@@ -136,17 +136,14 @@ function pipeworks.register_wielder(def)
             if def.eject_drops then inv:set_size('main', 32) end
             set_wielder_formspec(def, meta)
         end,
-        on_place = function(itemstack, placer, pointed_thing)
-            -- Use default placement
-            return minetest.item_place(itemstack, placer, pointed_thing)
-        end,
 
         after_place_node = function(pos, placer, itemstack, pointed_thing)
             -- Update the pipe network connections
             pipeworks.scan_for_tube_objects(pos)
-            if not placer or not pointed_thing or pointed_thing.type ~= 'node' then return end
+            if not placer then return end
 
             minetest.get_meta(pos):set_string('owner', placer:get_player_name())
+            if not pointed_thing or pointed_thing.type ~= 'node' then return end
 
             -- Rotate to face the clicked block
             local dir = vector.subtract(pointed_thing.above, pointed_thing.under)
@@ -154,7 +151,7 @@ function pipeworks.register_wielder(def)
 
             local node = minetest.get_node(pos)
             node.param2 = param2
-            minetest.set_node(pos, node)
+            minetest.swap_node(pos, node)
         end,
         after_dig_node = function(pos, oldnode, oldmetadata, digger)
             local digger_inv = digger:get_inventory()
