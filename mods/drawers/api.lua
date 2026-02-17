@@ -251,7 +251,26 @@ function drawers.register_drawer(name, def)
     def.on_metadata_inventory_put = drawers.add_drawer_upgrade
     def.on_metadata_inventory_take = drawers.remove_drawer_upgrade
 
-    if minetest.get_modpath 'screwdriver' and screwdriver then def.on_rotate = def.on_rotate or screwdriver.disallow end
+    if minetest.get_modpath 'screwdriver' and screwdriver then
+        def.on_rotate = function(pos, node, user, mode, new_param2)
+            if mode ~= screwdriver.ROTATE_FACE then
+                return false
+            end
+
+            local rotation = node.param2 % 32
+            local color_bits = node.param2 - rotation
+            local new_rotation = (rotation + 1) % 4
+            
+            node.param2 = color_bits + new_rotation
+            minetest.swap_node(pos, node)
+
+            -- Respawn visuals with new rotation
+            drawers.remove_visuals(pos)
+            drawers.spawn_visuals(pos)
+
+            return true
+        end
+    end
 
     if minetest.get_modpath 'pipeworks' and pipeworks then
         def.groups.tubedevice = 1
