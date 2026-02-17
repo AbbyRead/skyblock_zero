@@ -67,6 +67,46 @@ sbz_api.register_stateful_machine('sbz_chem:crusher', {
     groups = { matter = 1 },
     paramtype2 = 'facedir',
 
+    allow_metadata_inventory_put = function(pos, listname, index, stack, player)
+        if listname == "input" then
+            -- Do NOT allow empty cells in input
+            if stack:get_name() == "sbz_chem:empty_fluid_cell" then
+                return 0
+            end
+            -- Anything else can go into input (even if not applicable)
+            return stack:get_count()
+        end
+
+        if listname == "output" then
+            if stack:get_name() == "sbz_chem:empty_fluid_cell" then
+                return stack:get_count()
+            end
+            return 0
+        end
+        return stack:get_count()
+    end,
+
+    allow_metadata_inventory_move = function(pos, from_list, from_index, to_list, to_index, count, player)
+        local meta = minetest.get_meta(pos)
+        local inv = meta:get_inventory()
+        local stack = inv:get_stack(from_list, from_index)
+
+        if to_list == "input" then
+            if stack:get_name() == "sbz_chem:empty_fluid_cell" then
+                return 0
+            end
+            return count
+        end
+
+        if to_list == "output" then
+            if stack:get_name() == "sbz_chem:empty_fluid_cell" then
+                return count
+            end
+            return 0
+        end
+        return count
+    end,
+
     on_construct = function(pos)
         local meta = minetest.get_meta(pos)
         local inv = meta:get_inventory()
