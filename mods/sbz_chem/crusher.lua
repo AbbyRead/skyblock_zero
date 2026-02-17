@@ -122,7 +122,11 @@ style_type[list;spacing=.2;size=.8]
 list[context;output;3.5,0.5;4,4;]
 list[context;input;1,2;1,1;]
 list[current_player;main;0.2,5;8,4;]
-listring[current_player;main]listring[context;input]listring[current_player;main]listring[context;output]listring[current_player;main]
+listring[current_player;main]
+listring[context;input]
+listring[current_player;main]
+listring[context;output]
+listring[current_player;main]
 ]]
         )
     end,
