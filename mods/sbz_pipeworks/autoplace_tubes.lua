@@ -43,6 +43,48 @@ local function nodeside(node, tubedir)
 	return "left"
 end
 
+-- Convert camera yaw and pitch to the nearest facedir param2 value.
+
+-- Degrees start at 0 facing North, increasing while turning counter-clockwise (if looking down from above):
+--   0       = looking toward +Z (North)
+--   π/2     = looking toward -X (West)
+--   π       = looking toward -Z (South)
+--   3π/2    = looking toward +X (East)
+--
+local function look_to_facedir(yaw, pitch)
+    -- Vertical placement threshold (directionality favors yaw, but allows pitch)
+    local limit = math.pi * 0.40   -- ≈ 72°
+
+    -- Looking up means node faces down
+    if pitch > limit then
+        return 0
+    elseif pitch < -limit then
+        return 20
+    end
+
+	-- Round yaw to nearest 90° sector.
+	-- Normalise to [0, 2π) first so the modulo is well-defined.
+	yaw = yaw % (2 * math.pi)
+	local sector = math.floor(yaw / (math.pi / 2) + 0.5) % 4
+
+	-- Map sector index to facedir param2.
+	-- Sector 0 (yaw ≈ 0):   looking toward +Z (North)  |  param2 as 2 would make node face North
+	-- Sector 1 (yaw ≈ π/2): looking toward -X (West)   |  param2 as 1 would make node face West
+	-- Sector 2 (yaw ≈ π):   looking toward -Z (South)  |  param2 as 0 would make node face South
+	-- Sector 3 (yaw ≈ 3π/2):looking toward +X (East)   |  param2 as 3 would make node face East
+
+	-- Use opposite angles instead so that it faces camera
+	return ({ [0] = 0, 3, 2, 1 })[sector] -- node mirrors (not matches) camera angle when placed
+end
+
+local function yaw_to_4dir(yaw)
+    yaw = yaw % (2 * math.pi)
+    local sector = math.floor(yaw / (math.pi / 2) + 0.5) % 4
+
+    -- Map yaw sectors to 4dir param2
+    return ({ [0] = 0, 3, 2, 1 })[sector]
+end
+
 local vts = { 0, 3, 1, 4, 2, 5 }
 local tube_table = { [0] = 1, 2, 2, 4, 2, 4, 4, 5, 2, 3, 4, 6, 4, 6, 5, 7, 2, 4, 3, 6, 4, 5, 6, 7, 4, 6, 6, 8, 5, 7, 7, 9, 2, 4, 4, 5, 3, 6, 6, 7, 4, 6, 5, 7, 6, 8, 7, 9, 4, 5, 6, 7, 6, 7, 8, 9, 5, 7, 7, 9, 7, 9, 9, 10 }
 local tube_table_facedirs = { [0] = 0, 0, 5, 0, 3, 4, 3, 0, 2, 0, 2, 0, 6, 4, 3, 0, 7, 12, 5, 12, 7, 4, 5, 5, 18, 20, 16, 0, 7, 4, 7, 0, 1, 8, 1, 1, 1, 13, 1, 1, 10, 8, 2, 2, 17, 4, 3, 6, 9, 9, 9, 9, 21, 13, 1, 1, 10, 10, 11, 2, 19, 4, 3, 0 }
@@ -112,8 +154,32 @@ function pipeworks.scan_for_tube_objects(pos)
 	end
 end
 
-function pipeworks.after_place(pos)
-	pipeworks.scan_for_tube_objects(pos)
+-- FIX: after_place previously saved original_param2, called scan_for_tube_objects
+-- (which skipped autorouting pos itself), then restored original_param2 — but that
+-- restoration was misguided because:
+--   1. The placed node IS a tube and SHOULD be autorouted like any other tube.
+--   2. Neighbours were updated while seeing whatever param2 the node happened to
+--      have at placement time, which may not match the final autorouted state.
+
+function pipeworks.after_place(pos, placer)
+    if placer and placer.get_look_horizontal then
+        local node = minetest.get_node(pos)
+        local def = minetest.registered_nodes[node.name]
+
+        local yaw = placer:get_look_horizontal()
+        local pitch = placer.get_look_vertical and placer:get_look_vertical() or 0
+
+        if def.paramtype2 == "4dir" then
+            node.param2 = yaw_to_4dir(yaw)
+        elseif def.paramtype2 == "facedir" then
+            node.param2 = look_to_facedir(yaw, pitch)
+        end
+
+        minetest.swap_node(pos, node)
+    end
+
+    tube_autoroute(pos)
+    pipeworks.scan_for_tube_objects(pos)
 end
 
 function pipeworks.after_dig(pos)
