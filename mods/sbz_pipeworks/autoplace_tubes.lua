@@ -100,7 +100,7 @@ local function tube_autoroute(pos)
 end
 
 function pipeworks.scan_for_tube_objects(pos)
-	for side = 0, 6 do
+	for side = 1, 6 do
 		tube_autoroute(vector.add(pos, pipeworks.directions.side_to_dir(side)))
 	end
 end
