@@ -150,6 +150,12 @@ function pipeworks.register_wielder(def)
 
             -- Rotate to face the clicked block
             local dir = vector.subtract(pointed_thing.above, pointed_thing.under)
+
+            -- Flip direction if this wielder should face away
+            if def.place_facing == "away" then
+                dir = vector.multiply(dir, -1)
+            end
+
             local param2 = minetest.dir_to_facedir(dir, true)
 
             local node = minetest.get_node(pos)
@@ -229,6 +235,7 @@ function pipeworks.register_wielder(def)
     })
 end
 
+-- Nodebreaker faces away from clicked block side when placed.
 pipeworks.register_wielder {
     name = 'pipeworks:nodebreaker',
     description = S 'Node Breaker',
@@ -241,6 +248,7 @@ pipeworks.register_wielder {
         'nodebreaker_front.png',
     },
     connect_sides = { top = 1, bottom = 1, left = 1, right = 1, back = 1 },
+    place_facing = "away",
     wield_inv = { name = 'pick', width = 1, height = 1 },
     wield_hand = true,
     eject_drops = true,
@@ -291,6 +299,7 @@ pipeworks.register_wielder {
     cost = 20,
 }
 
+-- Deployer faces away from clicked block side when placed.
 pipeworks.register_wielder {
     name = 'pipeworks:deployer',
     description = S 'Deployer',
@@ -302,6 +311,7 @@ pipeworks.register_wielder {
         'deployer_back.png',
         'deployer_front.png',
     },
+    place_facing = "away",
     wield_inv = { name = 'main', width = 3, height = 3 },
     connect_sides = { back = 1 },
     action = function(fakeplayer, pointed)
@@ -321,6 +331,7 @@ pipeworks.register_wielder {
     cost = 20,
 }
 
+-- Puncher faces toward clicked block side when placed.
 pipeworks.register_wielder {
     name = 'pipeworks:puncher',
     description = S 'Puncher',
@@ -332,6 +343,7 @@ pipeworks.register_wielder {
         'interactor_bottom.png', -- back
         'interactor_top.png', -- front
     },
+    place_facing = "toward",
     wield_inv = { name = 'pick', width = 1, height = 1 },
     connect_sides = { top = 1, bottom = 1, left = 1, right = 1, back = 1 },
     wield_hand = true,
