@@ -31,9 +31,16 @@ local function nodeside(node, tubedir)
 	local right = vector.dot(rightdir, tubedir)
 	if right == 1 then
 		return "right"
-	else
+	elseif right == -1 then
 		return "left"
 	end
+
+	-- Fallback with a warning for inapplicable values
+	-- (e.g. one that produces a direction not aligned to any axis).
+	core.log("warning", "[pipeworks] nodeside: unexpected tubedir, defaulting to left. " ..
+		"node.param2=" .. tostring(node.param2) ..
+		" tubedir=" .. minetest.pos_to_string(tubedir))
+	return "left"
 end
 
 local vts = { 0, 3, 1, 4, 2, 5 }
