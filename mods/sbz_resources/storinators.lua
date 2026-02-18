@@ -105,6 +105,27 @@ local function register_storinator(added_name, def)
             def_copy.on_metadata_inventory_move = update_node_texture
             def_copy.info_extra = def_copy.slots .. " Slots"
 
+            def_copy.on_rotate = function(pos, node, user, mode, new_param2)
+                -- Only handle the 'Face' rotation (Left Click)
+                if mode ~= screwdriver.ROTATE_FACE then 
+                    return false 
+                end
+
+                -- 1. Isolate the rotation (first 5 bits) and the color (everything else)
+                local rotation = node.param2 % 32
+                local color_bits = node.param2 - rotation
+
+                -- 2. Manually cycle through the 4 horizontal directions (0, 1, 2, 3)
+                -- This makes it behave exactly like the Crystal Grower
+                local new_rotation = (rotation + 1) % 4
+
+                -- 3. Re-combine and apply
+                node.param2 = color_bits + new_rotation
+                minetest.swap_node(pos, node)
+                
+                return true -- Tells the screwdriver we handled it!
+            end
+
             local dropname = "sbz_resources:storinator"
             if #added_name ~= 0 then
                 dropname = dropname .. "_" .. added_name
