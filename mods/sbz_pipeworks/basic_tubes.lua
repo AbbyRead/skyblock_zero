@@ -192,7 +192,9 @@ minetest.register_node('pipeworks:one_way_tube', {
         end,
         priority = 75, -- Higher than normal tubes, but lower than receivers
     },
-    after_place_node = pipeworks.after_place,
+    after_place_node = function(pos)
+        pipeworks.scan_for_tube_objects(pos)
+    end,
     after_dig_node = pipeworks.after_dig,
     on_rotate = pipeworks.on_rotate,
 })
