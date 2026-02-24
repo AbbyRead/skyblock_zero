@@ -151,7 +151,7 @@ function sbz_api.plant_plant(plant, nodes)
             local soil_node = core.get_node(pointed[use_pointed] - up)
             if
                 string.sub(node, 1, 6) == 'group:'
-                    and minetest.get_item_group(soil_node.name, string.sub(node, 7)) > 0
+                and minetest.get_item_group(soil_node.name, string.sub(node, 7)) > 0
                 or soil_node.name == node
             then
                 local _, pos = minetest.item_place_node(ItemStack(plant), user, pointed)
@@ -470,13 +470,7 @@ minetest.register_craftitem('sbz_bio:warpshroom', {
     end,
     groups = { ui_bio = 1, eat = 6 },
 })
---[[
-minetest.register_craft({
-    type = "shapeless",
-    output = "sbz_bio:warpshroom",
-    recipe = { "sbz_bio:stemfruit", "sbz_meteorites:neutronium" }
-})
-]]
+
 -- Shockshroom, +40 power, needs 2 co2
 -- ingredient in powered dirt
 playereffects.register_effect_type('shocked', 'Shocked', 'fx_shocked.png', { 'clearable', 'speed' }, function(player)
@@ -606,14 +600,3 @@ minetest.register_node('sbz_bio:fiberweed', {
         minetest.swap_node(pos, node.param2 <= 0 and { name = 'sbz_bio:dirt' } or node)
     end,
 })
---[[
-minetest.register_craft({
-    output = "sbz_bio:fiberweed",
-    recipe = {
-        { "sbz_bio:algae", "sbz_bio:algae",     "sbz_bio:algae" },
-        { "sbz_bio:algae", "sbz_bio:stemfruit", "sbz_bio:algae" },
-        { "sbz_bio:algae", "sbz_bio:algae",     "sbz_bio:algae" }
-    }
-})
-
-]]
