@@ -469,14 +469,18 @@ minetest.register_node('sbz_power:switching_station', {
     end,
 })
 
-minetest.register_craft {
-    output = 'sbz_power:switching_station',
-    recipe = {
-        { '', 'sbz_resources:matter_plate', '' },
-        { 'sbz_resources:matter_plate', 'sbz_resources:matter_plate', 'sbz_resources:matter_plate' },
-        { '', 'sbz_resources:matter_plate', '' },
-    },
-}
+do -- Switching Station recipe scope
+    local Switching_Station = 'sbz_power:switching_station'
+    local MP = 'sbz_resources:matter_plate'
+    core.register_craft({
+        output = Switching_Station,
+        recipe = {
+            { '', MP, '' },
+            { MP, MP, MP },
+            { '', MP, '' },
+        },
+    })
+end
 
 minetest.register_abm {
     label = 'Machine activation - switching stations',
