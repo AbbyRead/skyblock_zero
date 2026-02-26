@@ -45,7 +45,7 @@ Requires: Obtain Emittrium
 
 ### Text
 
-Starlight Catchers are similar starlight collectors but more compact, generating 1 Cj/s.  
+Starlight Catchers are similar starlight collectors but more compact, generating 3 Cj/s.  
 But unlike starlight collectors, they need **Photon-Energy converters**, to convert their energy into usable power.  
 They won't do anything if you connect them directly to a Switching Station, as they provide power though the photon-energy converter.  
 
