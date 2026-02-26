@@ -23,7 +23,7 @@ end
 core.register_node("sbz_power:starlight_catcher", {
     description = "Starlight Catcher",
     info_extra =
-    "For those who insist on starlight collectors.\n Generates energy and is less laggy in large quantities.\n It generates energy that can be converted to 1Cj/s. ",
+    "For those who insist on starlight collectors.\n Generates energy and is less laggy in large quantities.\n It generates energy that can be converted to 3Cj/s. ",
     tiles = {
         "starlight_catcher_up.png",
         "starlight_catcher_side.png",
@@ -39,11 +39,11 @@ core.register_node("sbz_power:starlight_catcher", {
 
 local wallmounted_to_dir = {
     [0] = { 0, 1, 0 },
-    { 0,  -1, 0 },
-    { 1,  0,  0 },
-    { -1, 0,  0 },
-    { 0,  0,  1 },
-    { 0,  0,  -1 },
+    {  0, -1,  0 },
+    {  1,  0,  0 },
+    { -1,  0,  0 },
+    {  0,  0,  1 },
+    {  0,  0, -1 },
 }
 
 -- i attempted to optimize this function as much as i possibly could
@@ -72,7 +72,7 @@ local assemble_network = function(start_pos)
             local node = get_or_load_node(pos)
             local nodename = node.name
             if nodename == "sbz_power:starlight_catcher" or hpos == h_start_pos then
-                amount = amount + 1
+                amount = amount + 3
                 pos2network[hpos] = net_id
 
                 for i = 0, 5 do
