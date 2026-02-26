@@ -51,6 +51,18 @@ minetest.register_node('sbz_meteorites:meteoric_emittrium', {
     sounds = sbz_api.sounds.matter(),
 })
 
+local drops = sbz_api.crusher_drops
+local processed_drops = {}
+
+for _, v in ipairs(drops) do
+    local item = ItemStack(v)
+    item:set_count(2)
+    processed_drops[#processed_drops + 1] = {
+        rarity = 6,
+        items = { item:to_string() .. tostring(math.random(1,2))},
+    }
+end
+
 core.register_node('sbz_meteorites:meteoric_metal', {
     description = 'Meteoric Metal',
     tiles = { 'metal.png^meteoric_overlay.png' },
@@ -60,13 +72,9 @@ core.register_node('sbz_meteorites:meteoric_metal', {
     sounds = sbz_api.sounds.matter(),
 
     drop = {
-        max_items = 3,
-        items = {
-            -- Each entry: drop 1 or 2 of a random crusher item
-            { items = { sbz_api.crusher_drops[math.random(#sbz_api.crusher_drops)] .. " 1" } },
-            { items = { sbz_api.crusher_drops[math.random(#sbz_api.crusher_drops)] .. " 2" } },
-        }
-    }
+        max_items = 6,
+        items = processed_drops,
+    },
 })
 
 minetest.register_node('sbz_meteorites:neutronium', {
