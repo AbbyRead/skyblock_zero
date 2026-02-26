@@ -27,7 +27,7 @@ sbz_api.register_stateful_generator('sbz_power:simple_charge_generator', {
              ]]
         )
     end,
-    action_interval = 10,
+    action_interval = 6,
     action = function(pos, node, meta)
         local inv = meta:get_inventory()
         -- check if fuel is there
@@ -93,7 +93,7 @@ sbz_api.register_stateful_generator('sbz_power:simple_charge_generator', {
     input_inv = 'main',
     output_inv = 'main',
     info_generated = 30,
-    info_extra = { 'Consumes 1 core dust every 10 seconds' },
+    info_extra = { 'Consumes 1 core dust every 6 seconds' },
     autostate = true,
 }, {
     light_source = 14,
@@ -287,10 +287,10 @@ sbz_api.register_generator('sbz_power:starlight_collector', {
     action = function(pos, node, meta)
         meta:set_string('infotext', '')
         local r = math.random(0, 2)
-        if r == 1 then return 1 end
+        if r ~= 0 then return 1 end
         return 0
     end,
-    info_extra = 'Has a 1/3 Chance/Second to produce 1 power.',
+    info_extra = 'Has a 2/3 Chance/Second to produce 1 power.',
 })
 
 minetest.register_craft {
