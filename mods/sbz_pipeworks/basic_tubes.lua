@@ -239,7 +239,7 @@ do -- One Way Tube recipe scope
 end
 
 pipeworks.register_tube('pipeworks:crossing_tube', {
-    description = 'Crossing tube',
+    description = 'Crossing Tube',
     plain = { 'crossing_tube_plain.png' },
     noctr = { 'crossing_tube_noctr.png' },
     node_def = {
@@ -251,10 +251,12 @@ pipeworks.register_tube('pipeworks:crossing_tube', {
     },
 })
 
-do -- Crossing Tube 1 recipe scope
+do -- Crossing Tube recipe scope
+    local Crossing_Tube = 'pipeworks:crossing_tube_1'
+    local amount = 5
     local BT = 'pipeworks:tube_1' -- ("Basic Tube" in-game)
     core.register_craft({
-        output = 'pipeworks:crossing_tube_1 5',
+        output = Crossing_Tube .. ' ' .. tostring(amount),
         recipe = {
             { '', BT, '' },
             { BT, BT, BT },
