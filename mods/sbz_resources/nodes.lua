@@ -66,6 +66,54 @@ minetest.register_craft {
     },
 }
 
+sbz_api.recipe.register_craft {
+    type = 'bonding',
+    output = 'sbz_resources:compressed_core_dust',
+    items = {
+        'sbz_resources:core_dust 9',
+    },
+}
+
+sbz_api.recipe.register_craft {
+    type = 'bonding',
+    output = 'sbz_power:simple_charged_field',
+    items = {
+        'sbz_resources:charged_particle 9',
+    },
+}
+
+sbz_api.recipe.register_craft {
+    type = 'bonding',
+    output = 'sbz_resources:matter_blob',
+    items = {
+        'sbz_resources:matter_dust 9',
+    },
+}
+
+sbz_api.recipe.register_craft {
+    type = 'bonding',
+    output = 'sbz_resources:antimatter_blob',
+    items = {
+        'sbz_resources:antimatter_dust 9',
+    },
+}
+
+sbz_api.recipe.register_craft {
+    type = 'bonding',
+    output = 'sbz_resources:matter_blob',
+    items = {
+        'sbz_resources:matter_plate 4',
+    },
+}
+
+sbz_api.recipe.register_craft {
+    type = 'bonding',
+    output = 'sbz_resources:antimatter_blob',
+    items = {
+        'sbz_resources:antimatter_plate 4',
+    },
+}
+
 core.register_node(
     'sbz_resources:antimatter_blob',
     unifieddyes.def {
