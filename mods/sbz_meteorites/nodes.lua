@@ -53,16 +53,16 @@ minetest.register_node('sbz_meteorites:meteoric_emittrium', {
 
 local drops = sbz_api.crusher_drops
 
-core.register_node("sbz_meteorites:meteoric_metal", {
-    description = "Meteoric Metal",
-    tiles = { "metal.png^meteoric_overlay.png" },
-    paramtype = "light",
+core.register_node('sbz_meteorites:meteoric_metal', {
+    description = 'Meteoric Metal',
+    tiles = { 'metal.png^meteoric_overlay.png' },
+    paramtype = 'light',
     light_source = 10,
     groups = { matter = 1, cracky = 3 },
     sounds = sbz_api.sounds.matter(),
 
     -- Ignore drop and use an at-dig implementation to randomize drops
-    drop = "",
+    drop = '',
 
     after_dig_node = function(pos, _, _, digger)
         if not digger or not digger:is_player() then return end
@@ -85,7 +85,7 @@ core.register_node("sbz_meteorites:meteoric_metal", {
             local stack = ItemStack(shuffled[i])
             stack:set_count(math.random(1, 2)) -- 1 or 2 of each type
 
-            local leftover = inv:add_item("main", stack)
+            local leftover = inv:add_item('main', stack)
             -- If inventory is full, drop remainder on ground
             if leftover and not leftover:is_empty() then
                 core.add_item(pos, leftover)
