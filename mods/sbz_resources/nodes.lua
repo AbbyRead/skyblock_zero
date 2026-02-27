@@ -304,6 +304,7 @@ minetest.register_node('sbz_resources:emittrium_glass', {
     sunlight_propagates = true,
     groups = { matter = 1, transparent = 1, explody = 100 },
     sounds = sbz_api.sounds.glass(),
+    stack_max = 256,
 })
 
 minetest.register_craft {
@@ -326,6 +327,7 @@ minetest.register_node(
         sunlight_propagates = true,
         groups = { matter = 1, transparent = 1, explody = 100, charged = 1 },
         sounds = sbz_api.sounds.glass(),
+        stack_max = 256,
     }
 )
 
@@ -349,6 +351,7 @@ minetest.register_node(
         sunlight_propagates = true,
         groups = { matter = 1, transparent = 1, explody = 100, charged = 1 },
         sounds = sbz_api.sounds.glass(),
+        stack_max = 256,
         info_extra = "Recipe requires cleargrass but it returns it back once you've crafted with it.",
     }
 )
@@ -378,6 +381,7 @@ minetest.register_node(
         sunlight_propagates = true,
         groups = { matter = 1, transparent = 1, explody = 100, charged = 1 },
         sounds = sbz_api.sounds.glass(),
+        stack_max = 256,
         info_extra = { "Recipe requires razorgrass, but it returns it back once you've crafted with it." },
     }
 )
