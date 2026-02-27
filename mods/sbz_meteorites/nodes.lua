@@ -35,17 +35,17 @@ minetest.register_node('sbz_meteorites:meteoric_antimatter', {
 
 local emittrium_items = {}
 for _ = 1, 8 do
-    emittrium_items[#emittrium_items + 1] = { rarity = 2, items = { 'sbz_resources:raw_emittrium 4' } }
+    emittrium_items[#emittrium_items + 1] = { rarity = 2, items = { 'sbz_resources:raw_emittrium 2' } }
 end
 
-minetest.register_node('sbz_meteorites:meteoric_emittrium', {
+core.register_node('sbz_meteorites:meteoric_emittrium', {
     description = 'Meteoric Emittrium',
     tiles = { 'emitter.png^meteoric_overlay.png' },
     paramtype = 'light',
     light_source = 10,
     groups = { matter = 1, cracky = 3 },
     drop = {
-        max_items = 9 * 2,
+        max_items = 16,
         items = emittrium_items,
     },
     sounds = sbz_api.sounds.matter(),
