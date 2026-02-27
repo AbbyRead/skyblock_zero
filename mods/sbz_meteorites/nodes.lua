@@ -52,16 +52,6 @@ minetest.register_node('sbz_meteorites:meteoric_emittrium', {
 })
 
 local drops = sbz_api.crusher_drops
-local processed_drops = {}
-
-for _, v in ipairs(drops) do
-    local item = ItemStack(v)
-    item:set_count(2)
-    processed_drops[#processed_drops + 1] = {
-        rarity = 6,
-        items = { item:to_string() .. tostring(math.random(1,2))},
-    }
-end
 
 core.register_node('sbz_meteorites:meteoric_metal', {
     description = 'Meteoric Metal',
@@ -71,10 +61,37 @@ core.register_node('sbz_meteorites:meteoric_metal', {
     groups = { matter = 1, cracky = 3 },
     sounds = sbz_api.sounds.matter(),
 
-    drop = {
-        max_items = 6,
-        items = processed_drops,
-    },
+    -- Ignore drop and use an at-dig implementation to randomize drops
+    drop = '',
+
+    after_dig_node = function(pos, _, _, digger)
+        if not digger or not digger:is_player() then return end
+        if not drops or #drops == 0 then return end
+
+        local inv = digger:get_inventory()
+        if not inv then return end
+
+        local types_to_drop = math.random(1, 2) -- 1 or 2 types
+
+        -- Fisher-Yates shuffle: loop backwards through the table
+        local shuffled = table.copy(drops)
+        for i = #shuffled, 2, -1 do
+            local j = math.random(i)
+            shuffled[i], shuffled[j] = shuffled[j], shuffled[i]
+        end
+
+        -- Prefer dropping into inventory directly
+        for i = 1, math.min(types_to_drop, #shuffled) do
+            local stack = ItemStack(shuffled[i])
+            stack:set_count(math.random(1, 2)) -- 1 or 2 of each type
+
+            local leftover = inv:add_item('main', stack)
+            -- If inventory is full, drop remainder on ground
+            if leftover and not leftover:is_empty() then
+                core.add_item(pos, leftover)
+            end
+        end
+    end,
 })
 
 minetest.register_node('sbz_meteorites:neutronium', {
@@ -98,18 +115,18 @@ local core_blob = 'sbz_resources:compressed_core_dust'
 minetest.register_craft {
     output = 'sbz_meteorites:neutronium',
     recipe = {
-        { core_blob, core_blob, core_blob },
+        { core_blob, core_blob,                       core_blob },
         { core_blob, 'sbz_meteorites:antineutronium', core_blob },
-        { core_blob, core_blob, core_blob },
+        { core_blob, core_blob,                       core_blob },
     },
 }
 
 minetest.register_craft {
     output = 'sbz_meteorites:antineutronium',
     recipe = {
-        { core_blob, core_blob, core_blob },
+        { core_blob, core_blob,                   core_blob },
         { core_blob, 'sbz_meteorites:neutronium', core_blob },
-        { core_blob, core_blob, core_blob },
+        { core_blob, core_blob,                   core_blob },
     },
 }
 
