@@ -51,29 +51,50 @@ minetest.register_node('sbz_meteorites:meteoric_emittrium', {
     sounds = sbz_api.sounds.matter(),
 })
 
-local drops = sbz_api.crusher_drops
-local processed_drops = {}
-
-for k, v in ipairs(drops) do
-    local item = ItemStack(v)
-    item:set_count(16)
-    processed_drops[#processed_drops + 1] = {
-        rarity = 2,
-        items = { item:to_string() },
-    }
-end
-
-minetest.register_node('sbz_meteorites:meteoric_metal', {
+core.register_node('sbz_meteorites:meteoric_metal', {
     description = 'Meteoric Metal',
     tiles = { 'metal.png^meteoric_overlay.png' },
     paramtype = 'light',
     light_source = 10,
     groups = { matter = 1, cracky = 3 },
-    drop = {
-        max_items = 8 * 4,
-        items = processed_drops,
-    },
     sounds = sbz_api.sounds.matter(),
+
+    on_dig = function(pos, node, digger)
+        -- Remove node normally
+        core.node_dig(pos, node, digger)
+
+        if not digger or not digger:is_player() then return true end
+
+        local drops = sbz_api.crusher_drops
+        if not drops or #drops == 0 then return true end
+
+        -- Decide how many different metals (1 or 2)
+        local types_to_drop = math.random(1, 2)
+
+        -- Shuffle to avoid duplicates
+        local shuffled = table.copy(drops)
+        for i = #shuffled, 2, -1 do
+            local j = math.random(i)
+            shuffled[i], shuffled[j] = shuffled[j], shuffled[i]
+        end
+
+        -- Add directly to inventory
+        for i = 1, math.min(types_to_drop, #shuffled) do
+            local amount = math.random(1, 2)
+            local stack = ItemStack(shuffled[i])
+            stack:set_count(amount)
+
+            local inv = digger:get_inventory()
+            if not inv then return true end -- satisfy linter
+
+            local leftover = inv:add_item("main", stack)
+            if leftover and not leftover:is_empty() then
+                core.add_item(pos, leftover)
+            end
+        end
+
+        return true
+    end,
 })
 
 minetest.register_node('sbz_meteorites:neutronium', {
