@@ -17,7 +17,7 @@ minetest.register_node('sbz_meteorites:meteoric_matter', {
 
 local antimatter_items = { max_items = 6 }
 for _ = 1, 8 do
-    antimatter_items[#antimatter_items + 1] = { rarity = 2, items = { 'sbz_resources:antimatter_dust 8' } }
+    antimatter_items[#antimatter_items + 1] = { rarity = 2, items = { 'sbz_resources:antimatter_dust 4' } }
 end
 
 minetest.register_node('sbz_meteorites:meteoric_antimatter', {
@@ -27,7 +27,7 @@ minetest.register_node('sbz_meteorites:meteoric_antimatter', {
     light_source = 12,
     groups = { antimatter = 1, cracky = 3 },
     drop = {
-        max_items = 9 * 4,
+        max_items = 32,
         items = antimatter_items,
     },
     sounds = sbz_api.sounds.antimatter(),
