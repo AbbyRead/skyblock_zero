@@ -147,7 +147,7 @@ sbz_api.register_stateful_machine("sbz_power:light_sensor", unifieddyes.def {
 
 do -- Light Sensor recipe scope
     local Light_Sensor = 'sbz_power:light_sensor_off'
-    local SC = 'sbz_power:sensor_casing_plate'
+    local SC = 'sbz_resources:sensor_casing_plate'
     local SR = 'sbz_resources:shock_crystal'
     local SL = 'sbz_resources:simple_logic_circuit'
     core.register_craft({
@@ -244,7 +244,7 @@ sbz_api.register_stateful_machine("sbz_power:node_sensor", unifieddyes.def {
 
 do -- Node Sensor recipe scope
     local Node_Sensor = 'sbz_power:node_sensor_off'
-    local SC = 'sbz_power:sensor_casing_plate'
+    local SC = 'sbz_resources:sensor_casing_plate'
     local WC = 'sbz_resources:warp_crystal'
     local SL = 'sbz_resources:simple_logic_circuit'
     core.register_craft({
