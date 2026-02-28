@@ -187,7 +187,7 @@ Make sure the habitat is fully sealed. And make sure things like slabs or non-ai
         table.concat({
             'CO₂ supply: ',
             math.max(co2_supply, co2_supply_temp),
-            '\nCO2 demand: ',
+            '\nCO₂ demand: ',
             habitat.demand,
             '\nHabitat CO₂: ',
             co2 .. '/' .. habitat.storage,

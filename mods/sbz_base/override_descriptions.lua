@@ -42,7 +42,7 @@ minetest.register_on_mods_loaded(function()
                 "This chemical is disabled.\nThis means that you won't be able to obtain it anymore, but it may receive a use in the future."
             end
             if v.groups.burn ~= nil then
-                new_desc[#new_desc + 1] = "Burn power: " .. v.groups.burn .. " co2"
+                new_desc[#new_desc + 1] = "Burn power: " .. v.groups.burn .. " CO₂"
             end
             if v.groups.eat then
                 local sign = "+"
