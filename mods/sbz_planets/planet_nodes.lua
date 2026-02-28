@@ -170,6 +170,7 @@ core.register_node('sbz_planets:snow', {
     climbable = true,
     move_resistance = 1,
     post_effect_color = '#ffffff9f',
+    post_effect_color_shaded = true,
     sunlight_propagates = true,
     drowning = 0.5,
     liquid_alternative_flowing = 'sbz_planets:snow_layer',
@@ -213,6 +214,7 @@ core.register_node('sbz_planets:snow_layer', {
     walkable = false,
     climbable = false,
     post_effect_color = '#ffffff9f',
+    post_effect_color_shaded = true,
     sunlight_propagates = true,
     drop = 'sbz_planets:snowball',
 })
@@ -244,6 +246,7 @@ core.register_node('sbz_planets:water_source_nofall', {
     use_texture_alpha = 'blend',
     groups = { liquid = 3, habitat_conducts = 1, transparent = 1, liquid_capturable = 0, water = 1 },
     post_effect_color = water_color,
+    post_effect_color_shaded = true,
     paramtype = 'light',
     walkable = false,
     pointable = false,
