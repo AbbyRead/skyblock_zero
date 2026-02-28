@@ -65,6 +65,7 @@ minetest.register_node("sbz_bio:airlock", {
     tiles = { { name = "airlock.png^[opacity:192", animation = { type = "vertical_frames", length = 0.25 } } },
     use_texture_alpha = "blend",
     post_effect_color = "#a0ffff40",
+    post_effect_color_shaded = true,
     paramtype = "light",
     sunlight_propagates = true,
     walkable = false,
