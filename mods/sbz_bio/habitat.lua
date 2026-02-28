@@ -185,11 +185,11 @@ Make sure the habitat is fully sealed. And make sure things like slabs or non-ai
     meta:set_string(
         'infotext',
         table.concat({
-            'CO2 supply: ',
+            'CO₂ supply: ',
             math.max(co2_supply, co2_supply_temp),
             '\nCO2 demand: ',
             habitat.demand,
-            '\nHabitat CO2: ',
+            '\nHabitat CO₂: ',
             co2 .. '/' .. habitat.storage,
             '\nHabitat size: ',
             habitat.size,
@@ -228,7 +228,7 @@ sbz_api.register_machine('sbz_bio:habitat_regulator', {
 
 core.register_node('sbz_bio:co2_compactor', {
     description = 'CO2 Compactor',
-    info_extra = "Stores 30 co2. Habitat regulator doesn't consider it a wall, similar to how airlock works",
+    info_extra = "Stores 30 CO₂. Habitat regulator doesn't consider it a wall, but it can be passed through",
     groups = { matter = 2, explody = 8 },
     walkable = false,
     drawtype = 'glasslike', -- this is so that when you are inside the node, it looks OK
