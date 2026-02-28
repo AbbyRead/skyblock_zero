@@ -1,4 +1,4 @@
-minetest.register_node("sbz_bio:burner", sbz_api.add_tube_support({
+core.register_node("sbz_bio:burner", sbz_api.add_tube_support({
     description = "Burner",
     tiles = { "burner.png" },
     groups = { matter = 1, co2_source = 1 },
@@ -6,7 +6,7 @@ minetest.register_node("sbz_bio:burner", sbz_api.add_tube_support({
     sounds = sbz_api.sounds.machine(),
     light_source = 5,
     on_construct = function(pos)
-        local meta = minetest.get_meta(pos)
+        local meta = core.get_meta(pos)
         meta:get_inventory():set_size("main", 1)
         meta:set_string("formspec",
             "formspec_version[7]" ..
@@ -18,7 +18,7 @@ minetest.register_node("sbz_bio:burner", sbz_api.add_tube_support({
         )
     end,
     co2_action = function(pos, node, co2, storage)
-        local meta = minetest.get_meta(pos)
+        local meta = core.get_meta(pos)
         local co2_stored = meta:get_int("co2_stored")
         if co2_stored > 0 then
             local output = co2_stored
@@ -32,7 +32,7 @@ minetest.register_node("sbz_bio:burner", sbz_api.add_tube_support({
         local inv = meta:get_inventory()
         local itemstack = inv:get_stack("main", 1)
         if itemstack:is_empty() then return 0 end
-        local output = minetest.get_item_group(itemstack:get_name(), "burn")
+        local output = core.get_item_group(itemstack:get_name(), "burn")
         if output == 0 then return 0 end
         itemstack:take_item()
         inv:set_stack("main", 1, itemstack)
@@ -50,7 +50,7 @@ minetest.register_node("sbz_bio:burner", sbz_api.add_tube_support({
 })
 )
 
-minetest.register_craft({
+core.register_craft({
     output = "sbz_bio:burner",
     recipe = {
         { "sbz_bio:pyrograss",         "sbz_resources:matter_blob",        "sbz_bio:pyrograss" },
@@ -59,7 +59,7 @@ minetest.register_craft({
     }
 })
 
-minetest.register_node("sbz_bio:airlock", {
+core.register_node("sbz_bio:airlock", {
     description = "Airlock",
     drawtype = "glasslike",
     tiles = { { name = "airlock.png^[opacity:192", animation = { type = "vertical_frames", length = 0.25 } } },
@@ -71,7 +71,7 @@ minetest.register_node("sbz_bio:airlock", {
     groups = { matter = 1, transparent = 1 }
 })
 
-minetest.register_craft({
+core.register_craft({
     output = "sbz_bio:airlock",
     recipe = {
         { "sbz_resources:emittrium_glass", "sbz_resources:emittrium_glass", "sbz_resources:emittrium_glass" },
