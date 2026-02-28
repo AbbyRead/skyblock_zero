@@ -80,7 +80,7 @@ The following licenses are used within this work.
 | fakelib                    | <https://github.com/OgelGames/fakelib>                                          | MIT | N/A | ❌ |
 | modlib                     | <https://github.com/appgurueu/modlib>                                           | MIT | N/A | ❌ |
 | sethome                    | <https://github.com/minetest-game/sethome/>                                     | MIT | N/A | ❌ |
-| stubes                     | <https://github.com/TheEt1234/luanti-stubes/>                                   | MIT | Unspecified/Same as Code License | ❌ |
+| stubes                     | <https://codeberg.org/Skyblock_zero/stubes>                                     | MIT | Unspecified/Same as Code License | ❌ |
 | visible_wielditem          | <https://github.com/appgurueu/visible_wielditem/>                               | MIT | N/A | ❌ |
 | hotbar_switching           | <https://github.com/TheEt1234/hotbar_switching/>                                | 0BSD | N/A | ❌ |
 
