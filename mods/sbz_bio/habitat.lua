@@ -1,4 +1,4 @@
-local hash = minetest.hash_node_position
+local hash = core.hash_node_position
 local touched_nodes = {}
 
 local habitat_max_size = 4096
@@ -147,7 +147,7 @@ Make sure the habitat is fully sealed. And make sure things like slabs or non-ai
         for _, v in ipairs(habitat.co2_sources) do
             local pos, node = unpack(v)
             if stage == PcgRandom(hash(pos)):next(0, 9) or sbz_api.accelerated_habitats then
-                co2 = co2 + minetest.registered_nodes[node.name].co2_action(pos, node, atm_co2 + co2, habitat.storage)
+                co2 = co2 + core.registered_nodes[node.name].co2_action(pos, node, atm_co2 + co2, habitat.storage)
             end
             touched_nodes[hash(pos)] = time
         end
@@ -166,12 +166,12 @@ Make sure the habitat is fully sealed. And make sure things like slabs or non-ai
     for _, v in ipairs(habitat.plants) do
         local pos, node, demand = unpack(v)
         local under = vector.subtract(pos, vector.new(0, 1, 0))
-        local soil = minetest.get_item_group((sbz_api.get_or_load_node(under) or { name = '' }).name, 'soil')
+        local soil = core.get_item_group((sbz_api.get_or_load_node(under) or { name = '' }).name, 'soil')
 
         if (stage == PcgRandom(hash(pos)):next(0, 9)) or sbz_api.accelerated_habitats then
             if co2 - demand >= 0 then
                 co2 = co2 - demand
-                local growth_tick = minetest.registered_nodes[node.name].growth_tick or function(...) end
+                local growth_tick = core.registered_nodes[node.name].growth_tick or function(...) end
                 if growth_tick(pos, node) then touched_nodes[hash(pos)] = time end
             else
                 co2 = 0
@@ -246,13 +246,13 @@ core.register_craft {
     },
 }
 
-minetest.register_craft({
+core.register_craft({
     type = 'shapeless',
     output = 'sbz_bio:habitat_regulator',
     recipe = { 'sbz_power:switching_station', 'sbz_bio:moss' },
 })
 
-minetest.register_abm({
+core.register_abm({
     interval = 10,
     chance = 20,
     nodenames = { 'group:plant' },
@@ -260,7 +260,7 @@ minetest.register_abm({
         local touched = touched_nodes[hash(pos)]
         local time = os.time()
         if not touched or time - touched >= 60 then
-            local wilt = minetest.registered_nodes[node.name].wilt or function(...) end
+            local wilt = core.registered_nodes[node.name].wilt or function(...) end
             wilt(pos, node)
             touched_nodes[hash(pos)] = time
         end
