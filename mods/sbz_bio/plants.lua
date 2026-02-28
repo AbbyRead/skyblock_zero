@@ -287,7 +287,7 @@ minetest.register_craftitem('sbz_bio:pyrograss', {
 -- poison bullets for later
 -- compressed razorgrass could maybe look nice
 -- grows slightly slower than pyro
--- no co2 demand
+-- no CO₂ demand
 
 playereffects.register_effect_type(
     'poison',
@@ -348,7 +348,7 @@ minetest.register_craftitem('sbz_bio:razorgrass', {
 -- clearing effect
 -- blinding bullets for later
 -- could be used to "polish" decoblocks
--- boosts plants near it by 15% when in full growth stage, consumes co2, makes plants consume more co2
+-- boosts plants near it by 15% when in full growth stage, consumes CO₂, makes plants consume more CO₂
 -- grows slowly
 
 playereffects.register_effect_type('immune', 'Immune', 'fx_immunity.png', { 'immunity' }, function(player)
@@ -477,7 +477,7 @@ minetest.register_craft({
     recipe = { "sbz_bio:stemfruit", "sbz_meteorites:neutronium" }
 })
 ]]
--- Shockshroom, +40 power, needs 2 co2
+-- Shockshroom, +40 power, needs 2 CO₂
 -- ingredient in powered dirt
 playereffects.register_effect_type('shocked', 'Shocked', 'fx_shocked.png', { 'clearable', 'speed' }, function(player)
     ---modifies the vector, returns it

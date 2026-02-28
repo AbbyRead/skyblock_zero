@@ -36,11 +36,11 @@ minetest.register_node("sbz_bio:burner", sbz_api.add_tube_support({
         if output == 0 then return 0 end
         itemstack:take_item()
         inv:set_stack("main", 1, itemstack)
-        meta:set_string("infotext", "Storing 0 co2")
+        meta:set_string("infotext", "Storing 0 CO₂")
         if (output + co2) > storage then
             local new_output = math.max(0, storage - co2)
             meta:set_int("co2_stored", output - new_output)
-            meta:set_string("infotext", "Storing " .. (output - new_output) .. " co2")
+            meta:set_string("infotext", "Storing " .. (output - new_output) .. " CO₂")
             return new_output
         end
         return output
