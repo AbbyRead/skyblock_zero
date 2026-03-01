@@ -47,12 +47,9 @@ core.register_entity("drawers:visual", {
 		hp_max = 1,
 		physical = false,
 		collide_with_objects = false,
-		collisionbox = { -0.4374, -0.4374, 0, 0.4374, 0.4374, 0 }, -- for param2 0, 2
-		visual = "upright_sprite",                           -- "wielditem" for items without inv img?
-		visual_size = { x = 0.6, y = 0.6 },
-		textures = { "blank.png" },
-		spritediv = { x = 1, y = 1 },
-		initial_sprite_basepos = { x = 0, y = 0 },
+		collisionbox = { -0.4374, -0.4374, 0, 0.4374, 0.4374, 0 },
+		visual = "node",
+		visual_size = { x = 0.8, y = 0.8, z = 0.5 },
 		is_visible = true,
 	},
 
@@ -156,13 +153,16 @@ core.register_entity("drawers:visual", {
 		-- set_rotation for isometric posing.
 		local item_def = core.registered_items[self.itemName]
 		local use_node_visual = use_wielditem_visual(item_def)
+		self.use_node_visual = use_node_visual
+		self.node_visual_size = visual_size -- will be updated below if node visual
 
 		if use_node_visual then
 			if self.drawerType >= 2 then
-				visual_size = { x = 0.22, y = 0.22, z = 0.04 }
+				visual_size = { x = 0.22, y = 0.22, z = 0.0 }
 			else
-				visual_size = { x = 0.44, y = 0.44, z = 0.04 }
+				visual_size = { x = 0.44, y = 0.44, z = 0.0 }
 			end
+			self.node_visual_size = visual_size
 		end
 
 		-- infotext
@@ -175,6 +175,7 @@ core.register_entity("drawers:visual", {
 				visual = "node",
 				node = { name = self.itemName },
 				visual_size = visual_size,
+				is_visible = true,
 			})
 		else
 			self.object:set_properties({
@@ -183,10 +184,11 @@ core.register_entity("drawers:visual", {
 				visual = "upright_sprite",
 				textures = { self.texture },
 				visual_size = visual_size,
+				is_visible = true,
 			})
 		end
 
-		-- apply facing + isometric rotation
+		-- apply facing direction
 		local drawer_node = core.get_node(self.drawer_pos)
 		local bdir = core.facedir_to_dir(facedir(drawer_node.param2))
 		drawers.set_visual_rotation(self.object, bdir, use_node_visual)
@@ -407,12 +409,28 @@ core.register_entity("drawers:visual", {
 
 	updateTexture = function(self)
 		local item_def = core.registered_items[self.itemName]
-		if use_wielditem_visual(item_def) then
+		local use_node_visual = use_wielditem_visual(item_def)
+		self.use_node_visual = use_node_visual
+		if use_node_visual then
 			self.texture = self.itemName
+			-- node_visual_size may be nil for entities activated before this
+			-- code ran; fall back to computing it from drawerType
+			local vs = self.node_visual_size
+			if not vs then
+				vs = (self.drawerType >= 2)
+					and { x = 0.22, y = 0.22, z = 0.04 }
+					or { x = 0.44, y = 0.44, z = 0.04 }
+				self.node_visual_size = vs
+			end
 			self.object:set_properties({
 				visual = "node",
 				node = { name = self.itemName },
+				visual_size = vs,
 			})
+			-- re-apply rotation after set_properties
+			local drawer_node = core.get_node(self.drawer_pos)
+			local bdir = core.facedir_to_dir(facedir(drawer_node.param2))
+			drawers.set_visual_rotation(self.object, bdir, true)
 		else
 			self.texture = drawers.get_inv_image(self.itemName)
 			self.object:set_properties({

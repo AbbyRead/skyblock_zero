@@ -103,25 +103,12 @@ local all_same_face_drawtypes = {
 	mesh = true,
 }
 
--- Set entity rotation. For wielditem entities, applies a 45° yaw offset and
--- -30° pitch to mimic the inventory isometric look.
--- Axis convention (extrinsic X-Y-Z, left-handed):
---   Y = yaw (horizontal turn), X = pitch (tilt), Z = roll (unused)
-function drawers.set_visual_rotation(obj, bdir, use_wielditem)
+function drawers.set_visual_rotation(obj, bdir, use_node_visual)
 	local base_yaw = 0
 	if bdir.x < 0 then base_yaw = 0.5 * math.pi end
 	if bdir.z < 0 then base_yaw = math.pi end
 	if bdir.x > 0 then base_yaw = 1.5 * math.pi end
-
-	if use_wielditem then
-		obj:set_rotation({
-			x = -math.pi / 6,  -- -30° pitch: tilt top toward viewer
-			y = base_yaw + math.pi / 4, -- 45° yaw offset for diagonal view
-			z = 0,
-		})
-	else
-		obj:set_yaw(base_yaw)
-	end
+	obj:set_yaw(base_yaw)
 end
 
 function drawers.get_inv_image(name)
