@@ -70,23 +70,56 @@ local function tile_to_image(tile, fallback_image)
 	return image
 end
 
+-- Drawtypes that are not full cubes and will look wrong with inventorycube()
+local non_cubic_drawtypes = {
+	--allfaces = true,
+	--allfaces_optional = true,
+	--glasslike = true,
+	--glasslike_framed = true,
+	--glasslike_framed_optional = true,
+	--liquid = true,
+	--flowingliquid = true,
+	--torchlike = true,
+	--signlike = true,
+	--plantlike = true,
+	--plantlike_rooted = true,
+	--firelike = true,
+	--fencelike = true,
+	--raillike = true,
+	nodebox = true,
+	--mesh = true,
+	--connected = true,
+}
+
 function drawers.get_inv_image(name)
 	local texture = "blank.png"
 	local def = core.registered_items[name]
-	if not def then return end
+	if not def then return texture end
 
+	-- Best case: an explicit 2D inventory image is defined
 	if def.inventory_image and #def.inventory_image > 0 then
-		texture = def.inventory_image
-	else
-		if not def.tiles then return texture end
-		local tiles = table.copy(def.tiles)
-		local top = tile_to_image(tiles[1])
-		local left = tile_to_image(tiles[3], top)
-		local right = tile_to_image(tiles[5], left)
-		texture = core.inventorycube(top, left, right)
+		return def.inventory_image
 	end
 
-	return texture
+	-- Second best: an explicit 2D wield image
+	if def.wield_image and #def.wield_image > 0 then
+		return def.wield_image
+	end
+
+	-- For non-full-cube drawtypes, inventorycube() will look wrong.
+	-- Fall back to the front/top tile as a flat 2D representation.
+	if def.drawtype and non_cubic_drawtypes[def.drawtype] then
+		if not def.tiles then return texture end
+		return tile_to_image(def.tiles[1]) or texture
+	end
+
+	-- Full cubic nodes: build the standard isometric cube preview
+	if not def.tiles then return texture end
+	local tiles = table.copy(def.tiles)
+	local top = tile_to_image(tiles[1])
+	local left = tile_to_image(tiles[3], top)
+	local right = tile_to_image(tiles[5], left)
+	return core.inventorycube(top, left, right)
 end
 
 function drawers.spawn_visuals(pos)
