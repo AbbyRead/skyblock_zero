@@ -26,6 +26,22 @@ SOFTWARE.
 
 local S = minetest.get_translator('drawers')
 
+-- colorfacedir packs colour into the upper bits of param2.
+-- Strip them before any facedir operation so colour doesn't corrupt direction.
+local function facedir(param2)
+	return param2 % 32
+end
+
+-- Nodebox nodes with no explicit 2D image use visual = "node" so the engine
+-- renders the actual nodebox mesh. This visual type fully respects visual_size
+-- (including z for depth-flattening) and set_rotation, unlike "wielditem".
+local function use_wielditem_visual(item_def)
+	if not (item_def and item_def.drawtype == "nodebox") then return false end
+	local has_2d = (item_def.inventory_image and #item_def.inventory_image > 0)
+		or (item_def.wield_image and #item_def.wield_image > 0)
+	return not has_2d
+end
+
 core.register_entity("drawers:visual", {
 	initial_properties = {
 		hp_max = 1,
@@ -101,7 +117,7 @@ core.register_entity("drawers:visual", {
 		node = core.get_node(self.drawer_pos)
 		local colbox
 		if self.drawerType ~= 2 then
-			if node.param2 == 1 or node.param2 == 3 then
+			if facedir(node.param2) == 1 or facedir(node.param2) == 3 then
 				colbox = { 0, -0.4374, -0.4374, 0, 0.4374, 0.4374 }
 			else
 				colbox = { -0.4374, -0.4374, 0, 0.4374, 0.4374, 0 } -- for param2 = 0 or 2
@@ -113,7 +129,7 @@ core.register_entity("drawers:visual", {
 				end
 			end
 		else
-			if node.param2 == 1 or node.param2 == 3 then
+			if facedir(node.param2) == 1 or facedir(node.param2) == 3 then
 				colbox = { 0, -0.2187, -0.4374, 0, 0.2187, 0.4374 }
 			else
 				colbox = { -0.4374, -0.2187, 0, 0.4374, 0.2187, 0 } -- for param2 = 0 or 2
@@ -126,8 +142,7 @@ core.register_entity("drawers:visual", {
 			visual_size = { x = 0.3, y = 0.3 }
 		end
 
-
-		-- drawer values
+		-- drawer values — must be read before visual type detection
 		local vid = self.visualId
 		self.count = self.meta:get_int("count" .. vid)
 		self.itemName = self.meta:get_string("name" .. vid)
@@ -135,16 +150,46 @@ core.register_entity("drawers:visual", {
 		self.itemStackMax = self.meta:get_int("base_stack_max" .. vid)
 		self.stackMaxFactor = self.meta:get_int("stack_max_factor" .. vid)
 
+		-- Nodebox nodes with no explicit 2D image: use visual = "node" so the
+		-- engine renders the real nodebox mesh. Unlike "wielditem", this visual
+		-- type fully respects visual_size.z for depth-flattening and
+		-- set_rotation for isometric posing.
+		local item_def = core.registered_items[self.itemName]
+		local use_node_visual = use_wielditem_visual(item_def)
+
+		if use_node_visual then
+			if self.drawerType >= 2 then
+				visual_size = { x = 0.22, y = 0.22, z = 0.04 }
+			else
+				visual_size = { x = 0.44, y = 0.44, z = 0.04 }
+			end
+		end
 
 		-- infotext
 		local infotext = self.meta:get_string("entity_infotext" .. vid) .. "\n\n\n\n\n"
 
-		self.object:set_properties({
-			collisionbox = colbox,
-			infotext = infotext,
-			textures = { self.texture },
-			visual_size = visual_size
-		})
+		if use_node_visual then
+			self.object:set_properties({
+				collisionbox = colbox,
+				infotext = infotext,
+				visual = "node",
+				node = { name = self.itemName },
+				visual_size = visual_size,
+			})
+		else
+			self.object:set_properties({
+				collisionbox = colbox,
+				infotext = infotext,
+				visual = "upright_sprite",
+				textures = { self.texture },
+				visual_size = visual_size,
+			})
+		end
+
+		-- apply facing + isometric rotation
+		local drawer_node = core.get_node(self.drawer_pos)
+		local bdir = core.facedir_to_dir(facedir(drawer_node.param2))
+		drawers.set_visual_rotation(self.object, bdir, use_node_visual)
 
 		-- make entity undestroyable
 		self.object:set_armor_groups({ immortal = 1 })
@@ -361,12 +406,20 @@ core.register_entity("drawers:visual", {
 	end,
 
 	updateTexture = function(self)
-		-- texture
-		self.texture = drawers.get_inv_image(self.itemName)
-
-		self.object:set_properties({
-			textures = { self.texture }
-		})
+		local item_def = core.registered_items[self.itemName]
+		if use_wielditem_visual(item_def) then
+			self.texture = self.itemName
+			self.object:set_properties({
+				visual = "node",
+				node = { name = self.itemName },
+			})
+		else
+			self.texture = drawers.get_inv_image(self.itemName)
+			self.object:set_properties({
+				visual = "upright_sprite",
+				textures = { self.texture }
+			})
+		end
 	end,
 
 	dropStack = function(self, itemStack)

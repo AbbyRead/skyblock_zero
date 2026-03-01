@@ -27,6 +27,12 @@ SOFTWARE.
 
 local S = minetest.get_translator('drawers')
 
+-- colorfacedir packs colour into the upper bits of param2.
+-- Strip them before any facedir operation so colour doesn't corrupt direction.
+local function facedir(param2)
+	return param2 % 32
+end
+
 -- GUI
 function drawers.get_upgrade_slots_bg(x, y)
 	local out = ""
@@ -70,23 +76,88 @@ local function tile_to_image(tile, fallback_image)
 	return image
 end
 
+
+-- Drawtypes where even inventorycube() is meaningless — use a single flat tile.
+-- nodebox is intentionally absent: it has tiles and inventorycube() is reasonable.
+local flat_sprite_drawtypes = {
+	torchlike = true,
+	signlike = true,
+	plantlike = true,
+	plantlike_rooted = true,
+	firelike = true,
+	raillike = true,
+}
+
+-- Drawtypes that lack distinct top/side/front tiles for inventorycube(),
+-- but are vaguely cubic — repeat the first tile on all faces.
+local all_same_face_drawtypes = {
+	allfaces = true,
+	allfaces_optional = true,
+	glasslike = true,
+	glasslike_framed = true,
+	glasslike_framed_optional = true,
+	liquid = true,
+	flowingliquid = true,
+	fencelike = true,
+	connected = true,
+	mesh = true,
+}
+
+-- Set entity rotation. For wielditem entities, applies a 45° yaw offset and
+-- -30° pitch to mimic the inventory isometric look.
+-- Axis convention (extrinsic X-Y-Z, left-handed):
+--   Y = yaw (horizontal turn), X = pitch (tilt), Z = roll (unused)
+function drawers.set_visual_rotation(obj, bdir, use_wielditem)
+	local base_yaw = 0
+	if bdir.x < 0 then base_yaw = 0.5 * math.pi end
+	if bdir.z < 0 then base_yaw = math.pi end
+	if bdir.x > 0 then base_yaw = 1.5 * math.pi end
+
+	if use_wielditem then
+		obj:set_rotation({
+			x = -math.pi / 6,  -- -30° pitch: tilt top toward viewer
+			y = base_yaw + math.pi / 4, -- 45° yaw offset for diagonal view
+			z = 0,
+		})
+	else
+		obj:set_yaw(base_yaw)
+	end
+end
+
 function drawers.get_inv_image(name)
 	local texture = "blank.png"
 	local def = core.registered_items[name]
-	if not def then return end
+	if not def then return texture end
 
+	-- Best case: an explicit 2D inventory image is defined
 	if def.inventory_image and #def.inventory_image > 0 then
-		texture = def.inventory_image
-	else
-		if not def.tiles then return texture end
-		local tiles = table.copy(def.tiles)
-		local top = tile_to_image(tiles[1])
-		local left = tile_to_image(tiles[3], top)
-		local right = tile_to_image(tiles[5], left)
-		texture = core.inventorycube(top, left, right)
+		return def.inventory_image
 	end
 
-	return texture
+	-- Second best: an explicit 2D wield image
+	if def.wield_image and #def.wield_image > 0 then
+		return def.wield_image
+	end
+
+	if not def.tiles then return texture end
+
+	-- Drawtypes with no meaningful cube faces: single flat tile
+	if def.drawtype and flat_sprite_drawtypes[def.drawtype] then
+		return tile_to_image(def.tiles[1]) or texture
+	end
+
+	-- Drawtypes that are cubic but use the same texture on all faces
+	if def.drawtype and all_same_face_drawtypes[def.drawtype] then
+		local face = tile_to_image(def.tiles[1]) or texture
+		return core.inventorycube(face, face, face)
+	end
+
+	-- Full cubes and nodeboxes: isometric cube preview from top/left/right tiles
+	local tiles = table.copy(def.tiles)
+	local top   = tile_to_image(tiles[1])
+	local left  = tile_to_image(tiles[3], top)
+	local right = tile_to_image(tiles[5], left)
+	return core.inventorycube(top, left, right)
 end
 
 function drawers.spawn_visuals(pos)
@@ -102,24 +173,20 @@ function drawers.spawn_visuals(pos)
 		drawers.last_visual_id = ""
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name"))
 
-		local bdir = core.facedir_to_dir(node.param2)
+		local bdir = core.facedir_to_dir(facedir(node.param2))
 		local fdir = vector.new(-bdir.x, 0, -bdir.z)
 		local pos2 = vector.add(pos, vector.multiply(fdir, 0.45))
 
 		local obj = core.add_entity(pos2, "drawers:visual")
 		if not obj then return end
 
-		if bdir.x < 0 then obj:set_yaw(0.5 * math.pi) end
-		if bdir.z < 0 then obj:set_yaw(math.pi) end
-		if bdir.x > 0 then obj:set_yaw(1.5 * math.pi) end
-
 		drawers.last_texture = nil
 	elseif drawerType == 2 then
-		local bdir = core.facedir_to_dir(node.param2)
+		local bdir = core.facedir_to_dir(facedir(node.param2))
 
 		local fdir1
 		local fdir2
-		if node.param2 == 2 or node.param2 == 0 then
+		if facedir(node.param2) == 2 or facedir(node.param2) == 0 then
 			fdir1 = vector.new(-bdir.x, 0.5, -bdir.z)
 			fdir2 = vector.new(-bdir.x, -0.5, -bdir.z)
 		else
@@ -127,41 +194,34 @@ function drawers.spawn_visuals(pos)
 			fdir2 = vector.new(-bdir.x, -0.5, -bdir.z)
 		end
 
-		local objs = {}
-
 		drawers.last_visual_id = 1
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name1"))
 		local pos1 = vector.add(pos, vector.multiply(fdir1, 0.45))
-		objs[1] = core.add_entity(pos1, "drawers:visual")
+		core.add_entity(pos1, "drawers:visual")
 
 		drawers.last_visual_id = 2
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name2"))
 		local pos2 = vector.add(pos, vector.multiply(fdir2, 0.45))
-		objs[2] = core.add_entity(pos2, "drawers:visual")
-
-		for i, obj in pairs(objs) do
-			if bdir.x < 0 then obj:set_yaw(0.5 * math.pi) end
-			if bdir.z < 0 then obj:set_yaw(math.pi) end
-			if bdir.x > 0 then obj:set_yaw(1.5 * math.pi) end
-		end
+		core.add_entity(pos2, "drawers:visual")
+		-- rotation is handled in on_activate for all objects
 	else -- 2x2 drawer
-		local bdir = core.facedir_to_dir(node.param2)
+		local bdir = core.facedir_to_dir(facedir(node.param2))
 
 		local fdir1
 		local fdir2
 		local fdir3
 		local fdir4
-		if node.param2 == 2 then
+		if facedir(node.param2) == 2 then
 			fdir1 = vector.new(-bdir.x + 0.5, 0.5, -bdir.z)
 			fdir2 = vector.new(-bdir.x - 0.5, 0.5, -bdir.z)
 			fdir3 = vector.new(-bdir.x + 0.5, -0.5, -bdir.z)
 			fdir4 = vector.new(-bdir.x - 0.5, -0.5, -bdir.z)
-		elseif node.param2 == 0 then
+		elseif facedir(node.param2) == 0 then
 			fdir1 = vector.new(-bdir.x - 0.5, 0.5, -bdir.z)
 			fdir2 = vector.new(-bdir.x + 0.5, 0.5, -bdir.z)
 			fdir3 = vector.new(-bdir.x - 0.5, -0.5, -bdir.z)
 			fdir4 = vector.new(-bdir.x + 0.5, -0.5, -bdir.z)
-		elseif node.param2 == 1 then
+		elseif facedir(node.param2) == 1 then
 			fdir1 = vector.new(-bdir.x, 0.5, -bdir.z + 0.5)
 			fdir2 = vector.new(-bdir.x, 0.5, -bdir.z - 0.5)
 			fdir3 = vector.new(-bdir.x, -0.5, -bdir.z + 0.5)
@@ -173,34 +233,26 @@ function drawers.spawn_visuals(pos)
 			fdir4 = vector.new(-bdir.x, -0.5, -bdir.z + 0.5)
 		end
 
-		local objs = {}
-
 		drawers.last_visual_id = 1
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name1"))
 		local pos1 = vector.add(pos, vector.multiply(fdir1, 0.45))
-		objs[1] = core.add_entity(pos1, "drawers:visual")
+		core.add_entity(pos1, "drawers:visual")
 
 		drawers.last_visual_id = 2
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name2"))
 		local pos2 = vector.add(pos, vector.multiply(fdir2, 0.45))
-		objs[2] = core.add_entity(pos2, "drawers:visual")
+		core.add_entity(pos2, "drawers:visual")
 
 		drawers.last_visual_id = 3
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name3"))
 		local pos3 = vector.add(pos, vector.multiply(fdir3, 0.45))
-		objs[3] = core.add_entity(pos3, "drawers:visual")
+		core.add_entity(pos3, "drawers:visual")
 
 		drawers.last_visual_id = 4
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name4"))
 		local pos4 = vector.add(pos, vector.multiply(fdir4, 0.45))
-		objs[4] = core.add_entity(pos4, "drawers:visual")
-
-
-		for i, obj in pairs(objs) do
-			if bdir.x < 0 then obj:set_yaw(0.5 * math.pi) end
-			if bdir.z < 0 then obj:set_yaw(math.pi) end
-			if bdir.x > 0 then obj:set_yaw(1.5 * math.pi) end
-		end
+		core.add_entity(pos4, "drawers:visual")
+		-- rotation is handled in on_activate for all objects
 	end
 end
 
