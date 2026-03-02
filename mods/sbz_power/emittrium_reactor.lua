@@ -118,13 +118,13 @@ minetest.register_node('sbz_power:reactor_item_input', {
     },
 })
 
-do -- Reactor Item Input recipe scope
-    local Reactor_Item_Input = 'sbz_power:reactor_item_input'
+do -- Reactor Emittrium Input recipe scope
+    local Reactor_Emittrium_Input = 'sbz_power:reactor_item_input' -- Only takes emittrium
     local BT = 'pipeworks:tube_1' -- ("Basic Tube" in-game)
     local RC = 'sbz_resources:retaining_circuit'
     local RS = 'sbz_power:reactor_shell'
     core.register_craft({
-        output = Reactor_Item_Input,
+        output = Reactor_Emittrium_Input,
         recipe = {
             { BT, RC, RS },
         },
