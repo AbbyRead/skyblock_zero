@@ -260,6 +260,7 @@ sbz_api.register_leaves(
         },
         light_source = 1,
         post_effect_color = '#ffc0cb5F',
+        post_effect_color_shaded = true,
         radius = 3,
         tree = 'sbz_bio:colorium_tree',
         tree_drop = {
