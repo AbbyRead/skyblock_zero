@@ -1,8 +1,12 @@
 --[[
-Minetest Mod Storage Drawers - A Mod adding storage drawers
+Luanti Mod Storage Drawers - A Mod adding storage drawers
 
+Original Mod:
 Copyright (C) 2017-2020 Linus Jahn <lnj@kaidan.im>
 Copyright (C) 2018 isaiah658
+
+Modifications for Skyblock: Zero:
+Copyright (C) 2026 Skyblock: Zero Contributors
 
 MIT License
 
@@ -443,11 +447,16 @@ register_controller()
 
 -- Because the rest of the drawers mod doesn't have a hard depend on
 -- default, I changed the recipe to have an alternative
-core.register_craft({
-	output = 'drawers:controller',
-	recipe = {
-		{ 'sbz_resources:luanium', 'sbz_resources:luanium', 'sbz_resources:luanium' },
-		{ 'sbz_resources:luanium', 'group:drawer',          'sbz_resources:luanium' },
-		{ 'sbz_resources:luanium', 'sbz_resources:luanium', 'sbz_resources:luanium' },
-	}
-})
+do -- Controller recipe scope
+	local Controller = 'drawers:controller'
+	local Lu = 'sbz_resources:luanium'
+	local Dr = 'group:drawer'
+	core.register_craft({
+		output = Controller,
+		recipe = {
+			{ Lu, Lu, Lu },
+			{ Lu, Dr, Lu },
+			{ Lu, Lu, Lu },
+		}
+	})
+end

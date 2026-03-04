@@ -1,45 +1,62 @@
-minetest.register_craftitem("sbz_resources:matter_plate", {
+core.register_craftitem("sbz_resources:matter_plate", {
     description = "Matter Plate",
     inventory_image = "matter_plate.png",
     stack_max = 256,
 })
-minetest.register_craft({
-    type = "shapeless",
-    output = "sbz_resources:matter_plate 4",
-    recipe = { "sbz_resources:matter_blob" }
-})
-minetest.register_craftitem("sbz_resources:antimatter_plate", {
+
+do -- Matter Plate recipe scope
+    local Matter_Plate = 'sbz_resources:matter_plate'
+    local amount = 4
+    local MB = 'sbz_resources:matter_blob'
+    core.register_craft({
+        type = 'shapeless',
+        output = Matter_Plate .. ' ' .. tostring(amount),
+        recipe = { MB }
+    })
+end
+
+core.register_craftitem("sbz_resources:antimatter_plate", {
     description = "Antimatter Plate",
     inventory_image = "antimatter_plate.png",
     stack_max = 256,
 })
-minetest.register_craft({
-    type = "shapeless",
-    output = "sbz_resources:antimatter_plate 4",
-    recipe = { "sbz_resources:antimatter_blob" }
-})
 
-minetest.register_craftitem("sbz_resources:conversion_chamber", {
+do -- Antimatter Plate recipe scope
+    local Antimatter_Plate = 'sbz_resources:antimatter_plate'
+    local amount = 4
+    local AB = 'sbz_resources:antimatter_blob'
+    core.register_craft({
+        type = 'shapeless',
+        output = Antimatter_Plate .. ' ' .. tostring(amount),
+        recipe = { AB }
+    })
+end
+
+core.register_craftitem("sbz_resources:conversion_chamber", {
     description = "Conversion chamber (!! DEPRECATED !! Throw it away!)",
     inventory_image = "conversion_chamber.png",
     stack_max = 1,
     groups = { not_in_creative_inventory = 1, }
 })
 
-minetest.register_craftitem("sbz_resources:pebble", {
+core.register_craftitem("sbz_resources:pebble", {
     description = "Pebble",
     inventory_image = "pebble.png",
     stack_max = 128,
 })
 
-minetest.register_craft({
-    type = "shapeless",
-    output = "sbz_resources:pebble",
-    recipe = { "sbz_resources:matter_blob", "sbz_resources:matter_blob", "sbz_resources:matter_blob" }
-})
+do -- Pebble recipe scope
+    local Pebble = 'sbz_resources:pebble'
+    local MB = 'sbz_resources:matter_blob'
+    core.register_craft({
+        type = 'shapeless',
+        output = Pebble,
+        recipe = { MB, MB, MB }
+    })
+end
 
 -- Angel's Wing
-minetest.register_tool("sbz_resources:angels_wing", {
+core.register_tool("sbz_resources:angels_wing", {
     description = "Angel's Wing",
     inventory_image = "angels_wing.png",
     stack_max = 1,
@@ -74,19 +91,31 @@ minetest.register_tool("sbz_resources:angels_wing", {
     end,
 })
 
-minetest.register_craft({
-    output = "sbz_resources:angels_wing",
-    recipe = {
-        { "sbz_resources:stone", "sbz_resources:stone",             "sbz_resources:stone" },
-        { "sbz_resources:stone", "sbz_resources:emittrium_circuit", "sbz_resources:stone" },
-        { "sbz_resources:stone", "sbz_resources:stone",             "sbz_resources:stone" }
-    }
-})
+do -- Angels Wing recipe scope
+    local Angels_Wing = 'sbz_resources:angels_wing'
+    local St = 'sbz_resources:stone'
+    local EC = 'sbz_resources:emittrium_circuit'
+    core.register_craft({
+        output = Angels_Wing,
+        recipe = {
+            { St, St, St },
+            { St, EC, St },
+            { St, St, St }
+        }
+    })
+end
 
-core.register_craftitem("sbz_resources:phlogiston", {
-    description = "Phlogiston",
-    inventory_image = "phlogiston.png"
-})
+sbz_api.recipe.register_craft_type {
+    type = 'phlogiston_fusing',
+    description = 'Phlogiston Fusing',
+    icon = 'phlogiston_fuser_off.png',
+}
+
+sbz_api.recipe.register_craft {
+    output = 'sbz_resources:phlogiston',
+    type = 'phlogiston_fusing',
+    items = {},
+}
 
 core.register_node("sbz_resources:phlogiston_blob", {
     description = "Phlogiston Blob",
@@ -95,28 +124,38 @@ core.register_node("sbz_resources:phlogiston_blob", {
     light_source = 14
 })
 
-core.register_craft {
-    output = "sbz_resources:phlogiston_blob",
-    recipe = {
-        { "sbz_resources:phlogiston", "sbz_resources:phlogiston", "sbz_resources:phlogiston", },
-        { "sbz_resources:phlogiston", "sbz_resources:phlogiston", "sbz_resources:phlogiston", },
-        { "sbz_resources:phlogiston", "sbz_resources:phlogiston", "sbz_resources:phlogiston", },
-    }
-}
+do -- Phlogiston Blob recipe scope
+    local Phlogiston_Blob = 'sbz_resources:phlogiston_blob'
+    local Ph = 'sbz_resources:phlogiston'
+    core.register_craft({
+        output = Phlogiston_Blob,
+        recipe = {
+            { Ph, Ph, Ph },
+            { Ph, Ph, Ph },
+            { Ph, Ph, Ph },
+        }
+    })
+end
 
 core.register_craftitem("sbz_resources:heating_element", {
     description = "Heating Element",
     inventory_image = "heating_element.png",
 })
 
-core.register_craft {
-    output = "sbz_resources:heating_element",
-    recipe = {
-        { "sbz_chem:copper_ingot",           "sbz_chem:copper_ingot",           "sbz_chem:copper_ingot" },
-        { "sbz_chem:invar_ingot",            "sbz_chem:invar_ingot",            "sbz_chem:invar_ingot" },
-        { "sbz_resources:emittrium_circuit", "sbz_resources:emittrium_circuit", "sbz_resources:emittrium_circuit", }
-    }
-}
+do -- Heating Element recipe scope
+    local Heating_Element = 'sbz_resources:heating_element'
+    local CI = 'sbz_chem:copper_ingot'
+    local II = 'sbz_chem:invar_ingot'
+    local EC = 'sbz_resources:emittrium_circuit'
+    core.register_craft({
+        output = Heating_Element,
+        recipe = {
+            { CI, CI, CI },
+            { II, II, II },
+            { EC, EC, EC },
+        }
+    })
+end
 
 core.register_craftitem("sbz_resources:sensor_casing_plate", {
     description = "Sensor Casing Plate",
