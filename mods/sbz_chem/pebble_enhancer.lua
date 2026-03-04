@@ -1,3 +1,28 @@
+sbz_api.recipe.register_craft_type {
+    type = 'pebble_enhancing',
+    description = 'Enhancing',
+    icon = 'pebble_enhancer_top.png',
+    single = true,
+}
+
+local function allow_metadata_inventory_put(pos, listname, index, stack, player)
+    if listname == 'output' then return 0 end
+    return stack:get_count()
+end
+
+local function allow_metadata_inventory_move(pos, from_list, from_index, to_list, to_index, count, player)
+    if to_list == 'output' then return 0 end
+    return count
+end
+
+sbz_api.recipe.register_craft {
+    output = 'sbz_chem:enhanced_pebble',
+    type = 'pebble_enhancing',
+    items = {
+        'sbz_resources:pebble',
+    },
+}
+
 sbz_api.register_stateful_machine("sbz_chem:pebble_enhancer", {
     description = "Pebble Enhancer",
     info_extra = "Makes shiny, potentially radioactive pebbles.",
@@ -6,6 +31,9 @@ sbz_api.register_stateful_machine("sbz_chem:pebble_enhancer", {
         "pebble_enhancer_side.png"
     },
     groups = { matter = 1, weak_radioactive = 80 },
+    paramtype2 = 'facedir',
+    allow_metadata_inventory_put = allow_metadata_inventory_put,
+    allow_metadata_inventory_move = allow_metadata_inventory_move,
 
     on_construct = function(pos)
         local meta = minetest.get_meta(pos)
