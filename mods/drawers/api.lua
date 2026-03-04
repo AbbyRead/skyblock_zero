@@ -32,7 +32,6 @@ SOFTWARE.
 local S = core.get_translator 'drawers'
 
 do -- Drawer node box scope
-
     -- Full node = 1.0, center = (0,0,0), edges = ±0.5
     -- Coordinates specified as {x1, y1, z1, x2, y2, z2}
     -- A cuboid is created from the diagonal corners you specified with each x,y,z set.
@@ -43,15 +42,14 @@ do -- Drawer node box scope
     local T = H - trim_thickness  -- center to trim is 7/16
 
     drawers.node_box_simple = {
-    --  { x1, y1, z1, x2, y2, z2 }
-    --  --------------------------
-        { -H, -H, -T,  H,  H,  H }, -- main block, slightly inset block
-        { -H, -H, -H, -T,  H, -T }, -- left-side   16th-of-node sized bar
-        {  T, -H, -H,  H,  H, -T }, -- right-side  16th-of-node sized bar
-        { -T,  T, -H,  T,  H, -T }, -- top-side    16th-of-node sized bar
-        { -T, -H, -H,  T, -T, -T }, -- bottom-side 16th-of-node sized bar
+        --  { x1, y1, z1, x2, y2, z2 }
+        --  --------------------------
+        { -H, -H, -T, H,  H,  H },  -- main block, slightly inset block
+        { -H, -H, -H, -T, H,  -T }, -- left-side   16th-of-node sized bar
+        { T,  -H, -H, H,  H,  -T }, -- right-side  16th-of-node sized bar
+        { -T, T,  -H, T,  H,  -T }, -- top-side    16th-of-node sized bar
+        { -T, -H, -H, T,  -T, -T }, -- bottom-side 16th-of-node sized bar
     }
-
 end
 
 drawers.drawer_formspec = 'size[9,6.7]'
@@ -67,7 +65,7 @@ function drawers.drawer_on_construct(pos)
     local drawerType = ndef.groups.drawer
 
     local base_stack_max = core.nodedef_default.stack_max or 99
-    local stack_max_factor = ndef.drawer_stack_max_factor or 24 -- 3x8
+    local stack_max_factor = ndef.drawer_stack_max_factor or 24  -- 3x8
     stack_max_factor = math.floor(stack_max_factor / drawerType) -- drawerType => number of drawers in node
 
     -- meta
@@ -77,13 +75,13 @@ function drawers.drawer_on_construct(pos)
         -- 1x1 drawers don't have numbers in the meta fields
         local slot_suffix = (drawerType == 1) and '' or tostring(i)
 
-        meta:set_string(           'name' .. slot_suffix, '')
+        meta:set_string('name' .. slot_suffix, '')
         meta:set_string('entity_infotext' .. slot_suffix,
-                drawers.gen_info_text(S 'Empty', 0, stack_max_factor, base_stack_max))
+            drawers.gen_info_text(S 'Empty', 0, stack_max_factor, base_stack_max))
 
-        meta:set_int(           'count' .. slot_suffix, 0)
-        meta:set_int(       'max_count' .. slot_suffix, base_stack_max * stack_max_factor)
-        meta:set_int(  'base_stack_max' .. slot_suffix, base_stack_max)
+        meta:set_int('count' .. slot_suffix, 0)
+        meta:set_int('max_count' .. slot_suffix, base_stack_max * stack_max_factor)
+        meta:set_int('base_stack_max' .. slot_suffix, base_stack_max)
         meta:set_int('stack_max_factor' .. slot_suffix, stack_max_factor)
     end
 
@@ -277,18 +275,19 @@ function drawers.register_drawer(name, def)
     def.on_metadata_inventory_put = drawers.add_drawer_upgrade
     def.on_metadata_inventory_take = drawers.remove_drawer_upgrade
 
-    if core.get_modpath 'screwdriver' and screwdriver then
+    if core.get_modpath("screwdriver") and screwdriver then
         def.on_rotate = function(pos, node, user, mode, new_param2)
             if mode ~= screwdriver.ROTATE_FACE then
                 return false
             end
+<<<<<<<<< Temporary merge branch 1
 
             local rotation = node.param2 % 32
             local color_bits = node.param2 - rotation
             local new_rotation = (rotation + 1) % 4
             
             node.param2 = color_bits + new_rotation
-            core.swap_node(pos, node)
+            minetest.swap_node(pos, node)
 
             -- Respawn visuals with new rotation
             drawers.remove_visuals(pos)
@@ -297,8 +296,20 @@ function drawers.register_drawer(name, def)
             return true
         end
     end
+=========
+>>>>>>>>> Temporary merge branch 2
 
-    if minetest.get_modpath 'pipeworks' and pipeworks then
+            node.param2 = new_param2
+            core.swap_node(pos, node)
+
+            drawers.remove_visuals(pos)
+            drawers.spawn_visuals(pos)
+
+            return true
+        end
+    end
+
+    if core.get_modpath 'pipeworks' and pipeworks then
         def.groups.tubedevice = 1
         def.groups.tubedevice_receiver = 1
         def.groups.tubedevice_use_item_entities = 1
