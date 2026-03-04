@@ -11,7 +11,6 @@
 │   ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐   │
 │   │   │ │   │ │   │ │   │ │   │ │   │ │   │ │   │   │
 │   └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘   │
-│                                                     │
 │   ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐ ┌───┐   │
 │   │   │ │   │ │   │ │   │ │   │ │   │ │   │ │   │   │
 │   └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘   │
@@ -25,13 +24,16 @@
 └─────────────────────────────────────────────────────┘
 ]]
 function drawers.drawer_formspec(pos, upgrade_slots, hotbar_slots)
+    -- Formspec version for this scope
+    local fs_version = 'formspec_version[7]'
+
     if hotbar_slots == 0 or hotbar_slots == nil then hotbar_slots = 8 end
     if upgrade_slots == nil then upgrade_slots = 5 end
 
     local inv_slot_w = 1.0
     local inv_slot_h = 1.0
     local separation_spacing = 0.5
-    local relational_spacing = 0.25
+    local relational_spacing = 0.25 -- was used to separate hotbar visually
     local inventory_size = 32
 
     -- Clamp hotbar and derive slots_per_row from it, within a sensible range
@@ -63,7 +65,7 @@ function drawers.drawer_formspec(pos, upgrade_slots, hotbar_slots)
     local hotbar_rows = math.ceil(hotbar_slots_clamped / slots_per_row)
     local inv_remaining_rows = math.ceil(remaining_slots / slots_per_row)
 
-    local hotbar_y = upgrade_y + inv_slot_h + separation_spacing
+    local hotbar_y = upgrade_y + inv_slot_h -- + separation_spacing
     local inv_remaining_y = hotbar_y + hotbar_rows * inv_slot_h + relational_spacing
     local total_height = inv_remaining_y + inv_remaining_rows * inv_slot_h + separation_spacing
 

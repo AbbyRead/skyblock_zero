@@ -30,6 +30,51 @@ SOFTWARE.
 
 local S = core.get_translator('drawers')
 
+-- Finicky drawer visual rendering (vs for "visual size")
+local small_vs = 0.25
+local large_vs = 0.5
+
+-- To address part 5 of Issue #259:
+-- Compute yaw from facedir direction so all four orientations are correct.
+-- bdir is the vector the drawer face points toward (from core.facedir_to_dir).
+-- The entity must face *toward the viewer*, i.e. opposite to bdir.
+
+local function facedir_yaw(bdir)
+	return math.atan2(-bdir.x, -bdir.z)
+end
+
+local function facedir(param2)
+	return param2 % 32 -- ignore color bits
+end
+
+-- Nodes whose geometry can't be meaningfully represented as a flat sprite.
+-- Use visual = "node" so the engine renders the actual mesh.
+local COMPLEX_DRAWTYPES = {
+	nodebox = true,
+	mesh    = true,
+	-- also a check below for animated blocks to render the same way
+}
+local function use_node_visual(item_def)
+	if not item_def then return false end
+	if COMPLEX_DRAWTYPES[item_def.drawtype] then
+		local has_2d = (item_def.inventory_image and #item_def.inventory_image > 0)
+			or (item_def.wield_image and #item_def.wield_image > 0)
+		return not has_2d
+	end
+	-- Animated tiles with no explicit 2D image: render as node so the
+	-- engine handles the animation rather than us mangling the spritesheet.
+	if item_def.tiles then
+		for _, tile in ipairs(item_def.tiles) do
+			if type(tile) == "table" and tile.animation then
+				local has_2d = (item_def.inventory_image and #item_def.inventory_image > 0)
+					or (item_def.wield_image and #item_def.wield_image > 0)
+				return not has_2d
+			end
+		end
+	end
+	return false
+end
+
 function drawers.spawn_visuals(pos)
 	local node = core.get_node(pos)
 	local ndef = core.registered_nodes[node.name]
@@ -43,24 +88,22 @@ function drawers.spawn_visuals(pos)
 		drawers.last_visual_id = ""
 		drawers.last_texture = drawers.get_inv_image(core.get_meta(pos):get_string("name"))
 
-		local bdir = core.facedir_to_dir(node.param2)
+		local bdir = core.facedir_to_dir(facedir(node.param2))
 		local fdir = vector.new(-bdir.x, 0, -bdir.z)
 		local pos2 = vector.add(pos, vector.multiply(fdir, 0.45))
 
 		local obj = core.add_entity(pos2, "drawers:visual")
 		if not obj then return end
 
-		if bdir.x < 0 then obj:set_yaw(0.5 * math.pi) end
-		if bdir.z < 0 then obj:set_yaw(math.pi) end
-		if bdir.x > 0 then obj:set_yaw(1.5 * math.pi) end
+		obj:set_yaw(facedir_yaw(bdir))
 
 		drawers.last_texture = nil
 	elseif drawerType == 2 then
-		local bdir = core.facedir_to_dir(node.param2)
+		local bdir = core.facedir_to_dir(facedir(node.param2))
 
 		local fdir1
 		local fdir2
-		if node.param2 == 2 or node.param2 == 0 then
+		if facedir(node.param2) == 2 or facedir(node.param2) == 0 then
 			fdir1 = vector.new(-bdir.x, 0.5, -bdir.z)
 			fdir2 = vector.new(-bdir.x, -0.5, -bdir.z)
 		else
@@ -68,6 +111,7 @@ function drawers.spawn_visuals(pos)
 			fdir2 = vector.new(-bdir.x, -0.5, -bdir.z)
 		end
 
+		-- Fix: declare objs and capture both entities so the yaw loop works
 		local objs = {}
 
 		drawers.last_visual_id = 1
@@ -80,29 +124,28 @@ function drawers.spawn_visuals(pos)
 		local pos2 = vector.add(pos, vector.multiply(fdir2, 0.45))
 		objs[2] = core.add_entity(pos2, "drawers:visual")
 
-		for i, obj in pairs(objs) do
-			if bdir.x < 0 then obj:set_yaw(0.5 * math.pi) end
-			if bdir.z < 0 then obj:set_yaw(math.pi) end
-			if bdir.x > 0 then obj:set_yaw(1.5 * math.pi) end
+		local yaw = facedir_yaw(bdir)
+		for _, obj in pairs(objs) do
+			obj:set_yaw(yaw)
 		end
 	else -- 2x2 drawer
-		local bdir = core.facedir_to_dir(node.param2)
+		local bdir = core.facedir_to_dir(facedir(node.param2))
 
 		local fdir1
 		local fdir2
 		local fdir3
 		local fdir4
-		if node.param2 == 2 then
+		if facedir(node.param2) == 2 then
 			fdir1 = vector.new(-bdir.x + 0.5, 0.5, -bdir.z)
 			fdir2 = vector.new(-bdir.x - 0.5, 0.5, -bdir.z)
 			fdir3 = vector.new(-bdir.x + 0.5, -0.5, -bdir.z)
 			fdir4 = vector.new(-bdir.x - 0.5, -0.5, -bdir.z)
-		elseif node.param2 == 0 then
+		elseif facedir(node.param2) == 0 then
 			fdir1 = vector.new(-bdir.x - 0.5, 0.5, -bdir.z)
 			fdir2 = vector.new(-bdir.x + 0.5, 0.5, -bdir.z)
 			fdir3 = vector.new(-bdir.x - 0.5, -0.5, -bdir.z)
 			fdir4 = vector.new(-bdir.x + 0.5, -0.5, -bdir.z)
-		elseif node.param2 == 1 then
+		elseif facedir(node.param2) == 1 then
 			fdir1 = vector.new(-bdir.x, 0.5, -bdir.z + 0.5)
 			fdir2 = vector.new(-bdir.x, 0.5, -bdir.z - 0.5)
 			fdir3 = vector.new(-bdir.x, -0.5, -bdir.z + 0.5)
@@ -136,11 +179,9 @@ function drawers.spawn_visuals(pos)
 		local pos4 = vector.add(pos, vector.multiply(fdir4, 0.45))
 		objs[4] = core.add_entity(pos4, "drawers:visual")
 
-
+		local yaw = facedir_yaw(bdir)
 		for i, obj in pairs(objs) do
-			if bdir.x < 0 then obj:set_yaw(0.5 * math.pi) end
-			if bdir.z < 0 then obj:set_yaw(math.pi) end
-			if bdir.x > 0 then obj:set_yaw(1.5 * math.pi) end
+			obj:set_yaw(yaw)
 		end
 	end
 end
@@ -183,7 +224,7 @@ core.register_entity("drawers:visual", {
 		physical = false,
 		collide_with_objects = false,
 		collisionbox = { -0.4374, -0.4374, 0, 0.4374, 0.4374, 0 }, -- for param2 0, 2
-		visual = "upright_sprite",                           -- "wielditem" for items without inv img?
+		visual = "upright_sprite",
 		visual_size = { x = 0.6, y = 0.6 },
 		textures = { "blank.png" },
 		spritediv = { x = 1, y = 1 },
@@ -198,7 +239,8 @@ core.register_entity("drawers:visual", {
 			drawer_posz = self.drawer_pos.z,
 			texture = self.texture,
 			drawerType = self.drawerType,
-			visualId = self.visualId
+			visualId = self.visualId,
+			yaw = self.object:get_yaw(), -- Persist yaw across chunk reloads
 		})
 	end,
 
@@ -214,6 +256,11 @@ core.register_entity("drawers:visual", {
 			self.texture = data.texture
 			self.drawerType = data.drawerType or 1
 			self.visualId = data.visualId or ""
+
+			-- Restore yaw saved at serialize time
+			if data.yaw then
+				self.object:set_yaw(data.yaw)
+			end
 
 			-- backwards compatibility
 			if self.texture == "drawers_empty.png" then
@@ -249,10 +296,11 @@ core.register_entity("drawers:visual", {
 		self.meta = core.get_meta(self.drawer_pos)
 
 		-- collisionbox
+		-- Fix: use facedir() to strip color bits before comparing param2
 		node = core.get_node(self.drawer_pos)
 		local colbox
 		if self.drawerType ~= 2 then
-			if node.param2 == 1 or node.param2 == 3 then
+			if facedir(node.param2) == 1 or facedir(node.param2) == 3 then
 				colbox = { 0, -0.4374, -0.4374, 0, 0.4374, 0.4374 }
 			else
 				colbox = { -0.4374, -0.4374, 0, 0.4374, 0.4374, 0 } -- for param2 = 0 or 2
@@ -264,7 +312,7 @@ core.register_entity("drawers:visual", {
 				end
 			end
 		else
-			if node.param2 == 1 or node.param2 == 3 then
+			if facedir(node.param2) == 1 or facedir(node.param2) == 3 then
 				colbox = { 0, -0.2187, -0.4374, 0, 0.2187, 0.4374 }
 			else
 				colbox = { -0.4374, -0.2187, 0, 0.4374, 0.2187, 0 } -- for param2 = 0 or 2
@@ -277,7 +325,6 @@ core.register_entity("drawers:visual", {
 			visual_size = { x = 0.3, y = 0.3 }
 		end
 
-
 		-- drawer values
 		local vid = self.visualId
 		self.count = self.meta:get_int("count" .. vid)
@@ -286,21 +333,36 @@ core.register_entity("drawers:visual", {
 		self.itemStackMax = self.meta:get_int("base_stack_max" .. vid)
 		self.stackMaxFactor = self.meta:get_int("stack_max_factor" .. vid)
 
-
 		-- infotext
 		local infotext = self.meta:get_string("entity_infotext" .. vid) .. "\n\n\n\n\n"
 
-		self.object:set_properties({
-			collisionbox = colbox,
-			infotext = infotext,
-			textures = { self.texture },
-			visual_size = visual_size
-		})
+		-- Use the same two-branch logic as updateTexture so node visuals
+		-- don't try to load the item name as a texture filename on reload
+		local item_def = core.registered_items[self.itemName]
+		if use_node_visual(item_def) then
+			local _visual_size = (self.drawerType >= 2)
+				and { x = small_vs, y = small_vs, z = 0.0 }
+				or { x = large_vs, y = large_vs, z = 0.0 }
+			self.object:set_properties({
+				collisionbox = colbox,
+				infotext = infotext,
+				visual = "node",
+				node = { name = self.itemName },
+				visual_size = _visual_size,
+			})
+		else
+			self.object:set_properties({
+				collisionbox = colbox,
+				infotext = infotext,
+				visual = "upright_sprite",
+				textures = { self.texture },
+				visual_size = visual_size,
+			})
+		end
 
 		-- make entity undestroyable
 		self.object:set_armor_groups({ immortal = 1 })
 	end,
-
 	on_rightclick = function(self, clicker)
 		if core.is_protected(self.drawer_pos, clicker:get_player_name()) then
 			core.record_protection_violation(self.drawer_pos, clicker:get_player_name())
@@ -415,7 +477,7 @@ core.register_entity("drawers:visual", {
 		self.count = self.count - removeCount
 
 		self:updateInfotext()
-		self:updateTexture()
+		self:update_texture()
 		self:saveMetaData()
 
 		-- return the stack that was removed from the drawer
@@ -477,7 +539,7 @@ core.register_entity("drawers:visual", {
 		-- update everything
 		self.count = self.count + insertCount
 		self:updateInfotext()
-		self:updateTexture()
+		self:update_texture()
 		self:saveMetaData()
 
 		-- return leftover
@@ -511,13 +573,29 @@ core.register_entity("drawers:visual", {
 		})
 	end,
 
-	updateTexture = function(self)
-		-- texture
-		self.texture = drawers.get_inv_image(self.itemName)
-
-		self.object:set_properties({
-			textures = { self.texture }
-		})
+	update_texture = function(self)
+		local item_def = core.registered_items[self.itemName]
+		if use_node_visual(item_def) then
+			local _visual_size = (self.drawerType >= 2)
+				and { x = small_vs, y = small_vs, z = 0.0 }
+				or { x = large_vs, y = large_vs, z = 0.0 }
+			self.texture = self.itemName
+			self.object:set_properties({
+				visual = "node",
+				node = { name = self.itemName },
+				visual_size = _visual_size,
+			})
+		else
+			self.texture = drawers.get_inv_image(self.itemName)
+			local _visual_size = (self.drawerType >= 2)
+				and { x = 0.3, y = 0.3 }
+				or { x = 0.6, y = 0.6 }
+			self.object:set_properties({
+				visual = "upright_sprite",
+				visual_size = _visual_size,
+				textures = { self.texture },
+			})
+		end
 	end,
 
 	dropStack = function(self, itemStack)
