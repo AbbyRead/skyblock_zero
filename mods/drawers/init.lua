@@ -1,7 +1,12 @@
 --[[
-Minetest Mod Storage Drawers - A Mod adding storage drawers
+Luanti Mod Storage Drawers - A Mod adding storage drawers
 
+Original Mod:
+Copyright (C) 2021 by Pandorabox
 Copyright (C) 2017-2020 Linus Jahn <lnj@kaidan.im>
+
+Modifications for Skyblock: Zero:
+Copyright (C) 2026 Skyblock: Zero Contributors
 
 MIT License
 
@@ -26,15 +31,13 @@ SOFTWARE.
 
 local MP = core.get_modpath(core.get_current_modname())
 
-local S = minetest.get_translator('drawers')
+local S = core.get_translator('drawers')
 
 drawers = {}
 drawers.drawer_visuals = {}
-
 drawers.enable_1x1 = true
 drawers.enable_1x2 = true
 drawers.enable_2x2 = true
-
 drawers.CONTROLLER_RANGE = 40
 drawers.CHEST_ITEMSTRING = "sbz_resources:storinator"
 
@@ -132,14 +135,21 @@ core.register_node("drawers:drawer_connector", {
 	is_ground_content = false,
 })
 
-core.register_craft({
-	output = "drawers:trim 6",
-	recipe = {
-		{ "group:stick", "group:wood", "group:stick" },
-		{ "group:wood",  "group:wood", "group:wood" },
-		{ "group:stick", "group:wood", "group:stick" }
-	}
-})
+do -- Trim recipe scope
+    local Trim = 'drawers:trim'
+    local amount = 6
+    local St = 'group:stick'
+    local Wo = 'group:wood'
+    core.register_craft({
+        output = Trim .. ' ' .. tostring(amount),
+        recipe = {
+            { St, Wo, St },
+            { Wo, Wo, Wo },
+            { St, Wo, St },
+        }
+    })
+end
+
 ]]
 
 -- Register drawer upgrade template
@@ -149,14 +159,22 @@ core.register_craftitem("drawers:upgrade_template", {
 	inventory_image = "drawers_upgrade_template.png"
 })
 
-core.register_craft({
-	output = "drawers:upgrade_template 4",
-	recipe = {
-		{ "sbz_chem:gold_ingot",   "sbz_chem:nickel_ingot",    "sbz_chem:gold_ingot" },
-		{ "sbz_chem:nickel_ingot", "sbz_resources:storinator", "sbz_chem:nickel_ingot" },
-		{ "sbz_chem:gold_ingot",   "sbz_chem:nickel_ingot",    "sbz_chem:gold_ingot" }
-	}
-})
+do -- Upgrade Template recipe scope
+    local Upgrade_Template = 'drawers:upgrade_template'
+    local amount = 4
+    local GI = 'sbz_chem:gold_ingot'
+    local NI = 'sbz_chem:nickel_ingot'
+    local St = 'sbz_resources:storinator'
+    core.register_craft({
+        output = Upgrade_Template .. ' ' .. tostring(amount),
+        recipe = {
+            { GI, NI, GI },
+            { NI, St, NI },
+            { GI, NI, GI },
+        }
+    })
+end
+
 
 
 --[[
@@ -185,10 +203,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ]]
-minetest.register_chatcommand("drawers_fix", {
+core.register_chatcommand("drawers_fix", {
 	description = "recreates the drawer-visuals in your area",
 	func = function(name)
-		local player = minetest.get_player_by_name(name)
+		local player = core.get_player_by_name(name)
 		if not player then
 			return
 		end
@@ -198,7 +216,7 @@ minetest.register_chatcommand("drawers_fix", {
 		local pos1 = vector.subtract(ppos, 10)
 		local pos2 = vector.add(ppos, 10)
 
-		local poslist = minetest.find_nodes_in_area(pos1, pos2, { "group:drawer" })
+		local poslist = core.find_nodes_in_area(pos1, pos2, { "group:drawer" })
 
 		for _, pos in ipairs(poslist) do
 			drawers.remove_visuals(pos)
