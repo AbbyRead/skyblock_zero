@@ -585,7 +585,6 @@ core.register_entity("drawers:visual", {
 })
 
 mesecon.register_mvps_kill("drawers:visual")
-
 core.register_lbm({
 	name              = "drawers:restore_visual",
 	nodenames         = { "group:drawer" },
@@ -594,10 +593,8 @@ core.register_lbm({
 		local meta = core.get_meta(pos)
 		-- create drawer upgrade inventory
 		meta:get_inventory():set_size("upgrades", 5)
-		-- set the formspec
-		meta:set_string("formspec", drawers.drawer_formspec)
+		-- formspec is now built dynamically on rightclick, nothing to set here
 
-		-- count the drawer visuals
 		local drawerType = core.registered_nodes[node.name].groups.drawer
 		local foundVisuals = 0
 		local objs = core.get_objects_inside_radius(pos, 0.56)
@@ -609,13 +606,37 @@ core.register_lbm({
 				end
 			end
 		end
-		-- if all drawer visuals were found, return
-		if foundVisuals == drawerType then
-			return
-		end
+		if foundVisuals == drawerType then return end
 
-		-- not enough visuals found, remove existing and create new ones
 		drawers.remove_visuals(pos)
 		drawers.spawn_visuals(pos)
 	end
+})
+
+core.register_lbm({
+    name              = "drawers:restore_visual",
+    nodenames         = { "group:drawer" },
+    run_at_every_load = true,
+    action            = function(pos, node)
+        local meta = core.get_meta(pos)
+        -- create drawer upgrade inventory
+        meta:get_inventory():set_size("upgrades", 5)
+        -- formspec is now built dynamically on rightclick, nothing to set here
+
+        local drawerType = core.registered_nodes[node.name].groups.drawer
+        local foundVisuals = 0
+        local objs = core.get_objects_inside_radius(pos, 0.56)
+        if objs then
+            for _, obj in pairs(objs) do
+                if obj and obj:get_luaentity() and
+                    obj:get_luaentity().name == "drawers:visual" then
+                    foundVisuals = foundVisuals + 1
+                end
+            end
+        end
+        if foundVisuals == drawerType then return end
+
+        drawers.remove_visuals(pos)
+        drawers.spawn_visuals(pos)
+    end
 })

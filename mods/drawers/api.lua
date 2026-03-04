@@ -54,12 +54,6 @@ do -- Drawer node box scope
 
 end
 
-drawers.drawer_formspec = 'size[9,6.7]'
-    .. 'list[context;upgrades;2,0.5;5,1;]'
-    .. 'listring[context;upgrades]'
-    .. 'listring[current_player;main]'
-    .. drawers.upgrades_gui_pane()
-
 -- construct drawer
 function drawers.drawer_on_construct(pos)
     local node = core.get_node(pos)
@@ -92,9 +86,6 @@ function drawers.drawer_on_construct(pos)
 
     -- create drawer upgrade inventory
     meta:get_inventory():set_size('upgrades', 5)
-
-    -- set the formspec
-    meta:set_string('formspec', drawers.drawer_formspec)
 end
 
 -- destruct drawer
@@ -267,6 +258,33 @@ function drawers.register_drawer(name, def)
     def.allow_metadata_inventory_take = drawers.drawer_allow_metadata_inventory_put
     def.on_metadata_inventory_put = drawers.add_drawer_upgrade
     def.on_metadata_inventory_take = drawers.remove_drawer_upgrade
+
+    -- Wrap the old rightclick behavior safely
+    local old_rightclick = def.on_rightclick
+    def.on_rightclick = function(pos, node, player, itemstack, pointed_thing)
+        if not player then return end
+
+        local player_name = player:get_player_name()
+        local pm = player:get_meta()
+        local hotbar_size = pm:get_int("hotbar_size")
+        if hotbar_size == 0 then hotbar_size = 8 end
+
+        local ndef = core.registered_nodes[node.name]
+        local upgrade_slots = ndef.drawer_upgrade_slots or 5 -- fallback to 5
+
+        local meta = core.get_meta(pos)                  -- fix: was core.get_meta(node)
+        local inv = meta:get_inventory()
+        if inv:get_size("upgrades") == 0 then
+            inv:set_size("upgrades", upgrade_slots)
+        end
+
+        local formspec = drawers.drawer_formspec(pos, upgrade_slots, hotbar_size)
+        core.show_formspec(player_name, "drawer:" .. core.hash_node_position(pos), formspec)
+
+        if old_rightclick then
+            return old_rightclick(pos, node, player, itemstack, pointed_thing)
+        end
+    end
 
     if core.get_modpath("screwdriver") and screwdriver then
         def.on_rotate = function(pos, node, user, mode, new_param2)
