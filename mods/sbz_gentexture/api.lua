@@ -3,14 +3,6 @@ local function hash(str)
     return core.sha1(str)
 end
 
-local function pixels_to_string(pixels)
-    local t = {}
-    for i, p in ipairs(pixels) do
-        t[i] = p.r .. "," .. p.g .. "," .. p.b .. "," .. p.a
-    end
-    return table.concat(t, "|")
-end
-
 local function try_write(path, data)
     local f = io.open(path, "wb")
     if not f then return false end
@@ -21,7 +13,10 @@ end
 
 local function file_exists(path)
     local f = io.open(path, "rb")
-    if f then f:close() return true end
+    if f then
+        f:close()
+        return true
+    end
     return false
 end
 
@@ -30,17 +25,19 @@ end
 -- Returns the filename (e.g. "test_noise_abc123.png") for use in tiles,
 -- or nil on failure. Must be called at mod load time.
 function gentexture_cache.get(name, width, height, pixels)
-    local id       = hash(name .. width .. height .. pixels_to_string(pixels))
-    local filename = name .. "_" .. id .. ".png"
+    local id            = hash(name .. width .. height)
+    local filename      = name .. "_" .. id .. ".png"
 
-    -- Try mod data path first, fall back to world path
-    local global_path = gentexture_cache.global_cache .. "/" .. filename
-    local world_path  = gentexture_cache.world_cache  .. "/" .. filename
+    local global_path   = gentexture_cache.global_cache .. "/" .. filename
+    local mod_data_path = gentexture_cache.mod_data_cache .. "/" .. filename
+    local world_path    = gentexture_cache.world_cache .. "/" .. filename
 
-    local filepath = nil
+    local filepath      = nil
 
     if file_exists(global_path) then
         filepath = global_path
+    elseif file_exists(mod_data_path) then
+        filepath = mod_data_path
     elseif file_exists(world_path) then
         filepath = world_path
     else
@@ -50,10 +47,12 @@ function gentexture_cache.get(name, width, height, pixels)
 
         if try_write(global_path, png_data) then
             filepath = global_path
+        elseif try_write(mod_data_path, png_data) then
+            filepath = mod_data_path
         elseif try_write(world_path, png_data) then
             filepath = world_path
         else
-            core.log("error", "[gentexture_cache] Could not write PNG to either cache location")
+            core.log("error", "[gentexture_cache] Could not write PNG to any cache location")
             return nil
         end
     end
