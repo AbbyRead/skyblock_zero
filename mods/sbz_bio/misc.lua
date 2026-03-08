@@ -106,6 +106,7 @@ sbz_api.register_stateful_machine("sbz_bio:neutron_emitter", {
             return 10, false
         else
             meta:set_string("infotext", "On")
+            -- sbz_api.play_sfx({ name = 'basic_neutron_emitter' }, { pos = pos, max_hear_distance = 8, gain = 0.8 })
             return 10, true
         end
     end,

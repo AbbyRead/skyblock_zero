@@ -105,7 +105,7 @@ listring[current_player;main]listring[context;input]listring[current_player;main
         end
 
         meta:set_string('infotext', 'Crushing...')
-        sbz_api.play_sfx({ name = 'crusher' }, { pos = pos, max_hear_distance = 8, gain = 0.8 })
+        -- sbz_api.play_sfx({ name = 'crusher' }, { pos = pos, max_hear_distance = 8, gain = 0.8 })
 
         -- if itemname == "sbz_resources:sand" and inv:contains_item("output", "sbz_chem:water_fluid_cell") then
         --     inv:remove_item("input", itemname)
