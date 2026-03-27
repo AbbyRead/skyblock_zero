@@ -42,7 +42,7 @@ local animation_def = {
 
 core.register_node('pipeworks:automatic_filter_injector', {
     description = 'Automatic Filter-Injector',
-    sounds = sbz_api.sounds.matter(),
+    sounds = sbz_audio.matter(),
     info_extra = 'Pushes items out of containers.',
     tiles = {
         { name = 'filter_side.png^[transformFX', animation = animation_def },
@@ -91,11 +91,6 @@ core.register_node('pipeworks:automatic_filter_injector', {
     allow_metadata_inventory_move = function(pos, from_list, from_index, to_list, to_index, count, player)
         if not pipeworks.may_configure(pos, player) then return 0 end
         return count
-    end,
-    can_dig = function(pos, player)
-        local meta = core.get_meta(pos)
-        local inv = meta:get_inventory()
-        return inv:is_empty 'main'
     end,
     tube = { connect_sides = { right = 1 } },
     on_receive_fields = function(pos, formname, fields, sender)

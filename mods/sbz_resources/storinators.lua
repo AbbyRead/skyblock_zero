@@ -141,7 +141,7 @@ local function register_storinator(added_name, def)
             def_copy.after_place_node = pipeworks.after_place
             def_copy.input_inv = "main"
             def_copy.output_inv = "main"
-            -- def_copy.sounds = sbz_api.sounds.machine()
+            -- def_copy.sounds = sbz_audio.machine()
 
             def_copy.tube = {
                 input_inventory = "main",
@@ -249,7 +249,7 @@ end
 
 register_storinator("", {
     description = "Storinator",
-    sounds = sbz_api.sounds.matter(),
+    sounds = sbz_audio.matter(),
     level = 0,
     overlay_color = "#696a6a",
     groups = { matter = 1 },
