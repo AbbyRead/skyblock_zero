@@ -286,6 +286,7 @@ local legacy_key_map = {
     ['Fiberweed']                  = 'qid_fiberweed',
     ['Electric Soil']              = 'qid_electric_soil',
     ['Engraver']                   = 'qid_engraver',
+    ['Info: Inside of planets']    = 'qid_info_inside_of_planets',
     ['Blast Furnace']              = 'qid_blast_furnace',
     ['Instatubes']                 = 'qid_instatubes',
     ['Teleport Battery']           = 'qid_teleport_battery',

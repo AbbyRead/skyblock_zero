@@ -217,6 +217,7 @@ Creates processors from silicon crystals.
 Requires: qid_laser, qid_crystal_grower
 
 ## Info: Multiblock Terminology
+### ID: qid_info_multiblock_terminology
 
 ### Text
 
@@ -282,6 +283,7 @@ Requires: qid_crystal_grower, qid_very_advanced_batteries
 Requires: qid_neutronium, qid_phlogiston_fuser
 
 ## Info: Inside of planets
+### ID: qid_info_inside_of_planets
 
 ### Text
 
