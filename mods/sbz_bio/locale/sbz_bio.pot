@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# SBZ_BIO MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 zanderdev
+# This file is distributed under the same license as the Skyblock: Zero package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-26 17:40-0700\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,9 +40,7 @@ msgid "CO2 Compactor"
 msgstr ""
 
 #: mods/sbz_bio/habitat.lua:235
-msgid ""
-"Stores 30 CO₂. Habitat regulator doesn't consider it a wall, but it can be "
-"passed through"
+msgid "Stores 30 CO₂. Habitat regulator doesn't consider it a wall, but it can be passed through"
 msgstr ""
 
 #: mods/sbz_bio/misc.lua:4

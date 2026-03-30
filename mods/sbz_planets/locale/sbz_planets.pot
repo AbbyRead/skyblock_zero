@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# SBZ_PLANETS MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 zanderdev
+# This file is distributed under the same license as the Skyblock: Zero package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-26 17:40-0700\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,9 +20,7 @@ msgid "Dwarf Orb"
 msgstr ""
 
 #: mods/sbz_planets/orbs.lua:12
-msgid ""
-"Used as a crafting replacement for matter annihilators, found naturally in "
-"dwarf planets"
+msgid "Used as a crafting replacement for matter annihilators, found naturally in dwarf planets"
 msgstr ""
 
 #: mods/sbz_planets/orbs.lua:29
@@ -112,10 +108,7 @@ msgid "You must be holding a warp crystal for this to work."
 msgstr ""
 
 #: mods/sbz_planets/planet_teleporter.lua:26
-msgid ""
-"Oops, the crystal broke, please insert another one. [What actually happened "
-"was that the planet teleporter tried to teleport you out of this world. "
-"Hello if you are seeing this - you must be very lucky.]"
+msgid "Oops, the crystal broke, please insert another one. [What actually happened was that the planet teleporter tried to teleport you out of this world. Hello if you are seeing this - you must be very lucky.]"
 msgstr ""
 
 #: mods/sbz_planets/planet_teleporter.lua:34

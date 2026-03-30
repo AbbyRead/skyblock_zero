@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# METATOOL MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 zanderdev
+# This file is distributed under the same license as the Skyblock: Zero package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-26 17:40-0700\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -96,9 +94,7 @@ msgstr ""
 
 #: mods/metatool/metatool/api.lua:370
 #, lua-format
-msgid ""
-"metatool:register_tool not registering tool %s because it is already "
-"registered."
+msgid "metatool:register_tool not registering tool %s because it is already registered."
 msgstr ""
 
 #: mods/metatool/metatool/api.lua:378
@@ -108,9 +104,7 @@ msgstr ""
 
 #: mods/metatool/metatool/api.lua:382
 #, lua-format
-msgid ""
-"metatool:register_node node %s not registered for core, skipping "
-"registration."
+msgid "metatool:register_node node %s not registered for core, skipping registration."
 msgstr ""
 
 #: mods/metatool/metatool/api.lua:394
@@ -120,16 +114,12 @@ msgstr ""
 
 #: mods/metatool/metatool/api.lua:396
 #, lua-format
-msgid ""
-"metatool:register_node invalid definition for %s: copy or paste function not "
-"defined."
+msgid "metatool:register_node invalid definition for %s: copy or paste function not defined."
 msgstr ""
 
 #: mods/metatool/metatool/api.lua:399
 #, lua-format
-msgid ""
-"metatool:register_node not registering node %s because it is already "
-"registered."
+msgid "metatool:register_node not registering node %s because it is already registered."
 msgstr ""
 
 #: mods/metatool/metatool/api.lua:418
@@ -192,8 +182,7 @@ msgstr ""
 
 #: mods/metatool/metatool/formspec.lua:257
 #, lua-format
-msgid ""
-"metatool.form.register_form Registration failed, invalid form_def type: %s"
+msgid "metatool.form.register_form Registration failed, invalid form_def type: %s"
 msgstr ""
 
 #: mods/metatool/metatool/formspec.lua:261

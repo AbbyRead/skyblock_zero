@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# REPLACER MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 zanderdev
+# This file is distributed under the same license as the Skyblock: Zero package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-26 17:40-0700\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,22 +64,15 @@ msgid "Replace single node."
 msgstr ""
 
 #: mods/replacer/blabla.lua:39
-msgid ""
-"Left click: Replace field of nodes of a kind where a translucent node is in "
-"front of it.@nRight click: Replace field of air where no translucent node is "
-"behind the air."
+msgid "Left click: Replace field of nodes of a kind where a translucent node is in front of it.@nRight click: Replace field of air where no translucent node is behind the air."
 msgstr ""
 
 #: mods/replacer/blabla.lua:42
-msgid ""
-"Left click: Replace nodes which touch another one of its kind and a "
-"translucent node, e.g. air.@nRight click: Replace air nodes which touch the "
-"crust."
+msgid "Left click: Replace nodes which touch another one of its kind and a translucent node, e.g. air.@nRight click: Replace air nodes which touch the crust."
 msgstr ""
 
 #: mods/replacer/blabla.lua:45
-msgid ""
-"Target node not yet loaded. Please wait a moment for the server to catch up."
+msgid "Target node not yet loaded. Please wait a moment for the server to catch up."
 msgstr ""
 
 #: mods/replacer/blabla.lua:47
@@ -151,9 +142,7 @@ msgid ""
 msgstr ""
 
 #: mods/replacer/blabla.lua:81
-msgid ""
-"This is a broken object. We have no further information about it. It is "
-"located"
+msgid "This is a broken object. We have no further information about it. It is located"
 msgstr ""
 
 #: mods/replacer/blabla.lua:82
@@ -333,9 +322,7 @@ msgid "Is wearing:"
 msgstr ""
 
 #: mods/replacer/replacer/constrain.lua:59
-msgid ""
-"Replacing nodes of type \"@1\" is not allowed on this server. Replacement "
-"failed."
+msgid "Replacing nodes of type \"@1\" is not allowed on this server. Replacement failed."
 msgstr ""
 
 #: mods/replacer/replacer/constrain.lua:63
@@ -380,9 +367,7 @@ msgid "Placing nodes of type \"@1\" is not allowed on this server."
 msgstr ""
 
 #: mods/replacer/replacer/replacer.lua:652
-msgid ""
-"Failed to set replacer to \"@1\". If there was one in your inventory, then "
-"maybe."
+msgid "Failed to set replacer to \"@1\". If there was one in your inventory, then maybe."
 msgstr ""
 
 #: mods/replacer/replacer/replacer.lua:663

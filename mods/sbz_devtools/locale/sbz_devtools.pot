@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# SBZ_DEVTOOLS MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 zanderdev
+# This file is distributed under the same license as the Skyblock: Zero package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-26 17:40-0700\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,9 +61,7 @@ msgid "Platform spawned."
 msgstr ""
 
 #: mods/sbz_devtools/init.lua:87
-msgid ""
-"Get the 8 closest unique nodes within a distance of 32 and receive them as "
-"items - for debugging only"
+msgid "Get the 8 closest unique nodes within a distance of 32 and receive them as items - for debugging only"
 msgstr ""
 
 #: mods/sbz_devtools/init.lua:92 mods/sbz_devtools/init.lua:157
@@ -101,9 +97,7 @@ msgid "Makes it day only for you"
 msgstr ""
 
 #: mods/sbz_devtools/init.lua:193
-msgid ""
-"Fake a craft, used for quest testing, param should be an item name or "
-"\"item\" to specify wielded item's name"
+msgid "Fake a craft, used for quest testing, param should be an item name or \"item\" to specify wielded item's name"
 msgstr ""
 
 #: mods/sbz_devtools/init.lua:210
@@ -115,9 +109,7 @@ msgid "Area re-generated!"
 msgstr ""
 
 #: mods/sbz_devtools/init.lua:229
-msgid ""
-"Sends you all the mapblocks in the radius. RADIUS IS IN MAPBLOCKS!! may not "
-"work... in singleplayer at least"
+msgid "Sends you all the mapblocks in the radius. RADIUS IS IN MAPBLOCKS!! may not work... in singleplayer at least"
 msgstr ""
 
 #: mods/sbz_devtools/init.lua:248

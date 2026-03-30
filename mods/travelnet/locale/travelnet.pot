@@ -1,17 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# TRAVELNET MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 zanderdev
+# This file is distributed under the same license as the Skyblock: Zero package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-26 17:40-0700\n"
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:31-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,32 +33,23 @@ msgid "Please provide a name for this station."
 msgstr ""
 
 #: mods/travelnet/actions/add_station.lua:36
-msgid ""
-"Please provide the name of the network this station ought to be connected to."
+msgid "Please provide the name of the network this station ought to be connected to."
 msgstr ""
 
 #: mods/travelnet/actions/add_station.lua:44
-msgid ""
-"You do not have the travelnet_attach priv which is required to attach your "
-"box to the network of someone else. Aborting."
+msgid "You do not have the travelnet_attach priv which is required to attach your box to the network of someone else. Aborting."
 msgstr ""
 
 #: mods/travelnet/actions/add_station.lua:59
-msgid ""
-"A station named '@1' already exists on this network. Please choose a "
-"different name!"
+msgid "A station named '@1' already exists on this network. Please choose a different name!"
 msgstr ""
 
 #: mods/travelnet/actions/add_station.lua:66
-msgid ""
-"Network '@1', already contains the maximum number (@2) of allowed stations "
-"per network. Please choose a different/new network name."
+msgid "Network '@1', already contains the maximum number (@2) of allowed stations per network. Please choose a different/new network name."
 msgstr ""
 
 #: mods/travelnet/actions/add_station.lua:85
-msgid ""
-"Station '@1' has been added to the network '@2', which now consists of @3 "
-"station(s)."
+msgid "Station '@1' has been added to the network '@2', which now consists of @3 station(s)."
 msgstr ""
 
 #: mods/travelnet/actions/add_station.lua:95
@@ -165,9 +154,7 @@ msgstr ""
 
 #: mods/travelnet/actions/update_travelnet.lua:92
 #: mods/travelnet/actions/update_travelnet.lua:156
-msgid ""
-"Network \"@1\", already contains the maximum number (@2) of allowed stations "
-"per network. Please choose a different network name."
+msgid "Network \"@1\", already contains the maximum number (@2) of allowed stations per network. Please choose a different network name."
 msgstr ""
 
 #: mods/travelnet/actions/update_travelnet.lua:103
@@ -176,15 +163,11 @@ msgid "Station does not have network."
 msgstr ""
 
 #: mods/travelnet/actions/update_travelnet.lua:118
-msgid ""
-"Station \"@1\" has been renamed to \"@2\", moved from network \"@3\" to "
-"network \"@4\" and from owner \"@5\" to owner \"@6\"."
+msgid "Station \"@1\" has been renamed to \"@2\", moved from network \"@3\" to network \"@4\" and from owner \"@5\" to owner \"@6\"."
 msgstr ""
 
 #: mods/travelnet/actions/update_travelnet.lua:178
-msgid ""
-"Station \"@1\" has been renamed to \"@2\" and moved from network \"@3\" to "
-"network \"@4\"."
+msgid "Station \"@1\" has been renamed to \"@2\" and moved from network \"@3\" to network \"@4\"."
 msgstr ""
 
 #: mods/travelnet/add_target.lua:19 mods/travelnet/formspecs.lua:33
@@ -197,25 +180,15 @@ msgid "Shows the travelnet formspec for the network"
 msgstr ""
 
 #: mods/travelnet/elevator.lua:14
-msgid ""
-"Congratulations! This is your first elevator. You can build an elevator "
-"network by placing further elevators somewhere above or below this one. Just "
-"make sure that the x and z coordinate are the same."
+msgid "Congratulations! This is your first elevator. You can build an elevator network by placing further elevators somewhere above or below this one. Just make sure that the x and z coordinate are the same."
 msgstr ""
 
 #: mods/travelnet/elevator.lua:27
-msgid ""
-"This elevator will automatically connect to the other elevators you have "
-"placed at different heights. Just enter a station name and click on "
-"\"store\" to set it up. Or just punch it to set the height as station name."
+msgid "This elevator will automatically connect to the other elevators you have placed at different heights. Just enter a station name and click on \"store\" to set it up. Or just punch it to set the height as station name."
 msgstr ""
 
 #: mods/travelnet/elevator.lua:38
-msgid ""
-"This is your first elevator. It differs from travelnet networks by only "
-"allowing movement in vertical direction (up or down). All further elevators "
-"which you will place at the same x,z coordinates at different heights will "
-"be able to connect to this elevator."
+msgid "This is your first elevator. It differs from travelnet networks by only allowing movement in vertical direction (up or down). All further elevators which you will place at the same x,z coordinates at different heights will be able to connect to this elevator."
 msgstr ""
 
 #: mods/travelnet/elevator.lua:46
@@ -281,9 +254,7 @@ msgid "Name of this station:"
 msgstr ""
 
 #: mods/travelnet/formspecs.lua:60
-msgid ""
-"What do you call this place here? Example: \"my first house\", \"mine\", "
-"\"shop\"..."
+msgid "What do you call this place here? Example: \"my first house\", \"mine\", \"shop\"..."
 msgstr ""
 
 #: mods/travelnet/formspecs.lua:61
