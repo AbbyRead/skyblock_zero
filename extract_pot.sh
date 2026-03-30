@@ -71,6 +71,7 @@ for mod in mods/*; do
         
         # 2. Privacy Fix: Replace the personal info placeholder
         #      Use | instead of / so the URL slashes don't break sed
+        sed -i "s|FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.|<Your Name> [Contact Info], <YEAR>.|" "$tmp_pot"
         sed -i "s|^\"Last-Translator: .*\"$|\"Last-Translator: Skyblock: Zero Translation Team <${BUG_ADDRESS}>\\\\n\"|" "$tmp_pot"
 
         # 3. Custom Header: MOD NAME TRANSLATION TEMPLATE
@@ -86,6 +87,9 @@ for mod in mods/*; do
 
         # 6. Set a generic Language-Team contact (also using |)
         sed -i "s|LANGUAGE <LL@li.org>|Skyblock: Zero Translation Team <${BUG_ADDRESS}>|" "$tmp_pot"
+
+        # 7. Remove any "fuzzy" markers (not needed in templates)
+        sed -i '/^#, fuzzy/d' "$tmp_pot"
 
         write_if_changed "$outdir/$modname.pot" "$tmp_pot"
     else
