@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the unified_inventory package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: unified_inventory\n"

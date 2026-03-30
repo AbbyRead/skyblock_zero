@@ -1,0 +1,130 @@
+# SBZ_PROGRESSION MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 chefzander, Skyblock Zero translations team
+# This file is distributed under the same license as the Skyblock: Zero package.
+# <Your Name> [Contact Info], <YEAR>
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:53-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mods/sbz_progression/annoy.lua:15
+msgid "Lost your questbook? Use /qb to get it back."
+msgstr ""
+
+#: mods/sbz_progression/annoy.lua:26
+msgid "Gives you a questbook if you don't have one."
+msgstr ""
+
+#: mods/sbz_progression/annoy.lua:33
+msgid "You already have a Quest Book."
+msgstr ""
+
+#: mods/sbz_progression/annoy.lua:37
+msgid "You have been given a Quest Book."
+msgstr ""
+
+#: mods/sbz_progression/annoy.lua:39
+msgid "Your inventory is full."
+msgstr ""
+
+#: mods/sbz_progression/init.lua:200
+msgid "You fell off the platform."
+msgstr ""
+
+#: mods/sbz_progression/init.lua:213
+msgid "⌠ Crazy Rare Drop: @1 just dropped a Singularity Rune! ⌡"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:32
+msgid "@1 and @2"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:36
+msgid "@1, and @2"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:70
+msgid "Quest Completed: @1!"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:101
+msgid "Quest revoked: @1"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:229
+msgid "Quest List (✓ @1 / ► @2 / ✕ @3)"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:236
+msgid "Makes font larger"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:237
+msgid "Makes font smaller"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:275
+#: mods/sbz_progression/questbook.lua:300
+msgid "Complete @1 to unlock."
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:279
+msgid "✔ Shhh... don't tell anyone :)"
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:279
+msgid "✔ You have completed this Quest."
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:280
+#: mods/sbz_progression/questbook.lua:290
+msgid "You have not completed this Quest."
+msgstr ""
+
+#: mods/sbz_progression/questbook.lua:402
+msgid "Quest Book"
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:63
+msgid "Thank you for playing Skyblock: Zero. You demonstrated extreme logical thinking skills, planning skills, and invested probably at least a couple of hours into our game. We hope you enjoyed this current version, because there will be more coming."
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:71
+msgid "Below is a list of all the people who helped work on the game, optionally, along with a quote by the respective developer."
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:75
+msgid "Developers & Contributors"
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:93
+msgid "Submodule Contributors"
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:99
+msgid "Translators"
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:101
+msgid "There's not been any work to translate the game outside of English. Maybe your name will one day show up here?"
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:103
+msgid "Menu & In-Game Music"
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:112
+msgid "Skybox was made by StumpyStrust."
+msgstr ""
+
+#: mods/sbz_progression/quests.lua:114
+msgid "You've finished the Questbook, but the game has only just begun."
+msgstr ""

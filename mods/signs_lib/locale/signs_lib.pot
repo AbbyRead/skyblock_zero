@@ -1,0 +1,52 @@
+# SIGNS_LIB MOD TRANSLATION TEMPLATE
+# Copyright (C) 2026 chefzander, Skyblock Zero translations team
+# This file is distributed under the same license as the Skyblock: Zero package.
+# <Your Name> [Contact Info], <YEAR>
+#
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
+"POT-Creation-Date: 2026-03-30 14:53-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mods/signs_lib/api.lua:824 mods/signs_lib/api.lua:994
+msgid "Locked sign, owned by @1\n"
+msgstr ""
+
+#: mods/signs_lib/api.lua:1301
+msgid "Skims through all currently-loaded sign-bearing mapblocks, clears away any entities within each sign's node space, and regenerates their text entities, if any."
+msgstr ""
+
+#: mods/signs_lib/api.lua:1320
+msgid "There are no signs in the currently-loaded terrain."
+msgstr ""
+
+#: mods/signs_lib/api.lua:1326
+msgid "Found a total of @1 sign nodes across @2 blocks."
+msgstr ""
+
+#: mods/signs_lib/api.lua:1327
+msgid "Regenerating sign entities ..."
+msgstr ""
+
+#: mods/signs_lib/api.lua:1339
+msgid "Finished."
+msgstr ""
+
+#: mods/signs_lib/api.lua:1365
+msgid "Write"
+msgstr ""
+
+#: mods/signs_lib/standard_signs.lua:7
+msgid "Wooden Wall Sign"
+msgstr ""
+
+#: mods/signs_lib/standard_signs.lua:25
+msgid "Steel Wall Sign"
+msgstr ""
