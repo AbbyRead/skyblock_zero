@@ -1,10 +1,13 @@
-
 # Questline: Emittrium Reactor
+### ID: qid_ql_reactor
+
+### Text
 
 Emittrium reactors are another way of generating energy. They are a 3x3x3 cube made of reactor shells (or reactor glass), with a reactor core in the center. Some of the shells must be replaced with a reactor power port, a reactor coolant port, a reactor emittrium port, and a reactor infoscreen. It consumes emittrium and water.
 If it doesn't have enough coolant (water), it heats up, and bad things happen if it heats up too much.
 
 ## Reactor Shells
+### ID: qid_reactor_shells
 
 ### Text
 
@@ -16,6 +19,7 @@ You can also use them as a nice decorative block that won't explode to meteorite
 Requires: Obtain Emittrium
 
 ## Reactor Glass
+### ID: qid_reactor_glass
 
 ### Text
 
@@ -24,9 +28,10 @@ You can also use it as a nice decorative block that won't explode to meteorites.
 
 ### Meta
 
-Requires: Emittrium Glass, Reactor Shells
+Requires: qid_emittrium_glass, qid_reactor_shells
 
 ## Reactor Infoscreens
+### ID: qid_reactor_infoscreens
 
 ### Text
 
@@ -34,9 +39,10 @@ A Reactor Infoscreen is needed in the construction of the emittrium reactor and 
 
 ### Meta
 
-Requires: Reactor Glass
+Requires: qid_reactor_glass
 
 ## Reactor Power Ports
+### ID: qid_reactor_power_ports
 
 ### Text
 
@@ -44,9 +50,10 @@ A Reactor Power Port is needed in the construction of the emittrium reactor. It 
 
 ### Meta
 
-Requires: Reactor Shells
+Requires: qid_reactor_shells
 
 ## Reactor Coolant Ports
+### ID: qid_reactor_coolant_ports
 
 ### Text
 
@@ -54,9 +61,10 @@ A Reactor Coolant Port is needed in the construction of the emittrium reactor. I
 
 ### Meta
 
-Requires: Fluid Storage Tanks
+Requires: qid_fluid_storage_tanks
 
 ## Reactor Emittrium Input
+### ID: qid_reactor_emittrium_input
 
 ### Text
 
@@ -64,9 +72,10 @@ A Reactor Emittrium Input is needed in the construction of the emittrium reactor
 
 ### Meta
 
-Requires: Reactor Shells, Tubes
+Requires: qid_reactor_shells, qid_tubes
 
 ## Reactor Core
+### ID: qid_reactor_core
 
 ### Text
 
@@ -74,9 +83,10 @@ A Reactor Core is needed in the construction of the emittrium reactor. It needs 
 
 ### Meta
 
-Requires: Neutronium, Reactor Shells
+Requires: qid_neutronium, qid_reactor_shells
 
 ## Building the emittrium reactor and turning it on
+### ID: qid_building_the_emittrium_reactor_and_turning_it_on
 
 ### Text
 
@@ -91,4 +101,4 @@ In older releases, the emittrium reactor used to explode when it ran out of cool
 
 ### Meta
 
-Requires: Reactor Shells, Reactor Infoscreens, Reactor Power Ports, Reactor Coolant Ports, Reactor Emittrium Input, Reactor Core
+Requires: qid_reactor_shells, qid_reactor_infoscreens, qid_reactor_power_ports, qid_reactor_coolant_ports, qid_reactor_emittrium_input, qid_reactor_core

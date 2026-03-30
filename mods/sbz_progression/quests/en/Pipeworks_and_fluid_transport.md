@@ -1,9 +1,12 @@
-
 # Questline: Pipeworks
+### ID: qid_ql_pipeworks
+
+### Text
 
 If you already know about regular pipeworks, skyblock_zero's pipeworks are a very modified version of that mod, but it will be similar though.
 
 ## Tubes
+### ID: qid_tubes
 
 ### Text
 
@@ -17,9 +20,10 @@ TIP: Items in tubes will go into directions with higher tube priority. The defau
 
 ### Meta
 
-Requires: Furnace
+Requires: qid_furnace
 
 ## Automatic Filter-Injectors
+### ID: qid_automatic_filter_injectors
 
 ### Text
 
@@ -35,13 +39,14 @@ Rotation: Takes items out in a cyclic order
 **The match mode (sets the behavior when taking out items):**  
 Exact match - off: If an item matches the filter, it takes out the whole stack  
 Exact match - on: If an item matches the filter and the stack is higher, it takes out the filter count. For example, if the filter is set to 5 matter and it is pulling from a stack of 60 matter, it will pull out 5 matter until the stack is below 5 or empty.  
-Threshold: If an item matches the filter and the stack is higher, it takes out items until the stack matches the filter. For example, if you have a filter of 5 matter and a stack of 60, it will pull 55 matter out of the stack.  
+Threshold: If an item matches the filter and the stack is higher, it takes out items until the stack matches the filter. For example, if you have a filter of 5 matter and a stack of 60, it will pull 55 matter out of the stack.
 
 ### Meta
 
-Requires: Bear Arms, Tubes
+Requires: qid_bear_arms, qid_tubes
 
 ## Info: Matter Factory
+### ID: qid_info_matter_factory
 
 ### Text
 
@@ -49,13 +54,14 @@ Using advanced matter extractors, some automatic filter injectors, tubes, and a 
 Advanced matter extractors are crazy fast for their cost, so with around 5 of them, you will get lots of matter in no time.  
   
 Here is an example of one:  
-\<img name=questbook_image_matter_factory.png width=483 height=453\>  
+\<img name=questbook_image_matter_factory.png width=483 height=453\>
 
 ### Meta
 
-Requires: Automatic Filter-Injectors, Tubes
+Requires: qid_automatic_filter_injectors, qid_tubes
 
 ## Node Breakers
+### ID: qid_node_breakers
 
 ### Text
 
@@ -63,9 +69,10 @@ Node Breakers try to break the node in front of them. The drops are ejected out 
 
 ### Meta
 
-Requires: Automatic Filter-Injectors
+Requires: qid_automatic_filter_injectors
 
 ## Deployers
+### ID: qid_deployers
 
 ### Text
 
@@ -73,9 +80,10 @@ Deployers try to place a node into their front-side. That's about it.
 
 ### Meta
 
-Requires: Automatic Filter-Injectors, Bear Arms
+Requires: qid_automatic_filter_injectors, qid_bear_arms
 
 ## Punchers
+### ID: qid_punchers
 
 ### Text
 
@@ -83,9 +91,10 @@ Punchers punch stuff, allowing you to automate resource generation even more. Bu
 
 ### Meta
 
-Requires: Automatic Filter-Injectors, Bear Arms, Emittrium Circuits
+Requires: qid_automatic_filter_injectors, qid_bear_arms, qid_emittrium_circuits
 
 ## Autocrafters
+### ID: qid_autocrafters
 
 ### Text
 
@@ -93,9 +102,10 @@ Autocrafters automatically craft. They require a crafting processor item to run,
 
 ### Meta
 
-Requires: Bear Arms, Neutronium, Emittrium Circuits, Automatic Filter-Injectors
+Requires: qid_bear_arms, qid_neutronium, qid_emittrium_circuits, qid_automatic_filter_injectors
 
 ## Simple Crafting Processors
+### ID: qid_simple_crafting_processors
 
 ### Text
 
@@ -109,19 +119,21 @@ Nuclear Crafting Processor: 16 items/s & 175 power
 
 ### Meta
 
-Requires: Autocrafters
+Requires: qid_autocrafters
 
 ## Item Voids
+### ID: qid_item_voids
 
 ### Text
 
-Item Voids delete every item that goes in, and yes, these are Pipeworks trash cans. But unlike pipeworks trash cans, they show the amount of items they've destroyed.  
+Item Voids delete every item that goes in, and yes, these are Pipeworks trash cans. But unlike pipeworks trash cans, they show the amount of items they've destroyed.
 
 ### Meta
 
-Requires: Tubes
+Requires: qid_tubes
 
 ## Info: Overflow Handling
+### ID: qid_info_overflow_handling
 
 ### Text
 
@@ -144,9 +156,10 @@ The default priority of nodes is 100.
 
 ### Meta
 
-Requires: Item Voids
+Requires: qid_item_voids
 
 ## Item Vacuums
+### ID: qid_item_vacuums
 
 ### Text
 
@@ -154,9 +167,10 @@ Item Vacuums vacuum up items in a 16-block radius, but they tend to cause lag.
 
 ### Meta
 
-Requires: Neutronium, Tubes
+Requires: qid_neutronium, qid_tubes
 
 ## Teleport Tubes
+### ID: qid_teleport_tubes
 
 ### Text
 
@@ -166,22 +180,24 @@ Oh wait, one thing to mention: items will fall off the receiving tube if you don
 
 ### Meta
 
-Requires: Tubes, Crystal Grower
+Requires: qid_tubes, qid_crystal_grower
 
 ## One Direction Tubes
+### ID: qid_one_direction_tubes
 
 ### Text
 
 This is a tube that accepts items from all directions but only allows them to go in one direction.  
 If you hover over it, it will spawn a white particle. The direction of the white particle is the direction that the items will go in.  
   
-To change that direction, sneak and punch it on the side that you want the items to go in.  
+To change that direction, sneak and punch it on the side that you want the items to go in.
 
 ### Meta
 
-Requires: Tubes
+Requires: qid_tubes
 
 ## Automatic Turrets
+### ID: qid_automatic_turrets
 
 ### Text
 
@@ -189,9 +205,10 @@ Do you want to automatically shoot down meteorites or even shoot down players? T
 
 ### Meta
 
-Requires: Node Breakers, Neutronium
+Requires: qid_node_breakers, qid_neutronium
 
 ## Instatubes
+### ID: qid_instatubes
 
 ### Text
 
@@ -224,19 +241,19 @@ It completely ignores the priority of receivers and instead cycles between them.
 \<big\>Randomized Input Instatube\</big\>  
 Like the cycling input instatube, but it gives the item to a random receiver.
   
-\<big>Instatube Item Filter\</big\>  
+\<big\>Instatube Item Filter\</big\>  
 Similar to the item sorter, but it only governs what can pass through that tube. (The advantage of using it over item sorters is that it will respect priority, and no short-lived entities will be created.)  
   
 \<big\>One-Way Instatubes\</big\>  
 Instatubes that only allow items to flow in one direction, useful when having multiple filter injectors.
 
 \<bigger\>Performance\</bigger\>
-With big speed comes big responsiblity.
+With big speed comes big responsibility.
 
 The lag from instatubes may show up in your switching station as lag from the thing that is inserting to them. (For example Automatic Filter-Injectors or punchers). The lag from pipeworks tubes does not show up in there.
 
 1st tip: Don't make all of your base a single large instatube network. (unless you know what you are doing, and know the flaws of instatubes)  
-2nd tip: Don't transport MANY small item stacks in a large instatube network, <b>have one or the other</b>. Always prefer larger item stacks. (Instead of sending 100 matter blobs in seperate stacks to a large network, just send one stack of matter blobs)
+2nd tip: Don't transport MANY small item stacks in a large instatube network, <b>have one or the other</b>. Always prefer larger item stacks. (Instead of sending 100 matter blobs in separate stacks to a large network, just send one stack of matter blobs)
 3rd tip: Only debug performance when it matters. (for example: you notice unusually high lag from filter injectors, or from your 500 puncher setup)
 
 Practical example: Say you want to wire up 50 punchers to your base for processing, how should you go about doing this?  
@@ -256,13 +273,14 @@ So in the worst case, an item only needs to iterate through 2 things (the collec
 There aren't as many item stacks that get sent to the larger network, because those item stacks will contain more items. (Instead of sending 200 "sbz_resources:matter_dust 1", it will just send 1 "sbz_resources:matter_dust 200" if that makes sense, and that's faster)
 The high priority instatube here is redundant but useful if you aren't working with punchers.
   
-**To complete this quest, craft an instatube.**  
+**To complete this quest, craft an instatube.**
 
 ### Meta
 
-Requires: Blast Furnace
+Requires: qid_blast_furnace
 
 ## Pattern Storinator
+### ID: qid_pattern_storinator
 
 ### Text
 
@@ -277,13 +295,17 @@ The Pattern Storinator can be used in machines like the Meteorite Maker, where y
 
 ### Meta
 
-Requires: Automatic Filter-Injectors
+Requires: qid_automatic_filter_injectors
 
 # Questline: Fluid Transport
+### ID: qid_ql_fluid_transport
+
+### Text
 
 This questline is about transporting fluids.
 
 ## Fluid Pipes
+### ID: qid_fluid_pipes
 
 ### Text
 
@@ -291,9 +313,10 @@ A fluid pipe is like an (Insta)tube, but with fluids. They move fluids around ju
 
 ### Meta
 
-Requires: Tubes
+Requires: qid_tubes
 
 ## Fluid Pumps
+### ID: qid_fluid_pumps
 
 ### Text
 
@@ -301,9 +324,10 @@ Fluid Pumps are automatic filter-injectors, but for pipes. They take fluids from
 
 ### Meta
 
-Requires: Automatic Filter-Injectors
+Requires: qid_automatic_filter_injectors
 
 ## Fluid Storage Tanks
+### ID: qid_fluid_storage_tanks
 
 ### Text
 
@@ -311,13 +335,14 @@ Fluid Storage Tanks are storinators for fluids. They can store 100 nodes of flui
 
 Tip: Once any fluid storage has received one type of liquid, it will always continue to receive that type of liquid.  
 This means that if you have a fluid storage that was previously filled with liquid aluminium, but now you want to fill it with water, you will need to replace that fluid storage block.  
-This applies to pretty much all of fluid transport.  
+This applies to pretty much all of fluid transport.
 
 ### Meta
 
-Requires: Tubes, Storinators
+Requires: qid_tubes, qid_storinators
 
 ## Fluid Capturers
+### ID: qid_fluid_capturers
 
 ### Text
 
@@ -325,9 +350,10 @@ Fluid Capturers capture liquid **sources** from their top and store them. You ca
 
 ### Meta
 
-Requires: Fluid Storage Tanks
+Requires: qid_fluid_storage_tanks
 
 ## Fluid Cell Fillers
+### ID: qid_fluid_cell_fillers
 
 ### Text
 
@@ -335,4 +361,4 @@ Fluid Cell Fillers fill empty fluid cells in their inventories.
 
 ### Meta
 
-Requires: Fluid Storage Tanks
+Requires: qid_fluid_storage_tanks
