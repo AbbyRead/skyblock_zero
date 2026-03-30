@@ -12,8 +12,6 @@ mt-mods/jumpdriveモッドの改変版で、自分自身と建築物をどこへ
 
 ### Meta
 
-Requires: qid_compressor, qid_reactor_shells
-
 ## ワープデバイス
 ### ID: qid_warp_device
 
@@ -22,8 +20,6 @@ Requires: qid_compressor, qid_reactor_shells
 ジャンプドライブエンジンの製造に必要な素材です。将来的には他のものにも必要になるかもしれません。
 
 ### Meta
-
-Requires: qid_crystal_grower, qid_antimatter_generators
 
 ## ジャンプドライブ（エンジン）
 ### ID: qid_the_jumpdrive_engine
@@ -49,8 +45,6 @@ Requires: qid_crystal_grower, qid_antimatter_generators
 
 ### Meta
 
-Requires: qid_jumpdrive_backbone, qid_warp_device, qid_very_advanced_batteries
-
 ## ジャンプドライブステーション
 ### ID: qid_jumpdrive_stations
 
@@ -61,8 +55,6 @@ Requires: qid_jumpdrive_backbone, qid_warp_device, qid_very_advanced_batteries
 目的地に設置するだけで、ジャンプドライブでそこへテレポートできるようになります。
 
 ### Meta
-
-Requires: qid_the_jumpdrive_engine
 
 ## ジャンプドライブフリートコントローラー
 ### ID: qid_jumpdrive_fleet_controller
@@ -75,5 +67,3 @@ Requires: qid_the_jumpdrive_engine
 警告：ジャンプする前に必ず「表示」を押してください...ジャンプドライブが間違った場所に置かれないように...
 
 ### Meta
-
-Requires: qid_jumpdrive_backbone

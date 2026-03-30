@@ -10,8 +10,6 @@
 
 ### Meta
 
-Requires: qid_concrete_plan, qid_antimatter, qid_charged_field
-
 ## 秘密：偽物です
 ### ID: qid_its_fake
 
@@ -20,8 +18,6 @@ Requires: qid_concrete_plan, qid_antimatter, qid_charged_field
 デジタルゴールド？どこかで聞いたことがあるような...
 
 ### Meta
-
-Requires:
 
 ## 電気炉
 ### ID: qid_furnace
@@ -34,8 +30,6 @@ Requires:
 
 ### Meta
 
-Requires: qid_crusher
-
 ## シンプル合金炉
 ### ID: qid_simple_alloy_furnace
 
@@ -46,8 +40,6 @@ Requires: qid_crusher
 
 ### Meta
 
-Requires: qid_crusher, qid_emittrium_circuits, qid_antimatter, qid_charged_field
-
 ## 青銅器時代
 ### ID: qid_bronze_age
 
@@ -56,8 +48,6 @@ Requires: qid_crusher, qid_emittrium_circuits, qid_antimatter, qid_charged_field
 おめでとうございます、司令官！ついに青銅器時代を解放しました。5000年前に我々の先祖が発見した金属を今さら作ろうとしているとは、まさに「最先端の宇宙探索」ですね。光速を超える移動をマスターしているのに、`[REDACTED]`と`[REDACTED]`を混ぜることがまだロケット科学並みに難しいとは。頑張れ、宇宙の原始人！
 
 ### Meta
-
-Requires: qid_simple_alloy_furnace, qid_crusher
 
 ## 遠心分離機
 ### ID: qid_centrifuge
@@ -71,8 +61,6 @@ Requires: qid_simple_alloy_furnace, qid_crusher
 
 ### Meta
 
-Requires: qid_crusher, qid_simple_alloy_furnace
-
 ## 圧縮機
 ### ID: qid_compressor
 
@@ -85,8 +73,6 @@ Requires: qid_crusher, qid_simple_alloy_furnace
 
 ### Meta
 
-Requires: qid_crusher, qid_simple_alloy_furnace
-
 ## 高性能バッテリー
 ### ID: qid_advanced_batteries
 
@@ -95,8 +81,6 @@ Requires: qid_crusher, qid_simple_alloy_furnace
 金属で作られたバッテリーです。基本バッテリーよりも大幅に優れています。
 
 ### Meta
-
-Requires: qid_batteries, qid_furnace, qid_centrifuge
 
 ## 超高性能バッテリー
 ### ID: qid_very_advanced_batteries
@@ -107,8 +91,6 @@ Requires: qid_batteries, qid_furnace, qid_centrifuge
 
 ### Meta
 
-Requires: qid_batteries, qid_furnace, qid_advanced_batteries
-
 ## クリスタル成長器
 ### ID: qid_crystal_grower
 
@@ -118,8 +100,6 @@ Requires: qid_batteries, qid_furnace, qid_advanced_batteries
 
 ### Meta
 
-Requires: qid_compressor, qid_neutronium
-
 ## テレポートバッテリー
 ### ID: qid_teleport_battery
 
@@ -128,8 +108,6 @@ Requires: qid_compressor, qid_neutronium
 テレポートバッテリーはネットワーク間で電力をテレポートします。他のプレイヤーと電力を共有したい場合に便利です。
 
 ### Meta
-
-Requires: qid_crystal_grower
 
 ## ジェットパック
 ### ID: qid_jetpack
@@ -164,8 +142,6 @@ Requires: qid_crystal_grower
 
 ### Meta
 
-Requires: qid_neutronium
-
 ## 武装権
 ### ID: qid_bear_arms
 
@@ -174,8 +150,6 @@ Requires: qid_neutronium
 小さなダジャレに気づきましたか？...ロボットアームをクラフトするように言っているのは明らかですよね？あれ。
 
 ### Meta
-
-Requires: qid_furnace
 
 ## 電動ドリル
 ### ID: qid_electric_drill
@@ -191,8 +165,6 @@ Requires: qid_furnace
 
 ### Meta
 
-Requires: qid_bear_arms
-
 ## 反物質発電機
 ### ID: qid_antimatter_generators
 
@@ -204,8 +176,6 @@ Requires: qid_bear_arms
 
 ### Meta
 
-Requires: qid_furnace
-
 ## 彫刻機
 ### ID: qid_engraver
 
@@ -214,8 +184,6 @@ Requires: qid_furnace
 シリコンクリスタルからプロセッサを作成します。
 
 ### Meta
-
-Requires: qid_laser, qid_crystal_grower
 
 ## 情報：マルチブロックの用語
 ### ID: qid_info_multiblock_terminology
@@ -231,8 +199,6 @@ Requires: qid_laser, qid_crystal_grower
 エミットリウム炉はマルチブロックが標準化される前に作られたため、ここに記載されている情報の一部は適用されない可能性があります。
 
 ### Meta
-
-Requires:
 
 ## 高炉
 ### ID: qid_blast_furnace
@@ -257,8 +223,6 @@ Requires:
 
 ### Meta
 
-Requires: qid_compressor, qid_engraver
-
 ## フロギストン融合炉
 ### ID: qid_phlogiston_fuser
 
@@ -270,8 +234,6 @@ Requires: qid_compressor, qid_engraver
 
 ### Meta
 
-Requires: qid_crystal_grower, qid_very_advanced_batteries
-
 ## 惑星テレポーター
 ### ID: qid_planet_teleporter
 
@@ -280,8 +242,6 @@ Requires: qid_crystal_grower, qid_very_advanced_batteries
 使用するにはワープクリスタルを**右**クリックしてください。左クリックすると消費されます。複数種類の惑星があり、一部には環があります。
 
 ### Meta
-
-Requires: qid_neutronium, qid_phlogiston_fuser
 
 ## 情報：惑星の内部
 ### ID: qid_info_inside_of_planets
@@ -298,8 +258,6 @@ Requires: qid_neutronium, qid_phlogiston_fuser
 
 ### Meta
 
-Requires: qid_planet_teleporter
-
 ## 惑星の鉱石
 ### ID: qid_planet_ores
 
@@ -312,8 +270,6 @@ Requires: qid_planet_teleporter
 
 ### Meta
 
-Requires: qid_planet_teleporter
-
 ## 小石強化機
 ### ID: qid_pebble_enhancer
 
@@ -325,8 +281,6 @@ Requires: qid_planet_teleporter
 
 ### Meta
 
-Requires: qid_planet_ores
-
 ## 崩壊加速機
 ### ID: qid_decay_accelerator
 
@@ -336,8 +290,6 @@ Requires: qid_planet_ores
 
 ### Meta
 
-Requires: qid_planet_ores
-
 ## 放射線シールド
 ### ID: qid_radiation_shielding
 
@@ -346,8 +298,6 @@ Requires: qid_planet_ores
 固体帯電フィールドまたは鉛ブロックが放射線を遮蔽します。シールドをクラフトしてこのクエストを完了させてください。
 
 ### Meta
-
-Requires: qid_planet_ores
 
 ## 核反応炉
 ### ID: qid_nuclear_reactor
@@ -365,8 +315,6 @@ Requires: qid_planet_ores
 
 ### Meta
 
-Requires: qid_planet_ores, qid_radiation_shielding
-
 ## ダスト
 ### ID: qid_dust
 
@@ -376,8 +324,6 @@ Requires: qid_planet_ores, qid_radiation_shielding
 また、登ることができ、足場として最適です。
 
 ### Meta
-
-Requires: qid_crusher
 
 ## 小型保護区
 ### ID: qid_small_protectors
@@ -393,8 +339,6 @@ Requires: qid_crusher
 
 ### Meta
 
-Requires: qid_concrete_plan, qid_furnace
-
 ## 大型保護区
 ### ID: qid_big_protectors
 
@@ -403,8 +347,6 @@ Requires: qid_concrete_plan, qid_furnace
 大型保護区は小型保護区と同じですが、より広いです。
 
 ### Meta
-
-Requires: qid_small_protectors
 
 ## ノード保存機
 ### ID: qid_node_preserver
@@ -420,8 +362,6 @@ Requires: qid_small_protectors
 ロボットアームが掘れるノードのみ掘ることができます。
 
 ### Meta
-
-Requires: qid_phlogiston_fuser
 
 ## コピーツール
 ### ID: qid_copy_tool
@@ -449,8 +389,6 @@ P.S. コピーツールと互換性があってほしいものがあれば、遠
 
 ### Meta
 
-Requires: qid_tubes, qid_phlogiston_fuser
-
 ## 一括設置ツール
 ### ID: qid_bulk_placer_tool
 
@@ -469,8 +407,6 @@ Aux1+スニーク+右クリック → ノードの変更、回転、またはそ
 
 ### Meta
 
-Requires: qid_phlogiston_fuser
-
 ## 天蓋
 ### ID: qid_firmament
 
@@ -479,8 +415,6 @@ Requires: qid_phlogiston_fuser
 天蓋はダストを遠心分離機にかけると非常にまれにドロップします。
 
 ### Meta
-
-Requires: qid_centrifuge, qid_dust
 
 ## 重力レンズ
 ### ID: qid_gravitational_lens
@@ -491,8 +425,6 @@ Requires: qid_centrifuge, qid_dust
 
 ### Meta
 
-Requires: qid_neutronium
-
 ## 精製天蓋
 ### ID: qid_refined_firmament
 
@@ -502,8 +434,6 @@ Requires: qid_neutronium
 
 ### Meta
 
-Requires: qid_firmament, qid_blast_furnace
-
 ## ワームホール
 ### ID: qid_wormhole
 
@@ -512,5 +442,3 @@ Requires: qid_firmament, qid_blast_furnace
 遠くにあるインベントリをワームホールにリンクして開きます。
 
 ### Meta
-
-Requires: qid_refined_firmament, qid_blast_furnace, qid_phlogiston_fuser

@@ -13,8 +13,6 @@
 
 ### Meta
 
-Requires: Obtain Emittrium
-
 ## 炉ガラス
 ### ID: qid_reactor_glass
 
@@ -25,8 +23,6 @@ Requires: Obtain Emittrium
 
 ### Meta
 
-Requires: qid_emittrium_glass, qid_reactor_shells
-
 ## 炉インフォスクリーン
 ### ID: qid_reactor_infoscreens
 
@@ -35,8 +31,6 @@ Requires: qid_emittrium_glass, qid_reactor_shells
 炉インフォスクリーンはエミットリウム炉の建設に必要で、炉を起動するためにも必要です。
 
 ### Meta
-
-Requires: qid_reactor_glass
 
 ## 炉電力ポート
 ### ID: qid_reactor_power_ports
@@ -47,8 +41,6 @@ Requires: qid_reactor_glass
 
 ### Meta
 
-Requires: qid_reactor_shells
-
 ## 炉冷却材ポート
 ### ID: qid_reactor_coolant_ports
 
@@ -57,8 +49,6 @@ Requires: qid_reactor_shells
 炉冷却材ポートはエミットリウム炉の建設に必要です。炉の熱を維持するために毎秒1バケツの水（パイプで供給）が必要です。
 
 ### Meta
-
-Requires: qid_fluid_storage_tanks
 
 ## 炉エミットリウム入力口
 ### ID: qid_reactor_emittrium_input
@@ -69,8 +59,6 @@ Requires: qid_fluid_storage_tanks
 
 ### Meta
 
-Requires: qid_reactor_shells, qid_tubes
-
 ## 炉コア
 ### ID: qid_reactor_core
 
@@ -79,8 +67,6 @@ Requires: qid_reactor_shells, qid_tubes
 炉コアはエミットリウム炉の建設に必要です。中心に置く必要があります。
 
 ### Meta
-
-Requires: qid_neutronium, qid_reactor_shells
 
 ## エミットリウム炉の建設と起動
 ### ID: qid_building_the_emittrium_reactor_and_turning_it_on
@@ -97,5 +83,3 @@ Requires: qid_neutronium, qid_reactor_shells
 以前のリリースでは冷却材が不足するとエミットリウム炉が爆発していましたが、現在はそうではありません。
 
 ### Meta
-
-Requires: qid_reactor_shells, qid_reactor_infoscreens, qid_reactor_power_ports, qid_reactor_coolant_ports, qid_reactor_emittrium_input, qid_reactor_core

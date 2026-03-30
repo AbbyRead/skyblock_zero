@@ -17,8 +17,6 @@ TIP: チューブ内のアイテムはより優先度の高い方向に進みま
 
 ### Meta
 
-Requires: qid_furnace
-
 ## 自動フィルターインジェクター
 ### ID: qid_automatic_filter_injectors
 
@@ -40,8 +38,6 @@ Requires: qid_furnace
 
 ### Meta
 
-Requires: qid_bear_arms, qid_tubes
-
 ## 情報：マターファクトリー
 ### ID: qid_info_matter_factory
 
@@ -55,8 +51,6 @@ Requires: qid_bear_arms, qid_tubes
 
 ### Meta
 
-Requires: qid_automatic_filter_injectors, qid_tubes
-
 ## ノードブレーカー
 ### ID: qid_node_breakers
 
@@ -65,8 +59,6 @@ Requires: qid_automatic_filter_injectors, qid_tubes
 ノードブレーカーは前方のノードを壊そうとします。ドロップ品は後部から排出されます。掘るノード1つにつき20の電力が必要です。「原始的な自動化」（Lua以外の自動化）をより強力にするため、成長が完了していない植物はノードブレーカーでは掘れません。電力が必要なツール（例えばレーザー）を挿入すると、充電しようとするため電力消費が増えます。
 
 ### Meta
-
-Requires: qid_automatic_filter_injectors
 
 ## デプロイヤー
 ### ID: qid_deployers
@@ -77,8 +69,6 @@ Requires: qid_automatic_filter_injectors
 
 ### Meta
 
-Requires: qid_automatic_filter_injectors, qid_bear_arms
-
 ## パンチャー
 ### ID: qid_punchers
 
@@ -88,8 +78,6 @@ Requires: qid_automatic_filter_injectors, qid_bear_arms
 
 ### Meta
 
-Requires: qid_automatic_filter_injectors, qid_bear_arms, qid_emittrium_circuits
-
 ## オートクラフター
 ### ID: qid_autocrafters
 
@@ -98,8 +86,6 @@ Requires: qid_automatic_filter_injectors, qid_bear_arms, qid_emittrium_circuits
 オートクラフターは自動的にクラフトします。実行するためにクラフトプロセッサアイテムが必要で、ゲームの進行に合わせてアップグレードしてクラフト速度を向上させられます。
 
 ### Meta
-
-Requires: qid_bear_arms, qid_neutronium, qid_emittrium_circuits, qid_automatic_filter_injectors
 
 ## シンプルクラフティングプロセッサ
 ### ID: qid_simple_crafting_processors
@@ -116,8 +102,6 @@ Requires: qid_bear_arms, qid_neutronium, qid_emittrium_circuits, qid_automatic_f
 
 ### Meta
 
-Requires: qid_autocrafters
-
 ## アイテムボイド
 ### ID: qid_item_voids
 
@@ -126,8 +110,6 @@ Requires: qid_autocrafters
 アイテムボイドは入ってきたすべてのアイテムを削除します。つまりパイプワークスのゴミ箱です。ただしパイプワークスのゴミ箱と異なり、破壊したアイテム数を表示します。
 
 ### Meta
-
-Requires: qid_tubes
 
 ## 情報：オーバーフロー処理
 ### ID: qid_info_overflow_handling
@@ -153,8 +135,6 @@ Requires: qid_tubes
 
 ### Meta
 
-Requires: qid_item_voids
-
 ## アイテムバキューム
 ### ID: qid_item_vacuums
 
@@ -163,8 +143,6 @@ Requires: qid_item_voids
 アイテムバキュームは16ブロック半径のアイテムを吸い込みますが、ラグが発生する傾向があります。
 
 ### Meta
-
-Requires: qid_neutronium, qid_tubes
 
 ## テレポートチューブ
 ### ID: qid_teleport_tubes
@@ -176,8 +154,6 @@ Requires: qid_neutronium, qid_tubes
 あ、一つ言っておくと：受け取りチューブの隣に高優先度のチューブを使わないと、受け取りチューブからアイテムが落ちます。
 
 ### Meta
-
-Requires: qid_tubes, qid_crystal_grower
 
 ## 一方通行チューブ
 ### ID: qid_one_direction_tubes
@@ -191,8 +167,6 @@ Requires: qid_tubes, qid_crystal_grower
 
 ### Meta
 
-Requires: qid_tubes
-
 ## 自動タレット
 ### ID: qid_automatic_turrets
 
@@ -201,8 +175,6 @@ Requires: qid_tubes
 隕石を自動的に撃ち落としたり、プレイヤーを撃ちたいですか？自動タレットが役立ちます。ノードブレーカーに似ていますがノードは掘りません。レーザーを装備して始めましょう。ただし注意：スポーン近くではタレットの射程が80%減少します。電力が必要なツール（例えばレーザー）を挿入すると、充電しようとするため電力消費が増えます。
 
 ### Meta
-
-Requires: qid_node_breakers, qid_neutronium
 
 ## インスタチューブ
 ### ID: qid_instatubes
@@ -274,8 +246,6 @@ Tip 3：パフォーマンスの問題が重要な時だけデバッグしてく
 
 ### Meta
 
-Requires: qid_blast_furnace
-
 ## パターンストリネーター
 ### ID: qid_pattern_storinator
 
@@ -292,8 +262,6 @@ Requires: qid_blast_furnace
 
 ### Meta
 
-Requires: qid_automatic_filter_injectors
-
 # Questline: 流体輸送
 
 このクエストラインは流体の輸送についてです。
@@ -307,8 +275,6 @@ Requires: qid_automatic_filter_injectors
 
 ### Meta
 
-Requires: qid_tubes
-
 ## 流体ポンプ
 ### ID: qid_fluid_pumps
 
@@ -317,8 +283,6 @@ Requires: qid_tubes
 流体ポンプはパイプ用の自動フィルターインジェクターです。流体インベントリから流体を取り出します。
 
 ### Meta
-
-Requires: qid_automatic_filter_injectors
 
 ## 流体貯蔵タンク
 ### ID: qid_fluid_storage_tanks
@@ -333,8 +297,6 @@ Tip: 一度流体貯蔵タンクが特定の液体を受け取ると、その液
 
 ### Meta
 
-Requires: qid_tubes, qid_storinators
-
 ## 流体キャプチャー
 ### ID: qid_fluid_capturers
 
@@ -344,8 +306,6 @@ Requires: qid_tubes, qid_storinators
 
 ### Meta
 
-Requires: qid_fluid_storage_tanks
-
 ## 流体セルフィラー
 ### ID: qid_fluid_cell_fillers
 
@@ -354,5 +314,3 @@ Requires: qid_fluid_storage_tanks
 流体セルフィラーはインベントリ内の空の流体セルを充填します。
 
 ### Meta
-
-Requires: qid_fluid_storage_tanks

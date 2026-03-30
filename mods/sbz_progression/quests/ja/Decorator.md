@@ -13,8 +13,6 @@
 
 ### Meta
 
-Requires: qid_a_bigger_platform
-
 ## さらなる反物質
 ### ID: qid_more_antimatter
 
@@ -27,8 +25,6 @@ Requires: qid_a_bigger_platform
 
 ### Meta
 
-Requires: qid_antimatter
-
 ## 反物質消滅機
 ### ID: qid_anti_annihilator
 
@@ -37,8 +33,6 @@ Requires: qid_antimatter
 残念ながら、またしても設置したノード[反物質ノード]を壊すほどの力がないようです。それを壊せるものをクラフトしましょう。
 
 ### Meta
-
-Requires: qid_more_antimatter
 
 ## スクリュードライバー
 ### ID: qid_screwdriver
@@ -49,8 +43,6 @@ Requires: qid_more_antimatter
 TIP: Minetest Gameのスクリュードライバーと同様に機能します。
 
 ### Meta
-
-Requires: qid_antimatter, qid_introduction
 
 ## CNC機械
 ### ID: qid_cnc_machines
@@ -67,8 +59,6 @@ CNC機械を使えば、様々な階段やスラブが作れます...
 
 ### Meta
 
-Requires: qid_emittrium_circuits
-
 ## 工場の床
 ### ID: qid_factory_flooring
 
@@ -77,8 +67,6 @@ Requires: qid_emittrium_circuits
 工場の床として使うノードで、クラシックな雰囲気を演出できます。
 
 ### Meta
-
-Requires: qid_a_bigger_platform
 
 ## タイル張り工場の床
 ### ID: qid_tiled_factory_flooring
@@ -89,8 +77,6 @@ Requires: qid_a_bigger_platform
 
 ### Meta
 
-Requires: qid_a_bigger_platform, qid_factory_flooring
-
 ## 工場換気扇
 ### ID: qid_factory_ventilator
 
@@ -100,8 +86,6 @@ Requires: qid_a_bigger_platform, qid_factory_flooring
 
 ### Meta
 
-Requires: qid_factory_flooring, qid_crusher
-
 ## 強化マター
 ### ID: qid_reinforced_matter
 
@@ -110,8 +94,6 @@ Requires: qid_factory_flooring, qid_crusher
 通常のマターでは頑丈さが足りない？これを試してみてください。
 
 ### Meta
-
-Requires: qid_a_bigger_platform, qid_matter_plates
 
 ## エミッタイミテーター
 ### ID: qid_emitter_imitators
@@ -123,8 +105,6 @@ Requires: qid_a_bigger_platform, qid_matter_plates
 TIP: エミッタイミテーターをパンチするとたくさんのパーティクルが生まれます。試してみてください！
 
 ### Meta
-
-Requires: qid_a_bigger_platform, qid_more_antimatter
 
 ## フォトンランプ
 ### ID: qid_photon_lamps
@@ -140,8 +120,6 @@ Requires: qid_a_bigger_platform, qid_more_antimatter
 
 ### Meta
 
-Requires: qid_emitter_imitators, qid_matter_plates
-
 ## リン光体
 ### ID: qid_phosphor
 
@@ -150,8 +128,6 @@ Requires: qid_emitter_imitators, qid_matter_plates
 一方で、エミットリウム回路でエミッタイミテーターをクラフトするとリン光体が作れます。これは非常に弱い光源ですが、電力でオン/オフを切り替えられます。機械が動いているかどうかのインジケーターとして、またはディスコのために使えます。
 
 ### Meta
-
-Requires: qid_emitter_imitators, qid_emittrium_circuits
 
 ## 看板
 ### ID: qid_signs
@@ -162,8 +138,6 @@ Requires: qid_emitter_imitators, qid_emittrium_circuits
 
 ### Meta
 
-Requires: qid_antimatter
-
 ## 電力ランプ
 ### ID: qid_powered_lights
 
@@ -173,8 +147,6 @@ Requires: qid_antimatter
 または広いエリアを照らしたいなら、超高出力ランプがあります。比較的低い電力消費で13×13×13の立方体を目に見えないライトで満たします！
 
 ### Meta
-
-Requires: qid_switching_station, qid_more_antimatter, qid_emittrium_glass
 
 ## 着色ツール
 ### ID: qid_coloring_tool
@@ -189,8 +161,6 @@ Requires: qid_switching_station, qid_more_antimatter, qid_emittrium_glass
 
 ### Meta
 
-Requires: qid_colorium_trees
-
 ## レンガ
 ### ID: qid_bricks
 
@@ -199,8 +169,6 @@ Requires: qid_colorium_trees
 建築に使えるより豪華な伝統的なレンガです。
 
 ### Meta
-
-Requires: qid_clay
 
 ## ミステリー水族館
 ### ID: qid_mystery_terrarium
@@ -211,8 +179,6 @@ Requires: qid_clay
 
 ### Meta
 
-Requires: qid_growing_plants, qid_planet_ores
-
 ## 大型サーバーラック
 ### ID: qid_large_server_rack
 
@@ -221,8 +187,6 @@ Requires: qid_growing_plants, qid_planet_ores
 虹色のLEDが付いたサーバーラックのような装飾ノードです。
 
 ### Meta
-
-Requires: qid_engraver, qid_knowledge_stations, qid_ele_fabs
 
 ## 接地ライン
 ### ID: qid_ground_line
@@ -233,8 +197,6 @@ Requires: qid_engraver, qid_knowledge_stations, qid_ele_fabs
 
 ### Meta
 
-Requires: qid_colorium_trees
-
 ## 電力接地ライン
 ### ID: qid_power_ground_line
 
@@ -243,8 +205,6 @@ Requires: qid_colorium_trees
 接地ラインと同様の床のライン。アニメーション付きで、ケーブルのように電力を伝えます。
 
 ### Meta
-
-Requires: qid_colorium_trees, qid_power_cables
 
 ## 反物質ブロック
 ### ID: qid_antiblocks
@@ -255,5 +215,3 @@ Requires: qid_colorium_trees, qid_power_cables
 空気状反物質ブロック：通常の反物質ブロックと同じ特性ですが、歩いて通り抜けられます。
 
 ### Meta
-
-Requires: qid_colorium_trees, qid_antimatter

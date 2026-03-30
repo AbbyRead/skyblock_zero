@@ -16,8 +16,6 @@
 
 ### Meta
 
-Requires: qid_blast_furnace
-
 ## ロジックゲート
 ### ID: qid_logic_gates
 
@@ -54,8 +52,6 @@ NANDゲート - ANDゲートをNOTゲートに通したもの
 
 ### Meta
 
-Requires: qid_sensor_linker
-
 ## マシンコントローラー
 ### ID: qid_machine_controller
 
@@ -72,8 +68,6 @@ Requires: qid_sensor_linker
 
 ### Meta
 
-Requires: qid_sensor_linker
-
 ## ディレイヤー
 ### ID: qid_delayer
 
@@ -83,8 +77,6 @@ Requires: qid_sensor_linker
 ノードタイマーを使用しているため、近くにいないと動作しないことがあります（約48ノード離れた場所）。ただし、何らかの方法でフォースロードされていれば動作します。
 
 ### Meta
-
-Requires: qid_sensor_linker
 
 ## 光センサー
 ### ID: qid_light_sensor
@@ -99,8 +91,6 @@ Requires: qid_sensor_linker
 
 ### Meta
 
-Requires: qid_sensor_linker
-
 ## ノードセンサー
 ### ID: qid_node_sensor
 
@@ -111,8 +101,6 @@ Requires: qid_sensor_linker
 リンク「A」のノードがUIに表示されているものと一致する場合にオンになります。
 
 ### Meta
-
-Requires: qid_sensor_linker
 
 ## アイテムセンサー
 ### ID: qid_item_sensor
@@ -128,8 +116,6 @@ Requires: qid_sensor_linker
 
 ### Meta
 
-Requires: qid_sensor_linker
-
 ## スイッチ
 ### ID: qid_switches
 
@@ -139,5 +125,3 @@ Requires: qid_sensor_linker
 オン/オフを切り替えられます。
 
 ### Meta
-
-Requires: qid_sensor_linker

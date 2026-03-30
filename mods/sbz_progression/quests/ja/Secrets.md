@@ -9,8 +9,6 @@
 
 ### Meta
 
-Requires:
-
 ## 秘密：荒廃
 ### ID: qid_secret_desolate
 
@@ -20,8 +18,6 @@ Requires:
 
 ### Meta
 
-Requires:
-
 ## 秘密：脆弱
 ### ID: qid_secret_fragile
 
@@ -30,8 +26,6 @@ Requires:
 天使の翼を壊しました。
 
 ### Meta
-
-Requires:
 
 ## 秘密：反カラーリウム惑星
 ### ID: qid_secret_anticolorium_planets
@@ -46,8 +40,6 @@ Requires:
 
 ### Meta
 
-Requires:
-
 ## 秘密：クラフトアゲドン
 ### ID: qid_craftageddon
 
@@ -57,8 +49,6 @@ Requires:
 
 ### Meta
 
-Requires:
-
 ## 秘密：存命詩人の会
 ### ID: qid_secret_alive_poets_society
 
@@ -67,5 +57,3 @@ Requires:
 「カルペ・ディエム。今日をつかめ、少年よ。人生を特別なものにしろ。」 - ジョン・キーティング
 
 ### Meta
-
-Requires:

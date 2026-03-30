@@ -15,8 +15,6 @@
 
 ### Meta
 
-Requires:
-
 ## 秘密：濡れた
 ### ID: qid_secret_wet
 
@@ -28,8 +26,6 @@ Requires:
 この効果は他の特定の効果と組み合わさると非常に危険な組み合わせになる可能性があります。
 
 ### Meta
-
-Requires:
 
 ## 秘密：感電した
 ### ID: qid_secret_shocked
@@ -43,8 +39,6 @@ Requires:
 
 ### Meta
 
-Requires:
-
 ## 秘密：毒状態
 ### ID: qid_secret_poisoned
 
@@ -53,8 +47,6 @@ Requires:
 この効果中は元の速度の0.5倍になります。また2秒ごとに1ダメージを受けます。
 
 ### Meta
-
-Requires:
 
 ## 秘密：免疫
 ### ID: qid_secret_immune
@@ -65,5 +57,3 @@ Requires:
 また「引き寄せられた」効果にも免疫になりますが、斥力機/引力機は引き続き引き寄せます。
 
 ### Meta
-
-Requires:

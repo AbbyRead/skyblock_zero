@@ -12,8 +12,6 @@
 
 ### Meta
 
-Requires: qid_matter_plates, qid_charged_field, qid_retaining_circuits
-
 ## より良いストリネーター
 ### ID: qid_better_storinators
 
@@ -27,8 +25,6 @@ Requires: qid_matter_plates, qid_charged_field, qid_retaining_circuits
 
 ### Meta
 
-Requires: qid_storinators, qid_bronze_age
-
 ## パブリックストリネーター
 ### ID: qid_public_storinators
 
@@ -37,8 +33,6 @@ Requires: qid_storinators, qid_bronze_age
 パブリックストリネーターは通常のストリネーターと同様ですが、保護に関係なく**誰でも**アクセスできます。任意の種類のストリネーターをクラフトガイドに入れるだけで作れます。
 
 ### Meta
-
-Requires: qid_storinators
 
 ## 最良のストリネーター
 ### ID: qid_best_storinators
@@ -49,8 +43,6 @@ Requires: qid_storinators
 ニュートロニウムストリネーターを使えます。ニュートロニウム4つが必要で少し高価ですが、それが許容できるなら最適です。
 
 ### Meta
-
-Requires: qid_better_storinators, qid_neutronium
 
 ## ドロワー
 ### ID: qid_drawers
@@ -67,8 +59,6 @@ Requires: qid_better_storinators, qid_neutronium
 
 ### Meta
 
-Requires: qid_storinators
-
 ## ドロワーアップグレード
 ### ID: qid_drawer_upgrades
 
@@ -81,8 +71,6 @@ TIP: ドロワーにアップグレードを挿入するには、端を右クリ
 
 ### Meta
 
-Requires: qid_drawers, qid_bronze_age
-
 ## ドロワーコントローラー
 ### ID: qid_drawer_controller
 
@@ -94,8 +82,6 @@ Requires: qid_drawers, qid_bronze_age
 アイテムを取り出すには、ルアコントローラーを使ってアイテムスタック（`"sbz_bio:dirt 100"`のような文字列）を送ると、その土を自身から排出しようとします。
 
 ### Meta
-
-Requires: qid_drawers
 
 ## ルームコンテナ
 ### ID: qid_room_containers
@@ -120,5 +106,3 @@ Requires: qid_drawers
 警告：電力入力機能は、サーバー上で（デフォルトで）正しく動作しない可能性があり、また「sbz_switching_station_unload」設定が有効なSkyblock Zero構成では、使用できない可能性があります。申し訳ありません。
 
 ### Meta
-
-Requires: qid_warpshrooms

@@ -16,8 +16,6 @@
 
 ### Meta
 
-Requires: qid_annihilator
-
 ## 電力ケーブル
 ### ID: qid_power_cables
 
@@ -30,8 +28,6 @@ Requires: qid_annihilator
 
 ### Meta
 
-Requires: qid_matter_plates, Obtain Emittrium
-
 ## スターライトコレクター
 ### ID: qid_starlight_collectors
 
@@ -40,8 +36,6 @@ Requires: qid_matter_plates, Obtain Emittrium
 スターライトコレクターは星の光を電力に変換します。ただし星は非常に微かなため、工場全体に電力を供給するには多数必要です！
 
 ### Meta
-
-Requires: Obtain Emittrium
 
 ## スターライトキャッチャー
 ### ID: qid_starlight_catchers
@@ -54,8 +48,6 @@ Requires: Obtain Emittrium
 
 ### Meta
 
-Requires: qid_starlight_collectors
-
 ## エミットリウム回路
 ### ID: qid_emittrium_circuits
 
@@ -64,8 +56,6 @@ Requires: qid_starlight_collectors
 電力の蓄積や転送に関連する一部のレシピには、エミットリウム回路が必要です。
 
 ### Meta
-
-Requires: qid_matter_plates, Obtain Emittrium, qid_retaining_circuits
 
 ## バッテリー
 ### ID: qid_batteries
@@ -78,8 +68,6 @@ TIP: バッテリーがないと、機械に使われていない電力はすべ
 
 ### Meta
 
-Requires: qid_emittrium_circuits
-
 ## コネクター
 ### ID: qid_connectors
 
@@ -90,8 +78,6 @@ Requires: qid_emittrium_circuits
 
 ### Meta
 
-Requires: qid_emittrium_circuits, qid_reinforced_matter
-
 ## 天使の翼
 ### ID: qid_angels_wing
 
@@ -100,8 +86,6 @@ Requires: qid_emittrium_circuits, qid_reinforced_matter
 天使の翼は飛ぶことができます。右クリックで使用、100回使用可能です。エミットリウム回路を石で囲むとクラフトできます。このレシピは一時的なものです。
 
 ### Meta
-
-Requires: qid_emittrium_circuits, qid_concrete_plan
 
 ## エレファブ
 ### ID: qid_ele_fabs
@@ -112,8 +96,6 @@ Requires: qid_emittrium_circuits, qid_concrete_plan
 
 ### Meta
 
-Requires: qid_antimatter, qid_emittrium_circuits
-
 ## ナレッジステーション
 ### ID: qid_knowledge_stations
 
@@ -122,8 +104,6 @@ Requires: qid_antimatter, qid_emittrium_circuits
 論理について学べます。このクエストブックではなく、ナレッジステーションで文書化されています。頑張ってください。
 
 ### Meta
-
-Requires: qid_concrete_plan, qid_ele_fabs
 
 ## 移動可能エミッター
 ### ID: qid_movable_emitters
@@ -136,5 +116,3 @@ Requires: qid_concrete_plan, qid_ele_fabs
 移動可能エミッターはフロギストン8つで複製できます。
 
 ### Meta
-
-Requires: qid_planet_teleporter
