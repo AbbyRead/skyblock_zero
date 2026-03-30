@@ -62,7 +62,7 @@ for mod in mods/*; do
             -kS -kPS:1,2 -kcore.translate:1c,2 -kcore.translate_n:1c,2,3 \
             --package-name="${GAME_TITLE}" \
             --msgid-bugs-address="${BUG_ADDRESS}" \
-            --copyright-holder="zanderdev" \
+            --copyright-holder="chefzander, Skyblock Zero translations team" \
             --no-wrap -o "$tmp_pot" -f -
 
     if [ -s "$tmp_pot" ]; then
