@@ -1,7 +1,7 @@
 
 # Questline: Jumpdrive
 
-A modified version of the mt-mods/jumpdrive mod, lets you teleport yourself, and your buildings, anywhere*.
+A modified version of the mt-mods/jumpdrive mod, lets ye teleport yerself, and yer buildings, anywhere*.
     
 
 ## Jumpdrive Backbone
@@ -9,8 +9,8 @@ A modified version of the mt-mods/jumpdrive mod, lets you teleport yourself, and
 
 ### Text
 
-An ingredient in making the jumpdrive engine.  
-Also used in connecting jumpdrives to a fleet controller.  
+An ingredient in makin' the jumpdrive engine.  
+Also used in connectin' jumpdrives to a fleet controller.  
 
 ### Meta
 
@@ -21,7 +21,7 @@ Requires: qid_compressor, qid_reactor_shells
 
 ### Text
 
-An ingredient in making the jumpdrive engine. May be required for other things in the future.  
+An ingredient in makin' the jumpdrive engine. May be required fer other things in the future.  
 
 ### Meta
 
@@ -32,22 +32,22 @@ Requires: qid_crystal_grower, qid_antimatter_generators
 
 ### Text
 
-Lets you teleport your buildings with you, to any* coordinate....  
+Lets ye teleport yer buildings with ye, to any* coordinate....  
   
-*Though in skyblock zero, this has been slightly modified: Without a jumpdrive station near the target, you can only travel 500 blocks away from your current position... But if you have a jumpdrive station, near (50 blocks away) your target position, you can teleport there.  
+*Though in skyblock zero, this has been slightly modified: Without a jumpdrive station near the target, ye can only travel 500 blocks away from yer current position... But if ye have a jumpdrive station, near (50 blocks away) yer target position, ye can teleport there.  
   
-The jumpdrive also acts as a battery, storing 200 kCj, this also means it can be discharged, be aware of that.  
+The jumpdrive also acts as a battery, storin' 200 kCj, this also means it can be discharged, be aware of that.  
   
-If you punch the jumpdrive with an empty hand, you will see an outline of what nodes it will teleport.  
+If ye punch the jumpdrive with an empty hand, ye'll see an outline of what nodes it'll teleport.  
   
-You can transport emitters with the jumpdrive.  
-Also, emitters stop spawning after y=1000, so you can transport stuff more easily there, since no emitters will interfere with you.  
+Ye can transport emitters with the jumpdrive.  
+Also, emitters stop spawning after y=1000, so ye can transport stuff more easily there, since no emitters'll interfere with ye.  
   
-If your jumpdrive flight takes too much energy, the jumpdrive can also take away power from other batteries, it will do this automatically, but its 4 times less efficient compared to using regular jumpdrive's power.  
-It is good practice to use the "show" button before using the "jump" button, to see how much power your flight will consume,  
-The jumpdrive can only take away power from batteries that are in the jumpdrive range.  
+If yer jumpdrive flight takes too much energy, the jumpdrive can also take away power from other batteries, it'll do this automatically, but it be 4 times less efficient compared to using regular jumpdrive's power.  
+It be good practice to use the "show" button before using the "jump" button, to see how much power yer flight'll consume,  
+The jumpdrive can only take away power from batteries that be in the jumpdrive range.  
   
-With protections: Jumpdrive leaves protections behind if it collides with another protected area that's not yours.  
+With protections: Jumpdrive leaves protections behind if it collides with another protected area that's not yers.  
 
 ### Meta
 
@@ -58,9 +58,9 @@ Requires: qid_jumpdrive_backbone, qid_warp_device, qid_very_advanced_batteries
 
 ### Text
 
-So, I imagine you'd like to travel huge distances with the jumpdrive, well.... this will allow you to do that  
+So, I imagine ye'd like to travel huge distances with the jumpdrive, well.... this'll allow ye to do that  
   
-Simply place one down in your target destination. Now you can teleport near it with the jumpdrive.  
+Simply place one down in yer target destination. Now ye can teleport near it with the jumpdrive.  
 
 ### Meta
 
@@ -71,10 +71,10 @@ Requires: qid_the_jumpdrive_engine
 
 ### Text
 
-So... I imagine you want to move multiple jumpdrives at once... well you are lucky, this is the node for you!  
-Connect up all the jumpdrives with jumpdrive backbones, connect that to the fleet controller, and now you can use it!  
+So... I imagine ye want to move multiple jumpdrives at once... well ye be lucky, this be the node fer ye!  
+Connect up all the jumpdrives with jumpdrive backbones, connect that to the fleet controller, and now ye can use it!  
   
-Warning: Make sure to ALWAYS press "show" before jump... you don't want one of your jumpdrives to be in the wrong place...  
+Warning: Make sure to ALWAYS press "show" before jump... ye don't want one of yer jumpdrives to be in the wrong place...  
 
 ### Meta
 

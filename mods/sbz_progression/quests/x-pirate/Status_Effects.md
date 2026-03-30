@@ -1,7 +1,7 @@
 
 # Questline: Status Effects
 
-This questline tells you all about status effects, **after** you get them :>
+This questline tells ye all about status effects, **after** ye get 'em :>
         
 
 ## Secret: Attracted
@@ -9,11 +9,11 @@ This questline tells you all about status effects, **after** you get them :>
 
 ### Text
 
-This effect is applied to you when you are holding a node with gravitational properties in your hand near meteorite attractors/repulsors. The attraction is slower when you have more items in the stack that you are holding.  
-During this effect, you can't move yourself, and you experience zero gravity.  
-But you can still jump, and other knockback sources like explosions can still move you, and jetpacks move you too.  
+This effect be applied to ye when ye be holdin' a node with gravitational properties in yer hand near meteorite attractors/repulsors. The attraction be slower when ye have more items in the stack that ye be holdin'.  
+During this effect, ye can't move yerself, and ye experience zero gravity.  
+But ye can still jump, and other knockback sources like explosions can still move ye, and jetpacks move ye too.  
   
-And yes, you can go into orbit around the meteorite attractor; it just takes some practice.  
+And aye, ye can go into orbit around the meteorite attractor; it just takes some practice.  
 
 ### Meta
 
@@ -24,8 +24,8 @@ Requires:
 
 ### Text
 
-This effect is applied to you when you are standing in water.  
-During this effect, you will be 0.8x as fast as you were before.  
+This effect be applied to ye when ye be standin' in water.  
+During this effect, ye'll be 0.8x as fast as ye were before.  
   
 This effect, combined with certain other effects, may produce a very dangerous combination.  
 
@@ -38,10 +38,10 @@ Requires:
 
 ### Text
 
-During this effect, you will be 1.2x as fast as you were before.  
-You will also experience random jittery movements.  
+During this effect, ye'll be 1.2x as fast as ye were before.  
+Ye'll also experience random jittery movements.  
   
-This effect, combined with Wet, damages you by 8 hp, and the shocked effect will go away.  
+This effect, combined with Wet, damages ye by 8 hp, and the shocked effect'll go away.  
 
 ### Meta
 
@@ -52,7 +52,7 @@ Requires:
 
 ### Text
 
-During this effect, you will be 0.5x as fast as you were before. You will also receive 1 damage every 2 seconds.  
+During this effect, ye'll be 0.5x as fast as ye were before. Ye'll also receive 1 damage every 2 seconds.  
 
 ### Meta
 
@@ -63,9 +63,9 @@ Requires:
 
 ### Text
 
-During this effect, you will be immune to almost all effects, excluding effects like "Wet".  
-It will also make you immune to the Attracted effect, but the repulsors/attractors will still pull you.  
+During this effect, ye'll be immune to almost all effects, excludin' effects like "Wet".  
+It'll also make ye immune to the Attracted effect, but the repulsors/attractors'll still pull ye.  
 
 ### Meta
 
-Requires: 
+Requires:

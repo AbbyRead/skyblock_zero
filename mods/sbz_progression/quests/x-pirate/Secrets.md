@@ -5,7 +5,7 @@
 
 ### Text
 
-Damn. You fell off.
+Blimey. Ye fell off.
 
 ### Meta
 
@@ -16,7 +16,7 @@ Requires:
 
 ### Text
 
-You talked to yourself.
+Ye talked to yerself.
 
 ### Meta
 
@@ -27,7 +27,7 @@ Requires:
 
 ### Text
 
-You broke an Angel's Wing.
+Ye broke an Angel's Wing.
 
 ### Meta
 
@@ -38,9 +38,9 @@ Requires:
 
 ### Text
 
-Colorium planets, but something is wrong with them.
+Colorium planets, but somethin' be wrong with 'em.
 
-Hint: You need to have enabled post processing in luanti's settings, or this won't work. This requires shaders to be enabled. It may not be available on some weaker devices.
+Hint: Ye need to have enabled post processing in luanti's settings, or this won't work. This requires shaders to be enabled. It may not be available on some weaker devices.
 
 Hint 2: Use a screen inverter potion to reverse the effect, at the cost of a mild saturation increase.
 

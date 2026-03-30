@@ -1,19 +1,19 @@
 
 # Questline: Emittrium
 
-Emittrium is a very important material when working with Cosmic Joules. This questline will teach you all about it.
+Emittrium be a very important material when workin' with Cosmic Joules, arrr! This questline will teach ye all about it, so pay attention, ye scallywag!
 
 ## Obtain Emittrium
 ### ID: qid_obtain_emittrium
 
 ### Text
 
-Do you see those blue nodes in the distance? They're called Emitters. To obtain Emittrium from them, you will have to build a bridge over to one.  
-I would recommend to choose the closest one to you, but any Emitter works. Next, you'll need a Matter Annihilator. You can't destroy the Emitters, but you can chip away at them.  
-  
-Punch your Emitter of choice until it yields some 'Raw Emittrium'. We'll refine the Emittrium later, but for now we just need it in its raw state.  
-  
-Emitters have a 1/10 chance of producing Raw Emittrium, and a 9/10 chance of producing the same materials that the core does.  
+Do ye see those blue nodes in the distance, matey? They be called Emitters. To obtain Emittrium from them, ye will have to build a bridge over to one, like layin' a plank to board a prize ship!
+I would recommend choosin' the closest one to ye, but any Emitter works, arrr. Next, ye'll need a Matter Annihilator. Ye can't destroy the Emitters, but ye can chip away at them, like chiselin' at a reef fer buried gold!
+
+Punch yer Emitter of choice until it yields some 'Raw Emittrium'. We'll refine the Emittrium later, but fer now we just need it in its raw state, savvy!
+
+Emitters have a 1/10 chance of producin' Raw Emittrium, and a 9/10 chance of producin' the same materials that the core does, so be patient, matey!
 
 ### Meta
 
@@ -24,10 +24,10 @@ Requires: qid_annihilator
 
 ### Text
 
-To transfer power from generators to machines, you'll need Power Cables. You can get a power cable with a shapeless craft using one Raw Emittrium and one Matter Plate.  
-The cables will connect up and supply your machines with power, looking at your machine will show 'Running' if the machine is running.  
-Also, if you put a machine next to another machine, it will conduct power to that machine, so you only need power cables in some cases.  
-For example, if you have one area for plants, one area for manufacturing, cables are the nicest option to bridge the areas.
+To transfer power from generators to machines, ye'll need Power Cables, like the rigging that holds a ship together! Ye can get a power cable with a shapeless craft usin' one Raw Emittrium and one Matter Plate.
+The cables will connect up and supply yer machines with power. Lookin' at yer machine will show 'Running' if the machine be runnin', as clear as a flag in the wind!
+Also, if ye put a machine next to another machine, it will conduct power to that machine, so ye only need power cables in some cases, arrr.
+Fer example, if ye have one area fer plants, one area fer manufacturing, cables be the finest option to bridge the areas, like a rope between two ships!
 
 ### Meta
 
@@ -38,7 +38,7 @@ Requires: qid_matter_plates, Obtain Emittrium
 
 ### Text
 
-Starlight Collectors turn the light of stars into power for you to use. But the stars are very faint, so you'll need a lot of these if you want to power a whole factory!
+Starlight Collectors turn the light of stars into power fer ye to use, like harnessin' the very heavens themselves! But the stars be very faint, so ye'll need a lot of these if ye want to power a whole factory, arrr!
 
 ### Meta
 
@@ -49,9 +49,9 @@ Requires: Obtain Emittrium
 
 ### Text
 
-Starlight Catchers are similar starlight collectors but more compact, generating 1 Cj/s.  
-But unlike starlight collectors, they need **Photon-Energy converters**, to convert their energy into usable power.  
-They won't do anything if you connect them directly to a Switching Station, as they provide power though the photon-energy converter.  
+Starlight Catchers be similar to starlight collectors but more compact, generatin' 1 Cj/s, arrr!
+But unlike starlight collectors, they need **Photon-Energy converters**, to convert their energy into usable power, savvy?
+They won't do anything if ye connect them directly to a Switching Station, as they provide power though the photon-energy converter, so don't make that blunder!
 
 ### Meta
 
@@ -62,7 +62,7 @@ Requires: qid_starlight_collectors
 
 ### Text
 
-For some recipes related to storing or transferring power, you'll need Emittrium Circuits. 
+Fer some recipes related to storin' or transferrin' power, ye'll need Emittrium Circuits, as essential as a compass on the open sea!
 
 ### Meta
 
@@ -73,9 +73,9 @@ Requires: qid_matter_plates, Obtain Emittrium, qid_retaining_circuits
 
 ### Text
 
-Sometimes, you'll need to temporarily buffer some energy. That's what the Battery is for. It stores up to 5 kCj of energy. You can craft it by surrounding a Emittrium Circuit with matter blobs.
+Sometimes, ye'll need to temporarily buffer some energy, like keepin' spare powder dry fer the cannons! That be what the Battery be fer, arrr. It stores up to 5 kCj of energy. Ye can craft it by surroundin' an Emittrium Circuit with matter blobs.
 
-TIP: Without batteries, all power that isn't being used for machines is wasted, with batteries you can store some of it.
+TIP: Without batteries, all power that isn't being used fer machines be wasted, but with batteries ye can store some of it, like keepin' plunder in the hold!
 
 ### Meta
 
@@ -86,8 +86,8 @@ Requires: qid_emittrium_circuits
 
 ### Text
 
-If you want to turn machines on and off, you can use Connectors. They join two networks together, and you can click on them to turn them on and off.  
-IMPORTANT: Make sure that only one of the two or more joined networks has a Switching Station, or they will blow up until reaching one.
+If ye want to turn machines on and off, ye can use Connectors, arrr! They join two networks together, and ye can click on them to turn them on and off, like a valve on a ship's bilge pump!
+IMPORTANT: Make sure that only one of the two or more joined networks has a Switching Station, or they will blow up until reaching one, and that be a terrible waste of good plunder!
 
 ### Meta
 
@@ -98,7 +98,7 @@ Requires: qid_emittrium_circuits, qid_reinforced_matter
 
 ### Text
 
-The Angel's Wing can make you fly. Right-Click to use, it has 100 uses. To craft, surround an Emittrium Circuit with Stone. This recipe is temporary.
+The Angel's Wing can make ye fly like a seabird above the waves! Right-Click to use, it has 100 uses. To craft, surround an Emittrium Circuit with Stone. This recipe be temporary, mind ye!
 
 ### Meta
 
@@ -109,7 +109,7 @@ Requires: qid_emittrium_circuits, qid_concrete_plan
 
 ### Text
 
-Used to manufacture various logic components.
+Used to manufacture various logic components, like the fine instruments of a ship's navigator!
 
 ### Meta
 
@@ -120,7 +120,7 @@ Requires: qid_antimatter, qid_emittrium_circuits
 
 ### Text
 
-Teaches you about logic, which is not documented in this questbook but instead in the knowledge station. Good luck.
+Teaches ye about logic, which not be documented in this questbook but instead in the knowledge station, arrr! Good luck, and may the winds be at yer back!
 
 ### Meta
 
@@ -131,10 +131,10 @@ Requires: qid_concrete_plan, qid_ele_fabs
 
 ### Text
 
-If you are tired of not being able to have emitters wherever you want, get a Movable Emitter. Your factory could use another Emitter, no?  
-In the core of the ice planets there is a solution but be aware, you must be strong.  
-  
-Movable emitters can be duplicated with 8 phlogiston.  
+If ye be tired of not being able to have emitters wherever ye want, get a Movable Emitter, matey! Yer factory could use another Emitter, no?
+In the core of the ice planets there be a solution, but be aware, ye must be strong, fer those waters be treacherous, arrr!
+
+Movable emitters can be duplicated with 8 phlogiston, like multiplyin' yer finest treasure!
 
 ### Meta
 

@@ -7,8 +7,8 @@ Mainly about drawers and Storinators.
 
 ### Text
 
-Storinators are the solution to clogged up inventories. They have 32 slots of inventory, and function like a chest.  
-The more red/green dots the front of a Storinator displays, the more full/empty it is.  
+Storinators be the solution to clogged up inventories. They have 32 slots of inventory, and function like a chest.  
+The more red/green dots the front of a Storinator displays, the more full/empty it be.  
 
 ### Meta
 
@@ -19,11 +19,11 @@ Requires: qid_matter_plates, qid_charged_field, qid_retaining_circuits
 
 ### Text
 
-At some point, only having 32 slots of storage is not enough.  
-You can make more Storinators, or you can make an upgraded one.  
+At some point, only havin' 32 slots of storage be not enough.  
+Ye can make more Storinators, or ye can make an upgraded one.  
 Each upgrade adds 1 row and 1 column to the inventory space.  
   
-To complete this quest, you need to craft the bronze Storinator.  
+To complete this quest, ye need to craft the bronze Storinator.  
 
 ### Meta
 
@@ -34,7 +34,7 @@ Requires: qid_storinators, qid_bronze_age
 
 ### Text
 
-Public Storinators are like regular Storinators but are accessible to **anyone**, regardless of protections. You can craft them by simply putting any type of Storinator in your crafting guide.
+Public Storinators be like regular Storinators but be accessible to **anyone**, regardless of protections. Ye can craft 'em by simply puttin' any type of Storinator in yer crafting guide.
 
 ### Meta
 
@@ -45,8 +45,8 @@ Requires: qid_storinators
 
 ### Text
 
-Do you have chaos in your Storinators? Are you struggling to figure out which one is which? Do you need labels, but signs get in the way?  
-You can use Neutronium Storinators. They are a little expensive, requiring 4 Neutronium, but if you can afford them, they are great for this.  
+Do ye have chaos in yer Storinators? Are ye strugglin' to figure out which one be which? Do ye need labels, but signs get in the way?  
+Ye can use Neutronium Storinators. They be a little expensive, requirin' 4 Neutronium, but if ye can afford 'em, they be great fer this.  
 
 ### Meta
 
@@ -57,10 +57,10 @@ Requires: qid_better_storinators, qid_neutronium
 
 ### Text
 
-Do you have some automation that produces large amounts of one type of item?  
-Or do you just have large amounts of a single item type?  
+Do ye have some automation that produces large amounts of one type of item?  
+Or do ye just have large amounts of a single item type?  
 
-Drawers will help here. They are like Storinators, but they can only store a few item types.
+Drawers'll help here. They be like Storinators, but they can only store a few item types.
 They store 3200 items (without upgrades). With upgrades, they can store a lot more.  
 
 Drawers also come with 1x2 and 4x4 variants.  
@@ -74,10 +74,10 @@ Requires: qid_storinators
 
 ### Text
 
-Drawers by default store the same amount of items as a Storinator; that's a bit boring. What if you could store more?
+Drawers by default store the same amount of items as a Storinator; that be a bit borin'. What if ye could store more?
 
-TIP: The upgrades don't work as you might expect. If you have two bronze upgrades, each bronze upgrade adds an extra 3200 items; it doesn't multiply 3200 by 4 or anything like that.  
-TIP: To insert an upgrade into a drawer, you need to right-click the edge of it or right-click a side that doesn't have the item display.
+TIP: The upgrades don't work as ye might expect. If ye have two bronze upgrades, each bronze upgrade adds an extra 3200 items; it doesn't multiply 3200 by 4 or anythin' like that.  
+TIP: To insert an upgrade into a drawer, ye need to right-click the edge of it or right-click a side that doesn't have the item display.
 
 ### Meta
 
@@ -88,10 +88,10 @@ Requires: qid_drawers, qid_bronze_age
 
 ### Text
 
-You may have noticed that drawers still might not work amazingly for automation; the drawer controller is here to solve that.  
-If you send it an item with a tube or manually provide it an item, it will automatically put it into an adjacent drawer (or a drawer adjacent to the others).  
+Ye may have noticed that drawers still might not work amazingly fer automation; the drawer controller be here to solve that.  
+If ye send it an item with a tube or manually provide it an item, it'll automatically put it into an adjacent drawer (or a drawer adjacent to the others).  
 
-For taking out items, you can use a Luacontroller, sending an itemstack (a string like `"sbz_bio:dirt 100"`), and it will try to give you that dirt by injecting it out of itself.  
+Fer takin' out items, ye can use a Luacontroller, sendin' an itemstack (a string like `"sbz_bio:dirt 100"`), and it'll try to give ye that dirt by injectin' it out of itself.  
 
 ### Meta
 
@@ -101,11 +101,11 @@ Requires: qid_drawers
 ### ID: qid_room_containers
 ### Text
 
-Do you want to just put things in a room? This node was made for that.
+Do ye want to just put things in a room? This node was made fer that.
 
-Room containers contain 16x16x16 rooms (if you count the walls) that is inside one mapblock. A player can only have 100 rooms at most.
+Room containers contain 16x16x16 rooms (if ye count the walls) that be inside one mapblock. A player can only have 100 rooms at most.
 
-If you break a room container, don't worry, the next room container you place will point to that same room.
+If ye break a room container, don't worry, the next room container ye place'll point to that same room.
 
 Room containers can also accept power and teleport it to a room.
 
@@ -113,7 +113,7 @@ Right-click a room to teleport to it, and right-click the room exit (a special b
 
 To set a custom entry point to the room, craft the "Room Container Entry Point" block and place it in a room.
 
-Warning: To save the positions of rooms, room containers use an experimental luanti function (that has been experimental and mostly unchanged since 2016), this might not be that big of a concern but <b>you shouldn't put your entire storage system in a room container</b> because of that. It is unclear how reliable the saving/loading of room containers is.
+Warning: To save the positions of rooms, room containers use an experimental luanti function (that has been experimental and mostly unchanged since 2016), this might not be that big of a concern but <b>ye shouldn't put yer entire storage system in a room container</b> because of that. It be unclear how reliable the saving/loading of room containers be.
 Server owners should ideally have backups.
 
 Warning: The power input functionality may not work correctly on servers (by default), or on Skyblock Zero configurations that have the "sbz_switching_station_unload" setting active, it may be unusable, sorry.
