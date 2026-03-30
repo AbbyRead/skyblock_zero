@@ -71,7 +71,7 @@ for mod in mods/*; do
         
         # 2. Privacy Fix: Replace the personal info placeholder
         #      Use | instead of / so the URL slashes don't break sed
-        sed -i "s|FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.|<Your Name> [Contact Info], <YEAR>.|" "$tmp_pot"
+        sed -i "s|FIRST AUTHOR <EMAIL@ADDRESS>, YEAR\.|<Your Name> [Contact Info], <YEAR>|" "$tmp_pot"
         sed -i "s|^\"Last-Translator: .*\"$|\"Last-Translator: Skyblock: Zero Translation Team <${BUG_ADDRESS}>\\\\n\"|" "$tmp_pot"
 
         # 3. Custom Header: MOD NAME TRANSLATION TEMPLATE
