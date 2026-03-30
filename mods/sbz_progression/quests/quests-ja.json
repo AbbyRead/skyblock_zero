@@ -2,6 +2,8 @@
     {
         "source_file": "Chemistry.md",
         "questline": "化学",
+        "id": "qid_ql_chemistry",
+        "questline": "化学",
         "description": "",
         "quests": [
             {
@@ -317,6 +319,7 @@
     {
         "source_file": "Decorator.md",
         "questline": "デコレーター",
+        "id": "qid_ql_decorator",
         "description": "機械だけの島はとても退屈に見えます！デコレータークエストラインの知識を使って島を彩りましょう！これらのクエストは進行に必須ではありませんが、空っぽで荒涼とした暗い島ではゲームがつまらなくなります。だからこのクエストラインを無視しないでくださいね？ :P",
         "quests": [
             {
@@ -506,6 +509,7 @@
     {
         "source_file": "Emittrium.md",
         "questline": "エミットリウム",
+        "id": "qid_ql_emittrium",
         "description": "エミットリウムはコズミックジュールを扱う上で非常に重要な素材です。このクエストラインではエミットリウムについてすべて学べます。",
         "quests": [
             {
@@ -608,6 +612,7 @@
     {
         "source_file": "Introduction.md",
         "questline": "はじめに",
+        "id": "qid_ql_introduction",
         "description": "最初のクエストラインで、ゲームの導入です。あなたの冒険はここから始まります。\n\nクエストラインを展開するには、名前の隣のプラスをクリックするか、矢印キーを使うか、クエストライン上でダブルクリックしてください。",
         "quests": [
             {
@@ -773,6 +778,7 @@
     {
         "source_file": "Jumpdrive.md",
         "questline": "ジャンプドライブ",
+        "id": "qid_ql_jumpdrive",
         "description": "mt-mods/jumpdriveモッドの改変版で、自分自身と建築物をどこへでもテレポートできます*。",
         "quests": [
             {
@@ -824,6 +830,7 @@
     {
         "source_file": "Meteorites.md",
         "questline": "隕石",
+        "id": "qid_ql_meteorites",
         "description": "",
         "quests": [
             {
@@ -890,6 +897,7 @@
     {
         "source_file": "Organics.md",
         "questline": "有機物",
+        "id": "qid_ql_organics",
         "description": "植物や菌類を育てて、より多くのものをクラフトし、基地を格好良くしましょう。",
         "quests": [
             {
@@ -1093,6 +1101,7 @@
     {
         "source_file": "Pipeworks_and_fluid_transport.md",
         "questline": "パイプワークス",
+        "id": "qid_ql_pipeworks",
         "description": "通常のパイプワークスをご存じの方へ：Skyblock Zeroのパイプワークスはそのモッドを大幅に変更したバージョンですが、似ている部分もあります。",
         "quests": [
             {
@@ -1239,6 +1248,7 @@
     {
         "source_file": "Pipeworks_and_fluid_transport.md",
         "questline": "流体輸送",
+        "id": "qid_ql_fluid_transport",
         "description": "このクエストラインは流体の輸送についてです。",
         "quests": [
             {
@@ -1287,6 +1297,7 @@
     {
         "source_file": "Reactor.md",
         "questline": "エミットリウム炉",
+        "id": "qid_ql_reactor",
         "description": "エミットリウム炉はエネルギーを生成する別の方法です。炉殻（または炉ガラス）でできた3×3×3の立方体で、中心に炉コアがあります。一部の殻を炉電力ポート、炉冷却材ポート、炉エミットリウム入力口、炉インフォスクリーンに交換する必要があります。エミットリウムと水を消費します。\n冷却材（水）が不足すると温度が上昇し、過熱しすぎると悪いことが起きます。",
         "quests": [
             {
@@ -1366,6 +1377,7 @@
     {
         "source_file": "Secrets.md",
         "questline": "秘密",
+        "id": "qid_ql_secrets",
         "description": "",
         "quests": [
             {
@@ -1409,6 +1421,7 @@
     {
         "source_file": "Sensors.md",
         "questline": "センサー",
+        "id": "qid_ql_sensors",
         "description": "ロジックゲートを一つクラフトするだけで複数のステップが必要？大歓迎！",
         "quests": [
             {
@@ -1480,6 +1493,7 @@
     {
         "source_file": "Status_Effects.md",
         "questline": "状態効果",
+        "id": "qid_ql_status_effects",
         "description": "このクエストラインは状態効果についてすべて教えてくれます。それを受けた**後**で :>",
         "quests": [
             {
@@ -1517,6 +1531,7 @@
     {
         "source_file": "Storage.md",
         "questline": "ストレージ",
+        "id": "qid_ql_storage",
         "description": "主にドロワーとストリネーターについてです。",
         "quests": [
             {

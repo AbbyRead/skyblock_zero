@@ -2,6 +2,7 @@
     {
         "source_file": "Chemistry.md",
         "questline": "Chemistry",
+        "id": "qid_ql_chemistry",
         "description": "",
         "quests": [
             {
@@ -317,6 +318,7 @@
     {
         "source_file": "Decorator.md",
         "questline": "Decorator",
+        "id": "qid_ql_decorator",
         "description": "An island with just machines will look very boring! Use the knowledge from the Decorator Questline to spice up your island! These quests are not required for progression, but playing can get boring on an empty, barren, dark island. So don't just ignore this questline, okay? :P",
         "quests": [
             {
@@ -506,6 +508,7 @@
     {
         "source_file": "Emittrium.md",
         "questline": "Emittrium",
+        "id": "qid_ql_emittrium",
         "description": "Emittrium is a very important material when working with Cosmic Joules. This questline will teach you all about it.",
         "quests": [
             {
@@ -608,6 +611,7 @@
     {
         "source_file": "Introduction.md",
         "questline": "Introduction",
+        "id": "qid_ql_introduction",
         "description": "The first questline, to introduce you to the game. Your adventure will start here.\n\nTo expand one of those questlines, click the plus next to the name, use the arrow keys or double click on the questline.",
         "quests": [
             {
@@ -773,6 +777,7 @@
     {
         "source_file": "Jumpdrive.md",
         "questline": "Jumpdrive",
+        "id": "qid_ql_jumpdrive",
         "description": "A modified version of the mt-mods/jumpdrive mod, lets you teleport yourself, and your buildings, anywhere*.",
         "quests": [
             {
@@ -824,6 +829,7 @@
     {
         "source_file": "Meteorites.md",
         "questline": "Meteorites",
+        "id": "qid_ql_meteorites",
         "description": "",
         "quests": [
             {
@@ -890,6 +896,7 @@
     {
         "source_file": "Organics.md",
         "questline": "Organics",
+        "id": "qid_ql_organics",
         "description": "Grow plants and fungi to craft more things and also make your base look really cool.",
         "quests": [
             {
@@ -1093,6 +1100,7 @@
     {
         "source_file": "Pipeworks_and_fluid_transport.md",
         "questline": "Pipeworks",
+        "id": "qid_ql_pipeworks",
         "description": "If you already know about regular pipeworks, skyblock_zero's pipeworks are a very modified version of that mod, but it will be similar though.",
         "quests": [
             {
@@ -1239,6 +1247,7 @@
     {
         "source_file": "Pipeworks_and_fluid_transport.md",
         "questline": "Fluid Transport",
+        "id": "qid_ql_fluid_transport",
         "description": "This questline is about transporting fluids.",
         "quests": [
             {
@@ -1286,6 +1295,8 @@
     },
     {
         "source_file": "Reactor.md",
+        "questline": "Reactor",
+        "id": "qid_ql_reactor",
         "questline": "Emittrium Reactor",
         "description": "Emittrium reactors are another way of generating energy. They are a 3x3x3 cube made of reactor shells (or reactor glass), with a reactor core in the center. Some of the shells must be replaced with a reactor power port, a reactor coolant port, a reactor emittrium port, and a reactor infoscreen. It consumes emittrium and water.\nIf it doesn't have enough coolant (water), it heats up, and bad things happen if it heats up too much.",
         "quests": [
@@ -1366,6 +1377,7 @@
     {
         "source_file": "Secrets.md",
         "questline": "Secrets",
+        "id": "qid_ql_secrets",
         "description": "",
         "quests": [
             {
@@ -1409,6 +1421,7 @@
     {
         "source_file": "Sensors.md",
         "questline": "Sensors",
+        "id": "qid_ql_sensors",
         "description": "Multi-step processes just to craft some logic gates? Yes please!",
         "quests": [
             {
@@ -1480,6 +1493,7 @@
     {
         "source_file": "Status_Effects.md",
         "questline": "Status Effects",
+        "id": "qid_ql_status_effects",
         "description": "This questline tells you all about status effects, **after** you get them :>",
         "quests": [
             {
@@ -1517,6 +1531,7 @@
     {
         "source_file": "Storage.md",
         "questline": "Storage",
+        "id": "qid_ql_storage",
         "description": "Mainly about drawers and Storinators.",
         "quests": [
             {
