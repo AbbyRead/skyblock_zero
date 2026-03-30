@@ -220,7 +220,6 @@ local function decode_text_and_meta(lines, line_index, quest)
     end
     return line_index
 end
-
 function markdown_parser.decode(text)
     local quests = {}
     local lines = text:split('\n', true)
@@ -230,10 +229,10 @@ function markdown_parser.decode(text)
         local quest = {}
         local write_to_quests = false
         if starts_with(line, '## Info: ') then
-            quest.title = string.sub(line, #'## Info: ' + 1):trim()
-            quest.type  = 'text'
-            quest.info  = true
-            line_index  = decode_text_and_meta(lines, line_index, quest)
+            quest.title     = string.sub(line, #'## Info: ' + 1):trim()
+            quest.type      = 'text'
+            quest.info      = true
+            line_index      = decode_text_and_meta(lines, line_index, quest)
             write_to_quests = true
         elseif starts_with(line, '## ') then
             local name = string.sub(line, #'## ' + 1)
@@ -242,9 +241,8 @@ function markdown_parser.decode(text)
                 name   = string.sub(line, #'## Secret: ' + 1)
                 secret = true
             end
-            quest.title = name:trim() -- display text; may be translated freely
+            quest.title = name:trim()
             quest.type  = secret and 'secret' or 'quest'
-            -- quest.id is read from ### ID: inside decode_text_and_meta
             line_index  = decode_text_and_meta(lines, line_index, quest)
             assert(
                 quest.id,
@@ -252,23 +250,18 @@ function markdown_parser.decode(text)
             )
             write_to_quests = true
         elseif starts_with(line, '# ') then
-            -- Questline banner: no ID required, not part of the progression graph
+            -- Questline banner
             quest.title = string.sub(line, #'# ' + 1):trim()
-            quest.id    = quest.title -- banners use title as id; they are never referenced by Requires:
             quest.type  = 'text'
-            local desc  = {}
 
-            while true do
-                line_index = line_index + 1
-                line = lines[line_index]
-                if line == nil then break end
-                if starts_with(line, '#') then
-                    line_index = line_index - 1
-                    break
-                end
-                desc[#desc + 1] = line
-            end
-            quest.text = markdown_parser.decode_text(table.concat(desc, '\n'))
+            -- Pull the stable ID and description
+            line_index  = decode_text_and_meta(lines, line_index, quest)
+
+            -- Ensure questlines have a valid ID from the markdown file.
+            assert(
+                quest.id,
+                '[parser]: Questline "' .. quest.title .. '" is missing a ### ID: line'
+            )
             write_to_quests = true
         end
         if write_to_quests then quests[#quests + 1] = quest end
