@@ -68,8 +68,13 @@ for mod in mods/*; do
         # 1. Fix the charset
         sed -i 's/charset=CHARSET/charset=UTF-8/' "$tmp_pot"
         
-        # 2. Privacy Fix: Replace the personal info placeholder with the project issue tracker
+        # 2. Privacy Fix: Replace the personal info placeholder
         sed -i "s|^\"Last-Translator: .*\"$|\"Last-Translator: Skyblock: Zero Translation Team <${BUG_ADDRESS}>\\\\n\"|" "$tmp_pot"
+
+        # 3. Custom Header: Replace "SOME DESCRIPTIVE TITLE" with the actual mod name
+        # Convert modname to uppercase (e.g., areas -> AREAS)
+        MOD_UPPER=$(echo "$modname" | tr '[:lower:]' '[:upper:]')
+        sed -i "s/SOME DESCRIPTIVE TITLE./${MOD_UPPER} MOD TRANSLATION TEMPLATE/" "$tmp_pot"
 
         write_if_changed "$outdir/$modname.pot" "$tmp_pot"
     else
