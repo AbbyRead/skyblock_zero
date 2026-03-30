@@ -66,7 +66,12 @@ for mod in mods/*; do
             --no-wrap -o "$tmp_pot" -f -
 
     if [ -s "$tmp_pot" ]; then
+        # 1. Fix the charset
         sed -i 's/charset=CHARSET/charset=UTF-8/' "$tmp_pot"
+        
+        # 2. Privacy Fix: Replace the personal info placeholder with the project issue tracker
+        sed -i "s|^\"Last-Translator: .*\"$|\"Last-Translator: Skyblock: Zero Translation Team <${BUG_ADDRESS}>\\\\n\"|" "$tmp_pot"
+
         write_if_changed "$outdir/$modname.pot" "$tmp_pot"
     else
         rm -f "$tmp_pot"
