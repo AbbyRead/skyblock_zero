@@ -1,8 +1,6 @@
-
 # Questline: Jumpdrive
 
 A modified version of the mt-mods/jumpdrive mod, lets you teleport yourself, and your buildings, anywhere*.
-    
 
 ## Jumpdrive Backbone
 ### ID: qid_jumpdrive_backbone
@@ -10,7 +8,7 @@ A modified version of the mt-mods/jumpdrive mod, lets you teleport yourself, and
 ### Text
 
 An ingredient in making the jumpdrive engine.  
-Also used in connecting jumpdrives to a fleet controller.  
+Also used in connecting jumpdrives to a fleet controller.
 
 ### Meta
 
@@ -21,7 +19,7 @@ Requires: qid_compressor, qid_reactor_shells
 
 ### Text
 
-An ingredient in making the jumpdrive engine. May be required for other things in the future.  
+An ingredient in making the jumpdrive engine. May be required for other things in the future.
 
 ### Meta
 
@@ -47,7 +45,7 @@ If your jumpdrive flight takes too much energy, the jumpdrive can also take away
 It is good practice to use the "show" button before using the "jump" button, to see how much power your flight will consume,  
 The jumpdrive can only take away power from batteries that are in the jumpdrive range.  
   
-With protections: Jumpdrive leaves protections behind if it collides with another protected area that's not yours.  
+With protections: Jumpdrive leaves protections behind if it collides with another protected area that's not yours.
 
 ### Meta
 
@@ -60,7 +58,7 @@ Requires: qid_jumpdrive_backbone, qid_warp_device, qid_very_advanced_batteries
 
 So, I imagine you'd like to travel huge distances with the jumpdrive, well.... this will allow you to do that  
   
-Simply place one down in your target destination. Now you can teleport near it with the jumpdrive.  
+Simply place one down in your target destination. Now you can teleport near it with the jumpdrive.
 
 ### Meta
 
@@ -74,7 +72,7 @@ Requires: qid_the_jumpdrive_engine
 So... I imagine you want to move multiple jumpdrives at once... well you are lucky, this is the node for you!  
 Connect up all the jumpdrives with jumpdrive backbones, connect that to the fleet controller, and now you can use it!  
   
-Warning: Make sure to ALWAYS press "show" before jump... you don't want one of your jumpdrives to be in the wrong place...  
+Warning: Make sure to ALWAYS press "show" before jump... you don't want one of your jumpdrives to be in the wrong place...
 
 ### Meta
 

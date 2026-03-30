@@ -9,7 +9,7 @@ Damn. You fell off.
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Secret: Desolate
 ### ID: qid_secret_desolate
@@ -20,7 +20,7 @@ You talked to yourself.
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Secret: Fragile
 ### ID: qid_secret_fragile
@@ -31,7 +31,7 @@ You broke an Angel's Wing.
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Secret: AntiColorium Planets
 ### ID: qid_secret_anticolorium_planets
@@ -46,7 +46,7 @@ Hint 2: Use a screen inverter potion to reverse the effect, at the cost of a mil
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Secret: Craftageddon
 ### ID: qid_craftageddon
@@ -57,7 +57,7 @@ What would ever justify this investment??
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Secret: Alive Poets Society
 ### ID: qid_secret_alive_poets_society
@@ -68,4 +68,4 @@ Requires:
 
 ### Meta
 
-Requires: 
+Requires:

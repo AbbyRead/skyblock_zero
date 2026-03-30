@@ -1,4 +1,3 @@
-
 # Questline: Emittrium Reactor
 
 Emittrium reactors are another way of generating energy. They are a 3x3x3 cube made of reactor shells (or reactor glass), with a reactor core in the center. Some of the shells must be replaced with a reactor power port, a reactor coolant port, a reactor emittrium port, and a reactor infoscreen. It consumes emittrium and water.

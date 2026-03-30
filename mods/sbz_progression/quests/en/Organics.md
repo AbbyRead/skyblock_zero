@@ -1,4 +1,3 @@
-
 # Questline: Organics
 
 Grow plants and fungi to craft more things and also make your base look really cool.
@@ -75,7 +74,7 @@ Requires: qid_switching_station, qid_emittrium_glass, qid_dirt, qid_sprouting_pl
 
 I'm guessing you want to grow plants faster now, don't worry, this is one of the solutions!  
   
-The growth of plants above it will be 2x faster, but so will the CO₂ consumption, and you can't fertilize the dirt, you will have to manually place your plant.  
+The growth of plants above it will be 2x faster, but so will the CO₂ consumption, and you can't fertilize the dirt, you will have to manually place your plant.
 
 ### Meta
 
@@ -117,7 +116,7 @@ Requires: qid_carbon_dioxide
 There is not enough radiation in the air for plants to mutate on their own, so basic neutron emitter helps them to mutate.  
 Fully grown plants don't mutate.  
   
-The radiation coming off of the Basic Neutron Emitter is mostly harmless to players, but if there are multiple Neutron Emitters, that might become a concern, place this node near plants.  
+The radiation coming off of the Basic Neutron Emitter is mostly harmless to players, but if there are multiple Neutron Emitters, that might become a concern, place this node near plants.
 
 ### Meta
 
@@ -132,7 +131,7 @@ Unlike the other plants we've met so far, this one lives in the water, and can o
 It'll keep growing higher and higher until it reaches the surface of the water. Its sturdiness and fibrousness allow it to be crafted into Rope, which may be placed hanging from things to climb down them.  
   
 Stemfruit will grow into Fiberweed when placed under water. To grow this plant, make a small area in your habitat with water, at least 3 nodes deep, and at the bottom, place some regular Dirt. Then place the Stemfruit on the dirt you had underwater, it will sprout into fiberweed.  
-It must also be regular Dirt, Electric Soil or Fertilized Dirt won't be able to grow Fiberweed.  
+It must also be regular Dirt, Electric Soil or Fertilized Dirt won't be able to grow Fiberweed.
 
 ### Meta
 
@@ -143,7 +142,7 @@ Requires: qid_stemfruit, qid_basic_neutron_emitter
 
 ### Text
 
-Warpshrooms are used for teleport technology, they grow slightly slower than other plants, and when eaten, they teleport you around.  
+Warpshrooms are used for teleport technology, they grow slightly slower than other plants, and when eaten, they teleport you around.
 
 ### Meta
 
@@ -155,7 +154,7 @@ Requires: qid_stemfruit, qid_basic_neutron_emitter
 ### Text
 
 Shockshrooms are very energetic shrooms, so energetic that they will inflict the "shocked" effect when you step on them, and will generate a small amount of power. (better soil makes it generate more)  
-Unlike other plants, they will continue consuming CO₂ even after they have completely grown, and will keep generating power.  
+Unlike other plants, they will continue consuming CO₂ even after they have completely grown, and will keep generating power.
 
 ### Meta
 
@@ -168,7 +167,7 @@ Requires: qid_stemfruit, qid_basic_neutron_emitter
 
 When stepping on cleargrass, you get rid of almost all effects.  
 The cleargrass will boost plant growth by 25% when fully grown.  
-Unlike other plants, they will continue consuming CO₂ even after they have completely grown, and will keep boosting plant growth.  
+Unlike other plants, they will continue consuming CO₂ even after they have completely grown, and will keep boosting plant growth.
 
 ### Meta
 
@@ -180,7 +179,7 @@ Requires: qid_stemfruit, qid_basic_neutron_emitter
 ### Text
 
 When stepping on razorgrass, you will get poisoned.  
-It is used for some crafting recipes and fertilizer.  
+It is used for some crafting recipes and fertilizer.
 
 ### Meta
 
@@ -229,7 +228,7 @@ So apparently Warpshrooms make you teleport randomly when you eat them. Dunno if
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## TNT
 ### ID: qid_tnt
@@ -242,7 +241,7 @@ Normal TNT (compressed 9 tnt sticks, 81 Pyrograss) can be lit by right clicking 
   
 To complete this quest, craft a full TNT block.  
   
-Also, TNT explosions are delayed if the server is laggy, meaning you can set up 100 000 TNT and it wouldn't be much of an issue. (frog tried this)  
+Also, TNT explosions are delayed if the server is laggy, meaning you can set up 100 000 TNT and it wouldn't be much of an issue. (frog tried this)
 
 ### Meta
 
@@ -257,7 +256,7 @@ I think you want to automate that annoying harvesting of your Pyrograss... feedi
 Well no worries, node breakers and deployers make plant automation easy.  
   
 \<img name=questbook_image_organics_factory.png width=348\>  
-Side note: deployers can place 2 nodes ahead, that's a "feature" not a bug.  
+Side note: deployers can place 2 nodes ahead, that's a "feature" not a bug.
 
 ### Meta
 
@@ -278,7 +277,7 @@ Unlike plants, it does not need to be inside a Habitat Regulator.
 Achievement will unlock when your tree grows.  
 And also, Colorium Trunks can be used in the burner.  
   
-Also, you may see there is a tree core where the sapling used to be, that tree core contains the tree's DNA.  
+Also, you may see there is a tree core where the sapling used to be, that tree core contains the tree's DNA.
 
 ### Meta
 
@@ -295,7 +294,7 @@ So, do you want a different tree?
 3) Get your new sapling :D  
   
 That new sapling, when it grows, it will mutate slightly, so will the tree core.  
-You can put that new mutated tree core into the DNA Extractor, and repeat. After you do this enough times, you will get a tree completely different from the one you started with, you can go sell some tree cores to people too if you got a nice tree (assuming multiplayer) :D  
+You can put that new mutated tree core into the DNA Extractor, and repeat. After you do this enough times, you will get a tree completely different from the one you started with, you can go sell some tree cores to people too if you got a nice tree (assuming multiplayer) :D
 
 ### Meta
 
@@ -316,7 +315,7 @@ They are in the cores of "Colorium Planets", those are the planets with trees an
 Colorium Emitters are surrounded by molten metal, so you will need some strong armor (neutronium armor works, may be overkill).  
 You will get this quest when you obtain one (possibly will need to move it around in the inventory).  
   
-You can duplicate Colorium Emitters with 8 Phlogiston.  
+You can duplicate Colorium Emitters with 8 Phlogiston.
 
 ### Meta
 

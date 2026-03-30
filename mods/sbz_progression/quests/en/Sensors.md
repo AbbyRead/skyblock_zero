@@ -1,4 +1,3 @@
-
 # Questline: Sensors
 
 Multi-step processes just to craft some logic gates? Yes please!
@@ -51,7 +50,7 @@ XNOR gate - like XOR gate, but passed through a NOT gate
 XOR gate - like OR gate but passed through a NOT gate  
 NAND gate - like AND gate but passed through a NOT gate  
   
-You can complete this quest by crafting the buffer gate.  
+You can complete this quest by crafting the buffer gate.
 
 ### Meta
 

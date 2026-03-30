@@ -37,7 +37,7 @@ In your inventory, you can see a settings icon at the bottom. Clicking that take
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Info: Navigating the inventory
 ### ID: qid_navigating_the_inventory
@@ -79,7 +79,7 @@ TIP: If you lose your Quest Book, you can use /qb to get it back.
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## A bigger platform
 ### ID: qid_a_bigger_platform
@@ -89,7 +89,7 @@ Requires:
 Isn't this one node a little too crammed? Let's do something about that.  
 
 Punch the Core a little more. With nine 'Matter Dust', you can craft yourself a 'Matter Blob'.  
-If you are unable to place a matter blob next to the core, try sneaking while placing it. On multiplayer servers the area around the core may be protected.  
+If you are unable to place a matter blob next to the core, try sneaking while placing it. On multiplayer servers the area around the core may be protected.
 
 ### Meta
 
@@ -127,7 +127,7 @@ Requires: qid_a_bigger_platform, qid_antimatter
 
 Emitters are these blue nodes scattered around the core, be careful not to confuse them with the very similar looking skybox.  
 You will need an annihilator to extract resources from them, they will behave exactly the same as a core, but they will sometimes give you emittrium.  
-TIP: You can craft **Matter Platforms** to have a cheaper way of bridging out.  
+TIP: You can craft **Matter Platforms** to have a cheaper way of bridging out.
 
 ### Meta
 
@@ -185,7 +185,7 @@ Requires: qid_matter_plates
 
 Unlike most power systems, in Skyblock Zero's power system, almost all machines conduct power to other machines, so machines act like cables here.  
 Cables are useful when you have 2 far apart factories that you want to connect, or for aesthetics, or for organization.  
-The power unit is Cosmic Joules, and is abbreviated to Cj in most interfaces.  
+The power unit is Cosmic Joules, and is abbreviated to Cj in most interfaces.
 
 ### Meta
 
@@ -245,7 +245,7 @@ They also won't work with crafting recipes that have "replacements", it will ins
 - `place`: Configure  
 - `punch`: Craft one item  
 - `sneak+punch`: Craft 10 items  
-- `aux1+punch` (usually `e+punch`): Craft all items  
+- `aux1+punch` (usually `e+punch`): Craft all items
 
 ### Meta
 

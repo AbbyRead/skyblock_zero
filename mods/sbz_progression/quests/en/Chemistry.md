@@ -1,13 +1,11 @@
-
 # Questline: Chemistry
-
 
 ## Crusher
 ### ID: qid_crusher
 
 ### Text
 
-You can put in pebbles to get metals, it will also crush stones into 2 gravel each, and gravel to 2 sand each.  
+You can put in pebbles to get metals, it will also crush stones into 2 gravel each, and gravel to 2 sand each.
 
 ### Meta
 
@@ -22,7 +20,7 @@ Digital gold? Where have I heard that before...
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Furnace
 ### ID: qid_furnace
@@ -80,18 +78,18 @@ Requires: qid_crusher, qid_simple_alloy_furnace
 Have you ever wanted to turn your metals into blocks? Now you can!  
 Craft this wonderful compressor, insert 9 powder, or 9 ingots, and watch as it makes blocks out of them.  
 
-Blocks made from metals cannot be dug with Matter Annihilators, you must use the robotic arm or the drill instead.  
+Blocks made from metals cannot be dug with Matter Annihilators, you must use the robotic arm or the drill instead.
+
 ### Meta
 
 Requires: qid_crusher, qid_simple_alloy_furnace
-
 
 ## Advanced Batteries
 ### ID: qid_advanced_batteries
 
 ### Text
 
-A battery made with metals. Significantly better than the basic battery.  
+A battery made with metals. Significantly better than the basic battery.
 
 ### Meta
 
@@ -102,7 +100,7 @@ Requires: qid_batteries, qid_furnace, qid_centrifuge
 
 ### Text
 
-If you have **lots of metals** this is the battery for you! If you don't, then those metals can be put into better uses.  
+If you have **lots of metals** this is the battery for you! If you don't, then those metals can be put into better uses.
 
 ### Meta
 
@@ -113,7 +111,7 @@ Requires: qid_batteries, qid_furnace, qid_advanced_batteries
 
 ### Text
 
-Grows crystals out of stuff.  
+Grows crystals out of stuff.
 
 ### Meta
 
@@ -124,7 +122,7 @@ Requires: qid_compressor, qid_neutronium
 
 ### Text
 
-Teleport Battery teleports power across networks. Can be useful when trying to share power with other people.  
+Teleport Battery teleports power across networks. Can be useful when trying to share power with other people.
 
 ### Meta
 
@@ -159,7 +157,7 @@ You can re-fuel your jetpack by right-clicking on a battery, full recharge costs
   
 Jetpack gets de-activated when you move it in your inventory during flight, or when it runs out of charge.  
   
-The Jetpack originally used to get automatically de-activated when you stop having it in your hand, but that is no longer the case.  
+The Jetpack originally used to get automatically de-activated when you stop having it in your hand, but that is no longer the case.
 
 ### Meta
 
@@ -186,7 +184,7 @@ The electric drill has 500 uses and is powered by electricity.
 If you right click on a battery with the electric drill in your hand, it will take power from the battery and charge the drill! (Just like the jetpack)  
 It needs 1 power per 1 use.  
   
-It also digs 2x faster than the robotic arm.  
+It also digs 2x faster than the robotic arm.
 
 ### Meta
 
@@ -199,7 +197,7 @@ Requires: qid_bear_arms
 
 Craft the antimatter generator, it is best used with automation or a large array of batteries.  
 It needs 1 matter and 1 antimatter per second.  
-It's super resource hungry but gives you more power.  
+It's super resource hungry but gives you more power.
 
 ### Meta
 
@@ -210,7 +208,7 @@ Requires: qid_furnace
 
 ### Text
 
-Creates processors from silicon crystals.  
+Creates processors from silicon crystals.
 
 ### Meta
 
@@ -227,11 +225,11 @@ Wallsharing - When 2 multiblocks share a wall
 "Breaking" a multiblock - Disconnecting all the nodes of a multiblock, making it not function. This does **not** mean that any of the nodes of the multiblock would be damaged, the multiblock just won't function and will have to be re-formed.  
   
 Multiblocks will break when they are moved, or if any of their nodes are broken. This means they are not friendly to jumpdrives and you will have to form them again, this may change in the future.  
-The emittrium reactor was made before multiblocks got standardised, so some of this information that is here most likely won't apply to them.  
+The emittrium reactor was made before multiblocks got standardised, so some of this information that is here most likely won't apply to them.
 
 ### Meta
 
-Requires: 
+Requires:
 
 ## Blast Furnace
 ### ID: qid_blast_furnace
@@ -252,7 +250,7 @@ Optionally, you can add the item inputs/outputs. The item output will completely
 The blast furnace will look like this (the amount of heaters and the placement of the power port, item input and item output can be different):  
 \<img name=questbook_image_blast_furnace.png\>  
   
-To complete this quest, craft a blast furnace controller, but be aware that it doesn't end there.  
+To complete this quest, craft a blast furnace controller, but be aware that it doesn't end there.
 
 ### Meta
 
@@ -265,7 +263,7 @@ Requires: qid_compressor, qid_engraver
 
 Chemistry is boring.... what about alchemy!  
 To make phlogiston, you'll need lots of power for a very long time, be aware of that.  
-You can also make some armor from phlogiston, once it is low on durability, you can charge that armor like you would charge your jetpack.  
+You can also make some armor from phlogiston, once it is low on durability, you can charge that armor like you would charge your jetpack.
 
 ### Meta
 
@@ -293,7 +291,7 @@ Molten metal reacts with cold nodes (like water and ice), very slowly, to:
 - if flowing molten metal collides with water, it gets turned into stone  
 - if a flowing metal source collides with water, it gets turned into the node that the flowing metal was. For example molten silicon =\> silicon block  
   
-There is currently no way to make molten metal.  
+There is currently no way to make molten metal.
 
 ### Meta
 
@@ -307,7 +305,7 @@ Requires: qid_planet_teleporter
 At the center of planets, there is usually some core material.  
 In blue stone there is uranium ore, blue stone is only found in ice planets.  
 In red stone there is thorium ore, red stone is found in dead planets and colorium planets.  
-To get this achievement, you will need to put uranium or thorium powder in your inventory.  
+To get this achievement, you will need to put uranium or thorium powder in your inventory.
 
 ### Meta
 
@@ -320,7 +318,7 @@ Requires: qid_planet_teleporter
 
 You'll probably want to get thorium and uranium automatically now, no worries, it's possible.  
 Enhanced pebbles can also get you lithium, cobalt, titanium, silicon and silver.  
-Simply put a pebble into the pebble enhancer, it will become enhanced.  
+Simply put a pebble into the pebble enhancer, it will become enhanced.
 
 ### Meta
 
@@ -331,7 +329,7 @@ Requires: qid_planet_ores
 
 ### Text
 
-It is used to obtain plutonium or lead from radioactive materials (Uranium, thorium, plutonium). Only works with powders.  
+It is used to obtain plutonium or lead from radioactive materials (Uranium, thorium, plutonium). Only works with powders.
 
 ### Meta
 
@@ -360,7 +358,7 @@ Types of fuel rods:
 - uranium: explodes if not given cooling, 2200 power  
 - plutonium: must have a sufficient amount **non-radioactive** water sources (not flowing water) near the reactor, it explodes, generates 4800 power  
   
-You need at least 6 fuel rods for the reactor to power on.  
+You need at least 6 fuel rods for the reactor to power on.
 
 ### Meta
 
@@ -372,7 +370,7 @@ Requires: qid_planet_ores, qid_radiation_shielding
 ### Text
 
 Dust can grow plants at twice the speed of Dirt, but it decays after some time.  
-You can also climb it, and it is great for scaffolding.  
+You can also climb it, and it is great for scaffolding.
 
 ### Meta
 
@@ -388,8 +386,7 @@ Unwanted people won't be able to take items from machines or modify filter injec
   
 Special names ("owners") that you can add to protectors (no player can name themselves these):  
 **.meteorite** - meteorites will now explode in your area  
-**.strange_blob_spread** - strange blobs will spread in your area  
-
+**.strange_blob_spread** - strange blobs will spread in your area
 
 ### Meta
 
@@ -417,7 +414,7 @@ Or on a luacontroller, it will preserve everything it had.
 Or, with a filter injector, it will preserve... again... everything it had.  
   
 The node preservers be used on any nodes which have metadata, or inventories.  
-They can only dig nodes that the robotic arm can.  
+They can only dig nodes that the robotic arm can.
 
 ### Meta
 
@@ -445,7 +442,7 @@ Currently supported nodes:
 - teleport tube - brings up a special menu  
 - luacontroller - copies editor code, main code, memory, formspec, and links, processes the links so that they are moved with the luacontroller  
   
-P.S. if you find anything that you'd like to be compatible with the copytool, don't be afraid to make a suggestion  
+P.S. if you find anything that you'd like to be compatible with the copytool, don't be afraid to make a suggestion
 
 ### Meta
 
@@ -465,11 +462,12 @@ Aux1+sneak+right click =\> Cycles between changing nodes, rotation or both
 Right click =\> places the node, according to the mode  
 Left click =\> Replaces the node, according to the mode  
   
-It might behave weirdly with super powered lamps, be aware of that.  
+It might behave weirdly with super powered lamps, be aware of that.
 
 ### Meta
 
 Requires: qid_phlogiston_fuser
+
 <!-- ## Clay
 
 ### Text
@@ -479,6 +477,7 @@ Clay is a precursor. It has no particular use.
 ### Meta
 
 Requires: qid_crusher, qid_liquid_water -->
+
 ## Firmament
 ### ID: qid_firmament
 

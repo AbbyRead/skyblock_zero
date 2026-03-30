@@ -1,6 +1,4 @@
-
 # Questline: Meteorites
-
 
 ## Meteorites
 ### ID: qid_meteorites
@@ -25,7 +23,7 @@ Requires: qid_simple_alloy_furnace, qid_emittrium_circuits
 The laser is a tool that allows you to shoot down meteorites from far away. It is useful if you have trouble bridging/jumping to meteorites.
 
 To charge the laser, "place it" into a battery. (right-click the battery with it in your hand)  
-It also does some damage to other players if PVP is enabled.  
+It also does some damage to other players if PVP is enabled.
 
 ### Meta
 
@@ -68,7 +66,7 @@ Makes... meteorites... (no way), also it needs some space on top of it.
 But it cannot make Strange Matter meteorites.  
   
 Tip: By far, the fastest meteorite to mass produce is the Emitter meteorite.  
-Tip: Meteorites don't really explode in protected areas, you'll have to lure it into an open or unprotected area.  
+Tip: Meteorites don't really explode in protected areas, you'll have to lure it into an open or unprotected area.
 
 ### Meta
 

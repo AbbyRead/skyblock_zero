@@ -1,4 +1,3 @@
-
 # Questline: Decorator
 
 An island with just machines will look very boring! Use the knowledge from the Decorator Questline to spice up your island! These quests are not required for progression, but playing can get boring on an empty, barren, dark island. So don't just ignore this questline, okay? :P
@@ -24,7 +23,7 @@ Requires: qid_a_bigger_platform
 You can also craft Antimatter Blobs. They give off extremely faint light and unlock some lighting nodes to light up your island.  
 You can also make antimatter versions of some decorative blocks!  
   
-Previously, they used to explode when next to regular matter, but with new updates they no longer do.  
+Previously, they used to explode when next to regular matter, but with new updates they no longer do.
 
 ### Meta
 
@@ -64,7 +63,7 @@ Oh do I have the machine for you!
 With a CNC machine you can make all sorts of stairs and slabs....  
 Craft one, put in the block of your choosing*, and boom!  
   
-*The node needs to be compatible with the CNC machine, it usually will have a grey "You can make stairs with it!" text.  
+*The node needs to be compatible with the CNC machine, it usually will have a grey "You can make stairs with it!" text.
 
 ### Meta
 
@@ -116,6 +115,7 @@ Requires: qid_a_bigger_platform, qid_matter_plates
 
 ## Emitter Imitators
 ### ID: qid_emitter_imitators
+
 ### Text
 
 Emitter Imitators are decorative nodes providing light.  
@@ -185,7 +185,7 @@ For coloring nodes.
 It requires 1 colorium per each node you are coloring.  
   
 You extract colorium dust from colorium leaves, then you put it in the furnace.  
-With that colorium, you make your tool.  
+With that colorium, you make your tool.
 
 ### Meta
 
@@ -196,7 +196,7 @@ Requires: qid_colorium_trees
 
 ### Text
 
-More fancy traditional bricks to build with.  
+More fancy traditional bricks to build with.
 
 ### Meta
 

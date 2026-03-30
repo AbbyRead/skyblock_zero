@@ -1,4 +1,3 @@
-
 # Questline: Emittrium
 
 Emittrium is a very important material when working with Cosmic Joules. This questline will teach you all about it.
@@ -13,7 +12,7 @@ I would recommend to choose the closest one to you, but any Emitter works. Next,
   
 Punch your Emitter of choice until it yields some 'Raw Emittrium'. We'll refine the Emittrium later, but for now we just need it in its raw state.  
   
-Emitters have a 1/10 chance of producing Raw Emittrium, and a 9/10 chance of producing the same materials that the core does.  
+Emitters have a 1/10 chance of producing Raw Emittrium, and a 9/10 chance of producing the same materials that the core does.
 
 ### Meta
 
@@ -51,7 +50,7 @@ Requires: Obtain Emittrium
 
 Starlight Catchers are similar starlight collectors but more compact, generating 1 Cj/s.  
 But unlike starlight collectors, they need **Photon-Energy converters**, to convert their energy into usable power.  
-They won't do anything if you connect them directly to a Switching Station, as they provide power though the photon-energy converter.  
+They won't do anything if you connect them directly to a Switching Station, as they provide power though the photon-energy converter.
 
 ### Meta
 
@@ -62,7 +61,7 @@ Requires: qid_starlight_collectors
 
 ### Text
 
-For some recipes related to storing or transferring power, you'll need Emittrium Circuits. 
+For some recipes related to storing or transferring power, you'll need Emittrium Circuits.
 
 ### Meta
 
@@ -134,7 +133,7 @@ Requires: qid_concrete_plan, qid_ele_fabs
 If you are tired of not being able to have emitters wherever you want, get a Movable Emitter. Your factory could use another Emitter, no?  
 In the core of the ice planets there is a solution but be aware, you must be strong.  
   
-Movable emitters can be duplicated with 8 phlogiston.  
+Movable emitters can be duplicated with 8 phlogiston.
 
 ### Meta
 

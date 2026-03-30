@@ -1,4 +1,3 @@
-
 # Questline: Pipeworks
 
 If you already know about regular pipeworks, skyblock_zero's pipeworks are a very modified version of that mod, but it will be similar though.
@@ -37,7 +36,7 @@ Rotation: Takes items out in a cyclic order
 **The match mode (sets the behavior when taking out items):**  
 Exact match - off: If an item matches the filter, it takes out the whole stack  
 Exact match - on: If an item matches the filter and the stack is higher, it takes out the filter count. For example, if the filter is set to 5 matter and it is pulling from a stack of 60 matter, it will pull out 5 matter until the stack is below 5 or empty.  
-Threshold: If an item matches the filter and the stack is higher, it takes out items until the stack matches the filter. For example, if you have a filter of 5 matter and a stack of 60, it will pull 55 matter out of the stack.  
+Threshold: If an item matches the filter and the stack is higher, it takes out items until the stack matches the filter. For example, if you have a filter of 5 matter and a stack of 60, it will pull 55 matter out of the stack.
 
 ### Meta
 
@@ -52,7 +51,7 @@ Using advanced matter extractors, some automatic filter injectors, tubes, and a 
 Advanced matter extractors are crazy fast for their cost, so with around 5 of them, you will get lots of matter in no time.  
   
 Here is an example of one:  
-\<img name=questbook_image_matter_factory.png width=483 height=453\>  
+\<img name=questbook_image_matter_factory.png width=483 height=453\>
 
 ### Meta
 
@@ -124,7 +123,7 @@ Requires: qid_autocrafters
 
 ### Text
 
-Item Voids delete every item that goes in, and yes, these are Pipeworks trash cans. But unlike pipeworks trash cans, they show the amount of items they've destroyed.  
+Item Voids delete every item that goes in, and yes, these are Pipeworks trash cans. But unlike pipeworks trash cans, they show the amount of items they've destroyed.
 
 ### Meta
 
@@ -188,7 +187,7 @@ Requires: qid_tubes, qid_crystal_grower
 This is a tube that accepts items from all directions but only allows them to go in one direction.  
 If you hover over it, it will spawn a white particle. The direction of the white particle is the direction that the items will go in.  
   
-To change that direction, sneak and punch it on the side that you want the items to go in.  
+To change that direction, sneak and punch it on the side that you want the items to go in.
 
 ### Meta
 
@@ -271,7 +270,7 @@ So in the worst case, an item only needs to iterate through 2 things (the collec
 There aren't as many item stacks that get sent to the larger network, because those item stacks will contain more items. (Instead of sending 200 "sbz_resources:matter_dust 1", it will just send 1 "sbz_resources:matter_dust 200" if that makes sense, and that's faster)
 The high priority instatube here is redundant but useful if you aren't working with punchers.
   
-**To complete this quest, craft an instatube.**  
+**To complete this quest, craft an instatube.**
 
 ### Meta
 
@@ -330,7 +329,7 @@ Fluid Storage Tanks are storinators for fluids. They can store 100 nodes of flui
 
 Tip: Once any fluid storage has received one type of liquid, it will always continue to receive that type of liquid.  
 This means that if you have a fluid storage that was previously filled with liquid aluminium, but now you want to fill it with water, you will need to replace that fluid storage block.  
-This applies to pretty much all of fluid transport.  
+This applies to pretty much all of fluid transport.
 
 ### Meta
 
