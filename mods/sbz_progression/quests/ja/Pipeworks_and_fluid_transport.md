@@ -1,4 +1,4 @@
-# Questline: パイプワークス
+# クエストの流れ：パイプワークス
 ### ID: qid_ql_pipeworks
 
 ### Text
@@ -265,7 +265,7 @@ Tip 3：パフォーマンスの問題が重要な時だけデバッグしてく
 
 ### Meta
 
-# Questline: 流体輸送
+# クエストの流れ：流体輸送
 ### ID: qid_ql_fluid_transport
 
 ### Text

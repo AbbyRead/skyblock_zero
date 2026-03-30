@@ -1,4 +1,4 @@
-# Questline: エミットリウム
+# クエストの流れ：エミットリウム
 ### ID: qid_ql_emittrium
 
 ### Text

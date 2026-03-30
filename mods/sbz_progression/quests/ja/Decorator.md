@@ -1,4 +1,4 @@
-# Questline: デコレーター
+# クエストの流れ：デコレーター
 ### ID: qid_ql_decorator
 
 ### Text

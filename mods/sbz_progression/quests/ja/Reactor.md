@@ -1,4 +1,4 @@
-# Questline: エミットリウム炉
+# クエストの流れ：エミットリウム炉
 ### ID: qid_ql_reactor
 
 ### Text

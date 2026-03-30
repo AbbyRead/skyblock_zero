@@ -1,4 +1,4 @@
-# Questline: ストレージ
+# クエストの流れ：ストレージ
 ### ID: qid_ql_storage
 
 ### Text

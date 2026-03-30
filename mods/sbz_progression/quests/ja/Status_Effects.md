@@ -1,4 +1,4 @@
-# Questline: 状態効果
+# クエストの流れ：状態効果
 ### ID: qid_ql_status_effects
 
 ### Text

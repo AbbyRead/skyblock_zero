@@ -1,4 +1,4 @@
-# Questline: センサー
+# クエストの流れ：センサー
 ### ID: qid_ql_sensors
 
 ### Text

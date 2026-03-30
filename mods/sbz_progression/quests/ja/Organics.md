@@ -1,4 +1,4 @@
-# Questline: 有機物
+# クエストの流れ：有機物
 ### ID: qid_ql_organics
 
 ### Text

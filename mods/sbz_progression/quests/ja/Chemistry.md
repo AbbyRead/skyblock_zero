@@ -1,4 +1,4 @@
-# Questline: 化学
+# クエストの流れ：化学
 ### ID: qid_ql_chemistry
 
 ## 粉砕機

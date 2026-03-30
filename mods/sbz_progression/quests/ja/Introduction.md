@@ -1,4 +1,4 @@
-# Questline: はじめに
+# クエストの流れ：はじめに
 ### ID: qid_ql_introduction
 
 ### Text

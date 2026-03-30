@@ -1,4 +1,4 @@
-# Questline: 秘密
+# クエストの流れ：秘密
 ### ID: qid_ql_secrets
 
 ## 秘密：虚空
