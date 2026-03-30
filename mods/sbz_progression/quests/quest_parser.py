@@ -3,7 +3,6 @@ import re
 import json
 import argparse
 
-
 def parse_md_file(filepath, source_name=None):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
@@ -11,68 +10,81 @@ def parse_md_file(filepath, source_name=None):
     # Remove HTML comments
     content = re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
 
-    questline_match = re.search(r"# Questline:\s*(.+)", content)
-    questline_name = questline_match.group(1).strip() if questline_match else "Unknown"
+    results = []
 
-    # Extract description (text between questline header and first ##)
-    split_after_header = re.split(r"# Questline:.*\n", content, maxsplit=1)
-    description = ""
+    # Split by questlines
+    questline_blocks = re.split(r"\n(?=# Questline:)", content)
 
-    if len(split_after_header) > 1:
-        after_header = split_after_header[1]
+    for block in questline_blocks:
+        block = block.strip()
+        if not block.startswith("# Questline:"):
+            continue
 
-        # Everything before first quest (##)
-        desc_split = re.split(r"\n## ", after_header, maxsplit=1)
-        description = desc_split[0].strip()
+        # Questline name
+        questline_match = re.search(r"# Questline:\s*(.+)", block)
+        questline_name = questline_match.group(1).strip() if questline_match else "Unknown"
 
-    quests_raw = re.split(r"\n## ", content)[1:]
+        # Extract description (before first ##)
+        split_after_header = re.split(r"# Questline:.*\n", block, maxsplit=1)
+        description = ""
 
-    quests = []
+        if len(split_after_header) > 1:
+            after_header = split_after_header[1]
+            desc_split = re.split(r"\n## ", after_header, maxsplit=1)
+            description = desc_split[0].strip()
 
-    for raw in quests_raw:
-        title = raw.strip().splitlines()[0].strip()
+        # Extract quests
+        quests_raw = re.split(r"\n## ", block)[1:]
 
-        id_match = re.search(r"### ID:\s*(.+)", raw)
-        quest_id = id_match.group(1).strip() if id_match else None
+        quests = []
 
-        text_match = re.search(r"### Text\s*(.*?)\s*### Meta", raw, re.DOTALL)
-        text = text_match.group(1).strip() if text_match else ""
+        for raw in quests_raw:
+            title = raw.strip().splitlines()[0].strip()
 
-        requires_match = re.search(r"Requires:\s*(.*)", raw)
-        requires = []
-        if requires_match:
-            requires_raw = requires_match.group(1).strip()
-            if requires_raw:
-                requires = [r.strip() for r in requires_raw.split(",") if r.strip()]
+            id_match = re.search(r"### ID:\s*(.+)", raw)
+            quest_id = id_match.group(1).strip() if id_match else None
 
-        quests.append({
-            "title": title,
-            "id": quest_id,
-            "text": text,
-            "requires": requires
+            text_match = re.search(r"### Text\s*(.*?)\s*### Meta", raw, re.DOTALL)
+            text = text_match.group(1).strip() if text_match else ""
+
+            requires_match = re.search(r"Requires:\s*(.*)", raw)
+            requires = []
+            if requires_match:
+                requires_raw = requires_match.group(1).strip()
+                if requires_raw:
+                    requires = [r.strip() for r in requires_raw.split(",") if r.strip()]
+
+            quests.append({
+                "title": title,
+                "id": quest_id,
+                "text": text,
+                "requires": requires
+            })
+
+        results.append({
+            "source_file": source_name or os.path.basename(filepath),
+            "questline": questline_name,
+            "description": description,
+            "quests": quests
         })
 
-    return {
-        "source_file": source_name or os.path.basename(filepath),
-        "questline": questline_name,
-        "description": description,
-        "quests": quests
-    }
+    return results
 
 
 def process_input(input_path):
     results = []
 
     if os.path.isfile(input_path):
-        results.append(parse_md_file(input_path))
+        results.extend(parse_md_file(
+            input_path,
+            source_name=os.path.basename(input_path)
+        ))
 
     elif os.path.isdir(input_path):
         for filename in os.listdir(input_path):
             if filename.endswith(".md"):
                 full_path = os.path.join(input_path, filename)
-                parsed = parse_md_file(full_path)
-                parsed["source_file"] = filename
-                results.append(parsed)
+                results.extend(parse_md_file(full_path, source_name=filename))
     else:
         raise ValueError(f"Invalid path: {input_path}")
 

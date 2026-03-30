@@ -74,25 +74,35 @@ def write_output(data, output_path, include_requires=True, split_files=False):
     if split_files:
         os.makedirs(output_path, exist_ok=True)
 
+        # Group questlines by source_file
+        grouped = {}
+
         for entry in data:
             source = entry.get("source_file", "output.md")
+            grouped.setdefault(source, []).append(entry)
+
+        for source, entries in grouped.items():
             filename = os.path.splitext(source)[0] + ".md"
             full_path = os.path.join(output_path, filename)
 
-            md = questline_to_markdown(entry, include_requires)
+            all_md = []
+
+            for entry in entries:
+                all_md.append(questline_to_markdown(entry, include_requires))
+                all_md.append("")  # spacing between questlines
 
             with open(full_path, "w", encoding="utf-8") as f:
-                f.write(md)
+                f.write("\n".join(all_md).strip())
 
-        print(f"✅ Wrote {len(data)} markdown files to {output_path}")
+        print(f"✅ Wrote {len(grouped)} markdown file(s) to {output_path}")
 
     else:
-        # single output file
+        # single output file (unchanged behavior)
         all_md = []
 
         for entry in data:
             all_md.append(questline_to_markdown(entry, include_requires))
-            all_md.append("\n")
+            all_md.append("\n\n")
 
         with open(output_path, "w", encoding="utf-8") as f:
             f.write("\n".join(all_md).strip())
