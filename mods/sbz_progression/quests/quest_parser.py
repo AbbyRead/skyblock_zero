@@ -14,6 +14,17 @@ def parse_md_file(filepath, source_name=None):
     questline_match = re.search(r"# Questline:\s*(.+)", content)
     questline_name = questline_match.group(1).strip() if questline_match else "Unknown"
 
+    # Extract description (text between questline header and first ##)
+    split_after_header = re.split(r"# Questline:.*\n", content, maxsplit=1)
+    description = ""
+
+    if len(split_after_header) > 1:
+        after_header = split_after_header[1]
+
+        # Everything before first quest (##)
+        desc_split = re.split(r"\n## ", after_header, maxsplit=1)
+        description = desc_split[0].strip()
+
     quests_raw = re.split(r"\n## ", content)[1:]
 
     quests = []
@@ -44,6 +55,7 @@ def parse_md_file(filepath, source_name=None):
     return {
         "source_file": source_name or os.path.basename(filepath),
         "questline": questline_name,
+        "description": description,
         "quests": quests
     }
 
