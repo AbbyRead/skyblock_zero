@@ -37,6 +37,22 @@ local function combineWithAnd(list)
     end
 end
 
+-- Resolves a qid slug to its display title in the given language.
+-- Falls back to the raw slug if the quest doesn't exist (shouldn't happen in practice).
+local function resolve_req_title(qid, lang)
+    local quest = get_quest_by_id(qid)
+    return quest and localized(quest, 'title', lang) or qid
+end
+
+-- Maps a list of qid slugs to their localized display titles.
+local function localized_requires(requires, lang)
+    local titles = {}
+    for _, qid in ipairs(requires or {}) do
+        titles[#titles + 1] = resolve_req_title(qid, lang)
+    end
+    return titles
+end
+
 function unlock_achievement(player_name, achievement_id)
     local player = core.get_player_by_name(player_name)
     if not player then return end
@@ -256,7 +272,7 @@ local function get_questbook_formspec(selected_quest_index, player_name, quests_
                     (
                         is_quest_available(player_name, selected_quest.id)
                         and core.formspec_escape(localized(selected_quest, 'text', lang))
-                        or core.formspec_escape(S('Complete @1 to unlock.', combineWithAnd(selected_quest.requires)))
+                        or core.formspec_escape(S('Complete @1 to unlock.', combineWithAnd(localized_requires(selected_quest.requires, lang))))
                     ),
                     (
                         is_achievement_unlocked(player_name, selected_quest.id)
@@ -281,7 +297,7 @@ local function get_questbook_formspec(selected_quest_index, player_name, quests_
                     (
                         is_quest_available(player_name, selected_quest.id)
                         and core.formspec_escape(localized(selected_quest, 'text', lang))
-                        or core.formspec_escape(S('Complete @1 to unlock.', combineWithAnd(selected_quest.requires)))
+                        or core.formspec_escape(S('Complete @1 to unlock.', combineWithAnd(localized_requires(selected_quest.requires, lang))))
                     ),
                     ''
                 )

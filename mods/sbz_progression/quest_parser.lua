@@ -185,11 +185,15 @@ local function decode_text_and_meta(lines, line_index, quest)
                 line = lines[line_index]
                 if line == nil then break end
                 if starts_with(line, 'Requires: ') then
-                    quest.requires = table.foreach(
-                        string.split(string.sub(line, #'Requires: ' + 1), requires_sep_trim, false, math.huge, false),
-                        string.trim,
-                        true
-                    )
+                    local raw = string.sub(line, #'Requires: ' + 1):trim()
+                    if raw ~= '' then
+                        quest.requires = table.foreach(
+                            string.split(raw, requires_sep_trim, false, math.huge, false),
+                            string.trim,
+                            true
+                        )
+                    end
+                    -- if raw == '', leave quest.requires as nil
                 end
                 if starts_with(line, '#') then
                     line_index = line_index - 1
