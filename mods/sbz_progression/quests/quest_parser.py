@@ -24,14 +24,28 @@ def parse_md_file(filepath, source_name=None):
         questline_match = re.search(r"# Questline:\s*(.+)", block)
         questline_name = questline_match.group(1).strip() if questline_match else "Unknown"
 
-        # Extract description (before first ##)
-        split_after_header = re.split(r"# Questline:.*\n", block, maxsplit=1)
+        # Questline ID (optional)
+        ql_id_match = re.search(r"### ID:\s*(.+)", block)
+        questline_id = ql_id_match.group(1).strip() if ql_id_match else None
+
+        # Extract description (supports new ### Text format)
         description = ""
 
-        if len(split_after_header) > 1:
-            after_header = split_after_header[1]
-            desc_split = re.split(r"\n## ", after_header, maxsplit=1)
-            description = desc_split[0].strip()
+        text_match = re.search(
+            r"# Questline:.*?\n(?:### ID:.*?\n)?\s*### Text\s*(.*?)(?=\n## |\Z)",
+            block,
+            re.DOTALL
+        )
+
+        if text_match:
+            description = text_match.group(1).strip()
+        else:
+            # fallback for old format (no ### Text)
+            split_after_header = re.split(r"# Questline:.*\n", block, maxsplit=1)
+            if len(split_after_header) > 1:
+                after_header = split_after_header[1]
+                desc_split = re.split(r"\n## ", after_header, maxsplit=1)
+                description = desc_split[0].strip()
 
         # Extract quests
         quests_raw = re.split(r"\n## ", block)[1:]
@@ -64,6 +78,7 @@ def parse_md_file(filepath, source_name=None):
         results.append({
             "source_file": source_name or os.path.basename(filepath),
             "questline": questline_name,
+            "id": questline_id,
             "description": description,
             "quests": quests
         })
