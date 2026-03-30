@@ -60,7 +60,6 @@ for mod in mods/*; do
             --from-code=UTF-8 -L lua \
             -kS -kPS:1,2 -kcore.translate:1c,2 -kcore.translate_n:1c,2,3 \
             --package-name="${GAME_TITLE}" \
-            --package-version="${GAME_VERSION}" \
             --msgid-bugs-address="${BUG_ADDRESS}" \
             --copyright-holder="zanderdev" \
             --no-wrap -o "$tmp_pot" -f -
