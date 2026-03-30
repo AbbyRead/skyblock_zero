@@ -4,7 +4,7 @@ import json
 import argparse
 
 
-def parse_md_file(filepath):
+def parse_md_file(filepath, source_name=None):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -42,6 +42,7 @@ def parse_md_file(filepath):
         })
 
     return {
+        "source_file": source_name or os.path.basename(filepath),
         "questline": questline_name,
         "quests": quests
     }
