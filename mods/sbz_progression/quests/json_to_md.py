@@ -38,15 +38,21 @@ def quest_to_markdown(quest, include_requires=True):
 
 def questline_to_markdown(data, include_requires=True):
     questline_name = data.get("questline", "Unknown")
+    questline_id = data.get("id")
+    description = data.get("description", "").strip()
     quests = data.get("quests", [])
 
-    description = data.get("description", "").strip()
+    md = [f"# Questline: {questline_name}"]
 
-    md = [f"# Questline: {questline_name}", ""]
+    if questline_id:
+        md.append(f"### ID: {questline_id}")
+        md.append("")
 
     if description:
+        md.append("### Text")
+        md.append("")
         md.append(description)
-        md.append("")  # spacing before first quest
+        md.append("")
 
     for quest in quests:
         md.append(quest_to_markdown(quest, include_requires))
