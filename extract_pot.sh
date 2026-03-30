@@ -21,6 +21,7 @@ GAME_TITLE=$(grep '^title' game.conf | sed 's/^title *= *//')
 GAME_VERSION=$(git describe --tags --abbrev=0 2>/dev/null || echo "unversioned")
 BUG_ADDRESS="https://codeberg.org/skyblock_zero/skyblock_zero/issues"
 SUBMODULES=$(grep 'path = mods/' .gitmodules 2>/dev/null | sed 's|.*mods/||' || true)
+CURRENT_YEAR=$(date +%Y)
 
 # Only overwrite the file if the content (ignoring the POT-Creation-Date) has changed.
 write_if_changed() {
@@ -69,12 +70,22 @@ for mod in mods/*; do
         sed -i 's/charset=CHARSET/charset=UTF-8/' "$tmp_pot"
         
         # 2. Privacy Fix: Replace the personal info placeholder
+        #      Use | instead of / so the URL slashes don't break sed
         sed -i "s|^\"Last-Translator: .*\"$|\"Last-Translator: Skyblock: Zero Translation Team <${BUG_ADDRESS}>\\\\n\"|" "$tmp_pot"
 
-        # 3. Custom Header: Replace "SOME DESCRIPTIVE TITLE" with the actual mod name
-        # Convert modname to uppercase (e.g., areas -> AREAS)
+        # 3. Custom Header: MOD NAME TRANSLATION TEMPLATE
         MOD_UPPER=$(echo "$modname" | tr '[:lower:]' '[:upper:]')
         sed -i "s/SOME DESCRIPTIVE TITLE./${MOD_UPPER} MOD TRANSLATION TEMPLATE/" "$tmp_pot"
+
+        # 4. Remove Version
+        sed -i '/^"Project-Id-Version:/d' "$tmp_pot"
+
+        # 5. Update Copyright Year
+        CURRENT_YEAR=$(date +%Y)
+        sed -i "s/Copyright (C) YEAR/Copyright (C) $CURRENT_YEAR/" "$tmp_pot"
+
+        # 6. Set a generic Language-Team contact (also using |)
+        sed -i "s|LANGUAGE <LL@li.org>|Skyblock: Zero Translation Team <${BUG_ADDRESS}>|" "$tmp_pot"
 
         write_if_changed "$outdir/$modname.pot" "$tmp_pot"
     else
