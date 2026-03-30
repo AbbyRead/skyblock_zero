@@ -1,12 +1,12 @@
 # HUDBARS MOD TRANSLATION TEMPLATE
-# Copyright (C) 2026 zanderdev
+# Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# <Your Name> [Contact Info], <YEAR>
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
-"POT-Creation-Date: 2026-03-30 14:31-0700\n"
+"POT-Creation-Date: 2026-03-30 14:53-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
