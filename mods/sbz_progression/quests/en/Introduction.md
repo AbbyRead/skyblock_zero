@@ -1,7 +1,7 @@
-Hello, quest files will contain spoilers to secret quests.
-Maybe someone could make a parser that removes all the ### Text ### Meta stuffs
-
 # Questline: Introduction
+### ID: qid_ql_introduction
+
+### Text
 
 The first questline, to introduce you to the game. Your adventure will start here.
 

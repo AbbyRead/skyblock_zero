@@ -1,4 +1,7 @@
 # Questline: Emittrium
+### ID: qid_ql_emittrium
+
+### Text
 
 Emittrium is a very important material when working with Cosmic Joules. This questline will teach you all about it.
 

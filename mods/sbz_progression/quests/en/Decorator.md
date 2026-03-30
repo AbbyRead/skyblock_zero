@@ -1,4 +1,7 @@
 # Questline: Decorator
+### ID: qid_ql_decorator
+
+### Text
 
 An island with just machines will look very boring! Use the knowledge from the Decorator Questline to spice up your island! These quests are not required for progression, but playing can get boring on an empty, barren, dark island. So don't just ignore this questline, okay? :P
 

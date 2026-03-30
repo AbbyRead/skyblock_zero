@@ -1,4 +1,7 @@
 # Questline: Pipeworks
+### ID: qid_ql_pipeworks
+
+### Text
 
 If you already know about regular pipeworks, skyblock_zero's pipeworks are a very modified version of that mod, but it will be similar though.
 
@@ -295,6 +298,9 @@ The Pattern Storinator can be used in machines like the Meteorite Maker, where y
 Requires: qid_automatic_filter_injectors
 
 # Questline: Fluid Transport
+### ID: qid_ql_fluid_transport
+
+### Text
 
 This questline is about transporting fluids.
 

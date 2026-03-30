@@ -1,4 +1,7 @@
 # Questline: Sensors
+### ID: qid_ql_sensors
+
+### Text
 
 Multi-step processes just to craft some logic gates? Yes please!
 

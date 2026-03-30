@@ -1,4 +1,7 @@
 # Questline: Status Effects
+### ID: qid_ql_status_effects
+
+### Text
 
 This questline tells you all about status effects, **after** you get them :>
 

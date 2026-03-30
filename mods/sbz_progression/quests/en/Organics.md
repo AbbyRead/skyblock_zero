@@ -1,4 +1,7 @@
 # Questline: Organics
+### ID: qid_ql_organics
+
+### Text
 
 Grow plants and fungi to craft more things and also make your base look really cool.
 
