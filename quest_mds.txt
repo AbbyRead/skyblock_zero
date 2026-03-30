@@ -1,0 +1,2640 @@
+===== ./mods/sbz_progression/quests/en/Chemistry.md =====
+
+# Questline: Chemistry
+
+
+## Crusher
+### ID: qid_crusher
+
+### Text
+
+You can put in pebbles to get metals, it will also crush stones into 2 gravel each, and gravel to 2 sand each.  
+
+### Meta
+
+Requires: qid_concrete_plan, qid_antimatter, qid_charged_field
+
+## Secret: It's fake
+### ID: qid_its_fake
+
+### Text
+
+Digital gold? Where have I heard that before...
+
+### Meta
+
+Requires: 
+
+## Furnace
+### ID: qid_furnace
+
+### Text
+
+The High Power Electric Furnace (H.P.E.F for short), allows you to smelt any powder into an ingot, ingots are heavily used in crafting recipes. You may need to set up another generator to power it.
+
+### Meta
+
+Requires: qid_crusher
+
+## Simple Alloy Furnace
+### ID: qid_simple_alloy_furnace
+
+### Text
+
+Smelts metals into alloys.  
+Try out some combinations of metals to see which ones create alloys. Consumes 10 Power when running.
+
+### Meta
+
+Requires: qid_crusher, qid_emittrium_circuits, qid_antimatter, qid_charged_field
+
+## Bronze Age
+### ID: qid_bronze_age
+
+### Text
+
+Congratulations, Commander! You've just unlocked the Bronze Age, because nothing says 'cutting-edge space exploration' like struggling to make a metal our ancestors figured out 5,000 years ago. Sure, you've mastered faster-than-light travel, but apparently mixing `[REDACTED]` and `[REDACTED]` is still rocket science. Good luck, Space Caveman!
+
+### Meta
+
+Requires: qid_simple_alloy_furnace, qid_crusher
+
+## Centrifuge
+### ID: qid_centrifuge
+
+### Text
+
+In the centrifuge you can get:
+- sand -> silicon, gold, white sand
+- gravel -> titanium, lithium, cobalt, pebbles
+- white sand/dark sand -> silver, darker variation of said sand
+
+### Meta
+
+Requires: qid_crusher, qid_simple_alloy_furnace
+
+## Compressor
+### ID: qid_compressor
+
+### Text
+
+Have you ever wanted to turn your metals into blocks? Now you can!  
+Craft this wonderful compressor, insert 9 powder, or 9 ingots, and watch as it makes blocks out of them.  
+
+Blocks made from metals cannot be dug with Matter Annihilators, you must use the robotic arm or the drill instead.  
+### Meta
+
+Requires: qid_crusher, qid_simple_alloy_furnace
+
+
+## Advanced Batteries
+### ID: qid_advanced_batteries
+
+### Text
+
+A battery made with metals. Significantly better than the basic battery.  
+
+### Meta
+
+Requires: qid_batteries, qid_furnace, qid_centrifuge
+
+## Very Advanced Batteries
+### ID: qid_very_advanced_batteries
+
+### Text
+
+If you have **lots of metals** this is the battery for you! If you don't, then those metals can be put into better uses.  
+
+### Meta
+
+Requires: qid_batteries, qid_furnace, qid_advanced_batteries
+
+## Crystal Grower
+### ID: qid_crystal_grower
+
+### Text
+
+Grows crystals out of stuff.  
+
+### Meta
+
+Requires: qid_compressor, qid_neutronium
+
+## Teleport Battery
+### ID: qid_teleport_battery
+
+### Text
+
+Teleport Battery teleports power across networks. Can be useful when trying to share power with other people.  
+
+### Meta
+
+Requires: qid_crystal_grower
+
+## Jetpack
+### ID: qid_jetpack
+
+### Text
+
+Have you wished to fly? Do I have the tool for you...  
+  
+The controls:  
+  
+Left clicking while holding an un-activated jetpack (you can see with the red light on the texture) will activate it.  
+Left clicking while holding an activated jetpack (the light becomes green) will de-activate it  
+  
+When a jetpack is activated:  
+If you press/hold jump:  
+- jetpack applies upwards velocity to you  
+- jetpack wears down a bit  
+- you become 2x faster  
+If you press/hold both jump and shift or aux1:  
+- jetpack applies half as much upwards velocity as when you jump  
+- jetpack wears down 2x less  
+- you still become 2x faster  
+  
+The mode you are flying in can also be seen by how many particles are getting spawned.  
+The wear is setup such that it lasts you 3 minutes of constant flying  
+  
+You can re-fuel your jetpack by right-clicking on a battery, full recharge costs 20 kCj.
+  
+Jetpack gets de-activated when you move it in your inventory during flight, or when it runs out of charge.  
+  
+The Jetpack originally used to get automatically de-activated when you stop having it in your hand, but that is no longer the case.  
+
+### Meta
+
+Requires: qid_neutronium
+
+## Bear Arms
+### ID: qid_bear_arms
+
+### Text
+
+Notice the small little pun there? .. it's obvious that it tells you to craft a Robotic Arm? Oh.
+
+### Meta
+
+Requires: qid_furnace
+
+## Electric Drill
+### ID: qid_electric_drill
+
+### Text
+
+The electric drill has 500 uses and is powered by electricity.  
+  
+If you right click on a battery with the electric drill in your hand, it will take power from the battery and charge the drill! (Just like the jetpack)  
+It needs 1 power per 1 use.  
+  
+It also digs 2x faster than the robotic arm.  
+
+### Meta
+
+Requires: qid_bear_arms
+
+## Antimatter Generators
+### ID: qid_antimatter_generators
+
+### Text
+
+Craft the antimatter generator, it is best used with automation or a large array of batteries.  
+It needs 1 matter and 1 antimatter per second.  
+It's super resource hungry but gives you more power.  
+
+### Meta
+
+Requires: qid_furnace
+
+## Engraver
+### ID: qid_engraver
+
+### Text
+
+Creates processors from silicon crystals.  
+
+### Meta
+
+Requires: qid_laser, qid_crystal_grower
+
+## Info: Multiblock Terminology
+
+### Text
+
+Multiblock - A machine that is made from multiple nodes (blocks).  
+Wallsharing - When 2 multiblocks share a wall  
+"Forming" a multiblock - Connecting all the nodes of a multiblock to a controller.  
+"Breaking" a multiblock - Disconnecting all the nodes of a multiblock, making it not function. This does **not** mean that any of the nodes of the multiblock would be damaged, the multiblock just won't function and will have to be re-formed.  
+  
+Multiblocks will break when they are moved, or if any of their nodes are broken. This means they are not friendly to jumpdrives and you will have to form them again, this may change in the future.  
+The emittrium reactor was made before multiblocks got standardised, so some of this information that is here most likely won't apply to them.  
+
+### Meta
+
+Requires: 
+
+## Blast Furnace
+### ID: qid_blast_furnace
+
+### Text
+
+The Blast Furnace is a multiblock that allows you to smelt or alloy things very fast.  
+It also introduces a special mode that lets you alloy 3 items (required for some recipes), and when using the item input, it won't clog like the alloy furnace.  
+  
+**Please keep in mind, before making it, have some good ore automation, or you will find crafting it really not fun.** To get started, craft the blast furnace controller.  
+Click/tap on the "Show Build Plan" button to see what nodes the furnace will occupy. The furnace will always face one way relative to the controller.  
+Then, choose the amount of heater rows you want. Each heater smelts as fast as a regular furnace, and it will speed up "blast recipes" (recipes that require the blast furnace).  
+Then build it :D.  
+  
+Once you have built it according to the plan, don't forget to replace one machine casing (any machine casing) with one power port.  
+Optionally, you can add the item inputs/outputs. The item output will completely dump the destination inventory.  
+  
+The blast furnace will look like this (the amount of heaters and the placement of the power port, item input and item output can be different):  
+\<img name=questbook_image_blast_furnace.png\>  
+  
+To complete this quest, craft a blast furnace controller, but be aware that it doesn't end there.  
+
+### Meta
+
+Requires: qid_compressor, qid_engraver
+
+## Phlogiston Fuser
+### ID: qid_phlogiston_fuser
+
+### Text
+
+Chemistry is boring.... what about alchemy!  
+To make phlogiston, you'll need lots of power for a very long time, be aware of that.  
+You can also make some armor from phlogiston, once it is low on durability, you can charge that armor like you would charge your jetpack.  
+
+### Meta
+
+Requires: qid_crystal_grower, qid_very_advanced_batteries
+
+## Planet Teleporter
+### ID: qid_planet_teleporter
+
+### Text
+
+**Right**-click with a warp crystal to use. If you left click you will waste it. There are multiple types of planets, with some of them having rings.
+
+### Meta
+
+Requires: qid_neutronium, qid_phlogiston_fuser
+
+## Info: Inside of planets
+
+### Text
+
+In the center of a planet, there is a core, around it is some molten metal.  
+  
+Molten metal reacts with cold nodes (like water and ice), very slowly, to:  
+- if flowing molten metal collides with water, it gets turned into stone  
+- if a flowing metal source collides with water, it gets turned into the node that the flowing metal was. For example molten silicon =\> silicon block  
+  
+There is currently no way to make molten metal.  
+
+### Meta
+
+Requires: qid_planet_teleporter
+
+## Planet Ores
+### ID: qid_planet_ores
+
+### Text
+
+At the center of planets, there is usually some core material.  
+In blue stone there is uranium ore, blue stone is only found in ice planets.  
+In red stone there is thorium ore, red stone is found in dead planets and colorium planets.  
+To get this achievement, you will need to put uranium or thorium powder in your inventory.  
+
+### Meta
+
+Requires: qid_planet_teleporter
+
+## Pebble Enhancer
+### ID: qid_pebble_enhancer
+
+### Text
+
+You'll probably want to get thorium and uranium automatically now, no worries, it's possible.  
+Enhanced pebbles can also get you lithium, cobalt, titanium, silicon and silver.  
+Simply put a pebble into the pebble enhancer, it will become enhanced.  
+
+### Meta
+
+Requires: qid_planet_ores
+
+## Decay Accelerator
+### ID: qid_decay_accelerator
+
+### Text
+
+It is used to obtain plutonium or lead from radioactive materials (Uranium, thorium, plutonium). Only works with powders.  
+
+### Meta
+
+Requires: qid_planet_ores
+
+## Radiation Shielding
+### ID: qid_radiation_shielding
+
+### Text
+
+Solid charged field or lead blocks shield against radiation. Craft some shielding to complete this quest.
+
+### Meta
+
+Requires: qid_planet_ores
+
+## Nuclear Reactor
+### ID: qid_nuclear_reactor
+
+### Text
+
+If you need even more power, you might want to consider nuclear reactors.  
+  
+Types of fuel rods:  
+- thorium: doesn't explode, 800 power  
+- uranium: explodes if not given cooling, 2200 power  
+- plutonium: must have a sufficient amount **non-radioactive** water sources (not flowing water) near the reactor, it explodes, generates 4800 power  
+  
+You need at least 6 fuel rods for the reactor to power on.  
+
+### Meta
+
+Requires: qid_planet_ores, qid_radiation_shielding
+
+## Dust
+### ID: qid_dust
+
+### Text
+
+Dust can grow plants at twice the speed of Dirt, but it decays after some time.  
+You can also climb it, and it is great for scaffolding.  
+
+### Meta
+
+Requires: qid_crusher
+
+## Small Protectors
+### ID: qid_small_protectors
+
+### Text
+
+Small protectors protect a decently sized area.  
+Unwanted people won't be able to take items from machines or modify filter injectors or... like... do anything in your land... if the area is protected. Also this can't be placed anywhere near cores.  
+  
+Special names ("owners") that you can add to protectors (no player can name themselves these):  
+**.meteorite** - meteorites will now explode in your area  
+**.strange_blob_spread** - strange blobs will spread in your area  
+
+
+### Meta
+
+Requires: qid_concrete_plan, qid_furnace
+
+## Big Protectors
+### ID: qid_big_protectors
+
+### Text
+
+Large protectors are like the small protectors but bigger.
+
+### Meta
+
+Requires: qid_small_protectors
+
+## Node Preserver
+### ID: qid_node_preserver
+
+### Text
+
+The node preserver preserves any node, for example:  
+When you use it on a storinator, it will preserve all items in that storinator.  
+Or on a luacontroller, it will preserve everything it had.  
+Or, with a filter injector, it will preserve... again... everything it had.  
+  
+The node preservers be used on any nodes which have metadata, or inventories.  
+They can only dig nodes that the robotic arm can.  
+
+### Meta
+
+Requires: qid_phlogiston_fuser
+
+## Copy Tool
+### ID: qid_copy_tool
+
+### Text
+
+(Copy Tool is a tool made with the metatool library - it also combines the luatool and tubetool from the metatool modpack).  
+  
+The copy tool is used to copy settings between nodes.  
+  
+aux1+left mouse button =\> Load the configuration of the node you are pointing at, into the tool  
+left mouse button =\> Paste the configuration from the tool into the node you are pointing at, the configuration stays in the tool  
+Putting into crafting grid =\> resets the configuration of the copy tool  
+aux1+sneak+left mouse button =\> Depending on the node you've pointed at, this may open a special menu, or do the same thing as if you weren't sneaking  
+  
+Currently supported nodes:  
+- autocrafter  
+- filter injector  
+- item sorter  
+- luacontroller  
+- teleport tube - brings up a special menu  
+- luacontroller - copies editor code, main code, memory, formspec, and links, processes the links so that they are moved with the luacontroller  
+  
+P.S. if you find anything that you'd like to be compatible with the copytool, don't be afraid to make a suggestion  
+
+### Meta
+
+Requires: qid_tubes, qid_phlogiston_fuser
+
+## Bulk Placer Tool
+### ID: qid_bulk_placer_tool
+
+### Text
+
+The tool is from the "replacer" mod (specifically, SwissalpS's fork), originally called "Node replacement tool (technic)", but the name was changed in skyblock zero as that was a bit inaccurate (there is no technic here, and it can place nodes too).  
+  
+Sneak+right click =\> "Select" the node (this will be used later to decide what node to (re)place with)  
+Aux1+left click =\> Brings up a form where you can chose how the bulk placer tool will behave. Nodes that aren't rendered as a square, or are like/rendered like glass are treated as air.  
+Aux1+right click =\> Cycles through the modes without bringing up a form  
+Aux1+sneak+right click =\> Cycles between changing nodes, rotation or both  
+Right click =\> places the node, according to the mode  
+Left click =\> Replaces the node, according to the mode  
+  
+It might behave weirdly with super powered lamps, be aware of that.  
+
+### Meta
+
+Requires: qid_phlogiston_fuser
+<!-- ## Clay
+
+### Text
+
+Clay is a precursor. It has no particular use.  
+
+### Meta
+
+Requires: qid_crusher, qid_liquid_water -->
+## Firmament
+### ID: qid_firmament
+
+### Text
+
+Firmament is a very rare drop from centrifuging dust.
+
+### Meta
+
+Requires: qid_centrifuge, qid_dust
+
+## Gravitational Lens
+### ID: qid_gravitational_lens
+
+### Text
+
+Gain insight into matter by gravitational lensing.
+
+### Meta
+
+Requires: qid_neutronium
+
+## Refined Firmament
+### ID: qid_refined_firmament
+
+### Text
+
+You can refine Unrefined Firmament by looking at it through a Gravitational Lens.
+
+### Meta
+
+Requires: qid_firmament, qid_blast_furnace
+
+## Wormhole
+### ID: qid_wormhole
+
+### Text
+
+Open far-away inventories by linking them to the Wormhole.
+
+### Meta
+
+Requires: qid_refined_firmament, qid_blast_furnace, qid_phlogiston_fuser
+===== ./mods/sbz_progression/quests/en/Decorator.md =====
+
+# Questline: Decorator
+
+An island with just machines will look very boring! Use the knowledge from the Decorator Questline to spice up your island! These quests are not required for progression, but playing can get boring on an empty, barren, dark island. So don't just ignore this questline, okay? :P
+
+## Compressed Core Dust
+### ID: qid_compressed_core_dust
+
+### Text
+
+As you keep expanding your space station, you might wonder: "What am I going to do with all this Core Dust?". The answer to that question is to...  
+  
+Compress it! Compressed Core Dust can be used as a building material.
+
+### Meta
+
+Requires: qid_a_bigger_platform
+
+## More Antimatter
+### ID: qid_more_antimatter
+
+### Text
+
+You can also craft Antimatter Blobs. They give off extremely faint light and unlock some lighting nodes to light up your island.  
+You can also make antimatter versions of some decorative blocks!  
+  
+Previously, they used to explode when next to regular matter, but with new updates they no longer do.  
+
+### Meta
+
+Requires: qid_antimatter
+
+## Anti-Annihilator
+### ID: qid_anti_annihilator
+
+### Text
+
+Unfortunately, you again don't seem to be strong enough to destroy that node [antimatter nodes] once you place it, so let's craft something that can.
+
+### Meta
+
+Requires: qid_more_antimatter
+
+## Screwdriver
+### ID: qid_screwdriver
+
+### Text
+
+Screwdriver rotates nodes when you click on one with it.  
+TIP: This acts similarly to the Minetest Game screwdriver.
+
+### Meta
+
+Requires: qid_antimatter, qid_introduction
+
+## CNC Machines
+### ID: qid_cnc_machines
+
+### Text
+
+Do you want shapes that aren't blocks, like stairs or slabs?  
+Oh do I have the machine for you!  
+  
+With a CNC machine you can make all sorts of stairs and slabs....  
+Craft one, put in the block of your choosing*, and boom!  
+  
+*The node needs to be compatible with the CNC machine, it usually will have a grey "You can make stairs with it!" text.  
+
+### Meta
+
+Requires: qid_emittrium_circuits
+
+## Factory Flooring
+### ID: qid_factory_flooring
+
+### Text
+
+This is a node to use as floor for your factory, to give it those classic vibes.
+
+### Meta
+
+Requires: qid_a_bigger_platform
+
+## Tiled Factory Flooring
+### ID: qid_tiled_factory_flooring
+
+### Text
+
+A variation of Factory Flooring which adds even more tiling!
+
+### Meta
+
+Requires: qid_a_bigger_platform, qid_factory_flooring
+
+## Factory Ventilator
+### ID: qid_factory_ventilator
+
+### Text
+
+You might want a Ventilation system inside a factory, just saying.
+
+### Meta
+
+Requires: qid_factory_flooring, qid_crusher
+
+## Reinforced Matter
+### ID: qid_reinforced_matter
+
+### Text
+
+Normal matter isn't sturdy enough? Try this.
+
+### Meta
+
+Requires: qid_a_bigger_platform, qid_matter_plates
+
+## Emitter Imitators
+### ID: qid_emitter_imitators
+### Text
+
+Emitter Imitators are decorative nodes providing light.  
+  
+TIP: Emitter Imitators spawn a lot of particles when punched, try it!
+
+### Meta
+
+Requires: qid_a_bigger_platform, qid_more_antimatter
+
+## Photon Lamps
+### ID: qid_photon_lamps
+
+### Text
+
+Are Emitter Imitators too dim for you? Introducing: Photon Lamps!  
+  
+With this revolutionary technology you can light up your world the same way as with Emitter Imitators just brighter!  
+  
+To craft: A matter blob in the center, four matter plates in the corners and then just fill the rest of the spaces with regular Emitter Imitators.  
+Boom! You're done! Now you've got yourself a Photon Lamp! No more sitting in darkness! Yay!
+
+### Meta
+
+Requires: qid_emitter_imitators, qid_matter_plates
+
+## Phosphor
+### ID: qid_phosphor
+
+### Text
+
+On the other hand, you can craft an Emittrium Circuit with an Emitter Imitator to make Phosphor, a very weak light source which however is turned on and off using power. This may be useful as an indicator of whether machines are working... or for discos.
+
+### Meta
+
+Requires: qid_emitter_imitators, qid_emittrium_circuits
+
+## Signs
+### ID: qid_signs
+
+### Text
+
+Do you want to write something that's visible in the world? You should consider crafting a sign.
+
+### Meta
+
+Requires: qid_antimatter
+
+## Powered Lights
+### ID: qid_powered_lights
+
+### Text
+
+Do you want to light up an area, cheaply? Powered lamps are the way to do it, if you find something cheaper its a bug.  
+Or do you want to light up a huge area, the Super Powered Lamp is for you, it fills up a 13x13x13 cube with invisible lights for somewhat low power consumption!
+
+### Meta
+
+Requires: qid_switching_station, qid_more_antimatter, qid_emittrium_glass
+
+## Coloring Tool
+### ID: qid_coloring_tool
+
+### Text
+
+For coloring nodes.  
+It requires 1 colorium per each node you are coloring.  
+  
+You extract colorium dust from colorium leaves, then you put it in the furnace.  
+With that colorium, you make your tool.  
+
+### Meta
+
+Requires: qid_colorium_trees
+
+## Bricks
+### ID: qid_bricks
+
+### Text
+
+More fancy traditional bricks to build with.  
+
+### Meta
+
+Requires: qid_clay
+
+## Mystery Terrarium
+### ID: qid_mystery_terrarium
+
+### Text
+
+I wonder what's in there...
+
+### Meta
+
+Requires: qid_growing_plants, qid_planet_ores
+
+## Large Server Rack
+### ID: qid_large_server_rack
+
+### Text
+
+A decor node that looks like a server rack, with rainbow LEDs.
+
+### Meta
+
+Requires: qid_engraver, qid_knowledge_stations, qid_ele_fabs
+
+## Ground Line
+### ID: qid_ground_line
+
+### Text
+
+A line on the ground. Not fully 2D. Can be colored.
+
+### Meta
+
+Requires: qid_colorium_trees
+
+## Power Ground Line
+### ID: qid_power_ground_line
+
+### Text
+
+Line on the ground, just like Ground Line. Animated, conducts power like a cable.
+
+### Meta
+
+Requires: qid_colorium_trees, qid_power_cables
+
+## Antiblocks
+### ID: qid_antiblocks
+
+### Text
+
+Antiblock: Fully transparent node, which hides the faces of nodes behind them, allowing you to see through walls.
+Airlike Antiblock: The same properties as the regular Antiblock, but you can walk through it.
+
+### Meta
+
+Requires: qid_colorium_trees, qid_antimatter
+===== ./mods/sbz_progression/quests/en/Emittrium.md =====
+
+# Questline: Emittrium
+
+Emittrium is a very important material when working with Cosmic Joules. This questline will teach you all about it.
+
+## Obtain Emittrium
+### ID: qid_obtain_emittrium
+
+### Text
+
+Do you see those blue nodes in the distance? They're called Emitters. To obtain Emittrium from them, you will have to build a bridge over to one.  
+I would recommend to choose the closest one to you, but any Emitter works. Next, you'll need a Matter Annihilator. You can't destroy the Emitters, but you can chip away at them.  
+  
+Punch your Emitter of choice until it yields some 'Raw Emittrium'. We'll refine the Emittrium later, but for now we just need it in its raw state.  
+  
+Emitters have a 1/10 chance of producing Raw Emittrium, and a 9/10 chance of producing the same materials that the core does.  
+
+### Meta
+
+Requires: qid_annihilator
+
+## Power Cables
+### ID: qid_power_cables
+
+### Text
+
+To transfer power from generators to machines, you'll need Power Cables. You can get a power cable with a shapeless craft using one Raw Emittrium and one Matter Plate.  
+The cables will connect up and supply your machines with power, looking at your machine will show 'Running' if the machine is running.  
+Also, if you put a machine next to another machine, it will conduct power to that machine, so you only need power cables in some cases.  
+For example, if you have one area for plants, one area for manufacturing, cables are the nicest option to bridge the areas.
+
+### Meta
+
+Requires: qid_matter_plates, Obtain Emittrium
+
+## Starlight Collectors
+### ID: qid_starlight_collectors
+
+### Text
+
+Starlight Collectors turn the light of stars into power for you to use. But the stars are very faint, so you'll need a lot of these if you want to power a whole factory!
+
+### Meta
+
+Requires: Obtain Emittrium
+
+## Starlight Catchers
+### ID: qid_starlight_catchers
+
+### Text
+
+Starlight Catchers are similar starlight collectors but more compact, generating 1 Cj/s.  
+But unlike starlight collectors, they need **Photon-Energy converters**, to convert their energy into usable power.  
+They won't do anything if you connect them directly to a Switching Station, as they provide power though the photon-energy converter.  
+
+### Meta
+
+Requires: qid_starlight_collectors
+
+## Emittrium Circuits
+### ID: qid_emittrium_circuits
+
+### Text
+
+For some recipes related to storing or transferring power, you'll need Emittrium Circuits. 
+
+### Meta
+
+Requires: qid_matter_plates, Obtain Emittrium, qid_retaining_circuits
+
+## Batteries
+### ID: qid_batteries
+
+### Text
+
+Sometimes, you'll need to temporarily buffer some energy. That's what the Battery is for. It stores up to 5 kCj of energy. You can craft it by surrounding a Emittrium Circuit with matter blobs.
+
+TIP: Without batteries, all power that isn't being used for machines is wasted, with batteries you can store some of it.
+
+### Meta
+
+Requires: qid_emittrium_circuits
+
+## Connectors
+### ID: qid_connectors
+
+### Text
+
+If you want to turn machines on and off, you can use Connectors. They join two networks together, and you can click on them to turn them on and off.  
+IMPORTANT: Make sure that only one of the two or more joined networks has a Switching Station, or they will blow up until reaching one.
+
+### Meta
+
+Requires: qid_emittrium_circuits, qid_reinforced_matter
+
+## Angel's Wing
+### ID: qid_angels_wing
+
+### Text
+
+The Angel's Wing can make you fly. Right-Click to use, it has 100 uses. To craft, surround an Emittrium Circuit with Stone. This recipe is temporary.
+
+### Meta
+
+Requires: qid_emittrium_circuits, qid_concrete_plan
+
+## Ele Fabs
+### ID: qid_ele_fabs
+
+### Text
+
+Used to manufacture various logic components.
+
+### Meta
+
+Requires: qid_antimatter, qid_emittrium_circuits
+
+## Knowledge Stations
+### ID: qid_knowledge_stations
+
+### Text
+
+Teaches you about logic, which is not documented in this questbook but instead in the knowledge station. Good luck.
+
+### Meta
+
+Requires: qid_concrete_plan, qid_ele_fabs
+
+## Movable Emitters
+### ID: qid_movable_emitters
+
+### Text
+
+If you are tired of not being able to have emitters wherever you want, get a Movable Emitter. Your factory could use another Emitter, no?  
+In the core of the ice planets there is a solution but be aware, you must be strong.  
+  
+Movable emitters can be duplicated with 8 phlogiston.  
+
+### Meta
+
+Requires: qid_planet_teleporter
+===== ./mods/sbz_progression/quests/en/Introduction.md =====
+Hello, quest files will contain spoilers to secret quests.
+Maybe someone could make a parser that removes all the ### Text ### Meta stuffs
+
+# Questline: Introduction
+
+The first questline, to introduce you to the game. Your adventure will start here.
+
+To expand one of those questlines, click the plus next to the name, use the arrow keys or double click on the questline.
+
+## Info: General Info
+### ID: qid_general_info
+
+### Text
+
+By holding `aux1` (usually the "`e`" key), you can sprint.  
+You have 20hp. If you die, your inventory stays with you, meaning there is no reason to worry about dying.  
+
+Some commands useful for survival:
+- commands of the areas mod - protecting using areas using /protect has been disabled, but you can still do other things  
+- `/core` - teleports you to the core  
+- `/afk` - marks you as afk  
+- `/playtime` - shows your, or other player's playtime  
+- `/qb` - gives you the questbook if you don't have one  
+- `/home` - teleports you to home  
+- `/sethome` - sets your home  
+- `/drawers_fix` - if drawers appear broken just run that, yes that command is from pandorabox_custom
+- `/toggle_areas_hud` - Toggles the areas hud, useful if you don't want to always see it.  
+- `/bgm_volume` \<percentage\> - sets the background music's volume  
+
+**Hotbar switching** You can switch your hotbar row to another one by pressing `sneak` + `aux1` (usually `e`) + `left mouse button`, to cycle your hotbar in the opposite direction use `sneak` + `aux1` + `right mouse button`.
+
+**Recommended for small screens**  
+In theme settings, you can disable "Force mono font", this will make the font less good but it will make it smaller.  
+
+**Player settings**
+In your inventory, you can see a settings icon at the bottom. Clicking that takes you to player settings.
+
+### Meta
+
+Requires: 
+
+## Info: Navigating the inventory
+### ID: qid_navigating_the_inventory
+
+### Text
+
+This game uses unified inventory. You may be familiar with it if you have played modded minetest.  
+If you aren't familiar with it, here are some things to know:  
+- Top left: categories
+- Left side: A display of all the items
+**If you click on an item button, it will first show you what that item is used for.**  
+**If you click on it a second time, it will show you how to craft that item.**
+- Bottom left: Some navigation for the left side
+- Bottom right: Some miscellaneous buttons.
+- Top right: The player inventory and the crafting inventory. There are also some buttons related to crafting, feel free to play with them.
+
+### Meta
+
+Requires:
+
+## Introduction
+### ID: qid_introduction
+
+### Text
+
+Welcome, player. This is the Quest Book. Here, you can check out what tasks you can do and information about them.
+
+You can also just ignore the Quest Book if you are an experienced player.  
+
+Now, to get started: look down at the core. Punching it will give you some of your first resources.  
+You can also **hold right-click on the core**, it will be easier on you.  
+
+These quests are in no particular order, but you might need items from one quest for another.  
+The Introduction questline is designed to get you started into a couple other questlines, so it is recommended you jump between questlines occasionally.  
+
+If you need to know a recipe, search the item in the inventory, and click on it, it will bring up what it can be used for or how it can be crafted.  
+
+TIP: If you lose your Quest Book, you can use /qb to get it back.
+
+### Meta
+
+Requires: 
+
+## A bigger platform
+### ID: qid_a_bigger_platform
+
+### Text
+
+Isn't this one node a little too crammed? Let's do something about that.  
+
+Punch the Core a little more. With nine 'Matter Dust', you can craft yourself a 'Matter Blob'.  
+If you are unable to place a matter blob next to the core, try sneaking while placing it. On multiplayer servers the area around the core may be protected.  
+
+### Meta
+
+Requires: Introduction
+
+## Antimatter
+### ID: qid_antimatter
+
+### Text
+
+Unfortunately, you don't seem to be strong enough to destroy that node once you place it. That kind of sucks, so let's craft something that can. Craft some 'Antimatter Dust', we'll need it for later.
+Don't know how to craft it? The search bar in your inventory will help.
+
+### Meta
+
+Requires: Introduction
+
+## Annihilator
+### ID: qid_annihilator
+
+### Text
+
+Doesn't it feel weird to be holding antimatter? To break nodes you'll need a **Matter** Annihilator, you should craft it up now since it's used in some other crafts down the line.  
+
+Also, make sure you are crafting the **Matter** annihilator, not the **Anti**matter annihilator.
+
+### Meta
+
+Requires: qid_a_bigger_platform, qid_antimatter
+
+## Info: Bridging out
+### ID: qid_info_bridging_out
+
+### Text
+
+Emitters are these blue nodes scattered around the core, be careful not to confuse them with the very similar looking skybox.  
+You will need an annihilator to extract resources from them, they will behave exactly the same as a core, but they will sometimes give you emittrium.  
+TIP: You can craft **Matter Platforms** to have a cheaper way of bridging out.  
+
+### Meta
+
+Requires: qid_annihilator
+
+## Charged Field
+### ID: qid_charged_field
+
+### Text
+
+Now, then. We have one more thing to do before we can start automating. Can you guess what it is?  
+That's right! We need power generation.  
+
+To get going, craft yourself a Simple Charged Field.  
+But listen up! Charged Fields decay over time, leaving indestructible residue (that decays in a relatively short time) behind. Since you are using a Simple Charged Field, you should expect to have energy for about 10 minutes.  
+Generators use energy even when there's nothing connected to them. Since resources are infinite here, time is your resource. Let's get automating.
+
+### Meta
+
+Requires: Introduction
+
+## Matter Plates
+### ID: qid_matter_plates
+
+### Text
+
+Matter Plates are often used for machinery. They are simple to craft, yet very important.  
+
+You can get four Matter Plates by placing one matter blob into the crafting grid.
+
+### Meta
+
+Requires: qid_a_bigger_platform
+
+## Switching Station
+### ID: qid_switching_station
+
+### Text
+
+The Switching Station is an important node, because it is the heart of any Power Grid.  
+You **need** to have **one** Switching Station per power grid.  
+Every machine needs to be connected to a Switching Station.  
+The Switching Station also displays statistics about the Power Grid when hovered over in-world. When a machine says "no network found", it's not connected to the Switching Station and won't do anything.
+
+When you right-click a Switching Station, you will see a summary of all the machines connected.
+
+### Meta
+
+Requires: qid_matter_plates
+
+## Info: What conducts power?
+### ID: qid_info_what_conducts_power
+
+### Text
+
+Unlike most power systems, in Skyblock Zero's power system, almost all machines conduct power to other machines, so machines act like cables here.  
+Cables are useful when you have 2 far apart factories that you want to connect, or for aesthetics, or for organization.  
+The power unit is Cosmic Joules, and is abbreviated to Cj in most interfaces.  
+
+### Meta
+
+Requires: qid_switching_station
+
+## Automation
+### ID: qid_automation
+
+### Text
+
+Finally! Automation! Let's get on that, shall we? You will need a **Simple Matter Extractor** and some **power** for that.
+TIP: Some early game machines without power emit red particles.
+
+### Meta
+
+Requires: qid_annihilator, qid_charged_field
+
+## Advanced Extractors
+### ID: qid_advanced_extractors
+
+### Text
+
+That's a shiny new machine you've got there! Do you also want to triple your production? Only for DOUBLE THE POWER? Sure you do.  
+  
+For Advanced Extractors you'll need a Simple Matter Extractor, then four Matter Annihilators and four matter Blobs. That's a lot of resources, but this Extractor will also occasionally generate Core Dust!  
+  
+For the curious, an Advanced Extractor has a 4% chance of extracting core dust. This means a core dust will be extracted every 40 seconds (on average), and it is about 3 times better at making matter dust.
+
+### Meta
+
+Requires: qid_automation
+
+## Circuitry
+### ID: qid_circuitry
+
+### Text
+
+Circuits are important crafting components for future recipes. You'll need them for lots of recipes, and many of them too.  
+  
+Simple Circuits are currently your only available Circuit type, but there are different circuit types which will be used in the future. Also, all different Circuit types use Simple Circuits as their base.  
+  
+To craft a Simple Circuit, you'll need one core dust and one matter blob. You'll get two Simple Circuits from that craft.
+
+### Meta
+
+Requires: qid_a_bigger_platform
+
+## Manual Crafters
+### ID: qid_manual_crafters
+
+### Text
+
+Manual crafters are nodes that allow you to craft things very quickly. They do not require power, and **cannot** be used with automation.  
+They also won't work with crafting recipes that have "replacements", it will instead simply consume those items. (Recipes like that are very rare in sbz, unless you modified it.)  
+
+**Controls:**  
+- `place`: Configure  
+- `punch`: Craft one item  
+- `sneak+punch`: Craft 10 items  
+- `aux1+punch` (usually `e+punch`): Craft all items  
+
+### Meta
+
+Requires: qid_circuitry
+
+## Generators
+### ID: qid_generators
+
+### Text
+
+Right now, you're probably using Simple Charged Fields to generate your power, but since they decay, they don't last forever, which is not convenient.  
+  
+To solve that, you can use a Simple Charge Generator. It consumes **charged particles** as fuel over time, and provides you with more power than Simple Charged Fields do. You can use **core dust** to fuel it as well.
+
+It generates `36 Cj` with charged particles, `30 Cj` with core dust.
+
+### Meta
+
+Requires: qid_charged_field, qid_antimatter
+
+## Retaining Circuits
+### ID: qid_retaining_circuits
+
+### Text
+
+Retaining Circuits are a type of Circuit often used in nodes which store items, either permanently or temporarily. Circuits depend on other circuits which is why you will need a Simple Circuit to craft this Circuit.  
+  
+Unlike Simple Circuits, this will only craft one Retaining Circuit.
+
+TIP: With retaining circuits, you can craft **Storinators** to permanently store items outside of your inventory. (They are documented in the storage questline)
+
+### Meta
+
+Requires: qid_antimatter, qid_circuitry
+
+## Pretty Pebbles
+### ID: qid_pretty_pebbles
+
+### Text
+
+We're making the jump from generic matter to stone now! Here is where building a space station gets fun!  
+  
+First, before we can make Stone nodes we will need Pebbles. They are quite difficult to make, requiring **three matter blobs**, so **having at least 4 advanced matter extractors is recommended**, as you will need a lot of pebbles.  
+Pebbles will unlock a lot of decorative nodes to spice up your island, as well as plenty of tech, and if you want you can even start building your own planet. It's all up to your imagination!
+
+### Meta
+
+Requires: qid_a_bigger_platform
+
+## Concrete Plan
+### ID: qid_concrete_plan
+
+### Text
+
+Just regular old boring stone, nothing really to add here. Like, it's literally just stone. You know, the kind that would make even a rock collector yawn and say, "I've seen gravel with more personality". It sits around all day, doing nothing. No metamorphosis, no glittering crystals, just living its best sedentary life.  
+  
+That said, it's made using 9 pebbles.
+
+### Meta
+
+Requires: qid_pretty_pebbles
+
+## Info: What to do next?
+### ID: qid_info_what_to_do_next
+
+### Text
+
+The questbook isn't meant to be explored linearly. You should do quests in whichever order you like.
+If you have inventory issues, the storage questline is within your reach.
+If you want to explore more machines, check out the emittrium and chemistry questline.
+You should also check out the meteorites questline, if you don't, you might wish that you saw it sooner.
+If you are a decorator, there is a questline for you too.
+If you want to actually automate (you know, the fun part), see the pipeworks questline. Do that as soon as you can.
+
+You can also filter reachable quests (Quests that you can see the descriptions of, but haven't completed yet) by typing "reachable" into the questbook search bar
+
+Tip: When setting a goal, explore other quests to see if that goal could be done faster by using the tools from those quests. 
+Example: Getting the Very Advanced Battery would be greatly helped by the pipeworks questline.
+
+### Meta
+
+Requires: qid_concrete_plan
+===== ./mods/sbz_progression/quests/en/Jumpdrive.md =====
+
+# Questline: Jumpdrive
+
+A modified version of the mt-mods/jumpdrive mod, lets you teleport yourself, and your buildings, anywhere*.
+    
+
+## Jumpdrive Backbone
+### ID: qid_jumpdrive_backbone
+
+### Text
+
+An ingredient in making the jumpdrive engine.  
+Also used in connecting jumpdrives to a fleet controller.  
+
+### Meta
+
+Requires: qid_compressor, qid_reactor_shells
+
+## Warp Device
+### ID: qid_warp_device
+
+### Text
+
+An ingredient in making the jumpdrive engine. May be required for other things in the future.  
+
+### Meta
+
+Requires: qid_crystal_grower, qid_antimatter_generators
+
+## The Jumpdrive (engine)
+### ID: qid_the_jumpdrive_engine
+
+### Text
+
+Lets you teleport your buildings with you, to any* coordinate....  
+  
+*Though in skyblock zero, this has been slightly modified: Without a jumpdrive station near the target, you can only travel 500 blocks away from your current position... But if you have a jumpdrive station, near (50 blocks away) your target position, you can teleport there.  
+  
+The jumpdrive also acts as a battery, storing 200 kCj, this also means it can be discharged, be aware of that.  
+  
+If you punch the jumpdrive with an empty hand, you will see an outline of what nodes it will teleport.  
+  
+You can transport emitters with the jumpdrive.  
+Also, emitters stop spawning after y=1000, so you can transport stuff more easily there, since no emitters will interfere with you.  
+  
+If your jumpdrive flight takes too much energy, the jumpdrive can also take away power from other batteries, it will do this automatically, but its 4 times less efficient compared to using regular jumpdrive's power.  
+It is good practice to use the "show" button before using the "jump" button, to see how much power your flight will consume,  
+The jumpdrive can only take away power from batteries that are in the jumpdrive range.  
+  
+With protections: Jumpdrive leaves protections behind if it collides with another protected area that's not yours.  
+
+### Meta
+
+Requires: qid_jumpdrive_backbone, qid_warp_device, qid_very_advanced_batteries
+
+## Jumpdrive Stations
+### ID: qid_jumpdrive_stations
+
+### Text
+
+So, I imagine you'd like to travel huge distances with the jumpdrive, well.... this will allow you to do that  
+  
+Simply place one down in your target destination. Now you can teleport near it with the jumpdrive.  
+
+### Meta
+
+Requires: qid_the_jumpdrive_engine
+
+## Jumpdrive Fleet Controller
+### ID: qid_jumpdrive_fleet_controller
+
+### Text
+
+So... I imagine you want to move multiple jumpdrives at once... well you are lucky, this is the node for you!  
+Connect up all the jumpdrives with jumpdrive backbones, connect that to the fleet controller, and now you can use it!  
+  
+Warning: Make sure to ALWAYS press "show" before jump... you don't want one of your jumpdrives to be in the wrong place...  
+
+### Meta
+
+Requires: qid_jumpdrive_backbone
+===== ./mods/sbz_progression/quests/en/Meteorites.md =====
+
+# Questline: Meteorites
+
+
+## Meteorites
+### ID: qid_meteorites
+
+### Text
+
+By this point you've probably been here for at least an hour. You've almost certainly noticed the funny meteorites that whiz past your core occasionally.  
+These are actually a source of metal as well. If you can stop them, which is really hard when you don't know where they're going. But with the alloys you've got, you can craft a **Meteorite Radar**, which shows you their trajectory and makes them much easier to catch.  
+When there is no meteorite nearby, it will do nothing. It'll probably still take a few tries though. When meteorites explode, they will turn into neutronium and some meteoric matter, all meteoric matter decays after a hour. Neutronium and Strange Matter do not decay.
+
+TIP: The Meteorite Radar consumes **40 Cj** when a meteorite is nearby, but it will consume only **10 Cj** if it can't detect a meteorite. Be sure to have a battery when using it.
+
+### Meta
+
+Requires: qid_simple_alloy_furnace, qid_emittrium_circuits
+
+## Laser
+### ID: qid_laser
+
+### Text
+
+The laser is a tool that allows you to shoot down meteorites from far away. It is useful if you have trouble bridging/jumping to meteorites.
+
+To charge the laser, "place it" into a battery. (right-click the battery with it in your hand)  
+It also does some damage to other players if PVP is enabled.  
+
+### Meta
+
+Requires: qid_simple_alloy_furnace, qid_emittrium_circuits
+
+## Neutronium
+### ID: qid_neutronium
+
+### Text
+
+In the core of a meteorite, you can find a single piece of very dense matter called Neutronium. It's so dense that you can craft it into a Gravitational Attractor, which attracts other passing meteorites and gets you even more metal, or a Gravitational Repulsor which drives them away.  
+To complete this quest, make a Gravitational attractor.
+
+### Meta
+
+Requires: qid_meteorites
+
+## Antineutronium
+### ID: qid_antineutronium
+
+### Text
+
+Sometimes, meteorites whizzing by will be made of antimatter instead of regular matter. These meteorites have Antineutronium in their core.  
+Antineutronium can be crafted into a Gravitational Repulsor, which repulses meteorites.  
+
+To complete this quest, make a Gravitational Repulsor.
+  
+TIP: Build a shield out of compressed core dust to protect against Antimatter meteorites.
+
+### Meta
+
+Requires: qid_meteorites
+
+## Meteorite Maker
+### ID: qid_meteorite_maker
+
+### Text
+
+Makes... meteorites... (no way), also it needs some space on top of it.  
+But it cannot make Strange Matter meteorites.  
+  
+Tip: By far, the fastest meteorite to mass produce is the Emitter meteorite.  
+Tip: Meteorites don't really explode in protected areas, you'll have to lure it into an open or unprotected area.  
+
+### Meta
+
+Requires: qid_autocrafters, qid_neutronium
+
+## It's strange...
+### ID: qid_its_strange
+
+### Text
+
+Strange Matter can spread to both matter and antimatter.
+  
+Strange Matter won't spread to "charged" nodes or machines, or protected areas.  
+So it's best to protect your area, even if you are in singleplayer, to defend against strange matter.  
+  
+Strange Matter meteorites spawn if you are 100 nodes away from the core.
+
+### Meta
+
+Requires: qid_neutronium
+
+## Strange Blob Cleaner
+### ID: qid_strange_blob_cleaner
+
+### Text
+
+Restores what was destroyed by Strange Blobs.
+
+### Meta
+
+Requires: qid_its_strange
+===== ./mods/sbz_progression/quests/en/Organics.md =====
+
+# Questline: Organics
+
+Grow plants and fungi to craft more things and also make your base look really cool.
+
+## Liquid Water
+### ID: qid_liquid_water
+
+### Text
+
+Crushing pebbles squeezes out a bit of water. You can take advantage of this by crafting some fluid cells and putting them in the crusher output to collect it. Once you've done that, go build a little pool or something. :)
+
+### Meta
+
+Requires: qid_crusher
+
+## Emittrium Glass
+### ID: qid_emittrium_glass
+
+### Text
+
+The other preliminary we need before we can start growing plants is Glass. Thankfully it's really easy to craft, it only needs emittrium and antimatter and crafts a lot of glass.
+
+### Meta
+
+Requires: qid_antimatter, Obtain Emittrium
+
+## Dirt
+### ID: qid_dirt
+
+### Text
+
+If you've followed my instructions and built a pool, you should notice Moss beginning to grow around it, and Algae on top of it, if there's enough light. Take some of that Moss and craft it into Dirt.
+
+### Meta
+
+Requires: qid_liquid_water
+
+## Sprouting Plants
+### ID: qid_sprouting_plants
+
+### Text
+
+You'll also need to craft the Algae on your pool into Fertilizer. This is useful for forcing dormant seeds in Dirt to germinate.
+
+### Meta
+
+Requires: qid_liquid_water
+
+## Growing Plants
+### ID: qid_growing_plants
+
+### Text
+
+Alright, this is where it gets complicated, so read carefully.  
+  
+All plants except Moss and Algae need to be placed in a habitat in order to grow properly. This means a fully enclosed room with a powered Habitat Regulator placed inside it.  
+Plants also need : water next to the node they're on and heat from nearby light sources.  
+If they don't get these things, they'll start to wilt and die instead of growing. So take that into consideration when designing a habitat.  
+  
+Also, you can use the airtight power cable to deliver power to the Switching Station and make sure to not put things like slabs or stairs in the walls.  
+  
+To complete this quest, place a Habitat Regulator inside your habitat.  
+  
+**Tip: make the habitat walls out of solid nodes (Emittrium Glass is one of the cheapest), and airlocks, do not use things like stairs, or Meteorite Radars in the construction of your habitat. At most, use things that look like solid-full cubes. Also make sure that the Habitat Regulator isn't inside the wall, but inside the room you built.**
+
+### Meta
+
+Requires: qid_switching_station, qid_emittrium_glass, qid_dirt, qid_sprouting_plants
+
+## Fertilized Dirt
+### ID: qid_fertilized_dirt
+
+### Text
+
+I'm guessing you want to grow plants faster now, don't worry, this is one of the solutions!  
+  
+The growth of plants above it will be 2x faster, but so will the CO₂ consumption, and you can't fertilize the dirt, you will have to manually place your plant.  
+
+### Meta
+
+Requires: qid_growing_plants
+
+## Carbon Dioxide
+### ID: qid_carbon_dioxide
+
+### Text
+
+So now that you have a habitat, all you've got to do is use some Fertilizer on some dirt inside it. Keep trying until you get a sort of purple grass - this is Pyrograss, a hardy yet very flammable monocotyledon. Wait for it to grow to full height and then harvest it.  
+  
+There is one more thing which almost all plants except Pyrograss need: CO₂, which they use to photosynthesize. To produce some, simply craft a Burner from Pyrograss and some other stuff. If placed in a habitat this will burn organic items placed inside it to release CO₂ into the habitat's atmosphere - no power necessary.  
+  
+Some items are better than others, try out a few and see what works best!  
+Keep in mind, the excess CO₂ produced by the burner will stay in the habitat, so this means you can have a burner running, and it would build up CO₂ in the habitat. If the burner generates more CO₂ than the habitat can store, it can store a bit of CO₂ on its own, but it will stop burning when it is storing CO₂.  
+The size of the habitat determines how much CO₂ it can hold.
+
+### Meta
+
+Requires: qid_growing_plants, qid_annihilator
+
+## Stemfruit
+### ID: qid_stemfruit
+
+### Text
+
+The only other plant you can get from fertilizing dirt is Stemfruit; you won't need to grow much of these, but due to their unusual genetic instability, they will very easily mutate to other types of plants, even when provided a very small amount of radiation.
+
+### Meta
+
+Requires: qid_carbon_dioxide
+
+## Basic Neutron Emitter
+### ID: qid_basic_neutron_emitter
+
+### Text
+
+There is not enough radiation in the air for plants to mutate on their own, so basic neutron emitter helps them to mutate.  
+Fully grown plants don't mutate.  
+  
+The radiation coming off of the Basic Neutron Emitter is mostly harmless to players, but if there are multiple Neutron Emitters, that might become a concern, place this node near plants.  
+
+### Meta
+
+Requires: qid_growing_plants, qid_neutronium
+
+## Fiberweed
+### ID: qid_fiberweed
+
+### Text
+
+Unlike the other plants we've met so far, this one lives in the water, and can only be planted on regular Dirt.  
+It'll keep growing higher and higher until it reaches the surface of the water. Its sturdiness and fibrousness allow it to be crafted into Rope, which may be placed hanging from things to climb down them.  
+  
+Stemfruit will grow into Fiberweed when placed under water. To grow this plant, make a small area in your habitat with water, at least 3 nodes deep, and at the bottom, place some regular Dirt. Then place the Stemfruit on the dirt you had underwater, it will sprout into fiberweed.  
+It must also be regular Dirt, Electric Soil or Fertilized Dirt won't be able to grow Fiberweed.  
+
+### Meta
+
+Requires: qid_stemfruit, qid_basic_neutron_emitter
+
+## Warpshrooms
+### ID: qid_warpshrooms
+
+### Text
+
+Warpshrooms are used for teleport technology, they grow slightly slower than other plants, and when eaten, they teleport you around.  
+
+### Meta
+
+Requires: qid_stemfruit, qid_basic_neutron_emitter
+
+## Shockshrooms
+### ID: qid_shockshrooms
+
+### Text
+
+Shockshrooms are very energetic shrooms, so energetic that they will inflict the "shocked" effect when you step on them, and will generate a small amount of power. (better soil makes it generate more)  
+Unlike other plants, they will continue consuming CO₂ even after they have completely grown, and will keep generating power.  
+
+### Meta
+
+Requires: qid_stemfruit, qid_basic_neutron_emitter
+
+## Cleargrass
+### ID: qid_cleargrass
+
+### Text
+
+When stepping on cleargrass, you get rid of almost all effects.  
+The cleargrass will boost plant growth by 25% when fully grown.  
+Unlike other plants, they will continue consuming CO₂ even after they have completely grown, and will keep boosting plant growth.  
+
+### Meta
+
+Requires: qid_stemfruit, qid_basic_neutron_emitter
+
+## Razorgrass
+### ID: qid_razorgrass
+
+### Text
+
+When stepping on razorgrass, you will get poisoned.  
+It is used for some crafting recipes and fertilizer.  
+
+### Meta
+
+Requires: qid_stemfruit, qid_basic_neutron_emitter
+
+## Electric Soil
+### ID: qid_electric_soil
+
+### Text
+
+Was fertilized dirt too slow? Electric soil should be a good upgrade... or bad... Depending on what you need.  
+Electric soil will make plants grow a LOT faster, and consume a LOT more CO₂, and the electric soil itself needs 40 Cj every second to run.
+
+### Meta
+
+Requires: qid_shockshrooms
+
+## Airlocks
+### ID: qid_airlocks
+
+### Text
+
+Tired of breaking a hole in the wall whenever you want to enter a habitat? Introducing the Airlock: a node which holds in the atmosphere while letting you effortlessly walk through.
+
+### Meta
+
+Requires: qid_growing_plants, qid_emittrium_glass
+
+## CO2 Compactors
+### ID: qid_co2_compactors
+
+### Text
+
+I'll assume you want to store a little more carbon dioxide in your habitat, if so CO₂ compactors are excellent for that, they store 30 carbon dioxide in one node, so would be equivalent to 30 empty air nodes.
+
+### Meta
+
+Requires: qid_stemfruit, qid_airlocks
+
+## Secret: Not Chorus Fruit
+### ID: qid_secret_not_chorus_fruit
+
+### Text
+
+So apparently Warpshrooms make you teleport randomly when you eat them. Dunno if that makes up for how long they take to grow.
+
+### Meta
+
+Requires: 
+
+## TNT
+### ID: qid_tnt
+
+### Text
+
+There are TNT sticks, they are made by compressing 9 Pyrograss. These TNT sticks can be thrown and they can be used in combat.  
+  
+Normal TNT (compressed 9 tnt sticks, 81 Pyrograss) can be lit by right clicking it. TNT knocks back entities (regardless of if there is line of sight) and damages entities only if there is line of sight.  
+  
+To complete this quest, craft a full TNT block.  
+  
+Also, TNT explosions are delayed if the server is laggy, meaning you can set up 100 000 TNT and it wouldn't be much of an issue. (frog tried this)  
+
+### Meta
+
+Requires: qid_growing_plants
+
+## Info: Organics Automation
+### ID: qid_info_organics_automation
+
+### Text
+
+I think you want to automate that annoying harvesting of your Pyrograss... feeding the burner every day... very boring right!  
+Well no worries, node breakers and deployers make plant automation easy.  
+  
+\<img name=questbook_image_organics_factory.png width=348\>  
+Side note: deployers can place 2 nodes ahead, that's a "feature" not a bug.  
+
+### Meta
+
+Requires: qid_liquid_water
+
+## Colorium Trees
+### ID: qid_colorium_trees
+
+### Text
+
+Have you dreamed of like... coloring... nodes... or like... having some trees? You can do/have that now.  
+So, how do you grow them:  
+1) Obtain the sapling  
+2) Put a strong light source next to it  
+3) Wait or use Fertilizer on it  
+  
+Unlike plants, it does not need to be inside a Habitat Regulator.  
+Achievement will unlock when your tree grows.  
+And also, Colorium Trunks can be used in the burner.  
+  
+Also, you may see there is a tree core where the sapling used to be, that tree core contains the tree's DNA.  
+
+### Meta
+
+Requires: qid_neutronium
+
+## Dna Extractor
+### ID: qid_dna_extractor
+
+### Text
+
+So, do you want a different tree?  
+1) Put your tree core in the DNA Extractor  
+2) Put your saplings (doesn't matter if they are the default saplings, or already have some dna on them)  
+3) Get your new sapling :D  
+  
+That new sapling, when it grows, it will mutate slightly, so will the tree core.  
+You can put that new mutated tree core into the DNA Extractor, and repeat. After you do this enough times, you will get a tree completely different from the one you started with, you can go sell some tree cores to people too if you got a nice tree (assuming multiplayer) :D  
+
+### Meta
+
+Requires: qid_colorium_trees
+
+## Colorium Emitters
+### ID: qid_colorium_emitters
+
+### Text
+
+Tree farms are difficult, and sometimes needlessly laggy, so Colorium Emitters were made as a solution.  
+When you place them, don't worry, they can be dug.  
+They can also be colored, darker colors look weird, you should try them.  
+They can drop a sapling, a tree trunk or a leaf.  
+  
+So... how do you get them....  
+They are in the cores of "Colorium Planets", those are the planets with trees and Pyrograss.  
+Colorium Emitters are surrounded by molten metal, so you will need some strong armor (neutronium armor works, may be overkill).  
+You will get this quest when you obtain one (possibly will need to move it around in the inventory).  
+  
+You can duplicate Colorium Emitters with 8 Phlogiston.  
+
+### Meta
+
+Requires: qid_colorium_trees, qid_phlogiston_fuser
+===== ./mods/sbz_progression/quests/en/Pipeworks_and_fluid_transport.md =====
+
+# Questline: Pipeworks
+
+If you already know about regular pipeworks, skyblock_zero's pipeworks are a very modified version of that mod, but it will be similar though.
+
+## Tubes
+### ID: qid_tubes
+
+### Text
+
+Have you ever wanted to automatically move items around without input?  
+  
+Now you can!  
+  
+Tubes are, well, tubes that can transport items around! Currently, you can't interact with them, but just have some lying around—the next and future quests use them.  
+  
+TIP: Items in tubes will go into directions with higher tube priority. The default tube priority is 100.
+
+### Meta
+
+Requires: qid_furnace
+
+## Automatic Filter-Injectors
+### ID: qid_automatic_filter_injectors
+
+### Text
+
+Have you ever been tired of taking items out of nodes? Do you just want to interact with tubes as soon as possible?  
+Now you can!  
+The Automatic Filter-Injector takes stacks of items from nodes and places them into tubes or other nodes.  
+  
+\<big\>The Automatic Filter-Injector has two settings:\</big\>  
+**The slot sequence (allows you to change the order that items are taken out):**  
+Priority: Takes items out in first-out order  
+Randomly: Takes items out in a random order  
+Rotation: Takes items out in a cyclic order  
+**The match mode (sets the behavior when taking out items):**  
+Exact match - off: If an item matches the filter, it takes out the whole stack  
+Exact match - on: If an item matches the filter and the stack is higher, it takes out the filter count. For example, if the filter is set to 5 matter and it is pulling from a stack of 60 matter, it will pull out 5 matter until the stack is below 5 or empty.  
+Threshold: If an item matches the filter and the stack is higher, it takes out items until the stack matches the filter. For example, if you have a filter of 5 matter and a stack of 60, it will pull 55 matter out of the stack.  
+
+### Meta
+
+Requires: qid_bear_arms, qid_tubes
+
+## Info: Matter Factory
+### ID: qid_info_matter_factory
+
+### Text
+
+Using advanced matter extractors, some automatic filter injectors, tubes, and a Storinator, you can make a really good matter factory.  
+Advanced matter extractors are crazy fast for their cost, so with around 5 of them, you will get lots of matter in no time.  
+  
+Here is an example of one:  
+\<img name=questbook_image_matter_factory.png width=483 height=453\>  
+
+### Meta
+
+Requires: qid_automatic_filter_injectors, qid_tubes
+
+## Node Breakers
+### ID: qid_node_breakers
+
+### Text
+
+Node Breakers try to break the node in front of them. The drops are ejected out the back-side. They need 20 power for each node dug. To make "caveman automation" (non-Lua automation) more powerful, plants that haven't finished growing cannot be dug by the Node Breaker. If you insert a tool that requires power (for example, a laser), the node breaker will try to charge it, consuming more power.
+
+### Meta
+
+Requires: qid_automatic_filter_injectors
+
+## Deployers
+### ID: qid_deployers
+
+### Text
+
+Deployers try to place a node into their front-side. That's about it.
+
+### Meta
+
+Requires: qid_automatic_filter_injectors, qid_bear_arms
+
+## Punchers
+### ID: qid_punchers
+
+### Text
+
+Punchers punch stuff, allowing you to automate resource generation even more. But you need to give them something to punch with.
+
+### Meta
+
+Requires: qid_automatic_filter_injectors, qid_bear_arms, qid_emittrium_circuits
+
+## Autocrafters
+### ID: qid_autocrafters
+
+### Text
+
+Autocrafters automatically craft. They require a crafting processor item to run, which you can upgrade as you progress through the game, to increase crafting speed.
+
+### Meta
+
+Requires: qid_bear_arms, qid_neutronium, qid_emittrium_circuits, qid_automatic_filter_injectors
+
+## Simple Crafting Processors
+### ID: qid_simple_crafting_processors
+
+### Text
+
+The first tier of Crafting Processors. This one crafts at a speed of one item per second, for 10 power. The higher tiers of crafting processors will not have quests associated with them, so here are their stats:
+
+Simple Crafting Processor: 1 item/s & 10 power
+Quick Crafting Processor: 2 items/s & 25 power
+Fast Crafting Processor: 4 items/s & 50 power
+Accelerated Silicon Crafting Processor: 8 items/s & 100 power
+Nuclear Crafting Processor: 16 items/s & 175 power
+
+### Meta
+
+Requires: qid_autocrafters
+
+## Item Voids
+### ID: qid_item_voids
+
+### Text
+
+Item Voids delete every item that goes in, and yes, these are Pipeworks trash cans. But unlike pipeworks trash cans, they show the amount of items they've destroyed.  
+
+### Meta
+
+Requires: qid_tubes
+
+## Info: Overflow Handling
+### ID: qid_info_overflow_handling
+
+### Text
+
+Tubes break when they have too many stacks in them. This may not appear as a problem at first, but when you think about it, it can be a huge issue.  
+**If we have this setup:**  
+\<img name=questbook_image_basic_setup.png\>  
+Then there might be an issue if the Storinator that we are putting items into is completely filled.  
+In cases where there is only one tube, the item will simply drop, but when there are at least two tubes, the items will wander around until eventually there are too many of them. In that case, the tubes will break.  
+How do we prevent our tubes from breaking or items from dropping?  
+Well, a simple answer would be to have more storinators :D..... but that's not practical.
+  
+**Instead, consider using item voids like this:**  
+<img name=questbook_image_overflow_handling.png>
+
+Item voids have the lowest priority, so items really don't want to go there.
+Storinators have a higher priority than Item Voids, so if the Storinator isn't full, items will want to go there.  
+Item Voids have a lower priority, so if the item can't go to the Storinator, it will go into the Item Void.  
+  
+The default priority of nodes is 100.
+
+### Meta
+
+Requires: qid_item_voids
+
+## Item Vacuums
+### ID: qid_item_vacuums
+
+### Text
+
+Item Vacuums vacuum up items in a 16-block radius, but they tend to cause lag.
+
+### Meta
+
+Requires: qid_neutronium, qid_tubes
+
+## Teleport Tubes
+### ID: qid_teleport_tubes
+
+### Text
+
+So, I think you want to transmit items over long distances. Well, teleport tubes help with that! They pretty much explain themselves, so good luck!
+  
+Oh wait, one thing to mention: items will fall off the receiving tube if you don't use a high-priority tube next to it.
+
+### Meta
+
+Requires: qid_tubes, qid_crystal_grower
+
+## One Direction Tubes
+### ID: qid_one_direction_tubes
+
+### Text
+
+This is a tube that accepts items from all directions but only allows them to go in one direction.  
+If you hover over it, it will spawn a white particle. The direction of the white particle is the direction that the items will go in.  
+  
+To change that direction, sneak and punch it on the side that you want the items to go in.  
+
+### Meta
+
+Requires: qid_tubes
+
+## Automatic Turrets
+### ID: qid_automatic_turrets
+
+### Text
+
+Do you want to automatically shoot down meteorites or even shoot down players? The automatic turret will help with that. It is similar to the node breaker but does not dig nodes. Equip it with a laser to get started. But be warned: near spawn, the turret's range gets decreased by 80%. If you insert a tool that requires power, for example lasers, it will try to charge the laser, resulting in more power usage.
+
+### Meta
+
+Requires: qid_node_breakers, qid_neutronium
+
+## Instatubes
+### ID: qid_instatubes
+
+### Text
+
+Instatubes are tubes that are instant. They are generally less laggy than their regular pipeworks tube counterparts WHEN USED CORRECTLY. They can be a lot more laggy if you use them incorrectly.  
+  
+Instatubes work differently than regular tubes.  
+They internally create a list of all the receivers, then sort the receivers based on priority. The receivers with the highest priority will be given the items first. If they are full, it will move on to the receiver with lower priority.  
+This is different from regular pipeworks tubes, in a way that's hard to explain, so a visual example is best:  
+\<img name=questbook_image_instatubes_vs_pipeworks_tubes.png\>  
+Suppose that the green storinators have a priority of 99 (they don't, but it will make explaining this easier). That is higher than regular pipeworks tubes but lower than regular storinators.  
+In that case, with default pipeworks tubes, items will flow first to the green Storinator, then once it's full, they will flow to the regular Storinator.  
+Instatubes work differently: they will choose the Storinator with the highest priority first, then the lowest. So items would flow first into the regular Storinator, and once that's full, they will flow to the green Storinator.  
+  
+Overflow handling: simply put an item void connected to the instatubes (you might need to connect it to a few low-priority tubes if you use those anywhere, as it has a priority of only one, and you can go below that).  
+  
+Now, some things are just impossible with the basic instatube, so there are more types of instatubes :D. This will cover all them.
+  
+\<big\>Priority Instatubes\</big\>  
+(Low priority instatubes, high priority instatubes)  
+  
+They change the priority of all the machines on their "branch". To explain this better, here it is visually:  
+\<img name=questbook_image_instatube_priority.png width=450\>  
+  
+\<big\>Teleport Instatube\</big\>  
+It teleports items... But isn't quite the same as using the pipeworks instatube, because teleport instatubes will check all teleport instatubes and give the item to the highest-priority receiver instead of just sending items to one randomly.  
+\<big\>Cycling Input Instatube\</big\>  
+This instatube is only useful when placed next to something that outputs items (for example, Filter Injectors and Blast Furnace Output Ports).
+It completely ignores the priority of receivers and instead cycles between them.
+  
+\<big\>Randomized Input Instatube\</big\>  
+Like the cycling input instatube, but it gives the item to a random receiver.
+  
+\<big\>Instatube Item Filter\</big\>  
+Similar to the item sorter, but it only governs what can pass through that tube. (The advantage of using it over item sorters is that it will respect priority, and no short-lived entities will be created.)  
+  
+\<big\>One-Way Instatubes\</big\>  
+Instatubes that only allow items to flow in one direction, useful when having multiple filter injectors.
+
+\<bigger\>Performance\</bigger\>
+With big speed comes big responsibility.
+
+The lag from instatubes may show up in your switching station as lag from the thing that is inserting to them. (For example Automatic Filter-Injectors or punchers). The lag from pipeworks tubes does not show up in there.
+
+1st tip: Don't make all of your base a single large instatube network. (unless you know what you are doing, and know the flaws of instatubes)  
+2nd tip: Don't transport MANY small item stacks in a large instatube network, <b>have one or the other</b>. Always prefer larger item stacks. (Instead of sending 100 matter blobs in separate stacks to a large network, just send one stack of matter blobs)
+3rd tip: Only debug performance when it matters. (for example: you notice unusually high lag from filter injectors, or from your 500 puncher setup)
+
+Practical example: Say you want to wire up 50 punchers to your base for processing, how should you go about doing this?  
+Well, you will be transporting 50 item stacks per second, depending on the network size, that is a lot!
+
+What you SHOULDN'T do:
+(In these images, storinators may be in any place, and they don't have to be storinators, they can be machines or even other punchers, they just have to be connected to the punchers in some way, and the punchers can be anything that produces large amounts of very tiny item stacks)
+\<img name=questbook_image_instatube_performance_wrong.png width=400\>  
+In this image, for each item the punchers send out, it needs to iterate over everything in the network (so storinators, punchers) to find something that isn't full, this isn't ideal for performance if you are getting 100 item stacks per second.
+
+What you SHOULD do instead:
+\<img name=questbook_image_instatube_performance_correct.png width=400\>  
+(Don't forget to actually power those filter injectors)
+
+In this case, the many little item stacks that get sent to that storinator, or if that storinator got filled, to the item void.
+So in the worst case, an item only needs to iterate through 2 things (the collection storinator and the item void) to determine where to go.
+There aren't as many item stacks that get sent to the larger network, because those item stacks will contain more items. (Instead of sending 200 "sbz_resources:matter_dust 1", it will just send 1 "sbz_resources:matter_dust 200" if that makes sense, and that's faster)
+The high priority instatube here is redundant but useful if you aren't working with punchers.
+  
+**To complete this quest, craft an instatube.**  
+
+### Meta
+
+Requires: qid_blast_furnace
+
+## Pattern Storinator
+### ID: qid_pattern_storinator
+
+### Text
+
+It is a Storinator with 16 slots of storage and 16 slots for the pattern.  
+The pattern slots govern how the storage slots can be filled. If a pattern has 43 Matter Dust in the first slot, then there can be only up to 43 Matter Dust in that slot, similar to how the Autocrafter does it.  
+  
+By default, the Filter Injector does nothing to the Pattern Storinator.  
+When the Pattern Storinator is full (storage matches the pattern), it will allow using Filter Injectors but disallow inputting items into the Pattern Storinator.  
+Once it's empty, you will be able to insert into it again, and filter injectors will stop working on it.
+  
+The Pattern Storinator can be used in machines like the Meteorite Maker, where your flow rate of emittrium and matter blobs might otherwise cause clogging.
+
+### Meta
+
+Requires: qid_automatic_filter_injectors
+
+# Questline: Fluid Transport
+
+This questline is about transporting fluids.
+
+## Fluid Pipes
+### ID: qid_fluid_pipes
+
+### Text
+
+A fluid pipe is like an (Insta)tube, but with fluids. They move fluids around just like how tubes move items around.
+
+### Meta
+
+Requires: qid_tubes
+
+## Fluid Pumps
+### ID: qid_fluid_pumps
+
+### Text
+
+Fluid Pumps are automatic filter-injectors, but for pipes. They take fluids from fluid inventories.
+
+### Meta
+
+Requires: qid_automatic_filter_injectors
+
+## Fluid Storage Tanks
+### ID: qid_fluid_storage_tanks
+
+### Text
+
+Fluid Storage Tanks are storinators for fluids. They can store 100 nodes of fluid. That's a lot! (But not really if you compare it to the amount of nodes that a basic Storinator can store.)
+
+Tip: Once any fluid storage has received one type of liquid, it will always continue to receive that type of liquid.  
+This means that if you have a fluid storage that was previously filled with liquid aluminium, but now you want to fill it with water, you will need to replace that fluid storage block.  
+This applies to pretty much all of fluid transport.  
+
+### Meta
+
+Requires: qid_tubes, qid_storinators
+
+## Fluid Capturers
+### ID: qid_fluid_capturers
+
+### Text
+
+Fluid Capturers capture liquid **sources** from their top and store them. You can take out the captured fluid with a fluid pump.
+
+### Meta
+
+Requires: qid_fluid_storage_tanks
+
+## Fluid Cell Fillers
+### ID: qid_fluid_cell_fillers
+
+### Text
+
+Fluid Cell Fillers fill empty fluid cells in their inventories.
+
+### Meta
+
+Requires: qid_fluid_storage_tanks
+===== ./mods/sbz_progression/quests/en/Reactor.md =====
+
+# Questline: Emittrium Reactor
+
+Emittrium reactors are another way of generating energy. They are a 3x3x3 cube made of reactor shells (or reactor glass), with a reactor core in the center. Some of the shells must be replaced with a reactor power port, a reactor coolant port, a reactor emittrium port, and a reactor infoscreen. It consumes emittrium and water.
+If it doesn't have enough coolant (water), it heats up, and bad things happen if it heats up too much.
+
+## Reactor Shells
+### ID: qid_reactor_shells
+
+### Text
+
+Reactor Shells are needed for crafting the emittrium reactor parts and for construction of the emittrium reactor.  
+You can also use them as a nice decorative block that won't explode to meteorites.
+
+### Meta
+
+Requires: Obtain Emittrium
+
+## Reactor Glass
+### ID: qid_reactor_glass
+
+### Text
+
+Reactor Glass is needed in crafting recipes and can optionally be used as a replacement for the reactor shell in the construction of the emittrium reactor.  
+You can also use it as a nice decorative block that won't explode to meteorites.
+
+### Meta
+
+Requires: qid_emittrium_glass, qid_reactor_shells
+
+## Reactor Infoscreens
+### ID: qid_reactor_infoscreens
+
+### Text
+
+A Reactor Infoscreen is needed in the construction of the emittrium reactor and is required to turn on the reactor.
+
+### Meta
+
+Requires: qid_reactor_glass
+
+## Reactor Power Ports
+### ID: qid_reactor_power_ports
+
+### Text
+
+A Reactor Power Port is needed in the construction of the emittrium reactor. It delivers the energy generated by the reactor core.
+
+### Meta
+
+Requires: qid_reactor_shells
+
+## Reactor Coolant Ports
+### ID: qid_reactor_coolant_ports
+
+### Text
+
+A Reactor Coolant Port is needed in the construction of the emittrium reactor. It needs 1 water bucket per second (delivered via pipes) to sustain reactor heat.
+
+### Meta
+
+Requires: qid_fluid_storage_tanks
+
+## Reactor Emittrium Input
+### ID: qid_reactor_emittrium_input
+
+### Text
+
+A Reactor Emittrium Input is needed in the construction of the emittrium reactor. It needs 16 emittrium per minute to fuel the reactor.
+
+### Meta
+
+Requires: qid_reactor_shells, qid_tubes
+
+## Reactor Core
+### ID: qid_reactor_core
+
+### Text
+
+A Reactor Core is needed in the construction of the emittrium reactor. It needs to be in the center.
+
+### Meta
+
+Requires: qid_neutronium, qid_reactor_shells
+
+## Building the emittrium reactor and turning it on
+### ID: qid_building_the_emittrium_reactor_and_turning_it_on
+
+### Text
+
+Build a 3x3x3 cube of reactor shells or reactor glass. In the center, place the core, but in place of some of the shells, build the extra blocks mentioned earlier (Emittrium Input, Coolant Port, Power Port, etc.).  
+  
+Now, to actually turn the reactor on, click the Infoscreen and turn it on in the UI. If something is wrong with the reactor, it will tell you.  
+  
+If you have multiple reactors, try pressing the re-link button if you think the Infoscreen is displaying the wrong information.  
+The finished reactor should look something like this (obviously, there are many more ways to build it than just this):  
+\<img name=questbook_image_reactor.png\>  
+In older releases, the emittrium reactor used to explode when it ran out of coolant, but this is now no longer the case.
+
+### Meta
+
+Requires: qid_reactor_shells, qid_reactor_infoscreens, qid_reactor_power_ports, qid_reactor_coolant_ports, qid_reactor_emittrium_input, qid_reactor_core
+===== ./mods/sbz_progression/quests/en/Secrets.md =====
+# Questline: Secrets
+
+## Secret: Emptiness
+### ID: qid_emptiness
+
+### Text
+
+Damn. You fell off.
+
+### Meta
+
+Requires: 
+
+## Secret: Desolate
+### ID: qid_secret_desolate
+
+### Text
+
+You talked to yourself.
+
+### Meta
+
+Requires: 
+
+## Secret: Fragile
+### ID: qid_secret_fragile
+
+### Text
+
+You broke an Angel's Wing.
+
+### Meta
+
+Requires: 
+
+## Secret: AntiColorium Planets
+### ID: qid_secret_anticolorium_planets
+
+### Text
+
+Colorium planets, but something is wrong with them.
+
+Hint: You need to have enabled post processing in luanti's settings, or this won't work. This requires shaders to be enabled. It may not be available on some weaker devices.
+
+Hint 2: Use a screen inverter potion to reverse the effect, at the cost of a mild saturation increase.
+
+### Meta
+
+Requires: 
+
+## Secret: Craftageddon
+### ID: qid_craftageddon
+
+### Text
+
+What would ever justify this investment??
+
+### Meta
+
+Requires: 
+
+## Secret: Alive Poets Society
+### ID: qid_secret_alive_poets_society
+
+### Text
+
+"Carpe diem. Seize the day, boys. Make your lives extraordinary." -John Keating
+
+### Meta
+
+Requires: 
+===== ./mods/sbz_progression/quests/en/Sensors.md =====
+
+# Questline: Sensors
+
+Multi-step processes just to craft some logic gates? Yes please!
+
+## Sensor Linker
+### ID: qid_sensor_linker
+
+### Text
+
+It is the beginning of the sensor questline; it will be required for almost any sensor.
+
+Press **aux1 + any click/tap** with the sensor tool on a sensor to link that tool to the sensor.
+Then, you can **right-click** with the tool on a sensor and set the name of the link (usually "A" or "B").
+You can **left-click** with the tool on a sensor and automatically use the name you got from **right-clicking**.
+When you **left-click** a node that is already linked, it will unlink it.
+
+### Meta
+
+Requires: qid_blast_furnace
+
+## Logic Gates
+### ID: qid_logic_gates
+
+### Text
+
+They are machines which turn themselves off or on, depending on the states of other machines.  
+You have to use the sensor linker with logic gates:  
+- You have to make an "A" link as the 1st input  
+- Most of the time you have to make a "B" link as your 2nd input  
+  
+All logic gates run once every 0.25 seconds, this may be referred to as a "switching station subtick".  
+  
+When you have multiple logic gates in a chain, there are 2 categories of connections you can make:  
+- "slow" connections - Where each logic gate has to wait 0.25s to execute  
+- "fast" connections - Where a sequence of logic gates executes almost instantly  
+  
+They are dependant on the order that the switching station executes the logic gates.
+
+Switching from a fast connection to a slow one or the other way around may involve switching the direction the power source or switching the way that the logic gates are connected to each other.  
+  
+You can make a computer with these. I would strongly recommend not doing that. If you want to do that, submit your code optimizations to skyblock zero logic gates with a pull request.  
+  
+Descriptions of each logic gate if you are unfamiliar with them:  
+Buffer gate - It will copy the state of the machine linked in "A", so if it is on, it will be on, if it is off, it will be off  
+NOT gate - If a machine in link "A" is off, it will be on, if a machine in link "A" is on, it will be off  
+OR gate - If a machine in link "A" is on, or a machine in link "B" is on, it will be on, else it will be off  
+AND gate - Both machines in links "A" and "B" have to be on, for the logic gate to be on  
+XOR gate - like the OR gate, but if 2 machines are on, it will turn off  
+XNOR gate - like XOR gate, but passed through a NOT gate  
+XOR gate - like OR gate but passed through a NOT gate  
+NAND gate - like AND gate but passed through a NOT gate  
+  
+You can complete this quest by crafting the buffer gate.  
+
+### Meta
+
+Requires: qid_sensor_linker
+
+## Machine Controller
+### ID: qid_machine_controller
+
+### Text
+
+It is a machine that sets the state of multiple machines according to another chosen machine.
+
+You have to use the sensor linker with machine controllers:
+
+* Link "A" determines the machine whose state should be copied to all the machines in link "B"
+
+Example:
+The machine at link "A" is off, so all the machines in link "B" are turned off
+
+### Meta
+
+Requires: qid_sensor_linker
+
+## Delayer
+### ID: qid_delayer
+
+### Text
+
+The Delayer is not a machine, but rather a node that turns on after a selected amount of time.
+It uses node timers, so it may not work when you aren't near it (somewhere around 48 nodes away). However, it will work if it is force-loaded in some way.
+
+### Meta
+
+Requires: qid_sensor_linker
+
+## Light Sensor
+### ID: qid_light_sensor
+
+### Text
+
+Finally! A sensor in the "Sensors" questline!
+
+It senses light; depending on the condition (see the UI), it will turn on; otherwise, it will turn off.
+
+Link "A" determines which position to test.
+
+### Meta
+
+Requires: qid_sensor_linker
+
+## Node Sensor
+### ID: qid_node_sensor
+
+### Text
+
+Link "A" determines which node to check.
+
+It will turn on if the node at link "A" matches what is shown in the UI.
+
+### Meta
+
+Requires: qid_sensor_linker
+
+## Item Sensor
+### ID: qid_item_sensor
+
+### Text
+
+Now... this one is a little tricky.
+
+Link "A" should be a pipeworks-compatible storage.
+It will check if it can insert an item into that storage; if yes, it will turn on.
+
+In most machines, the item count that you put into this sensor won't matter.
+
+### Meta
+
+Requires: qid_sensor_linker
+
+## Switches
+### ID: qid_switches
+
+### Text
+
+They are like connectors, but they don't do anything to a power network.
+You can turn them on or off.
+
+### Meta
+
+Requires: qid_sensor_linker
+===== ./mods/sbz_progression/quests/en/Status_Effects.md =====
+
+# Questline: Status Effects
+
+This questline tells you all about status effects, **after** you get them :>
+        
+
+## Secret: Attracted
+### ID: qid_secret_attracted
+
+### Text
+
+This effect is applied to you when you are holding a node with gravitational properties in your hand near meteorite attractors/repulsors. The attraction is slower when you have more items in the stack that you are holding.  
+During this effect, you can't move yourself, and you experience zero gravity.  
+But you can still jump, and other knockback sources like explosions can still move you, and jetpacks move you too.  
+  
+And yes, you can go into orbit around the meteorite attractor; it just takes some practice.  
+
+### Meta
+
+Requires: 
+
+## Secret: Wet
+### ID: qid_secret_wet
+
+### Text
+
+This effect is applied to you when you are standing in water.  
+During this effect, you will be 0.8x as fast as you were before.  
+  
+This effect, combined with certain other effects, may produce a very dangerous combination.  
+
+### Meta
+
+Requires: 
+
+## Secret: Shocked
+### ID: qid_secret_shocked
+
+### Text
+
+During this effect, you will be 1.2x as fast as you were before.  
+You will also experience random jittery movements.  
+  
+This effect, combined with Wet, damages you by 8 hp, and the shocked effect will go away.  
+
+### Meta
+
+Requires: 
+
+## Secret: Poisoned
+### ID: qid_secret_poisoned
+
+### Text
+
+During this effect, you will be 0.5x as fast as you were before. You will also receive 1 damage every 2 seconds.  
+
+### Meta
+
+Requires: 
+
+## Secret: Immune
+### ID: qid_secret_immune
+
+### Text
+
+During this effect, you will be immune to almost all effects, excluding effects like "Wet".  
+It will also make you immune to the Attracted effect, but the repulsors/attractors will still pull you.  
+
+### Meta
+
+Requires: ===== ./mods/sbz_progression/quests/en/Storage.md =====
+# Questline: Storage
+
+Mainly about drawers and Storinators.
+
+## Storinators
+### ID: qid_storinators
+
+### Text
+
+Storinators are the solution to clogged up inventories. They have 32 slots of inventory, and function like a chest.  
+The more red/green dots the front of a Storinator displays, the more full/empty it is.  
+
+### Meta
+
+Requires: qid_matter_plates, qid_charged_field, qid_retaining_circuits
+
+## Better Storinators
+### ID: qid_better_storinators
+
+### Text
+
+At some point, only having 32 slots of storage is not enough.  
+You can make more Storinators, or you can make an upgraded one.  
+Each upgrade adds 1 row and 1 column to the inventory space.  
+  
+To complete this quest, you need to craft the bronze Storinator.  
+
+### Meta
+
+Requires: qid_storinators, qid_bronze_age
+
+## Public Storinators
+### ID: qid_public_storinators
+
+### Text
+
+Public Storinators are like regular Storinators but are accessible to **anyone**, regardless of protections. You can craft them by simply putting any type of Storinator in your crafting guide.
+
+### Meta
+
+Requires: qid_storinators
+
+## Best Storinators
+### ID: qid_best_storinators
+
+### Text
+
+Do you have chaos in your Storinators? Are you struggling to figure out which one is which? Do you need labels, but signs get in the way?  
+You can use Neutronium Storinators. They are a little expensive, requiring 4 Neutronium, but if you can afford them, they are great for this.  
+
+### Meta
+
+Requires: qid_better_storinators, qid_neutronium
+
+## Drawers
+### ID: qid_drawers
+
+### Text
+
+Do you have some automation that produces large amounts of one type of item?  
+Or do you just have large amounts of a single item type?  
+
+Drawers will help here. They are like Storinators, but they can only store a few item types.
+They store 3200 items (without upgrades). With upgrades, they can store a lot more.  
+
+Drawers also come with 1x2 and 4x4 variants.  
+
+### Meta
+
+Requires: qid_storinators
+
+## Drawer Upgrades
+### ID: qid_drawer_upgrades
+
+### Text
+
+Drawers by default store the same amount of items as a Storinator; that's a bit boring. What if you could store more?
+
+TIP: The upgrades don't work as you might expect. If you have two bronze upgrades, each bronze upgrade adds an extra 3200 items; it doesn't multiply 3200 by 4 or anything like that.  
+TIP: To insert an upgrade into a drawer, you need to right-click the edge of it or right-click a side that doesn't have the item display.
+
+### Meta
+
+Requires: qid_drawers, qid_bronze_age
+
+## Drawer Controller
+### ID: qid_drawer_controller
+
+### Text
+
+You may have noticed that drawers still might not work amazingly for automation; the drawer controller is here to solve that.  
+If you send it an item with a tube or manually provide it an item, it will automatically put it into an adjacent drawer (or a drawer adjacent to the others).  
+
+For taking out items, you can use a Luacontroller, sending an itemstack (a string like `"sbz_bio:dirt 100"`), and it will try to give you that dirt by injecting it out of itself.  
+
+### Meta
+
+Requires: qid_drawers
+
+## Room Containers
+### ID: qid_room_containers
+### Text
+
+Do you want to just put things in a room? This node was made for that.
+
+Room containers contain 16x16x16 rooms (if you count the walls) that is inside one mapblock. A player can only have 100 rooms at most.
+
+If you break a room container, don't worry, the next room container you place will point to that same room.
+
+Room containers can also accept power and teleport it to a room.
+
+Right-click a room to teleport to it, and right-click the room exit (a special block inside the wall) to exit the room.
+
+To set a custom entry point to the room, craft the "Room Container Entry Point" block and place it in a room.
+
+Warning: To save the positions of rooms, room containers use an experimental luanti function (that has been experimental and mostly unchanged since 2016), this might not be that big of a concern but <b>you shouldn't put your entire storage system in a room container</b> because of that. It is unclear how reliable the saving/loading of room containers is.
+Server owners should ideally have backups.
+
+Warning: The power input functionality may not work correctly on servers (by default), or on Skyblock Zero configurations that have the "sbz_switching_station_unload" setting active, it may be unusable, sorry.
+
+### Meta
+
+Requires: qid_warpshrooms
