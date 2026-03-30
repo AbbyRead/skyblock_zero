@@ -6,7 +6,7 @@ local charged_particle_power = 36
 -- 36*10 => 360 power per charged particle
 sbz_api.register_stateful_generator('sbz_power:simple_charge_generator', {
     description = 'Simple Charge Generator',
-    sounds = sbz_api.sounds.machine(),
+    sounds = sbz_audio.machine(),
     tiles = { 'simple_charge_generator_off.png' },
 
     groups = { dig_immediate = 2, sbz_machine = 1, pipe_connects = 1 },
@@ -288,7 +288,7 @@ sbz_api.recipe.register_craft {
 -- Starlight Collector
 sbz_api.register_generator('sbz_power:starlight_collector', {
     description = 'Starlight Collector',
-    sounds = sbz_api.sounds.matter(),
+    sounds = sbz_audio.matter(),
     drawtype = 'nodebox',
     tiles = {
         'starlight_collector.png',
