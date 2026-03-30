@@ -1,4 +1,7 @@
 # Questline: 状態効果
+### ID: qid_ql_status_effects
+
+### Text
 
 このクエストラインは状態効果についてすべて教えてくれます。それを受けた**後**で :>
 

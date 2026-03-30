@@ -1,4 +1,7 @@
 # Questline: パイプワークス
+### ID: qid_ql_pipeworks
+
+### Text
 
 通常のパイプワークスをご存じの方へ：Skyblock Zeroのパイプワークスはそのモッドを大幅に変更したバージョンですが、似ている部分もあります。
 
@@ -263,6 +266,9 @@ Tip 3：パフォーマンスの問題が重要な時だけデバッグしてく
 ### Meta
 
 # Questline: 流体輸送
+### ID: qid_ql_fluid_transport
+
+### Text
 
 このクエストラインは流体の輸送についてです。
 

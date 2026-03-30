@@ -1,4 +1,7 @@
 # Questline: はじめに
+### ID: qid_ql_introduction
+
+### Text
 
 最初のクエストラインで、ゲームの導入です。あなたの冒険はここから始まります。
 

@@ -1,4 +1,7 @@
 # Questline: ストレージ
+### ID: qid_ql_storage
+
+### Text
 
 主にドロワーとストリネーターについてです。
 

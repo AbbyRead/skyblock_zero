@@ -1,4 +1,7 @@
 # Questline: ジャンプドライブ
+### ID: qid_ql_jumpdrive
+
+### Text
 
 mt-mods/jumpdriveモッドの改変版で、自分自身と建築物をどこへでもテレポートできます*。
 
