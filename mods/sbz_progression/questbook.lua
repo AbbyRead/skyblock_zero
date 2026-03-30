@@ -227,7 +227,7 @@ local function get_questbook_formspec(selected_quest_index, player_name, quests_
     -- thanks luanti
 
     --- so, this is something like hypertext[blabla;%s]
-    --- where the %s gets filled in later, so dont worry about it
+    --- where the %s gets filled in later, so don't worry about it
     local hypertext = ([[
     %s
     %s
