@@ -203,7 +203,7 @@ More fancy traditional bricks to build with.
 
 ### Meta
 
-Requires: qid_clay
+Requires: qid_dirt
 
 ## Mystery Terrarium
 ### ID: qid_mystery_terrarium
