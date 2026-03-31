@@ -1,14 +1,14 @@
 # REPLACER MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:00-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,95 +17,95 @@ msgstr ""
 
 #: mods/replacer/blabla.lua:27
 msgid "History"
-msgstr ""
+msgstr "履歴"
 
 #: mods/replacer/blabla.lua:28
 msgid "Choose mode"
-msgstr ""
+msgstr "モード選択"
 
 #: mods/replacer/blabla.lua:29
 msgid "Both"
-msgstr ""
+msgstr "両方"
 
 #: mods/replacer/blabla.lua:30
 msgid "Node"
-msgstr ""
+msgstr "ノード"
 
 #: mods/replacer/blabla.lua:31
 msgid "Rotation"
-msgstr ""
+msgstr "回転"
 
 #: mods/replacer/blabla.lua:32
 msgid "Replace node and apply orientation."
-msgstr ""
+msgstr "ノードを置き換え、方向を適用します。"
 
 #: mods/replacer/blabla.lua:33
 msgid "Replace node without changing orientation."
-msgstr ""
+msgstr "方向を変えずにノードを置き換えます。"
 
 #: mods/replacer/blabla.lua:34
 msgid "Apply orientation without changing node type."
-msgstr ""
+msgstr "ノードの種類を変えずに方向のみを適用します。"
 
 #: mods/replacer/blabla.lua:35
 msgid "Single"
-msgstr ""
+msgstr "単体"
 
 #: mods/replacer/blabla.lua:36
 msgid "Field"
-msgstr ""
+msgstr "フィールド"
 
 #: mods/replacer/blabla.lua:37
 msgid "Crust"
-msgstr ""
+msgstr "表層"
 
 #: mods/replacer/blabla.lua:38
 msgid "Replace single node."
-msgstr ""
+msgstr "単一のノードを置き換えます。"
 
 #: mods/replacer/blabla.lua:39
 msgid "Left click: Replace field of nodes of a kind where a translucent node is in front of it.@nRight click: Replace field of air where no translucent node is behind the air."
-msgstr ""
+msgstr "左クリック：目の前に透過ノードがある同種のノード範囲を置き換えます。@n右クリック：背後に透過ノードがない空気の範囲を置き換えます。"
 
 #: mods/replacer/blabla.lua:42
 msgid "Left click: Replace nodes which touch another one of its kind and a translucent node, e.g. air.@nRight click: Replace air nodes which touch the crust."
-msgstr ""
+msgstr "左クリック：同種のノードおよび透過ノード（空気など）に接しているノードを置き換えます。@n右クリック：表層に接している空気ノードを置き換えます。"
 
 #: mods/replacer/blabla.lua:45
 msgid "Target node not yet loaded. Please wait a moment for the server to catch up."
-msgstr ""
+msgstr "対象のノードがまだ読み込まれていません。サーバーの処理をしばらくお待ちください。"
 
 #: mods/replacer/blabla.lua:47
 msgid "Nothing to replace."
-msgstr ""
+msgstr "置き換えるものがありません。"
 
 #: mods/replacer/blabla.lua:48
 msgid "Not enough charge to use this mode."
-msgstr ""
+msgstr "このモードを使用するための充電が不足しています。"
 
 #: mods/replacer/blabla.lua:49
 msgid "Aborted, too many nodes detected."
-msgstr ""
+msgstr "中止されました。検出されたノードが多すぎます。"
 
 #: mods/replacer/blabla.lua:50
 msgid "Error: No node selected."
-msgstr ""
+msgstr "エラー：ノードが選択されていません。"
 
 #: mods/replacer/blabla.lua:51
 msgid "Node replacement tool"
-msgstr ""
+msgstr "ノード置き換えツール"
 
 #: mods/replacer/blabla.lua:52
 msgid "Node replacement tool (technic)"
-msgstr ""
+msgstr "ノード置き換えツール（テクニック）"
 
 #: mods/replacer/blabla.lua:56
 msgid "Time-limit reached."
-msgstr ""
+msgstr "制限時間に達しました。"
 
 #: mods/replacer/blabla.lua:59
 msgid "(chat|audio) (0|1)"
-msgstr ""
+msgstr "(チャット|オーディオ) (0|1)"
 
 #: mods/replacer/blabla.lua:60
 msgid ""
@@ -113,26 +113,29 @@ msgid ""
 "chat: When on, messages are posted to chat.\n"
 "audio: When off, replacer is silent."
 msgstr ""
+"詳細表示を切り替えます。\n"
+"chat：オンの場合、チャットにメッセージを表示します。\n"
+"audio：オフの場合、リプレイサーの効果音が消えます。"
 
 #: mods/replacer/blabla.lua:62
 msgid "Player not found"
-msgstr ""
+msgstr "プレイヤーが見つかりません"
 
 #: mods/replacer/blabla.lua:63
 msgid "Player meta not existent"
-msgstr ""
+msgstr "プレイヤーのメタデータが存在しません"
 
 #: mods/replacer/blabla.lua:74
 msgid "Minor modes are disabled on this server."
-msgstr ""
+msgstr "このサーバーではマイナーモードが無効化されています。"
 
 #: mods/replacer/blabla.lua:75
 msgid "<no positional information>"
-msgstr ""
+msgstr "<位置情報なし>"
 
 #: mods/replacer/blabla.lua:76
 msgid "days"
-msgstr ""
+msgstr "日"
 
 #: mods/replacer/blabla.lua:79
 msgid ""
@@ -140,242 +143,247 @@ msgid ""
 "Use to inspect target node or entity.\n"
 "Place to inspect the adjacent node."
 msgstr ""
+"調査ツール\n"
+"対象のノードやエンティティを調査します。\n"
+"設置すると隣接するノードを調査します。"
 
 #: mods/replacer/blabla.lua:81
 msgid "This is a broken object. We have no further information about it. It is located"
-msgstr ""
+msgstr "これは壊れたオブジェクトです。これ以上の情報はありません。場所："
 
 #: mods/replacer/blabla.lua:82
 msgid "owned, protected and locked"
-msgstr ""
+msgstr "所有済み、保護済み、ロック済み"
 
 #: mods/replacer/blabla.lua:83
 msgid "owned and protected"
-msgstr ""
+msgstr "所有済み、保護済み"
 
 #: mods/replacer/blabla.lua:84
 msgid "owned and locked"
-msgstr ""
+msgstr "所有済み、ロック済み"
 
 #: mods/replacer/blabla.lua:85
 msgid "This is an object"
-msgstr ""
+msgstr "これはオブジェクトです"
 
 #: mods/replacer/blabla.lua:86
 msgid "WARNING: You can't dig this node. It is protected."
-msgstr ""
+msgstr "警告：このノードは保護されているため、掘ることはできません。"
 
 #: mods/replacer/blabla.lua:87
 msgid "INFO: You can dig this node, others can't."
-msgstr ""
+msgstr "情報：あなたはこのノードを掘ることができますが、他の人はできません。"
 
 #: mods/replacer/blabla.lua:88
 msgid "~ no description provided ~"
-msgstr ""
+msgstr "~ 説明はありません ~"
 
 #: mods/replacer/blabla.lua:89
 msgid "~ no node description provided ~"
-msgstr ""
+msgstr "~ ノードの説明はありません ~"
 
 #: mods/replacer/blabla.lua:90
 msgid "~ no item description provided ~"
-msgstr ""
+msgstr "~ アイテムの説明はありません ~"
 
 #: mods/replacer/blabla.lua:91
 msgid "Name:"
-msgstr ""
+msgstr "名称:"
 
 #: mods/replacer/blabla.lua:92
 msgid "Exit"
-msgstr ""
+msgstr "終了"
 
 #: mods/replacer/blabla.lua:93
 msgid "This is:"
-msgstr ""
+msgstr "これの正体:"
 
 #: mods/replacer/blabla.lua:94
 msgid "previous recipe"
-msgstr ""
+msgstr "前のレシピ"
 
 #: mods/replacer/blabla.lua:95
 msgid "next recipe"
-msgstr ""
+msgstr "次のレシピ"
 
 #: mods/replacer/blabla.lua:96
 msgid "No recipes."
-msgstr ""
+msgstr "レシピなし。"
 
 #: mods/replacer/blabla.lua:97
 msgid "Drops on dig:"
-msgstr ""
+msgstr "採掘時のドロップ:"
 
 #: mods/replacer/blabla.lua:98
 msgid "nothing."
-msgstr ""
+msgstr "なし。"
 
 #: mods/replacer/blabla.lua:99
 msgid "May drop on dig:"
-msgstr ""
+msgstr "採掘時にドロップする可能性:"
 
 #: mods/replacer/blabla.lua:100
 msgid "This can be used as a fuel."
-msgstr ""
+msgstr "これは燃料として使用できます。"
 
 #: mods/replacer/blabla.lua:101
 msgid "Error: Unknown recipe."
-msgstr ""
+msgstr "エラー：不明なレシピ。"
 
 #: mods/replacer/blabla.lua:105
 msgid "scoop up"
-msgstr ""
+msgstr "すくう"
 
 #: mods/replacer/blabla.lua:106
 msgid "pour out"
-msgstr ""
+msgstr "注ぐ"
 
 #: mods/replacer/blabla.lua:107
 msgid "filling"
-msgstr ""
+msgstr "充填"
 
 #: mods/replacer/blabla.lua:108
 msgid "(Functions may exist that change attributes and conditions of mobs)"
-msgstr ""
+msgstr "(モブの属性や状態を変更する機能が存在する場合があります)"
 
 #: mods/replacer/blabla.lua:109
 msgid "Is of type"
-msgstr ""
+msgstr "タイプ"
 
 #: mods/replacer/blabla.lua:110
 msgid "Is loyal to owner."
-msgstr ""
+msgstr "所有者に忠実です。"
 
 #: mods/replacer/blabla.lua:111
 msgid "Likes to attack:"
-msgstr ""
+msgstr "攻撃対象:"
 
 #: mods/replacer/blabla.lua:112
 msgid "Follows players holding:"
-msgstr ""
+msgstr "所持プレイヤーを追跡:"
 
 #: mods/replacer/blabla.lua:113
 msgid "May drop:"
-msgstr ""
+msgstr "ドロップの可能性:"
 
 #: mods/replacer/blabla.lua:114
 msgid "Can shoot missiles."
-msgstr ""
+msgstr "飛び道具を発射できます。"
 
 #: mods/replacer/blabla.lua:115
 msgid "Can breed."
-msgstr ""
+msgstr "繁殖可能です。"
 
 #: mods/replacer/blabla.lua:116
 msgid "Spawns on:"
-msgstr ""
+msgstr "出現場所:"
 
 #: mods/replacer/blabla.lua:117
 msgid "with neighbours:"
-msgstr ""
+msgstr "隣接ノード:"
 
 #: mods/replacer/blabla.lua:118
 msgid "Placed:"
-msgstr ""
+msgstr "設置数:"
 
 #: mods/replacer/blabla.lua:119
 msgid "Digs:"
-msgstr ""
+msgstr "採掘数:"
 
 #: mods/replacer/blabla.lua:120
 msgid "Inflicted:"
-msgstr ""
+msgstr "与ダメージ:"
 
 #: mods/replacer/blabla.lua:121
 msgid "Punched:"
-msgstr ""
+msgstr "パンチ数:"
 
 #: mods/replacer/blabla.lua:122
 msgid "XP:"
-msgstr ""
+msgstr "経験値:"
 
 #: mods/replacer/blabla.lua:123
 msgid "Deaths:"
-msgstr ""
+msgstr "死亡数:"
 
 #: mods/replacer/blabla.lua:124
 msgid "Played:"
-msgstr ""
+msgstr "プレイ時間:"
 
 #: mods/replacer/blabla.lua:125
 msgid "Is currently on a mission."
-msgstr ""
+msgstr "現在ミッション中です。"
 
 #: mods/replacer/blabla.lua:126
 msgid "You don't have any common channels."
-msgstr ""
+msgstr "共通のチャンネルがありません。"
 
 #: mods/replacer/blabla.lua:127
 msgid "You are both on these channels:"
-msgstr ""
+msgstr "共通のチャンネル:"
 
 #: mods/replacer/blabla.lua:128
 msgid "Is wearing:"
-msgstr ""
+msgstr "装備中:"
 
 #: mods/replacer/replacer/constrain.lua:59
 msgid "Replacing nodes of type \"@1\" is not allowed on this server. Replacement failed."
-msgstr ""
+msgstr "このサーバーでは「@1」タイプのノードの置き換えは許可されていません。置き換えに失敗しました。"
 
 #: mods/replacer/replacer/constrain.lua:63
 msgid "Protected at @1"
-msgstr ""
+msgstr "@1 は保護されています"
 
 #: mods/replacer/replacer/replacer.lua:140
 msgid "You have no further \"@1\". Replacement failed."
-msgstr ""
+msgstr "これ以上の「@1」を持っていません。置き換えに失敗しました。"
 
 #: mods/replacer/replacer/replacer.lua:146
 msgid "Unknown node: \"@1\""
-msgstr ""
+msgstr "不明なノード：「@1」"
 
 #: mods/replacer/replacer/replacer.lua:150
 msgid "Unknown node to place: \"@1\""
-msgstr ""
+msgstr "設置する不明なノード：「@1」"
 
 #: mods/replacer/replacer/replacer.lua:161
 msgid "Could not dig \"@1\" properly."
-msgstr ""
+msgstr "「@1」を正しく掘ることができませんでした。"
 
 #: mods/replacer/replacer/replacer.lua:175
 msgid "Could not place \"@1\"."
-msgstr ""
+msgstr "「@1」を設置できませんでした。"
 
 #: mods/replacer/replacer/replacer.lua:242
 msgid "Error: \"@1\" is not a node."
-msgstr ""
+msgstr "エラー：「@1」はノードではありません。"
 
 #: mods/replacer/replacer/replacer.lua:468
 msgid "@1 nodes replaced."
-msgstr ""
+msgstr "@1 個のノードを置き換えました。"
 
 #: mods/replacer/replacer/replacer.lua:507
 #: mods/replacer/replacer/replacer.lua:513
 msgid "Mode changed to @1: @2"
-msgstr ""
+msgstr "モードを @1 に変更: @2"
 
 #: mods/replacer/replacer/replacer.lua:552
 msgid "Placing nodes of type \"@1\" is not allowed on this server."
-msgstr ""
+msgstr "このサーバーでは「@1」タイプのノードの設置は許可されていません。"
 
 #: mods/replacer/replacer/replacer.lua:652
 msgid "Failed to set replacer to \"@1\". If there was one in your inventory, then maybe."
-msgstr ""
+msgstr "リプレイサーを「@1」に設定できませんでした。インベントリにあれば設定できたかもしれません。"
 
 #: mods/replacer/replacer/replacer.lua:663
 msgid ""
 "Node replacement tool set to:\n"
 "@1."
 msgstr ""
+"ノード置き換えツールを以下に設定：\n"
+"@1"
 
 #: mods/replacer/replacer/replacer.lua:685
 msgid "Bulk Placer Tool"
-msgstr ""
+msgstr "一括設置ツール"

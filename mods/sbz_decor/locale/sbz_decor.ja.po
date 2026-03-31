@@ -1,14 +1,14 @@
 # SBZ_DECOR MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:07-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,48 +17,48 @@ msgstr ""
 
 #: mods/sbz_decor/cnc.lua:47
 msgid "CNC Machine"
-msgstr ""
+msgstr "CNC工作機械"
 
 #: mods/sbz_decor/init.lua:6
 msgid "Photon Lamp"
-msgstr ""
+msgstr "フォトンランプ"
 
 #: mods/sbz_decor/init.lua:43
 msgid "Factory Floor"
-msgstr ""
+msgstr "工場の床"
 
 #: mods/sbz_decor/init.lua:76
 msgid "Factory Floor (Tiled)"
-msgstr ""
+msgstr "工場の床（タイル）"
 
 #: mods/sbz_decor/init.lua:104
 msgid "Factory Ventilator"
-msgstr ""
+msgstr "工場の換気扇"
 
 #: mods/sbz_decor/init.lua:154
 msgid "Factory Warning"
-msgstr ""
+msgstr "工場の警告"
 
 #: mods/sbz_decor/init.lua:170
 msgid "Mystery Terrarium"
-msgstr ""
+msgstr "ミステリーテラリウム"
 
 #: mods/sbz_decor/init.lua:188
 msgid "Large Server Rack"
-msgstr ""
+msgstr "大型サーバーラック"
 
 #: mods/sbz_decor/init.lua:246
 msgid "Matter Ladder"
-msgstr ""
+msgstr "物質のはしご"
 
 #: mods/sbz_decor/init.lua:290
 msgid "Antimatter Ladder"
-msgstr ""
+msgstr "反物質のはしご"
 
 #: mods/sbz_decor/signs.lua:4
 msgid "Antimatter Sign"
-msgstr ""
+msgstr "反物質の看板"
 
 #: mods/sbz_decor/signs.lua:26
 msgid "Matter Sign"
-msgstr ""
+msgstr "物質の看板"

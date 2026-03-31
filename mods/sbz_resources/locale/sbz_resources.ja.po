@@ -1,411 +1,410 @@
 # SBZ_RESOURCES MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:15+0000\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: mods/sbz_resources/basic_resources.lua:4
 msgid "Punching"
-msgstr ""
+msgstr "パンチ"
 
 #: mods/sbz_resources/basic_resources.lua:17
 msgid "Core Dust"
-msgstr ""
+msgstr "コアダスト"
 
 #: mods/sbz_resources/basic_resources.lua:39
 msgid "Matter Dust"
-msgstr ""
+msgstr "物質の粉末"
 
 #: mods/sbz_resources/basic_resources.lua:59
 msgid "Charged Particle"
-msgstr ""
+msgstr "荷電粒子"
 
 #: mods/sbz_resources/basic_resources.lua:81
 msgid "Antimatter Dust"
-msgstr ""
+msgstr "反物質の粉末"
 
 #: mods/sbz_resources/bomb.lua:47
 msgid "TNT Stick\n"
-msgstr ""
+msgstr "TNTスティック\n"
 
 #: mods/sbz_resources/bomb.lua:47
 msgid "Ability: Throw (Left-Click)"
-msgstr ""
+msgstr "能力: 投げる (左クリック)"
 
 #: mods/sbz_resources/bomb.lua:47
 msgid " Throw the TNT Stick, which will explode when it lands."
-msgstr ""
+msgstr " TNTスティックを投げます。着地時に爆発します。"
 
 #: mods/sbz_resources/bomb.lua:122
 msgid "TNT"
-msgstr ""
+msgstr "TNT"
 
 #: mods/sbz_resources/crystals.lua:61
 msgid "Warp Crystal"
-msgstr ""
+msgstr "ワープクリスタル"
 
 #: mods/sbz_resources/crystals.lua:89
 msgid "Uranium Crystal"
-msgstr ""
+msgstr "ウランクオリスタル"
 
 #: mods/sbz_resources/crystals.lua:94
 msgid "Thorium Crystal"
-msgstr ""
+msgstr "トリウムクリスタル"
 
 #: mods/sbz_resources/crystals.lua:99
 msgid "Silicon Crystal"
-msgstr ""
+msgstr "シリコンクリスタル"
 
 #: mods/sbz_resources/crystals.lua:125
 msgid "Shock Crystal"
-msgstr ""
+msgstr "ショッククリスタル"
 
 #: mods/sbz_resources/emitters.lua:60
 msgid "Emitter"
-msgstr ""
+msgstr "エミッター"
 
 #: mods/sbz_resources/emitters.lua:79
 msgid "Movable Emitter"
-msgstr ""
+msgstr "可動式エミッター"
 
 #: mods/sbz_resources/emitters.lua:138
 msgid "Raw Emittrium"
-msgstr ""
+msgstr "未精製エミトリウム"
 
 #: mods/sbz_resources/emitters.lua:203
 msgid "The Core"
-msgstr ""
+msgstr "ザ・コア"
 
 #: mods/sbz_resources/fireworks.lua:180
 msgid "Firework"
-msgstr ""
+msgstr "花火"
 
 #: mods/sbz_resources/items.lua:4
 msgid "Matter Plate"
-msgstr ""
+msgstr "物質プレート"
 
 #: mods/sbz_resources/items.lua:21
 msgid "Antimatter Plate"
-msgstr ""
+msgstr "反物質プレート"
 
 #: mods/sbz_resources/items.lua:38
 msgid "Conversion chamber (!! DEPRECATED !! Throw it away!)"
-msgstr ""
+msgstr "変換チャンバー (!! 非推奨 !! 捨ててください！)"
 
 #: mods/sbz_resources/items.lua:45
 msgid "Pebble"
-msgstr ""
+msgstr "小石"
 
 #: mods/sbz_resources/items.lua:62
 msgid "Angel's Wing"
-msgstr ""
+msgstr "天使の羽"
 
 #: mods/sbz_resources/items.lua:118
 msgid "Phlogiston"
-msgstr ""
+msgstr "フロギストン"
 
 #: mods/sbz_resources/items.lua:123
 msgid "Phlogiston Blob"
-msgstr ""
+msgstr "フロギストンの塊"
 
 #: mods/sbz_resources/items.lua:143
 msgid "Heating Element"
-msgstr ""
+msgstr "発熱体"
 
 #: mods/sbz_resources/items.lua:163
 msgid "Sensor Casing Plate"
-msgstr ""
+msgstr "センサー用ケーシングプレート"
 
 #: mods/sbz_resources/jetpack.lua:35
 msgid "Jetpack"
-msgstr ""
+msgstr "ジェットパック"
 
 #: mods/sbz_resources/laser.lua:9
 msgid "Laser"
-msgstr ""
+msgstr "レーザー"
 
 #: mods/sbz_resources/laser.lua:10
 msgid "Ability: Fire (Left-Click)"
-msgstr ""
+msgstr "能力: 発射 (左クリック)"
 
 #: mods/sbz_resources/laser.lua:10
 msgid " Fire a laserbeam which destroys meteorites and damages players."
-msgstr ""
+msgstr " 隕石を破壊し、プレイヤーにダメージを与えるレーザーを発射します。"
 
 #: mods/sbz_resources/logic_craftitems.lua:4
 msgid "Luanium"
-msgstr ""
+msgstr "ルアニウム"
 
 #: mods/sbz_resources/logic_craftitems.lua:10
 msgid "Lua Chip"
-msgstr ""
+msgstr "Luaチップ"
 
 #: mods/sbz_resources/logic_craftitems.lua:15
 msgid "Ram Stick"
-msgstr ""
+msgstr "RAMスティック"
 
 #: mods/sbz_resources/nodes.lua:6
 msgid "Matter Blob"
-msgstr ""
+msgstr "物質の塊"
 
 #: mods/sbz_resources/nodes.lua:33
 msgid "Matter Platform"
-msgstr ""
+msgstr "物質の足場"
 
 #: mods/sbz_resources/nodes.lua:82
 msgid "Antimatter Blob"
-msgstr ""
+msgstr "反物質の塊"
 
 #: mods/sbz_resources/nodes.lua:134
 msgid "Antimatter Platform"
-msgstr ""
+msgstr "反物質の足場"
 
 #: mods/sbz_resources/nodes.lua:166
 msgid "Emitter Imitator"
-msgstr ""
+msgstr "エミッター・イミテーター"
 
 #: mods/sbz_resources/nodes.lua:217
 msgid "Stone"
-msgstr ""
+msgstr "石"
 
 #: mods/sbz_resources/nodes.lua:254
 msgid "Reinforced Matter"
-msgstr ""
+msgstr "強化物質"
 
 #: mods/sbz_resources/nodes.lua:276
 msgid "Reinforced Antimatter"
-msgstr ""
+msgstr "強化反物質"
 
 #: mods/sbz_resources/nodes.lua:356
 msgid "Emittrium Glass"
-msgstr ""
+msgstr "エミトリウムガラス"
 
 #: mods/sbz_resources/nodes.lua:384
 msgid "Colorium Glass"
-msgstr ""
+msgstr "カラリウムガラス"
 
 #: mods/sbz_resources/nodes.lua:413
 msgid "Clear Colorium Glass"
-msgstr ""
+msgstr "透明なカラリウムガラス"
 
 #: mods/sbz_resources/nodes.lua:443
 msgid "Stained Colorium Glass"
-msgstr ""
+msgstr "着色されたカラリウムガラス"
 
 #: mods/sbz_resources/nodes.lua:473
 msgid "Compressed Core Dust"
-msgstr ""
+msgstr "圧縮されたコアダスト"
 
 #: mods/sbz_resources/nodes.lua:511
 msgid "Sand"
-msgstr ""
+msgstr "砂"
 
 #: mods/sbz_resources/nodes.lua:522
 msgid "Red Sand"
-msgstr ""
+msgstr "赤い砂"
 
 #: mods/sbz_resources/nodes.lua:531
 msgid "Gravel"
-msgstr ""
+msgstr "砂利"
 
 #: mods/sbz_resources/nodes.lua:540
 msgid "Dust"
-msgstr ""
+msgstr "ダスト"
 
 #: mods/sbz_resources/nodes.lua:585
 msgid "Clay"
-msgstr ""
+msgstr "粘土"
 
 #: mods/sbz_resources/nodes.lua:596
 msgid "Bricks"
-msgstr ""
+msgstr "レンガ"
 
 #: mods/sbz_resources/nodes.lua:623
 msgid "Dark Sand"
-msgstr ""
+msgstr "暗い砂"
 
 #: mods/sbz_resources/nodes.lua:633
 msgid "Black Sand"
-msgstr ""
+msgstr "黒い砂"
 
 #: mods/sbz_resources/nodes.lua:643
 msgid "White Sand"
-msgstr ""
+msgstr "白い砂"
 
 #: mods/sbz_resources/parkour.lua:14
 msgid "Emittrium Block"
-msgstr ""
+msgstr "エミトリウムブロック"
 
 #: mods/sbz_resources/processors_and_circuits.lua:4
 msgid "Simple Circuit"
-msgstr ""
+msgstr "簡易回路"
 
 #: mods/sbz_resources/processors_and_circuits.lua:22
 msgid "Retaining Circuit"
-msgstr ""
+msgstr "保持回路"
 
 #: mods/sbz_resources/processors_and_circuits.lua:40
 msgid "Emittrium Circuit"
-msgstr ""
+msgstr "エミトリウム回路"
 
 #: mods/sbz_resources/processors_and_circuits.lua:59
 msgid "Phlogiston Circuit"
-msgstr ""
+msgstr "フロギストン回路"
 
 #: mods/sbz_resources/processors_and_circuits.lua:84
 msgid "Prediction Circuit"
-msgstr ""
+msgstr "予測回路"
 
 #: mods/sbz_resources/processors_and_circuits.lua:104
 msgid "Simple Logic Circuit"
-msgstr ""
+msgstr "簡易論理回路"
 
 #: mods/sbz_resources/processors_and_circuits.lua:127
 msgid "Simple Inverted Logic Circuit"
-msgstr ""
+msgstr "簡易否定論理回路"
 
 #: mods/sbz_resources/processors_and_circuits.lua:165
 msgid "Simple Processor"
-msgstr ""
+msgstr "簡易プロセッサー"
 
 #: mods/sbz_resources/processors_and_circuits.lua:195
 msgid "Simple Crafting Processor"
-msgstr ""
+msgstr "簡易製作プロセッサー"
 
 #: mods/sbz_resources/processors_and_circuits.lua:216
 msgid "Fast Crafting Processor"
-msgstr ""
+msgstr "高速製作プロセッサー"
 
 #: mods/sbz_resources/processors_and_circuits.lua:240
 msgid "Very Fast Crafting Processor"
-msgstr ""
+msgstr "超高速製作プロセッサー"
 
 #: mods/sbz_resources/processors_and_circuits.lua:261
 msgid "Extremely Fast Crafting Processor"
-msgstr ""
+msgstr "極速製作プロセッサー"
 
 #: mods/sbz_resources/processors_and_circuits.lua:301
 msgid "Instant Crafting Processor"
-msgstr ""
+msgstr "即時製作プロセッサー"
 
 #: mods/sbz_resources/processors_and_circuits.lua:312
 msgid "Metal-Oxide-Semiconductor Field-Effect Transistor (MOSFET)"
-msgstr ""
+msgstr "電界効果トランジスタ (MOSFET)"
 
 #: mods/sbz_resources/storinators.lua:187
 msgid "Public "
-msgstr ""
+msgstr "公開 "
 
 #: mods/sbz_resources/storinators.lua:232
 msgid "Storinator"
-msgstr ""
+msgstr "ストリネーター"
 
 #: mods/sbz_resources/storinators.lua:243
 msgid "Bronze Storinator"
-msgstr ""
+msgstr "ブロンズ・ストリネーター"
 
 #: mods/sbz_resources/storinators.lua:253
 msgid "Stemfruit Storinator"
-msgstr ""
+msgstr "ステムフルーツ・ストリネーター"
 
 #: mods/sbz_resources/storinators.lua:262
 msgid "Colorium Storinator"
-msgstr ""
+msgstr "カラリウム・ストリネーター"
 
 #: mods/sbz_resources/storinators.lua:274
 msgid "Warpshroom Storinator"
-msgstr ""
+msgstr "ワープシュルーム・ストリネーター"
 
 #: mods/sbz_resources/storinators.lua:286
 msgid "Neutronium Storinator"
-msgstr ""
+msgstr "ニュートロニウム・ストリネーター"
 
 #: mods/sbz_resources/strange_matter.lua:4
 msgid "Strange Dust"
-msgstr ""
+msgstr "奇妙な粉末"
 
 #: mods/sbz_resources/strange_matter.lua:9
 msgid "Strange Blob"
-msgstr ""
+msgstr "奇妙な塊"
 
 #: mods/sbz_resources/strange_matter.lua:89
 msgid "Strange Blob Cleaner"
-msgstr ""
+msgstr "奇妙な塊のクリーナー"
 
 #: mods/sbz_resources/strange_matter.lua:91
 msgid "Restores what was.... done.... by strange blobs."
-msgstr ""
+msgstr "奇妙な塊によって…引き起こされた…事象を修復します。"
 
 #: mods/sbz_resources/strange_matter.lua:92
 msgid "\"Place\" it into a battery to charge."
-msgstr ""
+msgstr "バッテリーに「配置」して充電します。"
 
 #: mods/sbz_resources/strange_matter.lua:167
 msgid "Stabilized Strange Blob"
-msgstr ""
+msgstr "安定化した奇妙な塊"
 
 #: mods/sbz_resources/tools.lua:6
 msgid "Matter Annihilator"
-msgstr ""
+msgstr "物質消滅器"
 
 #: mods/sbz_resources/tools.lua:50
 msgid "Antimatter Annihilator"
-msgstr ""
+msgstr "反物質消滅器"
 
 #: mods/sbz_resources/tools.lua:94
 msgid "Robotic Arm"
-msgstr ""
+msgstr "ロボットアーム"
 
 #: mods/sbz_resources/tools.lua:171
 msgid "Electric Drill"
-msgstr ""
+msgstr "電気ドリル"
 
 #: mods/sbz_resources/tools.lua:174
 msgid "Powered by electricity. Wear bar indicates the amount of charge left."
-msgstr ""
+msgstr "電力で作動します。耐久値バーは残り充電量を示します。"
 
 #: mods/sbz_resources/tools.lua:175
 msgid "@1 use"
 msgid_plural "@1 uses"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "@1 回使用可能"
 
 #: mods/sbz_resources/tools.lua:176
 msgid "\"Place\" it on a battery to re-charge it."
-msgstr ""
+msgstr "バッテリーの上に「配置」して再充電します。"
 
 #: mods/sbz_resources/water.lua:22
 msgid "Water Source"
-msgstr ""
+msgstr "水源"
 
 #: mods/sbz_resources/water.lua:69
 msgid "Flowing Water"
-msgstr ""
+msgstr "流れる水"
 
 #: mods/sbz_resources/wormhole.lua:4
 msgid "Wormhole"
-msgstr ""
+msgstr "ワームホール"
 
 #: mods/sbz_resources/wormhole.lua:62
 msgid "Unrefined Firmament"
-msgstr ""
+msgstr "未精製の天空石"
 
 #: mods/sbz_resources/wormhole.lua:77
 msgid "Gravitational Lens"
-msgstr ""
+msgstr "重力レンズ"
 
 #: mods/sbz_resources/wormhole.lua:98
 msgid "Refined Firmament"
-msgstr ""
+msgstr "精製された天空石"

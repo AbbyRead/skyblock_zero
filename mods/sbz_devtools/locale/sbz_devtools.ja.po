@@ -1,129 +1,128 @@
 # SBZ_DEVTOOLS MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:12-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: mods/sbz_devtools/init.lua:6
 msgid "Gives achievements - for debugging only"
-msgstr ""
+msgstr "実績を付与する（デバッグ専用）"
 
 #: mods/sbz_devtools/init.lua:15
 msgid "Gave you all achievements"
-msgstr ""
+msgstr "すべての実績を付与しました"
 
 #: mods/sbz_devtools/init.lua:18
 msgid "Gave you the achievement with the name "
-msgstr ""
+msgstr "次の名前の実績を付与しました: "
 
 #: mods/sbz_devtools/init.lua:24
 msgid "Revoke an achievement - for debugging only"
-msgstr ""
+msgstr "実績を剥奪する（デバッグ専用）"
 
 #: mods/sbz_devtools/init.lua:33
 msgid "Revoked all achievements"
-msgstr ""
+msgstr "すべての実績を剥奪しました"
 
 #: mods/sbz_devtools/init.lua:36
 msgid "Revoked the achievement with the name "
-msgstr ""
+msgstr "次の名前の実績を剥奪しました: "
 
 #: mods/sbz_devtools/init.lua:42
 msgid "Set hotbar slot count - for debugging only"
-msgstr ""
+msgstr "ホットバーのスロット数を設定する（デバッグ専用）"
 
 #: mods/sbz_devtools/init.lua:52
 msgid "Hotbar slot count set to "
-msgstr ""
+msgstr "ホットバーのスロット数を次に設定しました: "
 
 #: mods/sbz_devtools/init.lua:54 mods/sbz_devtools/init.lua:81
 msgid "Player not found."
-msgstr ""
+msgstr "プレイヤーが見つかりません。"
 
 #: mods/sbz_devtools/init.lua:60
 msgid "Spawn a 10x10 platform below the player - for debugging only"
-msgstr ""
+msgstr "プレイヤーの足元に10x10のプラットフォームを生成する（デバッグ専用）"
 
 #: mods/sbz_devtools/init.lua:79
 msgid "Platform spawned."
-msgstr ""
+msgstr "プラットフォームを生成しました。"
 
 #: mods/sbz_devtools/init.lua:87
 msgid "Get the 8 closest unique nodes within a distance of 32 and receive them as items - for debugging only"
-msgstr ""
+msgstr "距離32以内にある最も近い8つのユニークなノードをアイテムとして取得する（デバッグ専用）"
 
 #: mods/sbz_devtools/init.lua:92 mods/sbz_devtools/init.lua:157
 #: mods/sbz_devtools/init.lua:184 mods/sbz_devtools/init.lua:198
 #: mods/sbz_devtools/init.lua:216 mods/sbz_devtools/init.lua:235
 msgid "Player not found!"
-msgstr ""
+msgstr "プレイヤーが見つかりません！"
 
 #: mods/sbz_devtools/init.lua:143
 msgid "No unique nodes found within 32 blocks."
-msgstr ""
+msgstr "32ブロック以内にユニークなノードは見つかりませんでした。"
 
 #: mods/sbz_devtools/init.lua:146
 msgid "Given @1 unique node."
 msgid_plural "Given @2 unique nodes."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "@1 個のユニークなノードを付与しました。"
 
 #: mods/sbz_devtools/init.lua:152
 msgid "Clears the player's inventory - for debugging only"
-msgstr ""
+msgstr "プレイヤーのインベントリを消去する（デバッグ専用）"
 
 #: mods/sbz_devtools/init.lua:164
 msgid "Inventory cleared."
-msgstr ""
+msgstr "インベントリを消去しました。"
 
 #: mods/sbz_devtools/init.lua:169
 msgid "Enables/Disables all lua sandboxing"
-msgstr ""
+msgstr "すべてのLuaサンドボックス化を有効/無効にする"
 
 #: mods/sbz_devtools/init.lua:179
 msgid "Makes it day only for you"
-msgstr ""
+msgstr "自分だけを常に昼の状態にする"
 
 #: mods/sbz_devtools/init.lua:193
 msgid "Fake a craft, used for quest testing, param should be an item name or \"item\" to specify wielded item's name"
-msgstr ""
+msgstr "クラフトを偽装する（クエストテスト用）。引数はアイテム名、または手に持っているアイテムを指定する場合は \"item\""
 
 #: mods/sbz_devtools/init.lua:210
 msgid "Re-generate a mapblock (one that you are standing on)"
-msgstr ""
+msgstr "マップブロック（現在立っている場所）を再生成する"
 
 #: mods/sbz_devtools/init.lua:223
 msgid "Area re-generated!"
-msgstr ""
+msgstr "エリアが再生成されました！"
 
 #: mods/sbz_devtools/init.lua:229
 msgid "Sends you all the mapblocks in the radius. RADIUS IS IN MAPBLOCKS!! may not work... in singleplayer at least"
-msgstr ""
+msgstr "半径内のすべてのマップブロックを送信する。半径はマップブロック単位です！シングルプレイヤーでは動作しない可能性があります。"
 
 #: mods/sbz_devtools/init.lua:248
 msgid "Area sent!"
-msgstr ""
+msgstr "エリアを送信しました！"
 
 #: mods/sbz_devtools/init.lua:252
 msgid "Toggles making habitats fast, don't use this in a server"
-msgstr ""
+msgstr "生息地の高速作成を切り替える（サーバーでは使用しないでください）"
 
 #: mods/sbz_devtools/init.lua:261
 msgid "Toggle pvp, NEEDS SERVER RESTART, bad idea to use if you aren't a dev"
-msgstr ""
+msgstr "PvPを切り替える（要サーバー再起動）。開発者以外が使用するのは推奨されません。"
 
 #: mods/sbz_devtools/init.lua:270
 msgid "Test rain particles <remove later>"
-msgstr ""
+msgstr "雨のパーティクルをテストする <後で削除>"

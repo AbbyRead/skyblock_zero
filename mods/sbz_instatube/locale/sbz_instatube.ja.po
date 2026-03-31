@@ -1,14 +1,14 @@
 # SBZ_INSTATUBE MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:08-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,60 +17,60 @@ msgstr ""
 
 #: mods/sbz_instatube/init.lua:310
 msgid "Instatube"
-msgstr ""
+msgstr "インスタチューブ"
 
 #: mods/sbz_instatube/init.lua:357
 msgid "One Way Instatube"
-msgstr ""
+msgstr "一方通行インスタチューブ"
 
 #: mods/sbz_instatube/init.lua:413
 msgid "Instatube Item Filter"
-msgstr ""
+msgstr "インスタチューブ・アイテムフィルター"
 
 #: mods/sbz_instatube/init.lua:517
 msgid "High Priority Instatube"
-msgstr ""
+msgstr "高優先度インスタチューブ"
 
 #: mods/sbz_instatube/init.lua:563
 msgid "Low Priority Instatube"
-msgstr ""
+msgstr "低優先度インスタチューブ"
 
 #: mods/sbz_instatube/init.lua:625
 msgid "Teleport Instatube"
-msgstr ""
+msgstr "テレポート・インスタチューブ"
 
 #: mods/sbz_instatube/init.lua:706
 msgid "Randomized Input Instatube"
-msgstr ""
+msgstr "ランダム入力インスタチューブ"
 
 #: mods/sbz_instatube/init.lua:751
 msgid "Cycling Input Instatube"
-msgstr ""
+msgstr "サイクリング入力インスタチューブ"
 
 #: mods/sbz_instatube/init.lua:856
 msgid "Something went wrong."
-msgstr ""
+msgstr "問題が発生しました。"
 
 #: mods/sbz_instatube/init.lua:861
 msgid "That network no longer exists"
-msgstr ""
+msgstr "そのネットワークはもう存在しません"
 
 #: mods/sbz_instatube/init.lua:886
 msgid "The network you were looking at no longer exists"
-msgstr ""
+msgstr "参照していたネットワークはもう存在しません"
 
 #: mods/sbz_instatube/init.lua:914
 msgid "Instatube Debug Tool"
-msgstr ""
+msgstr "インスタチューブ・デバッグツール"
 
 #: mods/sbz_instatube/init.lua:916
 msgid "Shows all machines connected to instatube"
-msgstr ""
+msgstr "インスタチューブに接続されているすべてのマシンを表示します"
 
 #: mods/sbz_instatube/init.lua:926
 msgid "No instatube networks found."
-msgstr ""
+msgstr "インスタチューブ・ネットワークが見つかりませんでした。"
 
 #: mods/sbz_instatube/recipes.lua:5
 msgid "Instantinium"
-msgstr ""
+msgstr "インスタンチニウム"

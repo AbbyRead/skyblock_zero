@@ -1,14 +1,14 @@
 # SBZ_CHEM MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:05-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,124 +17,124 @@ msgstr ""
 
 #: mods/sbz_chem/alloy_furnace.lua:5
 msgid "Alloying"
-msgstr ""
+msgstr "合金化"
 
 #: mods/sbz_chem/alloy_furnace.lua:32
 msgid "Simple Alloy Furnace"
-msgstr ""
+msgstr "簡易合金炉"
 
 #: mods/sbz_chem/centrifuge.lua:5
 msgid "Separating"
-msgstr ""
+msgstr "分離中"
 
 #: mods/sbz_chem/centrifuge.lua:128
 msgid "Centrifuge"
-msgstr ""
+msgstr "遠心分離機"
 
 #: mods/sbz_chem/compressor.lua:5
 msgid "Compressing"
-msgstr ""
+msgstr "圧縮中"
 
 #: mods/sbz_chem/compressor.lua:24
 msgid "Compressor"
-msgstr ""
+msgstr "圧縮機"
 
 #: mods/sbz_chem/crusher.lua:5
 msgid "Crushing"
-msgstr ""
+msgstr "粉砕中"
 
 #: mods/sbz_chem/crusher.lua:21
 msgid "Enhanced Pebble"
-msgstr ""
+msgstr "強化された小石"
 
 #: mods/sbz_chem/crusher.lua:64
 msgid "Crusher"
-msgstr ""
+msgstr "粉砕機"
 
 #: mods/sbz_chem/crystal_grower.lua:5
 msgid "Crystal Growing"
-msgstr ""
+msgstr "結晶成長"
 
 #: mods/sbz_chem/crystal_grower.lua:71
 msgid "Crystal Grower"
-msgstr ""
+msgstr "結晶成長装置"
 
 #: mods/sbz_chem/decay_accel.lua:52
 msgid "Decay Accelerator"
-msgstr ""
+msgstr "崩壊加速器"
 
 #: mods/sbz_chem/decay_chains.lua:12
 msgid "Decay Accelerating"
-msgstr ""
+msgstr "崩壊加速中"
 
 #: mods/sbz_chem/engraver.lua:17
 msgid "Engraving"
-msgstr ""
+msgstr "刻印中"
 
 #: mods/sbz_chem/engraver.lua:23
 msgid "Engraver"
-msgstr ""
+msgstr "刻印機"
 
 #: mods/sbz_chem/fluids.lua:39
 msgid "Empty Fluid Cell (Empty)"
-msgstr ""
+msgstr "空の流体セル（空）"
 
 #: mods/sbz_chem/fluids.lua:77
 msgid "Water Fluid Cell (H₂O)"
-msgstr ""
+msgstr "水の流体セル（H₂O）"
 
 #: mods/sbz_chem/hpef.lua:15
 msgid "High Power Electric Furnace"
-msgstr ""
+msgstr "高出力電気炉"
 
 #: mods/sbz_chem/melter_cooler.lua:14
 msgid "Melting"
-msgstr ""
+msgstr "溶解中"
 
 #: mods/sbz_chem/melter_cooler.lua:22
 msgid "Cooling"
-msgstr ""
+msgstr "冷却中"
 
 #: mods/sbz_chem/melter_cooler.lua:51
 msgid "Melter"
-msgstr ""
+msgstr "溶解炉"
 
 #: mods/sbz_chem/melter_cooler.lua:151
 msgid "Cooler"
-msgstr ""
+msgstr "冷却機"
 
 #: mods/sbz_chem/pebble_enhancer.lua:5
 msgid "Enhancing"
-msgstr ""
+msgstr "強化中"
 
 #: mods/sbz_chem/pebble_enhancer.lua:19
 msgid "Pebble Enhancer"
-msgstr ""
+msgstr "小石強化器"
 
 #: mods/sbz_chem/radiation.lua:222
 msgid "radon"
-msgstr ""
+msgstr "ラドン"
 
 #: mods/sbz_chem/radiation.lua:322
 msgid "bad water, unhealthy even"
-msgstr ""
+msgstr "汚染水、不衛生ですらある"
 
 #: mods/sbz_chem/reactor.lua:7
 msgid "Thorium Fuel Rod"
-msgstr ""
+msgstr "トリウム燃料棒"
 
 #: mods/sbz_chem/reactor.lua:19
 msgid "Uranium Fuel Rod"
-msgstr ""
+msgstr "ウラン燃料棒"
 
 #: mods/sbz_chem/reactor.lua:31
 msgid "Plutonium Fuel Rod"
-msgstr ""
+msgstr "プルトニウム燃料棒"
 
 #: mods/sbz_chem/reactor.lua:69
 msgid "Nuclear Reactor"
-msgstr ""
+msgstr "原子炉"
 
 #: mods/sbz_chem/reactor.lua:245
 msgid "X-ray Emitter"
-msgstr ""
+msgstr "X線放射器"

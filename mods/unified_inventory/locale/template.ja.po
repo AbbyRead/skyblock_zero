@@ -1,16 +1,16 @@
 # LANGUAGE translation for the unified_inventory mod.
 # Copyright (C) 2018 Maciej Kasatkin (RealBadAngel)
 # This file is distributed under the same license as the unified_inventory package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: unified_inventory\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 03:34+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-30 20:20+0000\n"
+"Last-Translator: Google Gemini\n"
+"Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,155 +18,155 @@ msgstr ""
 
 #: api.lua register.lua
 msgid "Crafting"
-msgstr ""
+msgstr "クラフト"
 
 #: api.lua
 msgid "Mixing"
-msgstr ""
+msgstr "調合"
 
 #: api.lua
 msgid "Cooking"
-msgstr ""
+msgstr "調理"
 
 #: api.lua
 msgid "Digging"
-msgstr ""
+msgstr "採掘"
 
 #: bags.lua
 msgid "Bags"
-msgstr ""
+msgstr "バッグ"
 
 #: bags.lua
 msgid "Bag @1"
-msgstr ""
+msgstr "バッグ @1"
 
 #: bags.lua
 msgid "Small Bag"
-msgstr ""
+msgstr "小さいバッグ"
 
 #: bags.lua
 msgid "Medium Bag"
-msgstr ""
+msgstr "中くらいのバッグ"
 
 #: bags.lua
 msgid "Large Bag"
-msgstr ""
+msgstr "大きいバッグ"
 
 #: group.lua
 msgid " and "
-msgstr ""
+msgstr " と "
 
 #: internal.lua
 msgid "First page"
-msgstr ""
+msgstr "最初のページ"
 
 #: internal.lua
 msgid "Back three pages"
-msgstr ""
+msgstr "3ページ戻る"
 
 #: internal.lua
 msgid "Back one page"
-msgstr ""
+msgstr "1ページ戻る"
 
 #: internal.lua
 msgid "Forward one page"
-msgstr ""
+msgstr "1ページ進む"
 
 #: internal.lua
 msgid "Forward three pages"
-msgstr ""
+msgstr "3ページ進む"
 
 #: internal.lua
 msgid "Last page"
-msgstr ""
+msgstr "最後のページ"
 
 #: internal.lua
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: internal.lua
 msgid "Reset search and display everything"
-msgstr ""
+msgstr "検索をリセットしてすべて表示"
 
 #: internal.lua
 msgid "No matching items"
-msgstr ""
+msgstr "一致するアイテムがありません"
 
 #: internal.lua
 msgid "No matches."
-msgstr ""
+msgstr "一致なし。"
 
 #: internal.lua
 msgid "Page"
-msgstr ""
+msgstr "ページ"
 
 #: internal.lua
 #, lua-format
 msgid "%s of %s"
-msgstr ""
+msgstr "%s / %s"
 
 #: internal.lua
 msgid "Filter"
-msgstr ""
+msgstr "フィルター"
 
 #: register.lua
 msgid "Can use the creative inventory"
-msgstr ""
+msgstr "クリエイティブインベントリを使用可能"
 
 #: register.lua
 msgid ""
 "Forces Unified Inventory to be displayed in Full mode if Lite mode is "
 "configured globally"
-msgstr ""
+msgstr "設定でライトモードが有効な場合でも、強制的にフルモードで表示する"
 
 #: register.lua
 msgid "Crafting Grid"
-msgstr ""
+msgstr "クラフトグリッド"
 
 #: register.lua
 msgid "Crafting Guide"
-msgstr ""
+msgstr "クラフトガイド"
 
 #: register.lua
 msgid "Set home position"
-msgstr ""
+msgstr "ホーム地点を設定"
 
 #: register.lua
 #, lua-format
 msgid "Home position set to: %s"
-msgstr ""
+msgstr "ホーム地点を以下に設定しました: %s"
 
 #: register.lua
 msgid "You don't have the \"home\" privilege!"
-msgstr ""
+msgstr "「home」権限がありません！"
 
 #: register.lua
 msgid "Go home"
-msgstr ""
+msgstr "ホームへ戻る"
 
 #: register.lua
 msgid "Set time to day"
-msgstr ""
+msgstr "時間を昼に設定"
 
 #: register.lua
 msgid "Time of day set to 6am"
-msgstr ""
+msgstr "時刻を午前6時に設定しました"
 
 #: register.lua
 msgid "You don't have the settime privilege!"
-msgstr ""
+msgstr "時刻設定（settime）の権限がありません！"
 
 #: register.lua
 msgid "Set time to night"
-msgstr ""
+msgstr "時間を夜に設定"
 
 #: register.lua
 msgid "Time of day set to 9pm"
-msgstr ""
+msgstr "時刻を午後9時に設定しました"
 
 #: register.lua
 msgid "Clear inventory"
-msgstr ""
+msgstr "インベントリを消去"
 
 #: register.lua
 msgid ""
@@ -174,184 +174,188 @@ msgid ""
 "inventory trashing.\n"
 "Use the trash slot instead."
 msgstr ""
+"誤ってアイテムを破棄するのを防ぐため、クリエイティブモード以外ではこのボタンは無効化されています。\n"
+"代わりにゴミ箱スロットを使用してください。"
 
 #: register.lua
 msgid "Inventory cleared!"
-msgstr ""
+msgstr "インベントリを消去しました！"
 
 #: register.lua
 msgid "Trash:"
-msgstr ""
+msgstr "ゴミ箱:"
 
 #: register.lua
 msgid "Refill:"
-msgstr ""
+msgstr "補充:"
 
 #: register.lua
 #, lua-format
 msgid "Any item belonging to the %s group"
-msgstr ""
+msgstr "%s グループに属する任意のアイテム"
 
 #: register.lua
 #, lua-format
 msgid "Any item belonging to the groups %s"
-msgstr ""
+msgstr "%s グループに属する任意のアイテム"
 
 #: register.lua
 #, lua-format
 msgid "Recipe %d of %d"
-msgstr ""
+msgstr "レシピ %d / %d"
 
 #: register.lua
 #, lua-format
 msgid "Usage %d of %d"
-msgstr ""
+msgstr "用途 %d / %d"
 
 #: register.lua
 msgid "No recipes"
-msgstr ""
+msgstr "レシピなし"
 
 #: register.lua
 msgid "No usages"
-msgstr ""
+msgstr "用途なし"
 
 #: register.lua
 msgid "Result"
-msgstr ""
+msgstr "結果"
 
 #: register.lua
 msgid "Ingredient"
-msgstr ""
+msgstr "材料"
 
 #: register.lua
 msgid "Show next recipe"
-msgstr ""
+msgstr "次のレシピを表示"
 
 #: register.lua
 msgid "Show next usage"
-msgstr ""
+msgstr "次の用途を表示"
 
 #: register.lua
 msgid "Show previous recipe"
-msgstr ""
+msgstr "前のレシピを表示"
 
 #: register.lua
 msgid "Show previous usage"
-msgstr ""
+msgstr "前の用途を表示"
 
 #: register.lua
 #, lua-format
 msgid "%s (%s)"
-msgstr ""
+msgstr "%s (%s)"
 
 #: register.lua
 msgid "Give me:"
-msgstr ""
+msgstr "入手:"
 
 #: register.lua
 msgid ""
 "This recipe is too\n"
 "large to be displayed."
 msgstr ""
+"このレシピは大きすぎて\n"
+"表示できません。"
 
 #: register.lua
 msgid "To craft grid:"
-msgstr ""
+msgstr "クラフト枠へ:"
 
 #: register.lua
 msgid "All"
-msgstr ""
+msgstr "すべて"
 
 #: waypoints.lua
 msgid "White"
-msgstr ""
+msgstr "白"
 
 #: waypoints.lua
 msgid "Yellow"
-msgstr ""
+msgstr "黄"
 
 #: waypoints.lua
 msgid "Red"
-msgstr ""
+msgstr "赤"
 
 #: waypoints.lua
 msgid "Green"
-msgstr ""
+msgstr "緑"
 
 #: waypoints.lua
 msgid "Blue"
-msgstr ""
+msgstr "青"
 
 #: waypoints.lua
 msgid "Waypoints"
-msgstr ""
+msgstr "ウェイポイント"
 
 #: waypoints.lua
 #, lua-format
 msgid "Select Waypoint #%d"
-msgstr ""
+msgstr "ウェイポイント #%d を選択"
 
 #: waypoints.lua
 #, lua-format
 msgid "Waypoint %d"
-msgstr ""
+msgstr "ウェイポイント %d"
 
 #: waypoints.lua
 msgid "Set waypoint to current location"
-msgstr ""
+msgstr "現在地にウェイポイントを設定"
 
 #: waypoints.lua
 msgid "invisible"
-msgstr ""
+msgstr "非表示"
 
 #: waypoints.lua
 msgid "visible"
-msgstr ""
+msgstr "表示"
 
 #: waypoints.lua
 msgid "Make waypoint @1"
-msgstr ""
+msgstr "ウェイポイントを@1にする"
 
 #: waypoints.lua
 msgid "Disable"
-msgstr ""
+msgstr "無効化"
 
 #: waypoints.lua
 msgid "Enable"
-msgstr ""
+msgstr "有効化"
 
 #: waypoints.lua
 msgid "@1 display of waypoint coordinates"
-msgstr ""
+msgstr "ウェイポイント座標の表示を@1にする"
 
 #: waypoints.lua
 msgid "Change color of waypoint display"
-msgstr ""
+msgstr "ウェイポイントの表示色を変更"
 
 #: waypoints.lua
 msgid "Edit waypoint name"
-msgstr ""
+msgstr "ウェイポイント名を編集"
 
 #: waypoints.lua
 msgid "Waypoint active"
-msgstr ""
+msgstr "ウェイポイント有効"
 
 #: waypoints.lua
 msgid "Waypoint inactive"
-msgstr ""
+msgstr "ウェイポイント無効"
 
 #: waypoints.lua
 msgid "Finish editing"
-msgstr ""
+msgstr "編集を終了"
 
 #: waypoints.lua
 msgid "World position"
-msgstr ""
+msgstr "ワールド座標"
 
 #: waypoints.lua
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: waypoints.lua
 msgid "HUD text color"
-msgstr ""
+msgstr "HUDテキストの色"

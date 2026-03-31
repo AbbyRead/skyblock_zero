@@ -1,14 +1,14 @@
 # SBZ_PIPEWORKS MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:10-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,148 +17,148 @@ msgstr ""
 
 #: mods/sbz_pipeworks/autocrafter.lua:23
 msgid "Unknown item"
-msgstr ""
+msgstr "不明なアイテム"
 
 #: mods/sbz_pipeworks/autocrafter.lua:264
 msgid "unconfigured Autocrafter: unknown recipe"
-msgstr ""
+msgstr "未設定の自動クラフト機：不明なレシピ"
 
 #: mods/sbz_pipeworks/autocrafter.lua:359
 msgid "unconfigured Autocrafter"
-msgstr ""
+msgstr "未設定の自動クラフト機"
 
 #: mods/sbz_pipeworks/autocrafter.lua:362
 msgid "No crafting processor."
-msgstr ""
+msgstr "クラフトプロセッサがありません。"
 
 #: mods/sbz_pipeworks/autocrafter.lua:367
 msgid "'@1' Autocrafter (@2)"
-msgstr ""
+msgstr "'@1' 自動クラフト機 (@2)"
 
 #: mods/sbz_pipeworks/autocrafter.lua:381
 msgid "Autocrafter"
-msgstr ""
+msgstr "自動クラフト機"
 
 #: mods/sbz_pipeworks/basic_blocks.lua:57
 msgid "Item Sorter"
-msgstr ""
+msgstr "アイテムソーター"
 
 #: mods/sbz_pipeworks/basic_blocks.lua:195
 msgid "Item Void"
-msgstr ""
+msgstr "アイテムボイド"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:4
 msgid "Basic Tube"
-msgstr ""
+msgstr "基本のチューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:25
 msgid "Accelerating Tube"
-msgstr ""
+msgstr "加速チューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:60
 msgid "One Direction Tube"
-msgstr ""
+msgstr "一方通行チューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:137
 msgid "High Priority Tube"
-msgstr ""
+msgstr "高優先度チューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:161
 msgid "Low Priority Tube"
-msgstr ""
+msgstr "低優先度チューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:189
 msgid "One-Way Tube"
-msgstr ""
+msgstr "逆流防止チューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:250
 msgid "Crossing Tube"
-msgstr ""
+msgstr "交差チューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:278
 msgid "Broken Tube"
-msgstr ""
+msgstr "壊れたチューブ"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:315
 msgid "Broken tubes may be a bit sharp. Maybe try hitting it with a robotic arm?"
-msgstr ""
+msgstr "壊れたチューブは少し鋭利かもしれません。ロボットアームで叩いてみてはどうでしょうか？"
 
 #: mods/sbz_pipeworks/basic_tubes.lua:335
 msgid "This tube cannot be repaired."
-msgstr ""
+msgstr "このチューブは修理できません。"
 
 #: mods/sbz_pipeworks/common.lua:31
 msgid "Allow splitting incoming stacks from tubes"
-msgstr ""
+msgstr "チューブから入ってくるスタックの分割を許可する"
 
 #: mods/sbz_pipeworks/filter_injector.lua:46
 msgid "Automatic Filter-Injector"
-msgstr ""
+msgstr "自動フィルターインジェクター"
 
 #: mods/sbz_pipeworks/luaentity.lua:440
 msgid "Removes all tube entities, use when it lags"
-msgstr ""
+msgstr "すべてのチューブエンティティを削除します（ラグが発生する場合に使用）"
 
 #: mods/sbz_pipeworks/pattern_storinator.lua:30
 msgid "Pattern Storinator"
-msgstr ""
+msgstr "パターンストリネーター"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:129
 msgid "Channels are public by default"
-msgstr ""
+msgstr "チャンネルはデフォルトで公開されています"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:130
 msgid "Use <player>:<channel> for fully private channels"
-msgstr ""
+msgstr "完全なプライベートチャンネルには <プレイヤー名>:<チャンネル名> を使用してください"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:131
 msgid "Use <player>;<channel> for private receivers"
-msgstr ""
+msgstr "プライベートな受信機には <プレイヤー名>;<チャンネル名> を使用してください"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:136
 msgid "Teleporting Tube"
-msgstr ""
+msgstr "テレポートチューブ"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:137
 msgid "Channel"
-msgstr ""
+msgstr "チャンネル"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:138
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:139
 msgid "Receive"
-msgstr ""
+msgstr "受信"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:147
 msgid "Unconfigured Teleport Tube"
-msgstr ""
+msgstr "未設定のテレポートチューブ"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:150
 msgid "Teleport Tube @1 on '@2'"
-msgstr ""
+msgstr "テレポートチューブ @1（チャンネル '@2'）"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:173
 msgid "Sorry, channel '@1' is reserved for exclusive use by @2"
-msgstr ""
+msgstr "申し訳ありません、チャンネル '@1' は @2 の専用です"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:177
 msgid "Sorry, receiving from channel '@1' is reserved for @2"
-msgstr ""
+msgstr "申し訳ありません、チャンネル '@1' からの受信は @2 専用です"
 
 #: mods/sbz_pipeworks/teleport_tube.lua:288
 msgid "Teleport Tube"
-msgstr ""
+msgstr "テレポートチューブ"
 
 #: mods/sbz_pipeworks/wielder.lua:234
 msgid "Node Breaker"
-msgstr ""
+msgstr "ノードブレイカー"
 
 #: mods/sbz_pipeworks/wielder.lua:296
 msgid "Deployer"
-msgstr ""
+msgstr "デプロイヤー"
 
 #: mods/sbz_pipeworks/wielder.lua:326
 msgid "Puncher"
-msgstr ""
+msgstr "パンチャー"

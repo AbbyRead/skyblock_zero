@@ -1,14 +1,14 @@
 # SBZ_PLANETS MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:10-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,100 +17,100 @@ msgstr ""
 
 #: mods/sbz_planets/orbs.lua:10
 msgid "Dwarf Orb"
-msgstr ""
+msgstr "ドワーフオーブ"
 
 #: mods/sbz_planets/orbs.lua:12
 msgid "Used as a crafting replacement for matter annihilators, found naturally in dwarf planets"
-msgstr ""
+msgstr "物質アナイアレイターのクラフト代用品として使用される。準惑星で天然に見つかる。"
 
 #: mods/sbz_planets/orbs.lua:29
 msgid "Dwarf Orb Ore"
-msgstr ""
+msgstr "ドワーフオーブ鉱石"
 
 #: mods/sbz_planets/orbs.lua:39
 msgid "Stone"
-msgstr ""
+msgstr "石"
 
 #: mods/sbz_planets/planet_nodes.lua:50
 msgid "Marble"
-msgstr ""
+msgstr "大理石"
 
 #: mods/sbz_planets/planet_nodes.lua:60
 msgid "Basalt"
-msgstr ""
+msgstr "玄武岩"
 
 #: mods/sbz_planets/planet_nodes.lua:68 mods/sbz_planets/planet_nodes.lua:76
 msgid "Red Stone"
-msgstr ""
+msgstr "レッドストーン"
 
 #: mods/sbz_planets/planet_nodes.lua:83
 msgid "Thorium Ore"
-msgstr ""
+msgstr "トリウム鉱石"
 
 #: mods/sbz_planets/planet_nodes.lua:99
 msgid "Blue Stone"
-msgstr ""
+msgstr "ブルーストーン"
 
 #: mods/sbz_planets/planet_nodes.lua:106
 msgid "Uranium Ore"
-msgstr ""
+msgstr "ウラン鉱石"
 
 #: mods/sbz_planets/planet_nodes.lua:127
 msgid "Granite"
-msgstr ""
+msgstr "花崗岩"
 
 #: mods/sbz_planets/planet_nodes.lua:135
 msgid "Dead Core Piece"
-msgstr ""
+msgstr "デッドコアの破片"
 
 #: mods/sbz_planets/planet_nodes.lua:147
 msgid "Ice"
-msgstr ""
+msgstr "氷"
 
 #: mods/sbz_planets/planet_nodes.lua:156
 msgid "Ice Core Piece - deprecated"
-msgstr ""
+msgstr "アイスコアの破片（非推奨）"
 
 #: mods/sbz_planets/planet_nodes.lua:165
 msgid "Snow"
-msgstr ""
+msgstr "雪"
 
 #: mods/sbz_planets/planet_nodes.lua:197
 msgid "Snow layer"
-msgstr ""
+msgstr "積雪"
 
 #: mods/sbz_planets/planet_nodes.lua:225
 msgid "Snowball"
-msgstr ""
+msgstr "雪玉"
 
 #: mods/sbz_planets/planet_nodes.lua:230
 msgid "Colorium Core Piece - Deprecated"
-msgstr ""
+msgstr "コロリウムコアの破片（非推奨）"
 
 #: mods/sbz_planets/planet_nodes.lua:241
 msgid "Not Water"
-msgstr ""
+msgstr "水ではない何か"
 
 #: mods/sbz_planets/planet_nodes.lua:267
 msgid "Mapgen Sapling (I guess you just got an instant sapling. lol.)"
-msgstr ""
+msgstr "マップ生成用苗木（即席の苗木を手に入れたようですね。笑）"
 
 #: mods/sbz_planets/planet_teleporter.lua:6
 msgid "Teleports you to a planet. Insert a warp crystal to get teleported."
-msgstr ""
+msgstr "惑星へテレポートします。ワープクリスタルを挿入してテレポートしてください。"
 
 #: mods/sbz_planets/planet_teleporter.lua:7
 msgid "Planet Teleporter"
-msgstr ""
+msgstr "プラネットテレポーター"
 
 #: mods/sbz_planets/planet_teleporter.lua:15
 msgid "You must be holding a warp crystal for this to work."
-msgstr ""
+msgstr "動作させるにはワープクリスタルを手に持っている必要があります。"
 
 #: mods/sbz_planets/planet_teleporter.lua:26
 msgid "Oops, the crystal broke, please insert another one. [What actually happened was that the planet teleporter tried to teleport you out of this world. Hello if you are seeing this - you must be very lucky.]"
-msgstr ""
+msgstr "おっと、クリスタルが割れてしまいました。別のものを挿入してください。[実際には、プラネットテレポーターがあなたをこの世の外へテレポートさせようとしました。これを見ているなら、あなたはとても幸運です。]"
 
 #: mods/sbz_planets/planet_teleporter.lua:34
 msgid "You have been teleported to the planet. Please wait and fall a bit."
-msgstr ""
+msgstr "惑星へテレポートしました。少しの間、落下しながらお待ちください。"

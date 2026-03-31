@@ -1,52 +1,51 @@
 # AREASPROTECTOR MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 19:46+0000\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: mods/areasprotector/init.lua:104 mods/areasprotector/init.lua:109
 #: mods/areasprotector/init.lua:115 mods/areasprotector/init.lua:162
 msgid "You are not allowed to protect that area: "
-msgstr ""
+msgstr "その領域を保護する権限がありません: "
 
 #: mods/areasprotector/init.lua:110
 msgid "That name is obviously invalid."
-msgstr ""
+msgstr "その名前は明らかに無効です。"
 
 #: mods/areasprotector/init.lua:116
 msgid "You need to fill out the field with a name"
-msgstr ""
+msgstr "名前を入力する必要があります"
 
 #: mods/areasprotector/init.lua:120
 msgid "Protector block sub-area"
-msgstr ""
+msgstr "プロテクターブロックのサブ領域"
 
 #: mods/areasprotector/init.lua:180
 msgid "Protected by Protector Block"
-msgstr ""
+msgstr "プロテクターブロックによって保護されています"
 
 #: mods/areasprotector/init.lua:187
 msgid "You are using too many protector blocks: this server allows you to use up to @1 protector block, and you already have @2."
 msgid_plural "You are using too many protector blocks: this server allows you to use up to @1 protector blocks, and you already have @2."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "プロテクターブロックを使用しすぎています。このサーバーでは最大 @1 個まで使用可能ですが、既に @2 個設置されています。"
 
 #: mods/areasprotector/init.lua:289
 msgid "Large Protector Block"
-msgstr ""
+msgstr "大型プロテクターブロック"
 
 #: mods/areasprotector/init.lua:314
 msgid "Small Protector Block"
-msgstr ""
+msgstr "小型プロテクターブロック"

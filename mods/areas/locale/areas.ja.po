@@ -1,14 +1,14 @@
 # AREAS MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# Abigail Read, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 19:45+0000\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +18,11 @@ msgstr ""
 #: mods/areas/chatcommands.lua:33 mods/areas/chatcommands.lua:64
 #: mods/areas/chatcommands.lua:102
 msgid "<AreaName>"
-msgstr ""
+msgstr "<領域名>"
 
 #: mods/areas/chatcommands.lua:34
 msgid "Protect your own area"
-msgstr ""
+msgstr "自分の領域を保護する"
 
 #: mods/areas/chatcommands.lua:38 mods/areas/chatcommands.lua:73
 #: mods/areas/chatcommands.lua:110 mods/areas/chatcommands.lua:152
@@ -31,367 +31,367 @@ msgstr ""
 #: mods/areas/chatcommands.lua:361 mods/areas/chatcommands.lua:400
 #: mods/areas/pos.lua:70
 msgid "Invalid usage, see /help @1."
-msgstr ""
+msgstr "使い方が正しくありません。/help @1 を参照してください。"
 
 #: mods/areas/chatcommands.lua:42 mods/areas/chatcommands.lua:78
 #: mods/areas/chatcommands.lua:116 mods/areas/chatcommands.lua:410
 msgid "You need to select an area first."
-msgstr ""
+msgstr "まず最初に範囲を選択する必要があります。"
 
 #: mods/areas/chatcommands.lua:52
 msgid "You can't protect that area: @1"
-msgstr ""
+msgstr "その領域を保護することはできません: @1"
 
 #: mods/areas/chatcommands.lua:58 mods/areas/chatcommands.lua:96
 #: mods/areas/chatcommands.lua:141
 msgid "Area protected. ID: @1"
-msgstr ""
+msgstr "領域を保護しました。ID: @1"
 
 #: mods/areas/chatcommands.lua:64 mods/areas/chatcommands.lua:102
 msgid "<PlayerName>"
-msgstr ""
+msgstr "<プレイヤー名>"
 
 #: mods/areas/chatcommands.lua:65
 msgid "Protect an area between two positions and give a player access to it without setting the parent of the area to any existing area"
-msgstr ""
+msgstr "既存の親領域を設定せずに、2地点間の領域を保護し、指定したプレイヤーにアクセス権を与えます。"
 
 #: mods/areas/chatcommands.lua:82 mods/areas/chatcommands.lua:120
 #: mods/areas/chatcommands.lua:310
 msgid "The player \"@1\" does not exist."
-msgstr ""
+msgstr "プレイヤー「@1」は存在しません。"
 
 #: mods/areas/chatcommands.lua:94 mods/areas/chatcommands.lua:139
 msgid "You have been granted control over area #@1. Type /list_areas to show your areas."
-msgstr ""
+msgstr "領域 #@1 の管理権限が付与されました。/list_areas で自分の領域を確認できます。"
 
 #: mods/areas/chatcommands.lua:102
 msgid "<ParentID>"
-msgstr ""
+msgstr "<親ID>"
 
 #: mods/areas/chatcommands.lua:103
 msgid "Give a player access to a sub-area between two positions that have already been protected, Use set_owner if you don't want the parent to be set."
-msgstr ""
+msgstr "既に保護されている領域内にサブ領域を作成し、プレイヤーに権限を与えます。親領域を設定したくない場合は set_owner を使用してください。"
 
 #: mods/areas/chatcommands.lua:132
 msgid "You can't protect that area."
-msgstr ""
+msgstr "その領域を保護することはできません。"
 
 #: mods/areas/chatcommands.lua:147 mods/areas/chatcommands.lua:257
 #: mods/areas/chatcommands.lua:279 mods/areas/chatcommands.lua:300
 #: mods/areas/chatcommands.lua:329 mods/areas/chatcommands.lua:394
 msgid "<ID>"
-msgstr ""
+msgstr "<ID>"
 
 #: mods/areas/chatcommands.lua:147
 msgid "<newName>"
-msgstr ""
+msgstr "<新しい名前>"
 
 #: mods/areas/chatcommands.lua:148
 msgid "Rename an area that you own"
-msgstr ""
+msgstr "所有している領域の名前を変更します"
 
 #: mods/areas/chatcommands.lua:157
 msgid "That area doesn't exist."
-msgstr ""
+msgstr "その領域は存在しません。"
 
 #: mods/areas/chatcommands.lua:161
 msgid "You don't own that area."
-msgstr ""
+msgstr "その領域の所有者ではありません。"
 
 #: mods/areas/chatcommands.lua:166
 msgid "Area renamed."
-msgstr ""
+msgstr "領域の名前を変更しました。"
 
 #: mods/areas/chatcommands.lua:173
 msgid "Find areas using a Lua regular expression"
-msgstr ""
+msgstr "Luaの正規表現を使用して領域を検索します"
 
 #: mods/areas/chatcommands.lua:177
 msgid "A regular expression is required."
-msgstr ""
+msgstr "正規表現が必要です。"
 
 #: mods/areas/chatcommands.lua:186
 msgid "Invalid regular expression."
-msgstr ""
+msgstr "正規表現が正しくありません。"
 
 #: mods/areas/chatcommands.lua:199
 msgid "No matches found."
-msgstr ""
+msgstr "一致する領域は見つかりませんでした。"
 
 #: mods/areas/chatcommands.lua:206
 msgid "[<name>]"
-msgstr ""
+msgstr "[<名前>]"
 
 #: mods/areas/chatcommands.lua:207
 msgid "List your areas. Admins can list all areas or those of a specific player."
-msgstr ""
+msgstr "自分の領域を表示します。管理者はすべての領域、または特定のプレイヤーの領域を表示できます。"
 
 #: mods/areas/chatcommands.lua:238
 msgid "@1 : @2 area(s)"
-msgstr ""
+msgstr "@1 : @2 個の領域"
 
 #: mods/areas/chatcommands.lua:249
 msgid "No visible areas."
-msgstr ""
+msgstr "表示できる領域はありません。"
 
 #: mods/areas/chatcommands.lua:258
 msgid "Recursively remove areas using an ID"
-msgstr ""
+msgstr "指定したIDの領域とそのサブ領域をすべて削除します"
 
 #: mods/areas/chatcommands.lua:267 mods/areas/chatcommands.lua:288
 #: mods/areas/chatcommands.lua:315 mods/areas/chatcommands.lua:338
 #: mods/areas/chatcommands.lua:365
 msgid "Area @1 does not exist or is not owned by you."
-msgstr ""
+msgstr "領域 @1 が存在しないか、あなたが所有していません。"
 
 #: mods/areas/chatcommands.lua:273
 msgid "Removed area @1 and its sub areas."
-msgstr ""
+msgstr "領域 @1 とそのサブ領域を削除しました。"
 
 #: mods/areas/chatcommands.lua:280
 msgid "Remove an area using an ID"
-msgstr ""
+msgstr "IDを指定して領域を削除します"
 
 #: mods/areas/chatcommands.lua:294
 msgid "Removed area @1"
-msgstr ""
+msgstr "領域 @1 を削除しました。"
 
 #: mods/areas/chatcommands.lua:300
 msgid "<NewOwner>"
-msgstr ""
+msgstr "<新しい所有者>"
 
 #: mods/areas/chatcommands.lua:301
 msgid "Change the owner of an area using its ID"
-msgstr ""
+msgstr "IDを指定して領域の所有者を変更します"
 
 #: mods/areas/chatcommands.lua:321
 msgid "@1 has given you control over the area \"@2\" (ID @3)."
-msgstr ""
+msgstr "@1 があなたに領域「@2」(ID @3) の管理権限を譲渡しました。"
 
 #: mods/areas/chatcommands.lua:323
 msgid "Owner changed."
-msgstr ""
+msgstr "所有者を変更しました。"
 
 #: mods/areas/chatcommands.lua:330
 msgid "Toggle an area open (anyone can interact) or closed"
-msgstr ""
+msgstr "領域の公開（誰でも干渉可能）と非公開を切り替えます"
 
 #: mods/areas/chatcommands.lua:345
 msgid "Area opened."
-msgstr ""
+msgstr "領域を公開しました。"
 
 #: mods/areas/chatcommands.lua:345
 msgid "Area closed."
-msgstr ""
+msgstr "領域を非公開にしました。"
 
 #: mods/areas/chatcommands.lua:352
 msgid "<ID> [faction_name]"
-msgstr ""
+msgstr "<ID> [派閥名]"
 
 #: mods/areas/chatcommands.lua:353
 msgid "Toggle an area open/closed for members in your faction."
-msgstr ""
+msgstr "自分の派閥メンバーに対して領域の公開・非公開を切り替えます。"
 
 #: mods/areas/chatcommands.lua:370
 msgid "Faction doesn't exists"
-msgstr ""
+msgstr "派閥が存在しません"
 
 #: mods/areas/chatcommands.lua:386
 msgid "Area is open for members of: @1"
-msgstr ""
+msgstr "この領域は次のメンバーに公開されています: @1"
 
 #: mods/areas/chatcommands.lua:387
 msgid "Area closed for faction members."
-msgstr ""
+msgstr "派閥メンバーに対して領域を非公開にしました。"
 
 #: mods/areas/chatcommands.lua:395
 msgid "Move (or resize) an area to the current positions."
-msgstr ""
+msgstr "現在選択されている位置へ領域を移動（またはリサイズ）します。"
 
 #: mods/areas/chatcommands.lua:405
 msgid "Area does not exist."
-msgstr ""
+msgstr "領域が存在しません。"
 
 #: mods/areas/chatcommands.lua:416
 msgid "Area successfully moved."
-msgstr ""
+msgstr "領域の移動に成功しました。"
 
 #: mods/areas/chatcommands.lua:422
 msgid "Get information about area configuration and usage."
-msgstr ""
+msgstr "領域の設定と使用状況に関する情報を取得します。"
 
 #: mods/areas/chatcommands.lua:445
 msgid "Self protection is enabled."
-msgstr ""
+msgstr "自己保護機能は有効です。"
 
 #: mods/areas/chatcommands.lua:446
 msgid "Self protection is disabled."
-msgstr ""
+msgstr "自己保護機能は無効です。"
 
 #: mods/areas/chatcommands.lua:450
 msgid "You have the necessary privilege (\"@1\")."
-msgstr ""
+msgstr "必要な権限（\"@1\"）を持っています。"
 
 #: mods/areas/chatcommands.lua:451
 msgid "You don't have the necessary privilege (\"@1\")."
-msgstr ""
+msgstr "必要な権限（\"@1\"）を持っていません。"
 
 #: mods/areas/chatcommands.lua:454
 msgid "You are an area administrator (\"areas\" privilege)."
-msgstr ""
+msgstr "あなたは領域管理者です（\"areas\" 権限）。"
 
 #: mods/areas/chatcommands.lua:458
 msgid "You have extended area protection limits (\"areas_high_limit\" privilege)."
-msgstr ""
+msgstr "領域保護の拡張制限権限（\"areas_high_limit\" 権限）を持っています。"
 
 #: mods/areas/chatcommands.lua:469
 msgid "You have @1 areas."
-msgstr ""
+msgstr "現在 @1 個の領域を所有しています。"
 
 #: mods/areas/chatcommands.lua:473
 msgid "Limit: no area count limit"
-msgstr ""
+msgstr "制限: 領域数の制限はありません"
 
 #: mods/areas/chatcommands.lua:474
 msgid "Limit: @1 areas"
-msgstr ""
+msgstr "制限: @1 個の領域まで"
 
 #: mods/areas/chatcommands.lua:479
 msgid "@1 spanning up to @2x@3x@4."
-msgstr ""
+msgstr "@1 (最大サイズ @2x@3x@4)"
 
 #: mods/areas/chatcommands.lua:483
 msgid "Players with the \"@1\" privilege can protect up to @2 areas"
-msgstr ""
+msgstr "\"@1\" 権限を持つプレイヤーは最大 @2 個の領域を保護できます"
 
 #: mods/areas/chatcommands.lua:494
 msgid "You can protect areas"
-msgstr ""
+msgstr "領域を保護できます"
 
 #: mods/areas/chatcommands.lua:504
 msgid "Removes all ownerless areas"
-msgstr ""
+msgstr "所有者のいないすべての領域を削除します"
 
 #: mods/areas/hud.lua:72
 msgid ":open"
-msgstr ""
+msgstr ":公開中"
 
 #: mods/areas/hud.lua:84
 msgid "Areas:"
-msgstr ""
+msgstr "領域:"
 
 #: mods/areas/init.lua:31
 msgid "Can administer areas."
-msgstr ""
+msgstr "領域の管理ができます。"
 
 #: mods/areas/init.lua:35
 msgid "Can protect more, bigger areas."
-msgstr ""
+msgstr "より多く、より大きな領域を保護できます。"
 
 #: mods/areas/init.lua:41
 msgid "Can protect areas."
-msgstr ""
+msgstr "領域を保護できます。"
 
 #: mods/areas/interact.lua:15
 msgid "@1 is protected by @2."
-msgstr ""
+msgstr "@1 は @2 によって保護されています。"
 
 #: mods/areas/internal.lua:261
 msgid "Self protection is disabled or you do not have the necessary privilege."
-msgstr ""
+msgstr "自己保護機能が無効であるか、必要な権限を持っていません。"
 
 #: mods/areas/internal.lua:276
 msgid "Area is too big."
-msgstr ""
+msgstr "領域が大きすぎます。"
 
 #: mods/areas/internal.lua:293
 msgid "You have reached the maximum amount of areas that you are allowed to protect."
-msgstr ""
+msgstr "保護可能な領域の最大数に達しました。"
 
 #: mods/areas/internal.lua:303
 msgid "The area intersects with @1 [@2] (@3)."
-msgstr ""
+msgstr "この範囲は @1 [@2] (@3) と重なっています。"
 
 #: mods/areas/legacy.lua:6
 msgid "<version>"
-msgstr ""
+msgstr "<バージョン>"
 
 #: mods/areas/legacy.lua:7
 msgid "Loads, converts, and saves the areas from a legacy save file."
-msgstr ""
+msgstr "旧形式のセーブファイルから領域を読み込み、変換して保存します。"
 
 #: mods/areas/legacy.lua:11
 msgid "Converting areas…"
-msgstr ""
+msgstr "領域を変換中…"
 
 #: mods/areas/legacy.lua:16
 msgid "Error loading legacy file: @1"
-msgstr ""
+msgstr "旧形式ファイルの読み込みエラー: @1"
 
 #: mods/areas/legacy.lua:20
 msgid "Invalid version number. (0 allowed)"
-msgstr ""
+msgstr "不正なバージョン番号です。(0のみ許可)"
 
 #: mods/areas/legacy.lua:23
 msgid "Legacy file loaded."
-msgstr ""
+msgstr "旧形式ファイルを読み込みました。"
 
 #: mods/areas/legacy.lua:38
 msgid "unnamed"
-msgstr ""
+msgstr "名前なし"
 
 #: mods/areas/legacy.lua:43
 msgid "Table format updated."
-msgstr ""
+msgstr "テーブル形式を更新しました。"
 
 #: mods/areas/legacy.lua:46
 msgid "Converted areas saved. Done."
-msgstr ""
+msgstr "変換された領域を保存しました。完了。"
 
 #: mods/areas/pos.lua:50
 msgid "Relative coordinates is not supported on this server. Please upgrade Minetest to 5.7.0 or newer versions."
-msgstr ""
+msgstr "このサーバーでは相対座標がサポートされていません。Minetestを5.7.0以降にアップグレードしてください。"
 
 #: mods/areas/pos.lua:73
 msgid "Unable to get position."
-msgstr ""
+msgstr "座標を取得できません。"
 
 #: mods/areas/pos.lua:83
 msgid "Area position @1 set to @2"
-msgstr ""
+msgstr "領域の座標 @1 を @2 に設定しました"
 
 #: mods/areas/pos.lua:89 mods/areas/pos.lua:99
 msgid "Set area protection region position @1 to your location or the one specified"
-msgstr ""
+msgstr "領域保護範囲の座標 @1 を、現在地または指定した座標に設定します"
 
 #: mods/areas/pos.lua:108
 msgid "Set area protection region, position 1, or position 2 by punching nodes, or display the region"
-msgstr ""
+msgstr "ノードを叩いて座標1または2を設定し、保護範囲を指定または表示します"
 
 #: mods/areas/pos.lua:113
 msgid "Select positions by punching two nodes."
-msgstr ""
+msgstr "2つのノードを叩いて座標を選択してください。"
 
 #: mods/areas/pos.lua:116 mods/areas/pos.lua:119
 msgid "Select position @1 by punching a node."
-msgstr ""
+msgstr "ノードを叩いて座標 @1 を選択してください。"
 
 #: mods/areas/pos.lua:121
 msgid "Position @1:"
-msgstr ""
+msgstr "座標 @1:"
 
 #: mods/areas/pos.lua:125 mods/areas/pos.lua:130
 msgid "<not set>"
-msgstr ""
+msgstr "<未設定>"
 
 #: mods/areas/pos.lua:134
 msgid "Unknown subcommand: @1"
-msgstr ""
+msgstr "不明なサブコマンド: @1"
 
 #: mods/areas/pos.lua:206 mods/areas/pos.lua:212
 msgid "Position @1 set to @2"
-msgstr ""
+msgstr "座標 @1 を @2 に設定しました"
 
 #: mods/areas/pvp.lua:33
 msgid "Toggle PvP in an area"
-msgstr ""
+msgstr "領域内でのPvPの有効・無効を切り替えます"

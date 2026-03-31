@@ -1,14 +1,14 @@
 # SBZ_BIO MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:04-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,176 +17,176 @@ msgstr ""
 
 #: mods/sbz_bio/colorium_emitter.lua:45
 msgid "Colorium Emitter"
-msgstr ""
+msgstr "カラリウム放射器"
 
 #: mods/sbz_bio/fertilizer.lua:46
 msgid "Fertilizer"
-msgstr ""
+msgstr "肥料"
 
 #: mods/sbz_bio/fire.lua:28
 msgid "Fire"
-msgstr ""
+msgstr "火"
 
 #: mods/sbz_bio/fire.lua:96
 msgid "Igniter"
-msgstr ""
+msgstr "点火器"
 
 #: mods/sbz_bio/habitat.lua:207
 msgid "Habitat Regulator"
-msgstr ""
+msgstr "居住環境調整器"
 
 #: mods/sbz_bio/habitat.lua:233
 msgid "CO2 Compactor"
-msgstr ""
+msgstr "CO2圧縮機"
 
 #: mods/sbz_bio/habitat.lua:235
 msgid "Stores 30 CO₂. Habitat regulator doesn't consider it a wall, but it can be passed through"
-msgstr ""
+msgstr "30のCO₂を貯蔵します。環境調整器からは壁として認識されませんが、通り抜けることが可能です。"
 
 #: mods/sbz_bio/misc.lua:4
 msgid "Burner"
-msgstr ""
+msgstr "バーナー"
 
 #: mods/sbz_bio/misc.lua:72
 msgid "Airlock"
-msgstr ""
+msgstr "エアロック"
 
 #: mods/sbz_bio/misc.lua:99
 msgid "Basic Neutron Emitter"
-msgstr ""
+msgstr "基本中性子放射器"
 
 #: mods/sbz_bio/moss.lua:4
 msgid "Moss"
-msgstr ""
+msgstr "苔"
 
 #: mods/sbz_bio/moss.lua:46
 msgid "Algae"
-msgstr ""
+msgstr "藻"
 
 #: mods/sbz_bio/paper.lua:4
 msgid "Paper"
-msgstr ""
+msgstr "紙"
 
 #: mods/sbz_bio/paper.lua:60
 msgid "Book"
-msgstr ""
+msgstr "本"
 
 #: mods/sbz_bio/plants.lua:272
 msgid "Pyrograss Plant"
-msgstr ""
+msgstr "パイログラスの株"
 
 #: mods/sbz_bio/plants.lua:288
 msgid "Pyrograss"
-msgstr ""
+msgstr "パイログラス"
 
 #: mods/sbz_bio/plants.lua:322
 msgid "Razorgrass Plant"
-msgstr ""
+msgstr "レイザーグラスの株"
 
 #: mods/sbz_bio/plants.lua:354
 msgid "Razorgrass"
-msgstr ""
+msgstr "レイザーグラス"
 
 #: mods/sbz_bio/plants.lua:380
 msgid "Cleargrass Plant"
-msgstr ""
+msgstr "クリアグラスの株"
 
 #: mods/sbz_bio/plants.lua:402
 msgid "Cleargrass"
-msgstr ""
+msgstr "クリアグラス"
 
 #: mods/sbz_bio/plants.lua:418
 msgid "Stemfruit Plant"
-msgstr ""
+msgstr "ステムフルーツの株"
 
 #: mods/sbz_bio/plants.lua:430
 msgid "Stemfruit"
-msgstr ""
+msgstr "ステムフルーツ"
 
 #: mods/sbz_bio/plants.lua:458
 msgid "Warpshroom Plant"
-msgstr ""
+msgstr "ワープシュルームの株"
 
 #: mods/sbz_bio/plants.lua:491
 msgid "Warpshroom"
-msgstr ""
+msgstr "ワープシュルーム"
 
 #: mods/sbz_bio/plants.lua:546
 msgid "Shockshroom Plant"
-msgstr ""
+msgstr "ショックシュルームの株"
 
 #: mods/sbz_bio/plants.lua:562
 msgid "Shockshroom"
-msgstr ""
+msgstr "ショックシュルーム"
 
 #: mods/sbz_bio/plants.lua:588
 msgid "Fiberweed"
-msgstr ""
+msgstr "ファイバーウィード"
 
 #: mods/sbz_bio/potions.lua:4
 msgid "Potion of Inverting"
-msgstr ""
+msgstr "反転のポーション"
 
 #: mods/sbz_bio/potions.lua:24
 msgid "Ability: Drink (Left-Click)"
-msgstr ""
+msgstr "能力：飲む（左クリック）"
 
 #: mods/sbz_bio/potions.lua:24
 msgid " Inverts your screen colors."
-msgstr ""
+msgstr " 画面の色を反転させます。"
 
 #: mods/sbz_bio/soil.lua:4
 msgid "Dirt"
-msgstr ""
+msgstr "土"
 
 #: mods/sbz_bio/soil.lua:53
 msgid "Fertilized Dirt"
-msgstr ""
+msgstr "施肥された土"
 
 #: mods/sbz_bio/soil.lua:66
 msgid "Plants grow 2x faster than on dirt, on this soil."
-msgstr ""
+msgstr "この土壌では、通常の土よりも植物が2倍速く成長します。"
 
 #: mods/sbz_bio/soil.lua:67
 msgid "Fertilizer can't sprout plants on this soil."
-msgstr ""
+msgstr "この土壌では肥料を使って植物を発芽させることはできません。"
 
 #: mods/sbz_bio/soil.lua:87
 msgid "Dirt With Pyrograss"
-msgstr ""
+msgstr "パイログラス付きの土"
 
 #: mods/sbz_bio/soil.lua:117
 msgid "Electric Soil"
-msgstr ""
+msgstr "帯電した土壌"
 
 #: mods/sbz_bio/trees.lua:218
 msgid "Colorium Tree"
-msgstr ""
+msgstr "カラリウムの木"
 
 #: mods/sbz_bio/trees.lua:243
 msgid "Colorium Leaves"
-msgstr ""
+msgstr "カラリウムの葉"
 
 #: mods/sbz_bio/trees.lua:308
 msgid "Colorium Sapling"
-msgstr ""
+msgstr "カラリウムの苗木"
 
 #: mods/sbz_bio/trees.lua:340
 msgid "Giant Colorium Sapling"
-msgstr ""
+msgstr "巨大カラリウムの苗木"
 
 #: mods/sbz_bio/trees.lua:391
 msgid "Colorium Planks"
-msgstr ""
+msgstr "カラリウムの板材"
 
 #: mods/sbz_bio/trees.lua:437
 msgid "Colorium Tree Core"
-msgstr ""
+msgstr "カラリウムの原木芯"
 
 #: mods/sbz_bio/trees.lua:502
 msgid "DNA Extractor"
-msgstr ""
+msgstr "DNA抽出機"
 
 #: mods/sbz_bio/uses.lua:4
 msgid "Rope"
-msgstr ""
+msgstr "ロープ"

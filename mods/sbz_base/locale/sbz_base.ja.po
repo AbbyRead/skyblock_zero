@@ -1,14 +1,14 @@
 # SBZ_BASE MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:02-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,71 +17,71 @@ msgstr ""
 
 #: mods/sbz_base/init.lua:51
 msgid "Skyblock: Zero"
-msgstr ""
+msgstr "Skyblock: Zero"
 
 #: mods/sbz_base/init.lua:52
 msgid "Release"
-msgstr ""
+msgstr "リリース"
 
 #: mods/sbz_base/init.lua:62
 msgid "Skyblock: Zero (Release"
-msgstr ""
+msgstr "Skyblock: Zero (リリース"
 
 #: mods/sbz_base/init.lua:168
 msgid "You already had a questbook before joining."
-msgstr ""
+msgstr "参加前にすでにクエストブックを所持していました。"
 
 #: mods/sbz_base/init.lua:173
 msgid "Your inventory is full. Can't give you a questbook. Use /qb"
-msgstr ""
+msgstr "インベントリがいっぱいです。クエストブックを渡せません。/qb を使用してください。"
 
 #: mods/sbz_base/init.lua:189
 msgid "Go back to the core."
-msgstr ""
+msgstr "コアに戻る。"
 
 #: mods/sbz_base/init.lua:193
 msgid "Sent you back to the Core."
-msgstr ""
+msgstr "コアに転送しました。"
 
 #: mods/sbz_base/init.lua:249
 msgid "Adjusts volume of background music"
-msgstr ""
+msgstr "背景音楽の音量を調整します"
 
 #: mods/sbz_base/init.lua:254
 msgid "Needs to be a number between 0 and 200, 100 is the default volume."
-msgstr ""
+msgstr "0から200の間の数値を指定してください。デフォルトは100です。"
 
 #: mods/sbz_base/init.lua:263
 msgid "Set the background volume to @1."
-msgstr ""
+msgstr "背景音量を @1 に設定しました。"
 
 #: mods/sbz_base/init.lua:273
 msgid "‼ reminder: If you fall off, use /core to teleport back to the core."
-msgstr ""
+msgstr "‼ リマインダー：落下した場合は、/core を使ってコアにテレポートして戻ってください。"
 
 #: mods/sbz_base/init.lua:274
 msgid "‼ reminder: If lose your Quest Book, use /qb to get it back."
-msgstr ""
+msgstr "‼ リマインダー：クエストブックを紛失した場合は、/qb を使って再入手してください。"
 
 #: mods/sbz_base/init.lua:361
 msgid "Kills you."
-msgstr ""
+msgstr "自害します。"
 
 #: mods/sbz_base/init.lua:374
 msgid "You talk. But there is no one to listen."
-msgstr ""
+msgstr "あなたは話しかけましたが、誰も聞いていません。"
 
 #: mods/sbz_base/init.lua:779
 msgid "Skyblock: Zero's Base Mod has finished loading."
-msgstr ""
+msgstr "Skyblock: Zero のベースModの読み込みが完了しました。"
 
 #: mods/sbz_base/legacy.lua:14
 msgid "Deprecated item, throw away"
-msgstr ""
+msgstr "非推奨のアイテムです、捨ててください"
 
 #: mods/sbz_base/playtime_and_afk.lua:91
 msgid "Shows your, or other player's playtime."
-msgstr ""
+msgstr "自分、または他のプレイヤーのプレイ時間を表示します。"
 
 #: mods/sbz_base/playtime_and_afk.lua:99
 #, lua-format
@@ -90,19 +90,22 @@ msgid ""
 "%s's afk time: %s\n"
 "%s's afk and playtime: %s"
 msgstr ""
+"%s のプレイ時間: %s\n"
+"%s の離席時間: %s\n"
+"%s の合計時間: %s"
 
 #: mods/sbz_base/playtime_and_afk.lua:108
 msgid "Set your status to afk (away from keyboard)"
-msgstr ""
+msgstr "ステータスを離席(AFK)に設定します"
 
 #: mods/sbz_base/playtime_and_afk.lua:113
 msgid "You became afk"
-msgstr ""
+msgstr "離席状態になりました"
 
 #: mods/sbz_base/space_movement.lua:7
 msgid "Allows toggling space movement"
-msgstr ""
+msgstr "宇宙移動の切り替えを可能にします"
 
 #: mods/sbz_base/space_movement.lua:24
 msgid "Toggle space movement"
-msgstr ""
+msgstr "宇宙移動を切り替える"

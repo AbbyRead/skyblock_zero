@@ -1,14 +1,14 @@
 # TRAVELNET MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:19+0000\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,370 +17,370 @@ msgstr ""
 
 #: mods/travelnet/actions/add_station.lua:8
 msgid "The give player is not a player"
-msgstr ""
+msgstr "指定されたプレイヤーはプレイヤーではありません"
 
 #: mods/travelnet/actions/add_station.lua:12
 msgid "There is no player with interact privilege named '@1'. Aborting."
-msgstr ""
+msgstr "名前が '@1' でinteract権限を持つプレイヤーが見つかりません。中止します。"
 
 #: mods/travelnet/actions/add_station.lua:27
 #: mods/travelnet/actions/update_elevator.lua:23
 msgid "at @1 m"
-msgstr ""
+msgstr "高度 @1 m"
 
 #: mods/travelnet/actions/add_station.lua:32
 msgid "Please provide a name for this station."
-msgstr ""
+msgstr "このステーションの名前を入力してください。"
 
 #: mods/travelnet/actions/add_station.lua:36
 msgid "Please provide the name of the network this station ought to be connected to."
-msgstr ""
+msgstr "このステーションを接続するネットワーク名を入力してください。"
 
 #: mods/travelnet/actions/add_station.lua:44
 msgid "You do not have the travelnet_attach priv which is required to attach your box to the network of someone else. Aborting."
-msgstr ""
+msgstr "他人のネットワークにボックスを接続するために必要な travelnet_attach 権限を持っていません。中止します。"
 
 #: mods/travelnet/actions/add_station.lua:59
 msgid "A station named '@1' already exists on this network. Please choose a different name!"
-msgstr ""
+msgstr "名前が '@1' のステーションはこのネットワークに既に存在します。別の名前を選んでください。"
 
 #: mods/travelnet/actions/add_station.lua:66
 msgid "Network '@1', already contains the maximum number (@2) of allowed stations per network. Please choose a different/new network name."
-msgstr ""
+msgstr "ネットワーク '@1' は、1ネットワークあたりの最大ステーション数 (@2) に既に達しています。別のネットワーク名を選んでください。"
 
 #: mods/travelnet/actions/add_station.lua:85
 msgid "Station '@1' has been added to the network '@2', which now consists of @3 station(s)."
-msgstr ""
+msgstr "ステーション '@1' がネットワーク '@2' に追加されました。現在、合計 @3 個のステーションで構成されています。"
 
 #: mods/travelnet/actions/add_station.lua:95
 #: mods/travelnet/actions/update_elevator.lua:76
 #: mods/travelnet/actions/update_travelnet.lua:233
 msgid "Station '@1' on network '@2' (owned by @3) ready for usage."
-msgstr ""
+msgstr "ネットワーク '@2' (@3 所有) のステーション '@1' が利用可能になりました。"
 
 #: mods/travelnet/actions/change_order.lua:20
 msgid "This station does not have a network."
-msgstr ""
+msgstr "このステーションにはネットワークが設定されていません。"
 
 #: mods/travelnet/actions/change_order.lua:45
 msgid "This station is already the first one on the list."
-msgstr ""
+msgstr "このステーションは既にリストの先頭にあります。"
 
 #: mods/travelnet/actions/change_order.lua:47
 msgid "This station is already the last one on the list."
-msgstr ""
+msgstr "このステーションは既にリストの最後にあります。"
 
 #: mods/travelnet/actions/change_order.lua:71
 #: mods/travelnet/actions/main.lua:72
 #: mods/travelnet/actions/update_elevator.lua:40
 #: mods/travelnet/actions/update_travelnet.lua:56
 msgid "This @1 belongs to @2. You can't edit it."
-msgstr ""
+msgstr "この @1 は @2 の所有物です。編集することはできません。"
 
 #: mods/travelnet/actions/main.lua:46
 msgid "This @1 belongs to @2. You can't remove it."
-msgstr ""
+msgstr "この @1 は @2 の所有物です。削除することはできません。"
 
 #: mods/travelnet/actions/main.lua:52
 msgid "You do not have enough room in your inventory."
-msgstr ""
+msgstr "インベントリに十分な空きがありません。"
 
 #: mods/travelnet/actions/main.lua:99
 msgid "Please click on the target you want to travel to."
-msgstr ""
+msgstr "移動先のターゲットをクリックしてください。"
 
 #: mods/travelnet/actions/repair_station.lua:15
 msgid "Update failed! Resetting this box on the travelnet."
-msgstr ""
+msgstr "更新に失敗しました！トラベルネット上のこのボックスをリセットします。"
 
 #: mods/travelnet/actions/repair_station.lua:39
 msgid "Station '@1' has been reattached to the network '@2'."
-msgstr ""
+msgstr "ステーション '@1' がネットワーク '@2' に再接続されました。"
 
 #: mods/travelnet/actions/transport_player.lua:20
 msgid "Station '@1' does not exist (anymore?) on this network."
-msgstr ""
+msgstr "ステーション '@1' はこのネットワークに（もう）存在しません。"
 
 #: mods/travelnet/actions/transport_player.lua:33
 msgid "You are not allowed to travel to this station."
-msgstr ""
+msgstr "このステーションへの移動は許可されていません。"
 
 #: mods/travelnet/actions/update_elevator.lua:14
 #: mods/travelnet/actions/update_travelnet.lua:20
 #: mods/travelnet/on_receive_fields.lua:28
 msgid "Unknown node."
-msgstr ""
+msgstr "不明なノードです。"
 
 #: mods/travelnet/actions/update_elevator.lua:18
 #: mods/travelnet/actions/update_travelnet.lua:9
 msgid "Invalid data or node."
-msgstr ""
+msgstr "データまたはノードが無効です。"
 
 #: mods/travelnet/actions/update_elevator.lua:55
 #: mods/travelnet/actions/update_travelnet.lua:149
 #: mods/travelnet/actions/update_travelnet.lua:203
 msgid "Station \"@1\" already exists on network \"@2\"."
-msgstr ""
+msgstr "ステーション \"@1\" はネットワーク \"@2\" に既に存在します。"
 
 #: mods/travelnet/actions/update_elevator.lua:62
 #: mods/travelnet/actions/update_travelnet.lua:210
 msgid "Station does exist."
-msgstr ""
+msgstr "ステーションは存在します。"
 
 #: mods/travelnet/actions/update_elevator.lua:72
 #: mods/travelnet/actions/update_travelnet.lua:220
 msgid "Station \"@1\" has been renamed to \"@2\" on network \"@3\"."
-msgstr ""
+msgstr "ネットワーク \"@3\" のステーション \"@1\" は \"@2\" に名前が変更されました。"
 
 #: mods/travelnet/actions/update_travelnet.lua:33
 msgid "Please provide a station name."
-msgstr ""
+msgstr "ステーション名を入力してください。"
 
 #: mods/travelnet/actions/update_travelnet.lua:37
 msgid "Please provide a network name."
-msgstr ""
+msgstr "ネットワーク名を入力してください。"
 
 #: mods/travelnet/actions/update_travelnet.lua:41
 msgid "Please provide an owner."
-msgstr ""
+msgstr "所有者を指定してください。"
 
 #: mods/travelnet/actions/update_travelnet.lua:67
 msgid "You don't have permission to change the owner of this travelnet"
-msgstr ""
+msgstr "このトラベルネットの所有者を変更する権限がありません"
 
 #: mods/travelnet/actions/update_travelnet.lua:85
 msgid "Station \"@1\" already exists on network \"@2\" of player \"@3\"."
-msgstr ""
+msgstr "プレイヤー \"@3\" のネットワーク \"@2\" には、ステーション \"@1\" が既に存在します。"
 
 #: mods/travelnet/actions/update_travelnet.lua:92
 #: mods/travelnet/actions/update_travelnet.lua:156
 msgid "Network \"@1\", already contains the maximum number (@2) of allowed stations per network. Please choose a different network name."
-msgstr ""
+msgstr "ネットワーク \"@1\" は、1ネットワークあたりの最大ステーション数 (@2) に既に達しています。別のネットワーク名を選んでください。"
 
 #: mods/travelnet/actions/update_travelnet.lua:103
 #: mods/travelnet/actions/update_travelnet.lua:166
 msgid "Station does not have network."
-msgstr ""
+msgstr "ステーションにネットワークがありません。"
 
 #: mods/travelnet/actions/update_travelnet.lua:118
 msgid "Station \"@1\" has been renamed to \"@2\", moved from network \"@3\" to network \"@4\" and from owner \"@5\" to owner \"@6\"."
-msgstr ""
+msgstr "ステーション \"@1\" は \"@2\" に名前変更され、ネットワーク \"@3\" から \"@4\" へ、所有者 \"@5\" から \"@6\" へ移動されました。"
 
 #: mods/travelnet/actions/update_travelnet.lua:178
 msgid "Station \"@1\" has been renamed to \"@2\" and moved from network \"@3\" to network \"@4\"."
-msgstr ""
+msgstr "ステーション \"@1\" は \"@2\" に名前変更され、ネットワーク \"@3\" から \"@4\" へ移動されました。"
 
 #: mods/travelnet/add_target.lua:19 mods/travelnet/formspecs.lua:33
 #: mods/travelnet/functions.lua:339 mods/travelnet/on_receive_fields.lua:18
 msgid "Error"
-msgstr ""
+msgstr "エラー"
 
 #: mods/travelnet/chat.lua:5
 msgid "Shows the travelnet formspec for the network"
-msgstr ""
+msgstr "ネットワークのトラベルネット設定画面を表示します"
 
 #: mods/travelnet/elevator.lua:14
 msgid "Congratulations! This is your first elevator. You can build an elevator network by placing further elevators somewhere above or below this one. Just make sure that the x and z coordinate are the same."
-msgstr ""
+msgstr "おめでとうございます！これが最初のエレベーターです。このエレベーターの上下にさらにエレベーターを設置することで、エレベーターネットワークを構築できます。x座標とz座標が同じであることを確認してください。"
 
 #: mods/travelnet/elevator.lua:27
 msgid "This elevator will automatically connect to the other elevators you have placed at different heights. Just enter a station name and click on \"store\" to set it up. Or just punch it to set the height as station name."
-msgstr ""
+msgstr "このエレベーターは、異なる高さに設置された他のエレベーターと自動的に接続されます。ステーション名を入力して「保存」をクリックするか、パンチして現在の高さをステーション名として設定してください。"
 
 #: mods/travelnet/elevator.lua:38
 msgid "This is your first elevator. It differs from travelnet networks by only allowing movement in vertical direction (up or down). All further elevators which you will place at the same x,z coordinates at different heights will be able to connect to this elevator."
-msgstr ""
+msgstr "これが最初のエレベーターです。トラベルネットネットワークとは異なり、垂直方向（上下）の移動のみが可能です。同じx,z座標の異なる高さに設置されるすべてのエレベーターが、このエレベーターに接続されます。"
 
 #: mods/travelnet/elevator.lua:46
 msgid "m to the right"
-msgstr ""
+msgstr "m 右"
 
 #: mods/travelnet/elevator.lua:47
 msgid "m behind this elevator and"
-msgstr ""
+msgstr "m 後ろ、そして"
 
 #: mods/travelnet/elevator.lua:48
 msgid "m to the left"
-msgstr ""
+msgstr "m 左"
 
 #: mods/travelnet/elevator.lua:49
 msgid "m in front of this elevator and"
-msgstr ""
+msgstr "m 前、そして"
 
 #: mods/travelnet/elevator.lua:56
 msgid "Your nearest elevator network is located"
-msgstr ""
+msgstr "最寄りのエレベーターネットワークの場所:"
 
 #: mods/travelnet/elevator.lua:68
 msgid ", located at x"
-msgstr ""
+msgstr "、x座標"
 
 #: mods/travelnet/elevator.lua:70
 msgid "This elevator here will start a new shaft/network."
-msgstr ""
+msgstr "このエレベーターは新しいシャフト/ネットワークを開始します。"
 
 #: mods/travelnet/elevator.lua:85
 msgid "Elevator"
-msgstr ""
+msgstr "エレベーター"
 
 #: mods/travelnet/elevator.lua:108
 msgid "Elevator (unconfigured)"
-msgstr ""
+msgstr "エレベーター (未設定)"
 
 #: mods/travelnet/elevator.lua:140 mods/travelnet/register_travelnet.lua:84
 msgid "Not enough vertical space to place the travelnet box!"
-msgstr ""
+msgstr "トラベルネットボックスを設置するための垂直方向のスペースが足りません！"
 
 #: mods/travelnet/formspecs.lua:35
 msgid "Back"
-msgstr ""
+msgstr "戻る"
 
 #: mods/travelnet/formspecs.lua:36 mods/travelnet/formspecs.lua:72
 #: mods/travelnet/formspecs.lua:91 mods/travelnet/formspecs.lua:119
 msgid "Exit"
-msgstr ""
+msgstr "終了"
 
 #: mods/travelnet/formspecs.lua:56
 msgid "Configure this travelnet station"
-msgstr ""
+msgstr "このトラベルネットステーションを設定"
 
 #: mods/travelnet/formspecs.lua:57 mods/travelnet/formspecs.lua:87
 msgid "Remove station"
-msgstr ""
+msgstr "ステーションを削除"
 
 #: mods/travelnet/formspecs.lua:58 mods/travelnet/formspecs.lua:88
 #: mods/travelnet/formspecs.lua:112
 msgid "Name of this station:"
-msgstr ""
+msgstr "ステーション名:"
 
 #: mods/travelnet/formspecs.lua:60
 msgid "What do you call this place here? Example: \"my first house\", \"mine\", \"shop\"..."
-msgstr ""
+msgstr "この場所を何と呼びますか？ 例: 「最初の家」「鉱山」「ショップ」など"
 
 #: mods/travelnet/formspecs.lua:61
 msgid "Assign to network:"
-msgstr ""
+msgstr "割り当て先ネットワーク:"
 
 #: mods/travelnet/formspecs.lua:67
 msgid "You can have more than one network. If unsure, use \"@1\"."
-msgstr ""
+msgstr "複数のネットワークを持つことができます。不明な場合は \"@1\" を使用してください。"
 
 #: mods/travelnet/formspecs.lua:68 mods/travelnet/formspecs.lua:116
 msgid "Owned by:"
-msgstr ""
+msgstr "所有者:"
 
 #: mods/travelnet/formspecs.lua:70
 msgid "Unless you know what you are doing, leave this as is."
-msgstr ""
+msgstr "特別な理由がない限り、このままにしておいてください。"
 
 #: mods/travelnet/formspecs.lua:71 mods/travelnet/formspecs.lua:90
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: mods/travelnet/formspecs.lua:86
 msgid "Configure this elevator station"
-msgstr ""
+msgstr "このエレベーターステーションを設定"
 
 #: mods/travelnet/formspecs.lua:111
 msgid "Elevator:"
-msgstr ""
+msgstr "エレベーター:"
 
 #: mods/travelnet/formspecs.lua:111
 msgid "Travelnet-Box:"
-msgstr ""
+msgstr "トラベルネットボックス:"
 
 #: mods/travelnet/formspecs.lua:114
 msgid "Assigned to Network:"
-msgstr ""
+msgstr "割り当て済みネットワーク:"
 
 #: mods/travelnet/formspecs.lua:118
 msgid "Click on target to travel there:"
-msgstr ""
+msgstr "移動先のターゲットをクリックしてください:"
 
 #: mods/travelnet/formspecs.lua:200
 msgid "move up"
-msgstr ""
+msgstr "上に移動"
 
 #: mods/travelnet/formspecs.lua:201
 msgid "move down"
-msgstr ""
+msgstr "下に移動"
 
 #: mods/travelnet/formspecs.lua:212
 msgid "Edit station"
-msgstr ""
+msgstr "ステーションを編集"
 
 #: mods/travelnet/formspecs.lua:218
 msgid "<<"
-msgstr ""
+msgstr "<<"
 
 #: mods/travelnet/formspecs.lua:221
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #: mods/travelnet/formspecs.lua:224
 msgid "Page @1/@2"
-msgstr ""
+msgstr "ページ @1/@2"
 
 #: mods/travelnet/formspecs.lua:227
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #: mods/travelnet/formspecs.lua:230
 msgid ">>"
-msgstr ""
+msgstr ">>"
 
 #: mods/travelnet/functions.lua:30
 msgid "travelnet box"
-msgstr ""
+msgstr "トラベルネットボックス"
 
 #: mods/travelnet/functions.lua:32
 msgid "elevator"
-msgstr ""
+msgstr "エレベーター"
 
 #: mods/travelnet/functions.lua:34
 msgid "locked travelnet"
-msgstr ""
+msgstr "ロックされたトラベルネット"
 
 #: mods/travelnet/functions.lua:36
 msgid "locked elevator"
-msgstr ""
+msgstr "ロックされたエレベーター"
 
 #: mods/travelnet/functions.lua:300
 msgid "Could not find information about the station that is to be removed."
-msgstr ""
+msgstr "削除対象のステーションに関する情報が見つかりませんでした。"
 
 #: mods/travelnet/functions.lua:311
 msgid "Could not find the station that is to be removed."
-msgstr ""
+msgstr "削除対象のステーションが見つかりませんでした。"
 
 #: mods/travelnet/functions.lua:322
 msgid "Station '@1' has been REMOVED from the network '@2'."
-msgstr ""
+msgstr "ステーション '@1' はネットワーク '@2' から削除されました。"
 
 #: mods/travelnet/on_receive_fields.lua:19
 msgid "There is something wrong with the configuration of this station."
-msgstr ""
+msgstr "このステーションの設定に問題があります。"
 
 #: mods/travelnet/persistence.lua:18
 msgid "[travelnet] migrating from json-file to mod-storage"
-msgstr ""
+msgstr "[travelnet] JSONファイルからmod-storageへ移行中"
 
 #: mods/travelnet/persistence.lua:21
 msgid "[travelnet] migrating from serialize-file to mod-storage"
-msgstr ""
+msgstr "[travelnet] serializeファイルからmod-storageへ移行中"
 
 #: mods/travelnet/privs.lua:6
 msgid "allows to attach travelnet boxes to travelnets of other players"
-msgstr ""
+msgstr "他プレイヤーのトラベルネットにボックスを接続することを許可します"
 
 #: mods/travelnet/privs.lua:15
 msgid "allows to dig travelnet boxes which belog to nets of other players"
-msgstr ""
+msgstr "他プレイヤーのネットワークに属するボックスを撤去することを許可します"
 
 #: mods/travelnet/register_travelnet.lua:25
 msgid "Travelnet-Box"
-msgstr ""
+msgstr "トラベルネットボックス"
 
 #: mods/travelnet/register_travelnet.lua:52
 msgid "Travelnet-Box (unconfigured)"
-msgstr ""
+msgstr "トラベルネットボックス (未設定)"

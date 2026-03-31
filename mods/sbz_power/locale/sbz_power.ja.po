@@ -1,299 +1,298 @@
 # SBZ_POWER MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:15-0700\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: mods/sbz_power/batteries.lua:33
 msgid "Battery"
-msgstr ""
+msgstr "バッテリー"
 
 #: mods/sbz_power/batteries.lua:56
 msgid "Advanced Battery"
-msgstr ""
+msgstr "高度なバッテリー"
 
 #: mods/sbz_power/batteries.lua:78
 msgid "Very Advanced Battery"
-msgstr ""
+msgstr "超高度なバッテリー"
 
 #: mods/sbz_power/batteries.lua:118
 msgid "Teleport Battery"
-msgstr ""
+msgstr "テレポートバッテリー"
 
 #: mods/sbz_power/batteries.lua:249
 msgid "Creative Power Generating Battery"
-msgstr ""
+msgstr "クリエイティブ発電バッテリー"
 
 #: mods/sbz_power/batteries.lua:264
 msgid "Creative Battery"
-msgstr ""
+msgstr "クリエイティブバッテリー"
 
 #: mods/sbz_power/connectors.lua:6 mods/sbz_power/connectors.lua:52
 msgid "Connector"
-msgstr ""
+msgstr "コネクター"
 
 #: mods/sbz_power/ele_fab.lua:52 mods/sbz_power/ele_fab.lua:103
 msgid "Ele Fab"
-msgstr ""
+msgstr "エレ・ファブ"
 
 #: mods/sbz_power/emittrium_reactor.lua:32
 msgid "Reactor Shell"
-msgstr ""
+msgstr "原子炉シェル"
 
 #: mods/sbz_power/emittrium_reactor.lua:59
 msgid "Reactor Glass"
-msgstr ""
+msgstr "原子炉ガラス"
 
 #: mods/sbz_power/emittrium_reactor.lua:89
 msgid "Reactor Emittrium Input"
-msgstr ""
+msgstr "原子炉エミットリウム入力口"
 
 #: mods/sbz_power/emittrium_reactor.lua:140
 msgid "Reactor Core"
-msgstr ""
+msgstr "原子炉コア"
 
 #: mods/sbz_power/emittrium_reactor.lua:218
 msgid "Reactor Infoscreen"
-msgstr ""
+msgstr "原子炉情報画面"
 
 #: mods/sbz_power/emittrium_reactor.lua:324
 msgid "Reactor Power Port"
-msgstr ""
+msgstr "原子炉パワーポート"
 
 #: mods/sbz_power/emittrium_reactor.lua:369
 msgid "Reactor Coolant Port"
-msgstr ""
+msgstr "原子炉冷却材ポート"
 
 #: mods/sbz_power/extractor.lua:15
 msgid "Simple Matter Extractor"
-msgstr ""
+msgstr "簡易物質抽出機"
 
 #: mods/sbz_power/extractor.lua:89
 msgid "Advanced Matter Extractor"
-msgstr ""
+msgstr "高度な物質抽出機"
 
 #: mods/sbz_power/fluid_transport.lua:54
 msgid "Fluid Pipe"
-msgstr ""
+msgstr "流体パイプ"
 
 #: mods/sbz_power/fluid_transport.lua:205
 msgid "Fluid Pump"
-msgstr ""
+msgstr "流体ポンプ"
 
 #: mods/sbz_power/fluid_transport.lua:345
 msgid "Creative Pump"
-msgstr ""
+msgstr "クリエイティブポンプ"
 
 #: mods/sbz_power/fluid_transport.lua:477
 msgid "Fluid Storage Tank"
-msgstr ""
+msgstr "流体貯蔵タンク"
 
 #: mods/sbz_power/fluid_transport.lua:530
 msgid "Fluid Capturer"
-msgstr ""
+msgstr "流体キャプチャ"
 
 #: mods/sbz_power/fluid_transport.lua:610
 msgid "Fluid Cell Filler"
-msgstr ""
+msgstr "流体セルフィラー"
 
 #: mods/sbz_power/generator.lua:123
 msgid "Simple Charged Field"
-msgstr ""
+msgstr "簡易チャージフィールド"
 
 #: mods/sbz_power/generator.lua:238
 msgid "Charged Field Residue"
-msgstr ""
+msgstr "チャージフィールド残渣"
 
 #: mods/sbz_power/generator.lua:267
 msgid "Solid Charged Field"
-msgstr ""
+msgstr "固体チャージフィールド"
 
 #: mods/sbz_power/infinite_storinator.lua:4
 msgid "Infinite Storinator (deprecated)"
-msgstr ""
+msgstr "無限ストリネーター（非推奨）"
 
 #: mods/sbz_power/lights.lua:5
 msgid "Powered Lamp"
-msgstr ""
+msgstr "パワードランプ"
 
 #: mods/sbz_power/lights.lua:28
 msgid "Funny air (YOU HACKER YOU!!!!)"
-msgstr ""
+msgstr "おかしな空気（ハッカーめ！）"
 
 #: mods/sbz_power/lights.lua:94
 msgid "Super Powered Lamp"
-msgstr ""
+msgstr "スーパーパワードランプ"
 
 #: mods/sbz_power/manual_crafter.lua:160
 msgid "Manual Crafter"
-msgstr ""
+msgstr "手動クラフト機"
 
 #: mods/sbz_power/misc.lua:4
 msgid "Phosphor"
-msgstr ""
+msgstr "リン"
 
 #: mods/sbz_power/misc.lua:64
 msgid "Like clearobjects but only for items, and only quick"
-msgstr ""
+msgstr "clearobjectsに似ていますが、アイテムのみを素早く削除します"
 
 #: mods/sbz_power/misc.lua:86
 msgid "Item Vacuum"
-msgstr ""
+msgstr "アイテムバキューム"
 
 #: mods/sbz_power/phlogiston_fuser.lua:18
 msgid "Phlogiston Fuser"
-msgstr ""
+msgstr "フロギストン核融合炉"
 
 #: mods/sbz_power/power_pipes.lua:27
 msgid "Emittrium Power Cable"
-msgstr ""
+msgstr "エミットリウム電力ケーブル"
 
 #: mods/sbz_power/power_pipes.lua:70
 msgid "Airtight Emittrium Power Cable"
-msgstr ""
+msgstr "気密エミットリウム電力ケーブル"
 
 #: mods/sbz_power/sensors/delayer.lua:4
 msgid "Delayer"
-msgstr ""
+msgstr "ディレイヤー"
 
 #: mods/sbz_power/sensors/gates.lua:46
 msgid "NOT gate"
-msgstr ""
+msgstr "NOTゲート"
 
 #: mods/sbz_power/sensors/gates.lua:65
 msgid "Buffer gate"
-msgstr ""
+msgstr "バッファゲート"
 
 #: mods/sbz_power/sensors/gates.lua:115
 msgid "OR gate"
-msgstr ""
+msgstr "ORゲート"
 
 #: mods/sbz_power/sensors/gates.lua:134
 msgid "NOR gate"
-msgstr ""
+msgstr "NORゲート"
 
 #: mods/sbz_power/sensors/gates.lua:153
 msgid "AND gate"
-msgstr ""
+msgstr "ANDゲート"
 
 #: mods/sbz_power/sensors/gates.lua:172
 msgid "NAND gate"
-msgstr ""
+msgstr "NANDゲート"
 
 #: mods/sbz_power/sensors/gates.lua:191
 msgid "XOR gate"
-msgstr ""
+msgstr "XORゲート"
 
 #: mods/sbz_power/sensors/gates.lua:210
 msgid "XNOR gate"
-msgstr ""
+msgstr "XNORゲート"
 
 #: mods/sbz_power/sensors/gates.lua:237
 msgid "Machine Controller"
-msgstr ""
+msgstr "マシンコントローラー"
 
 #: mods/sbz_power/sensors/item_sensor.lua:43
 msgid "Item Sensor"
-msgstr ""
+msgstr "アイテムセンサー"
 
 #: mods/sbz_power/sensors/node_sensors.lua:50
 msgid "Light Sensor"
-msgstr ""
+msgstr "照明センサー"
 
 #: mods/sbz_power/sensors/node_sensors.lua:183
 msgid "Node Sensor"
-msgstr ""
+msgstr "ノードセンサー"
 
 #: mods/sbz_power/sensors/sensors_player_facing.lua:8
 msgid "Switch ("
-msgstr ""
+msgstr "スイッチ ("
 
 #: mods/sbz_power/sensors/sensor_linker.lua:187
 msgid "Sensor Linker"
-msgstr ""
+msgstr "センサーリンカー"
 
 #: mods/sbz_power/sensors/sensor_linker.lua:189
 msgid "Right click: asks for a name, if a block is pointed to, links to the to the sensor."
-msgstr ""
+msgstr "右クリック：名前を入力。ブロックを指している場合、それをセンサーにリンクします。"
 
 #: mods/sbz_power/sensors/sensor_linker.lua:190
 msgid "Left click: uses the previous name from when you right clicked, links it to the sensor."
-msgstr ""
+msgstr "左クリック：前回の右クリック時の名前を使用して、センサーにリンクします。"
 
 #: mods/sbz_power/sensors/sensor_linker.lua:191
 msgid "Aux1 + right click/left click: Links the tool to the sensor."
-msgstr ""
+msgstr "Aux1 + 右クリック/左クリック：ツールをセンサーにリンクします。"
 
 #: mods/sbz_power/sensors/sensor_linker.lua:192
 msgid "If you hold it, it should show all the links and the sensor's linking radius."
-msgstr ""
+msgstr "手に持っている間、すべてのリンクとセンサーのリンク半径を表示します。"
 
 #: mods/sbz_power/starlight_catcher.lua:26
 msgid "Starlight Catcher"
-msgstr ""
+msgstr "スターライトキャッチャー"
 
 #: mods/sbz_power/starlight_catcher.lua:101
 msgid "Photon-Energy Converter"
-msgstr ""
+msgstr "光子エネルギー変換器"
 
 #: mods/sbz_power/switching_station.lua:439
 msgid "[Switching Station] Network ID: "
-msgstr ""
+msgstr "[スイッチングステーション] ネットワークID: "
 
 #: mods/sbz_power/switching_station.lua:460
 msgid "Switching Station"
-msgstr ""
+msgstr "スイッチングステーション"
 
 #: mods/sbz_power/switching_station.lua:587
 msgid "Toggles if switching stations are enabled or not"
-msgstr ""
+msgstr "スイッチングステーションの有効/無効を切り替えます"
 
 #: mods/sbz_power/switching_station.lua:594
 msgid "Enabled switching stations"
-msgstr ""
+msgstr "スイッチングステーションを有効にしました"
 
 #: mods/sbz_power/switching_station.lua:597
 msgid "Temporarily disabled switching stations."
-msgstr ""
+msgstr "スイッチングステーションを一時的に無効にしました。"
 
 #: mods/sbz_power/switching_station.lua:712
 msgid "Teleports to the laggiest switching station, useful to diagnose issues with skyblock zero on multiplayer."
-msgstr ""
+msgstr "最もラグのあるスイッチングステーションへテレポートします。マルチプレイヤーでの問題診断に役立ちます。"
 
 #: mods/sbz_power/switching_station.lua:724
 msgid "Could not find a switching station like that"
-msgstr ""
+msgstr "そのようなスイッチングステーションは見つかりませんでした"
 
 #: mods/sbz_power/switching_station.lua:727
 msgid "Done"
-msgstr ""
+msgstr "完了"
 
 #: mods/sbz_power/testnodes.lua:6
 msgid "Test machine"
-msgstr ""
+msgstr "テストマシン"
 
 #: mods/sbz_power/turret.lua:75
 msgid "Automatic Turret"
-msgstr ""
+msgstr "自動タレット"
 
 #: mods/sbz_power/turret.lua:79
 msgid "Shoots things like lasers."
-msgstr ""
+msgstr "レーザーなどを発射します。"
 
 #: mods/sbz_power/turret.lua:80
 msgid "Range: @1 node"
 msgid_plural "Range: @1 nodes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "射程：@1 ノード"

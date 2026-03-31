@@ -1,14 +1,14 @@
 # SBZ_WRENCH MOD TRANSLATION TEMPLATE
 # Copyright (C) 2026 chefzander, Skyblock Zero translations team
 # This file is distributed under the same license as the Skyblock: Zero package.
-# <Your Name> [Contact Info], <YEAR>
+# AbbyRead, 2026
 #
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://codeberg.org/skyblock_zero/skyblock_zero/issues\n"
 "POT-Creation-Date: 2026-03-30 14:53-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
+"PO-Revision-Date: 2026-03-30 20:15+0000\n"
+"Last-Translator: Google Gemini\n"
 "Language-Team: Skyblock: Zero Translation Team <https://codeberg.org/skyblock_zero/skyblock_zero/issues>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -17,48 +17,48 @@ msgstr ""
 
 #: mods/sbz_wrench/functions.lua:11
 msgid "Cannot pickup node. Owned by @1."
-msgstr ""
+msgstr "ノードを回収できません。所有者: @1"
 
 #: mods/sbz_wrench/functions.lua:12
 msgid "Cannot pickup node containing @1."
-msgstr ""
+msgstr "@1 を含むノードは回収できません。"
 
 #: mods/sbz_wrench/functions.lua:13
 msgid "Not enough room in inventory to pickup node."
-msgstr ""
+msgstr "インベントリの空き容量が足りないため、ノードを回収できません。"
 
 #: mods/sbz_wrench/functions.lua:14
 msgid "Cannot pickup node. Nesting inventories is not allowed."
-msgstr ""
+msgstr "ノードを回収できません。インベントリの入れ子（ネスト）は許可されていません。"
 
 #: mods/sbz_wrench/functions.lua:15
 msgid "Cannot pickup node. Node contains too much metadata. (Too much information)"
-msgstr ""
+msgstr "ノードを回収できません。ノードに含まれるメタデータが多すぎます。(情報過多)"
 
 #: mods/sbz_wrench/functions.lua:16
 msgid "Cannot pickup node. Node is missing inventory."
-msgstr ""
+msgstr "ノードを回収できません。ノードにインベントリが存在しません。"
 
 #: mods/sbz_wrench/functions.lua:17
 msgid "Cannot pickup node. Node doesn't contain metadata?"
-msgstr ""
+msgstr "ノードを回収できません。ノードにメタデータが含まれていないようです。"
 
 #: mods/sbz_wrench/functions.lua:18
 msgid "A robotic arm cannot dig that node."
-msgstr ""
+msgstr "ロボットアームでそのノードを掘ることはできません。"
 
 #: mods/sbz_wrench/functions.lua:28
 msgid "@1 with items"
-msgstr ""
+msgstr "アイテム入りの @1"
 
 #: mods/sbz_wrench/functions.lua:37
 msgid "@1 with text \"@2\""
-msgstr ""
+msgstr "テキスト「@2」が書かれた @1"
 
 #: mods/sbz_wrench/functions.lua:42
 msgid "@1 with configuration"
-msgstr ""
+msgstr "設定済みの @1"
 
 #: mods/sbz_wrench/tool.lua:6
 msgid "Node Preserver"
-msgstr ""
+msgstr "ノード・プリザーバー"
