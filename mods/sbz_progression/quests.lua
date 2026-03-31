@@ -120,8 +120,7 @@ sbz_api.register_quest({
 --  so all languages coexist on the quest object; the display code picks the right one at runtime.
 -- Logic fields (.id, .requires, .type) are never touched.
 -- Add new language codes here as translators contribute files.
--- `x-` prefix marks a private use language code (must be specified in minetest.conf, e.g.: language = x-pirate)
-local supported_languages = { 'ja', 'x-pirate' }
+local supported_languages = { 'ja' }
 
 for _, lang in ipairs(supported_languages) do
     for _, name in ipairs(quest_files) do
